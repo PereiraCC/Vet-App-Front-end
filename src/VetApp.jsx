@@ -1,7 +1,8 @@
 import React from 'react'
+import { AppRouter } from './routes/AppRouter'
 
 export const VetApp = () => {
-  return (
-    <h1>VetApp</h1>
-  )
+    return (
+        <AppRouter />
+    )
 }
