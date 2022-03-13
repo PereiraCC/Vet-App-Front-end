@@ -2,6 +2,10 @@ import React from 'react'
 
 export const BuysPage = () => {
   return (
-    <h1>BuysPage</h1>
+    <div className='buys'>
+
+      <h1>BuysPage</h1>
+
+    </div>
   )
 }

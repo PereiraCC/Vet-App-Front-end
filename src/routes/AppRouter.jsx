@@ -10,15 +10,26 @@ import { BillingPage } from '../components/Billing/BillingPage';
 import { BuysPage } from '../components/Buys/BuysPage';
 import { InventoryPage } from '../components/Inventory/InventoryPage';
 import { ReportsPage } from '../components/Reports/ReportsPage';
+import { Navbar } from '../components/Shared/Navbar';
+import { VetPage } from '../components/VetPage';
 
 export const AppRouter = () => {
   return (
     <Router>
+
+        <Navbar />
+
         <div>
             <Switch>
                 <Route 
                     exact
                     path="/"
+                    component={ VetPage }
+                />
+
+                <Route 
+                    exact
+                    path="/billing"
                     component={ BillingPage }
                 />
 

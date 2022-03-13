@@ -2,6 +2,10 @@ import React from 'react'
 
 export const InventoryPage = () => {
   return (
-    <h1>InventoryPage</h1>
+    <div className='inventory'>
+
+      <h1>InventoryPage</h1>
+
+    </div>
   )
 }

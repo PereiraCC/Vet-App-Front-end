@@ -2,6 +2,13 @@ import React from 'react'
 
 export const BillingPage = () => {
   return (
-    <h1>BillingPage</h1>
+
+      <div className='billing'>
+
+          <h1>BillingPage</h1>
+
+      </div>
+
+
   )
 }
