@@ -1,0 +1,57 @@
+.billing_header-number {
+    // background-color: yellow;
+    width: 30%;
+    height: 60px;
+    // text-align: center;
+}
+
+#Factura {
+    font-size: 30px;
+    font-weight: 500;
+    // background-color: green;
+    padding-top: 15px;
+    padding-left: 25px;
+    text-align: start;
+}
+
+.billing_header-token {
+    background-color: blue;
+    position: fixed;
+    margin-top: -61px;
+    margin-left: 30%;
+    height: 60px;
+    width: 30%;
+    padding-top: 15px;
+}
+
+#Ficha {
+    align-content: space-between;
+    // background-color: yellow;
+    width: 30%;
+    height: 30px;
+    text-align: start;
+    padding-left: 5px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#txtFicha {
+    position: fixed;
+    margin-top: -30px;
+    margin-left: -82px;
+    height: 30px;
+    width: 85px;
+    font-size: 23px;
+}
+
+.billing_image-binoculars {
+    background-color: white;
+    position: fixed;
+    top: 65px;
+    left: 650px;
+    height: 30px;
+    width: 35px;
+    
+    justify-content: start;
+    // align-items: ;
+}

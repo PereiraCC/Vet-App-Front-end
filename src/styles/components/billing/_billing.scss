@@ -1,0 +1,40 @@
+.billing_main {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'header-customer header-customer invoice totals totals totals'
+        'main main main totals totals totals'
+        'footer footer footer footer footer footer';
+    grid-template-rows: 60px 130px 325px 60px;
+}
+
+.billing_header {
+    background-color: red;
+    grid-area: header;
+}
+
+.billing_header-customer{
+    background-color: green;
+    grid-area: header-customer;
+}
+
+.billing_header-conditions {
+    background-color: blue;
+    grid-area: invoice;
+}
+
+.billing_totals {
+    background-color: yellow;
+    grid-area: totals;
+}
+
+.billing_items{
+    background-color: purple;
+    grid-area: main;
+}
+
+.billing_footer{
+    background-color: aquamarine;
+    grid-area: footer;
+}

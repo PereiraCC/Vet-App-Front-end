@@ -29,6 +29,10 @@ export const BillingPage = () => {
             <BillingItems />
         </div>
 
+        <div className='billing_footer'>
+           <h1>Footer</h1>
+        </div>
+
       </div>
   )
 }
