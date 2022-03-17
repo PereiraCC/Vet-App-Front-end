@@ -1,57 +1,137 @@
+.billing_header-main {
+    display: grid;
+    grid-template-areas: 
+        'Factura Ficha Tipos';
+    grid-template-rows: 60px 60px 60px;
+    grid-template-columns: 25% 30% 40%;
+}
+
 .billing_header-number {
-    // background-color: yellow;
-    width: 30%;
-    height: 60px;
-    // text-align: center;
+    grid-area: Factura;
 }
 
 #Factura {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
-    // background-color: green;
-    padding-top: 15px;
-    padding-left: 25px;
-    text-align: start;
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .billing_header-token {
-    background-color: blue;
-    position: fixed;
-    margin-top: -61px;
-    margin-left: 30%;
-    height: 60px;
-    width: 30%;
-    padding-top: 15px;
+    grid-area: Ficha;
+}
+
+.billing_header-ficha {
+    height: 100%;
+    width: 40%;
 }
 
 #Ficha {
-    align-content: space-between;
-    // background-color: yellow;
-    width: 30%;
-    height: 30px;
-    text-align: start;
-    padding-left: 5px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+    width: 50%;
 }
 
 #txtFicha {
-    position: fixed;
-    margin-top: -30px;
-    margin-left: -82px;
-    height: 30px;
-    width: 85px;
     font-size: 23px;
+    height: 30px;
+    left: 430px;
+    position: fixed;
+    top: 65px;
+    width: 85px;
 }
 
 .billing_image-binoculars {
-    background-color: white;
+    background-color: #C7C7CD;
+    cursor: pointer;
+    height: 30px;
+    left: 550px;
     position: fixed;
     top: 65px;
-    left: 650px;
-    height: 30px;
     width: 35px;
+
+    :hover {
+        background-color: blue;
+    }
+}
+
+.billing_image-icon {
+    padding-top: 8px;
+}
+
+.billing_image-nomoney {
+    background-color: #C7C7CD;
+    cursor: pointer;
+    height: 30px;
+    left: 600px;
+    position: fixed;
+    top: 65px;
+    width: 35px;
+
+    :hover {
+        background-color: blue;
+    }
+}
+
+.billing_image-refresh {
+    background-color: #C7C7CD;
+    cursor: pointer;
+    height: 30px;
+    left: 650px;
+    position: fixed;
+    top: 65px;
+    width: 35px;
+
+    :hover {
+        background-color: blue;
+    }
+}
+
+.billing_header-type {
+    grid-area: Tipos;
+    display: grid;
+    grid-template-areas: 
+        'Apartado Contado Credito';
+    grid-template-rows: 60px 60px 60px;
+    grid-template-columns: 20% 20% 30%;
     
-    justify-content: start;
-    // align-items: ;
+}
+
+.billing_header-radio-apartado {
+    grid-area: Apartado;
+    padding-top: 20px;
+}
+
+.billing_header-radio-contado {
+    grid-area: Contado;
+    padding-top: 20px;
+}
+
+.billing_header-radio-credito {
+    grid-area: Credito;
+    display: grid;
+    grid-template-areas: 
+        'Radio Label';
+    grid-template-rows: 60px 60px;
+    grid-template-columns: 50% 50%;
+}
+
+.billing_header-radio-credito-radio {
+    grid-area: Radio;
+    padding-top: 20px;
+}
+
+.billing_header-radio-credito-label {
+    grid-area: Label;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#Apartado, #Contado, #Credito {
+    margin-right: 5px;
 }

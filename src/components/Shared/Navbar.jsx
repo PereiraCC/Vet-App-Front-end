@@ -19,7 +19,7 @@ export const Navbar = () => {
     return (
         <>
 
-          <IconContext.Provider value={{ color: '#fff' }}>
+          <IconContext.Provider value={{ color: '#ee7519' }}>
 
             <div className='vet_navbar'>
                 <Link to="#" className='vet_menu-bars'>

@@ -10,8 +10,8 @@
 }
 
 .billing_header {
-    background-color: red;
     grid-area: header;
+    border: 1px black solid;
 }
 
 .billing_header-customer{
@@ -20,21 +20,21 @@
 }
 
 .billing_header-conditions {
-    background-color: blue;
+    // background-color: blue;
     grid-area: invoice;
 }
 
 .billing_totals {
-    background-color: yellow;
+    // background-color: yellow;
     grid-area: totals;
 }
 
 .billing_items{
-    background-color: purple;
+    // background-color: purple;
     grid-area: main;
 }
 
 .billing_footer{
-    background-color: aquamarine;
+    // background-color: aquamarine;
     grid-area: footer;
 }
