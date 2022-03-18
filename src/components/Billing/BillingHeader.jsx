@@ -5,7 +5,7 @@ import { AiOutlineFileSync } from 'react-icons/ai';
 
 export const BillingHeader = () => {
   return (
-    
+  
     <div className='billing_header-main'>
 
         <div className="billing_header-number">

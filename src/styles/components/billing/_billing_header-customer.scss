@@ -1,0 +1,283 @@
+.billing_header-customer-main {
+    display: grid;
+    grid-template-areas: 
+        'first'
+        'second'
+        'third';
+    grid-template-rows: 43px 43px 43px;
+}
+
+.billing_header-customer-first {
+    grid-area: first;
+    display: grid;
+    grid-template-areas: 
+        'cedula tipo nombre buttons';
+    grid-template-columns: 20% 18% 43% 18%;
+}
+
+.billing_header-customer-first-cedula {
+    grid-area: cedula;
+    display: grid;
+    grid-template-areas: 
+        'labelCedula'
+        'inputCedula';
+    grid-template-rows: 50% 50%;
+}
+
+#lblCedula {
+    font-size: 15px;
+    grid-area: labelCedula;
+    padding-left: 15px;
+    text-align: start;
+}
+
+#txtCedula {
+    font-size: 15px;
+    grid-area: inputCedula;
+    margin-left: 15px;
+    width: 90%;
+}
+
+.billing_header-customer-first-tipo {
+    grid-area: tipo;
+    display: grid;
+    grid-template-areas: 
+        'labelTipo'
+        'inputTipo';
+    grid-template-rows: 50% 50%;
+}
+
+#lblTipo {
+    font-size: 15px;
+    grid-area: labelTipo;
+    padding-left: 15px;
+    text-align: start;
+}
+
+#cboTipo {
+    grid-area: inputTipo;
+    margin-left: 15px
+}
+
+
+.billing_header-customer-first-nombre {
+    grid-area: nombre;
+    display: grid;
+    grid-template-areas: 
+        'labelNombre'
+        'inputNombre';
+    grid-template-rows: 50% 50%;
+}
+
+#lblNombre {
+    font-size: 15px;
+    grid-area: labelNombre;
+    padding-left: 15px;
+    text-align: start;
+}
+
+#txtNombre {
+    font-size: 15px;
+    grid-area: inputNombre;
+    margin-left: 15px;
+    width: 90%;
+}
+
+.billing_header-customer-first-buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-areas: 
+        'button1 button2 button3';
+    grid-template-columns: 33% 33% 33%;
+    gap: 2px;
+}
+
+.button1 {
+    cursor: pointer;
+    grid-area: button1;
+    height: 85%;
+    margin-top: 5px;
+    
+    :hover {
+        background-color: #c7c7c7;
+    }
+}
+
+.button2 {
+    cursor: pointer;
+    grid-area: button2;
+    height: 85%;
+    margin-top: 5px;
+    
+    :hover {
+        background-color: #c7c7c7;
+    }
+
+}
+
+.button3 {
+    cursor: pointer;
+    grid-area: button3;
+    height: 85%;
+    margin-top: 5px;
+    
+    :hover {
+        background-color: #c7c7c7;
+    }
+
+}
+
+#button1, #button2, #button3 {
+    height: 75%;
+    margin-top: 5px;
+    width: 70%;
+}
+
+
+.billing_header-customer-second {
+    grid-area: second;
+    display: grid;
+    grid-template-areas: 
+        'telefono direccion encargado';
+    grid-template-columns: 20% 50% 30%;
+}
+
+.billing_header-customer-second-telefono {
+    grid-area: telefono;
+    display: grid;
+    grid-template-areas: 
+        'labelTelefono'
+        'inputTelefono';
+    grid-template-rows: 50% 50%;
+}
+
+#lblTelefono {
+    font-size: 15px;
+    grid-area: labelTelefono;
+    padding-left: 15px;
+    text-align: start;
+}
+
+#txtTelefono {
+    font-size: 15px;
+    grid-area: inputTelefono;
+    margin-left: 15px;
+    width: 90%;
+}
+
+.billing_header-customer-second-direccion {
+    grid-area: direccion;
+    display: grid;
+    grid-template-areas: 
+        'labelDireccion'
+        'inputDireccion';
+    grid-template-rows: 50% 50%;
+}
+
+#lblDireccion {
+    font-size: 15px;
+    grid-area: labelDireccion;
+    padding-left: 15px;
+    text-align: start;
+}
+
+#txtDireccion {
+    font-size: 15px;
+    grid-area: inputDireccion;
+    margin-left: 15px;
+}
+
+
+.billing_header-customer-second-Encargado {
+    grid-area: encargado;
+    display: grid;
+    grid-template-areas: 
+        'labelEncargado'
+        'inputEncargado';
+    grid-template-rows: 50% 50%;
+}
+
+#lblEncargado{
+    font-size: 15px;
+    grid-area: labelEncargado;
+    padding-left: 15px;
+    text-align: start;
+}
+
+#txtEncargado{
+    font-size: 15px;
+    grid-area: inputEncargado;
+    margin-left: 15px;
+    width: 90%;
+}
+
+.billing_header-customer-third {
+    grid-area: third;
+    display: grid;
+    grid-template-areas: 
+        'observaciones correo button';
+    grid-template-columns: 45% 45% 10%;
+}
+
+.billing_header-customer-third-observaciones {
+    grid-area: observaciones;
+    grid-template-areas: 
+        'labelObservaciones'
+        'inputObservaciones';
+    grid-template-rows: 50% 50%;
+}
+
+#lblObservaciones {
+    font-size: 15px;
+    grid-area: labelObservaciones;
+    padding-left: 15px;
+    text-align: start;
+}
+
+#txtObservaciones {
+    font-size: 15px;
+    grid-area: labelObservaciones;
+    margin-left: 15px;
+    width: 93%;
+}
+
+.billing_header-customer-third-correos {
+    grid-area: correo;
+    grid-template-areas: 
+        'labelcorreos'
+        'inputcorreos';
+    grid-template-rows: 50% 50%;
+}
+
+#lblComprobante {
+    font-size: 15px;
+    grid-area: labelcorreos;
+    padding-left: 15px;
+    text-align: start;
+}
+
+#txtComprobante {
+    font-size: 15px;
+    grid-area: inputcorreos;
+    margin-left: 15px;
+    width: 94%;
+}
+
+
+.billing_header-customer-third-button {
+    grid-area: button;
+}
+
+.buttonPencil {
+    cursor: pointer;
+    padding-top: 10px;
+    
+    :hover {
+        background-color: #c7c7c7;
+    }
+}
+
+#buttonPencil {
+    height: 100%;
+    width: 40%;  
+}

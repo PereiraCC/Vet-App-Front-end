@@ -1,6 +1,6 @@
 
 export const BillingConditions = () => {
   return (
-    <h1>invoice conditions</h1>
+    <h1>invoice</h1>
   )
 }

@@ -3,10 +3,11 @@
     display: grid;
     grid-template-areas: 
         'header header header header header header'
-        'header-customer header-customer invoice totals totals totals'
-        'main main main totals totals totals'
+        'header-customer header-customer invoice invoice totals totals'
+        'main main main main totals totals'
         'footer footer footer footer footer footer';
     grid-template-rows: 60px 130px 325px 60px;
+    grid-template-columns: 50px;
 }
 
 .billing_header {
@@ -16,12 +17,13 @@
 }
 
 .billing_header-customer{
-    background-color: green;
+    // background-color: green;
     grid-area: header-customer;
+    border: 1px black solid;
 }
 
 .billing_header-conditions {
-    // background-color: blue;
+    background-color: blue;
     grid-area: invoice;
 }
 
