@@ -6,6 +6,7 @@
     grid-template-columns: 25% 30% 40%;
 }
 
+// Number 
 .billing_header-number {
     grid-area: Factura;
 }
@@ -19,41 +20,58 @@
     width: 100%;
 }
 
+
+// Token and buttons
 .billing_header-token {
     grid-area: Ficha;
+    display: grid;
+    grid-template-areas: 
+        'ficha buttons';
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 50% 50%;
 }
 
 .billing_header-ficha {
-    height: 100%;
-    width: 40%;
+    grid-area: ficha;
+    display: grid;
+    grid-template-areas: 
+        'label input';
+    grid-template-rows: 60px 60px;
+    grid-template-columns: 50% 45%;
 }
 
 #Ficha {
+    grid-area: label;
     font-size: 20px;
     font-weight: 500;
     height: 100%;
     padding-top: 20px;
     text-align: center;
-    width: 50%;
 }
 
 #txtFicha {
-    font-size: 23px;
-    height: 30px;
-    left: 430px;
-    position: fixed;
-    top: 65px;
-    width: 85px;
+    grid-area: input;
+    font-size: 20px;
+    height: 50%;
+    margin-top: 20%;
+}
+
+.billing_header-buttons {
+    margin-top: 17px;
+    margin-left: 20px;
+    grid-area: buttons;
+    display: grid;
+    grid-template-areas: 
+        'binoculars nomoney refresh';
+    grid-template-rows: 30px 30px 30px;
+    grid-template-columns: 20% 20% 20%;
+    column-gap: 10px;
 }
 
 .billing_image-binoculars {
     background-color: #C7C7CD;
+    grid-area: binoculars;
     cursor: pointer;
-    height: 30px;
-    left: 550px;
-    position: fixed;
-    top: 65px;
-    width: 35px;
 
     :hover {
         background-color: blue;
@@ -66,12 +84,8 @@
 
 .billing_image-nomoney {
     background-color: #C7C7CD;
+    grid-area: nomoney;
     cursor: pointer;
-    height: 30px;
-    left: 600px;
-    position: fixed;
-    top: 65px;
-    width: 35px;
 
     :hover {
         background-color: blue;
@@ -80,18 +94,15 @@
 
 .billing_image-refresh {
     background-color: #C7C7CD;
+    grid-area: refresh;
     cursor: pointer;
-    height: 30px;
-    left: 650px;
-    position: fixed;
-    top: 65px;
-    width: 35px;
 
     :hover {
         background-color: blue;
     }
 }
 
+// Radios buttons
 .billing_header-type {
     grid-area: Tipos;
     display: grid;

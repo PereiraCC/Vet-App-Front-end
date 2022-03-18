@@ -21,22 +21,26 @@ export const BillingHeader = () => {
               <input id="txtFicha" name="txtFicha"/>
           </div>
 
-          <div className="billing_image-binoculars">
-              <div className='billing_image-icon'>
-                <ImBinoculars />
-              </div>
-          </div>
+          <div className='billing_header-buttons'>
 
-          <div className="billing_image-nomoney">
-              <div className='billing_image-icon'>
-                <MdOutlineMoneyOffCsred />
-              </div>
-          </div>
+            <div className="billing_image-binoculars">
+                <div className='billing_image-icon'>
+                  <ImBinoculars />
+                </div>
+            </div>
 
-          <div className="billing_image-refresh">
-              <div className='billing_image-icon'>
-                <AiOutlineFileSync />
-              </div>
+            <div className="billing_image-nomoney">
+                <div className='billing_image-icon'>
+                  <MdOutlineMoneyOffCsred />
+                </div>
+            </div>
+
+            <div className="billing_image-refresh">
+                <div className='billing_image-icon'>
+                  <AiOutlineFileSync />
+                </div>
+            </div>
+            
           </div>
         </div>
 
