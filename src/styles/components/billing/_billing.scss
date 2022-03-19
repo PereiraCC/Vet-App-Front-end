@@ -31,10 +31,11 @@
 .billing_totals {
     // background-color: yellow;
     grid-area: totals;
+    border: 1px black solid;
 }
 
 .billing_items{
-    // background-color: purple;
+    background-color: purple;
     grid-area: main;
 }
 
