@@ -1,4 +1,5 @@
 import { BillingConditions } from './BillingConditions'
+import { BillingFooter } from './BillingFooter'
 import { BillingHeader } from './BillingHeader'
 import { BillingHeaderCustomer } from './BillingHeaderCustomer'
 import { BillingItems } from './BillingItems'
@@ -30,7 +31,7 @@ export const BillingPage = () => {
         </div>
 
         <div className='billing_footer'>
-           <h1>Footer</h1>
+            <BillingFooter />
         </div>
 
       </div>

@@ -12,35 +12,30 @@
 
 .billing_header {
     grid-area: header;
-    // background-color: red;
     border: 1px black solid;
 }
 
 .billing_header-customer{
-    // background-color: green;
     grid-area: header-customer;
     border: 1px black solid;
 }
 
 .billing_header-conditions {
-    // background-color: blue;
     grid-area: invoice;
     border: 1px black solid;
 }
 
 .billing_totals {
-    // background-color: yellow;
     grid-area: totals;
     border: 1px black solid;
 }
 
 .billing_items{
-    // background-color: purple;
     grid-area: main;
     border: 1px black solid;
 }
 
 .billing_footer{
-    background-color: aquamarine;
     grid-area: footer;
+    border: 1px black solid;
 }
