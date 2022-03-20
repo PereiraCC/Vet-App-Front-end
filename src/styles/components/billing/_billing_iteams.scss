@@ -1,0 +1,384 @@
+.billing_iteams-main {
+    display: grid;
+    grid-template-areas: 
+        'Titulo'
+        'Header'
+        'Tabla';
+    grid-template-rows: 20px 90px 215px;
+    grid-template-columns: 100%;
+}
+
+.billing_iteams-title {
+    background-color: green;
+    grid-area: Titulo;
+}
+
+#lblTitle {
+    color: white;
+    font-size: 15px;
+}
+
+.billing_iteams-header {
+    grid-area: Header;
+    display: grid;
+    grid-template-areas: 
+        'Codigo PrecioUnit IV Desc Exist Cantidad Subtotal';
+    grid-template-columns: 16% 14% 14% 14% 14% 14% 14%;
+    border: 1px black solid;
+}
+
+.billing_iteams-Codigo {
+    grid-area: Codigo;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'title-check'
+        'inputCodigo';
+    grid-template-rows: 40% 60%;
+}
+
+.billing_iteams-codigo-title-check {
+    grid-area: title-check;
+    display: grid;
+    grid-template-areas: 
+        'title check';
+    grid-template-columns: 50% 50%;
+}
+
+.billing_iteams-codigo-title {
+    grid-area: title;
+}
+
+#lblCodigo {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.billing_iteams-codigo-check {
+    grid-area: check;
+    display: grid;
+    grid-template-areas: 
+        'inputPedido labelPedido';
+    grid-template-columns: 20% 80%;
+    padding-top: 10px;
+}
+
+.billing_iteams-codigo-check-input {
+    grid-area: inputPedido;
+}
+
+#lblPedido {
+    color: #3B46F5;
+    font-size: 15px;
+    grid-area: labelPedido;
+}
+
+.billing_iteams-codigo-input {
+    grid-area: inputCodigo;
+}
+
+#txtCodigo {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.billing_iteams-precioUnit {
+    grid-area: PrecioUnit;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'labelTitlePrecio'
+        'labelResultPrecio';
+    grid-template-rows: 40% 60%;
+    text-align: end;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+#lblTilePrecio {
+    grid-area: labelTitlePrecio;
+    padding-top: 10px;
+}
+
+#lblResulPrecio {
+    grid-area: labelResultPrecio;
+}
+
+.billing_iteams-IV {
+    grid-area: IV;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'title-inputIV'
+        'labelResultIV';
+    grid-template-rows: 40% 60%;
+    text-align: end;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.billing_iteams-IV-label-input {
+    grid-area: title-inputIV;
+    display: grid;
+    grid-template-areas: 
+        'labelIV inputIV';
+    grid-template-columns: 75% 25%;
+}
+
+#lblTitleIV {
+    font-size: 15px;
+    grid-area: labelIV;
+    padding-right: 5px;
+    padding-top: 10px;
+    text-align: end;
+}
+
+#txtIV {
+    font-size: 12px;
+    grid-area: inputIV;
+    height: 50%;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#lblResulIV {
+    grid-area: labelResultIV;
+}
+
+.billing_iteams-Desc {
+    grid-area: Desc;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'labelTitleDesc'
+        'labelResultDesc';
+    grid-template-rows: 40% 60%;
+    text-align: end;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+#lblTitleDesc {
+    grid-area: labelTitleDesc;
+    padding-top: 10px;
+}
+
+#lblResulDesc {
+    grid-area: labelResultDesc;
+}
+
+.billing_iteams-Exist {
+    grid-area: Exist;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'labelTitleExist'
+        'labelResultExist'
+        'labelRegalias';
+    grid-template-rows: 33% 33% 33%;
+    text-align: end;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+#lblTitleExist {
+    grid-area: labelTitleExist;
+    padding-top: 10px;
+}
+
+#lblResulExist {
+    grid-area: labelResultExist;
+    padding-top: 5px;
+}
+
+#lblTtleRegalias {
+    grid-area: labelRegalias;
+    padding-top: 5px;
+}
+
+.billing_iteams-Cantidad {
+    grid-area: Cantidad;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'labelTitleCantidad'
+        'labelResultCantidad'
+        'labelResultRegalias';
+    grid-template-rows: 33% 33% 33%;
+    text-align: end;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+#lblTitleCantidad {
+    grid-area: labelTitleCantidad;
+    padding-top: 10px;
+}
+
+#lblResulCantidad {
+    grid-area: labelResultCantidad;
+    padding-top: 5px;
+}
+
+#lblResulRegalias {
+    grid-area: labelResultRegalias;
+    padding-top: 5px;
+}
+
+.billing_iteams-SubTotal {
+    grid-area: Subtotal;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'labelTitleSubTotal'
+        'labelResultSubTotal'
+        'labelExistenciasBod';
+    grid-template-rows: 33% 40% 27%;
+}
+
+#lblTitleSubTotal {
+    font-size: 15px;
+    grid-area: labelTitleSubTotal;
+    padding-right: 5px;
+    padding-top: 10px;
+    text-align: end;
+}
+
+#lblResulSubTotal {
+    font-size: 15px;
+    grid-area: labelResultSubTotal;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-align: end;
+}
+
+.billing_iteams-SubTotal-Exist-Bod {
+    grid-area: labelExistenciasBod;
+    display: grid;
+    grid-template-areas: 
+        'labelExist resulExist';
+    grid-template-columns: 75% 25%;
+    background-color: #A930EA;
+}
+
+#lblTitleExist-Bod {
+    color: white;
+    font-size: 15px;
+    grid-area: labelExist;
+    margin-left: 5px;
+    margin-top: 4px;
+    text-align: start;
+}
+
+#lblResulExist-Bod {
+    color: white;
+    font-size: 15px;
+    grid-area: resulExist;
+    margin-top: 4px;
+}
+
+.billing_iteams-table {
+    grid-area: Tabla;
+}
+
+.billing_iteams-main-table {
+    width: 100%;
+}
+
+.billing_iteams-table-header-codigo {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.billing_iteams-table-header-descrip {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 30%;
+}
+
+.billing_iteams-table-header-cantidad {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 6%;
+}
+
+.billing_iteams-table-header-precioU {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 6%;
+}
+
+.billing_iteams-table-header-desc {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 6%;
+}
+
+.billing_iteams-table-header-imp {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 6%;
+}
+
+.billing_iteams-table-header-subtotal {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 6%;
+}
+
+.billing_iteams-table-codigo {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.billing_iteams-table-descrip {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.billing_iteams-table-cantidad {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-right: 5px;
+    text-align: end;
+}
+
+.billing_iteams-table-precioU {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-right: 5px;
+    text-align: end;
+}
+
+.billing_iteams-table-desc {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-right: 5px;
+    text-align: end;
+}
+
+.billing_iteams-table-imp {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-right: 5px;
+    text-align: end;
+}
+
+.billing_iteams-table-subtotal {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-right: 5px;
+    text-align: end;
+}

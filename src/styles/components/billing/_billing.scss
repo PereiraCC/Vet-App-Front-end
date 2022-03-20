@@ -35,11 +35,12 @@
 }
 
 .billing_items{
-    background-color: purple;
+    // background-color: purple;
     grid-area: main;
+    border: 1px black solid;
 }
 
 .billing_footer{
-    // background-color: aquamarine;
+    background-color: aquamarine;
     grid-area: footer;
 }
