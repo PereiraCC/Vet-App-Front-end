@@ -122,7 +122,7 @@
     grid-template-areas: 
         'Apartado Contado Credito';
     grid-template-rows: 60px 60px 60px;
-    grid-template-columns: 20% 20% 30%;
+    grid-template-columns: 20% 20% 40%;
     
 }
 
@@ -152,7 +152,7 @@
 
 .billing_header-radio-credito-label {
     grid-area: Label;
-    text-align: center;
+    text-align: start;
     padding-top: 20px;
 }
 
