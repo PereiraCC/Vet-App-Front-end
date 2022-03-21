@@ -90,6 +90,7 @@
         'button1 button2 button3';
     grid-template-columns: 33% 33% 33%;
     gap: 2px;
+    color : #F68A1D;
 }
 
 .button1 {
@@ -266,6 +267,7 @@
 
 .billing_header-customer-third-button {
     grid-area: button;
+    color: #F68A1D;
 }
 
 .buttonPencil {

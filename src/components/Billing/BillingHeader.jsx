@@ -25,19 +25,19 @@ export const BillingHeader = () => {
 
             <div className="billing_image-binoculars">
                 <div className='billing_image-icon'>
-                  <ImBinoculars />
+                  <ImBinoculars id='imageBinoculars'/>
                 </div>
             </div>
 
             <div className="billing_image-nomoney">
                 <div className='billing_image-icon'>
-                  <MdOutlineMoneyOffCsred />
+                  <MdOutlineMoneyOffCsred id='imageNoMoney'/>
                 </div>
             </div>
 
             <div className="billing_image-refresh">
                 <div className='billing_image-icon'>
-                  <AiOutlineFileSync />
+                  <AiOutlineFileSync id='imageFileAsync'/>
                 </div>
             </div>
             

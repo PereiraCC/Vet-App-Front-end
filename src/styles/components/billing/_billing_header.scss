@@ -57,7 +57,7 @@
 }
 
 .billing_header-buttons {
-    margin-top: 17px;
+    margin-top: 15px;
     margin-left: 20px;
     grid-area: buttons;
     display: grid;
@@ -66,16 +66,21 @@
     grid-template-rows: 30px 30px 30px;
     grid-template-columns: 20% 20% 20%;
     column-gap: 10px;
+    color: #F68A1D;
 }
 
 .billing_image-binoculars {
-    background-color: #C7C7CD;
     grid-area: binoculars;
     cursor: pointer;
 
     :hover {
-        background-color: blue;
+        background-color: #C7C7CD;
     }
+}
+
+#imageBinoculars {
+    width: 60%;
+    height: 100%;
 }
 
 .billing_image-icon {
@@ -83,23 +88,31 @@
 }
 
 .billing_image-nomoney {
-    background-color: #C7C7CD;
     grid-area: nomoney;
     cursor: pointer;
 
     :hover {
-        background-color: blue;
+        background-color: #C7C7CD;
     }
 }
 
+#imageNoMoney {
+    width: 60%;
+    height: 100%;
+}
+
 .billing_image-refresh {
-    background-color: #C7C7CD;
     grid-area: refresh;
     cursor: pointer;
 
     :hover {
-        background-color: blue;
+        background-color: #C7C7CD;
     }
+}
+
+#imageFileAsync {
+    width: 60%;
+    height: 100%;
 }
 
 // Radios buttons
