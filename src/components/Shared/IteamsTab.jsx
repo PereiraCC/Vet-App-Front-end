@@ -17,7 +17,6 @@ export const IteamsTab = () => {
     return (
         <ul>
             {tabs.map(tab => {
-              console.log(tab);
               return (
                 <li className="Tabs_li">
                     <Link to={tab.routePage}>
