@@ -1,0 +1,47 @@
+.well {
+    background: #eeefff;
+    padding: 15px;
+}
+
+.tab {
+    background: transparent;
+    padding: 5px 15px;
+    color: #1122ff;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-content {
+    padding: 15px 5px;
+}
+
+.tab.active {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+.nav-tabs {
+    margin-top: 10px;
+}
+
+.Tabs_li {
+    // background-color: red;
+    height: 50%;
+    display: inline-block;
+}
+
+.tabs_main {
+    // background-color: red;
+    width: 50%;
+    display: flex;
+    border: 1px black solid;
+    // height: 30px;
+    // width: 250px;
+}
+
+.tabs_menu ol {
+    display: inline-block;
+    background-color: green;
+    
+}
