@@ -21,13 +21,12 @@ export const tabsReducer = (state = initialState, action ) => {
         case types.AddTab:
 
             const listTab = state.tabs.find(tab => tab.name == action.payload.name ||tab.name.includes(action.payload.name));
-            console.log(`listTab ${ listTab }`)
             
             if(listTab === undefined ) {
 
                 const newTab = {
                     name: (action.payload.name === 'Facturación') ? action.payload.name + ' # 1' : action.payload.name,
-                    routePage: action.payload.routePage
+                    routePage: (action.payload.name === 'Facturación') ? action.payload.routePage + '/1' : action.payload.routePage,
                 };
 
                 localStorage.setItem('tabs', JSON.stringify({
@@ -43,11 +42,10 @@ export const tabsReducer = (state = initialState, action ) => {
             } else if(listTab.name.includes("Facturación")){
 
                 const size = state.tabs.filter(tab => tab.name.includes("Facturación")).length;
-                console.log(`size ${size}`);
 
                 const newTab = {
                     name: action.payload.name + ` # ${ size + 1 }`,
-                    routePage: action.payload.routePage
+                    routePage: action.payload.routePage + `/${ size + 1 }`
                 };
 
                 localStorage.setItem('tabs', JSON.stringify({
@@ -93,14 +91,14 @@ export const tabsReducer = (state = initialState, action ) => {
 
             } else {
 
-                const indexTab = state.tabs.findIndex( tab => tab.name === action.payload.name);
-
+                const indexTab = state.tabs.findIndex( tab => tab.name.includes(action.payload.name));
+                
                 const newState = {
-                    tabs: state.tabs.filter(tab => tab.name !== action.payload.name),
+                    tabs: state.tabs.filter(tab => !tab.name.includes(action.payload.name)),
                     currentTab : (state.currentTab.name === action.payload.name)
                                 ? {
-                                    name: state.tabs[indexTab - 1].name,
-                                    routePage: state.tabs[indexTab - 1].routePage, 
+                                    name: state.tabs[(indexTab === 0) ? 1 : indexTab - 1].name,
+                                    routePage: state.tabs[(indexTab === 0) ? 1 : indexTab - 1].routePage, 
                                 }
                                 : state.currentTab
                 }

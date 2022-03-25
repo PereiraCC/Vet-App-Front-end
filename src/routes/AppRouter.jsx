@@ -33,7 +33,7 @@ export const AppRouter = () => {
 
                 <Route 
                     exact
-                    path="/billing"
+                    path={`/billing/:billingId`}
                     component={ BillingPage }
                 />
 

@@ -24,14 +24,14 @@ export const IteamsTab = () => {
             {tabs.map(tab => {
               return (
                 <li className="Tabs_li">
-                    <Link to={tab.routePage}>
-                        <button
-                            className={currentTab.name == tab.name ? "tab active" : "tab"}
-                            onClick={() => handleSelectTab(tab)}
-                        >
-                            {tab.name}
-                        </button>
-                    </Link>
+
+                    <button
+                        className={currentTab.name == tab.name ? "tab active" : "tab"}
+                        onClick={() => handleSelectTab(tab)}
+                    >
+                        <Redirect to={currentTab.routePage} />
+                        {tab.name}
+                    </button>
                    
                     <button
                         className={currentTab.name == tab.name ? "tab active" : "tab"}
