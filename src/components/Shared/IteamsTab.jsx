@@ -1,7 +1,8 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { SelectTab } from '../../actions/tabs';
+import { DeleteTab, SelectTab } from '../../actions/tabs';
 
 export const IteamsTab = () => {
 
@@ -12,6 +13,10 @@ export const IteamsTab = () => {
 
     const handleSelectTab = (tab) => {
         dispatch( SelectTab( tab.name, tab.routePage ) );
+    }
+
+    const handleDeleteTab = (tab) => {
+        dispatch( DeleteTab( tab.name, tab.routePage ) );
     }
 
     return (
@@ -26,8 +31,15 @@ export const IteamsTab = () => {
                         >
                             {tab.name}
                         </button>
-                    
                     </Link>
+                   
+                    <button
+                        className={currentTab.name == tab.name ? "tab active" : "tab"}
+                        onClick={() => handleDeleteTab(tab)}
+                    >
+                        <Redirect to={currentTab.routePage} />
+                            X   
+                    </button>
                 </li>
               );
             })}

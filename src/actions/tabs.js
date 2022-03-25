@@ -15,4 +15,12 @@ export const SelectTab = ( name, routePage ) => ({
         name,
         routePage
     }
+});
+
+export const DeleteTab = ( name, routePage ) => ({
+    type: types.DeleteTab,
+    payload: {
+        name,
+        routePage
+    }
 })
