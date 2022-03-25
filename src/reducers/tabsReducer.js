@@ -20,11 +20,13 @@ export const tabsReducer = (state = initialState, action ) => {
 
         case types.AddTab:
 
-            const listTab = state.tabs.find(tab => tab.name == action.payload.name);
+            const listTab = state.tabs.find(tab => tab.name == action.payload.name ||tab.name.includes(action.payload.name));
+            console.log(`listTab ${ listTab }`)
+            
+            if(listTab === undefined ) {
 
-            if(listTab === undefined) {
                 const newTab = {
-                    name: action.payload.name,
+                    name: (action.payload.name === 'Facturación') ? action.payload.name + ' # 1' : action.payload.name,
                     routePage: action.payload.routePage
                 };
 
@@ -37,6 +39,27 @@ export const tabsReducer = (state = initialState, action ) => {
                     tabs: [... state.tabs, newTab],
                     currentTab: newTab
                 }
+                
+            } else if(listTab.name.includes("Facturación")){
+
+                const size = state.tabs.filter(tab => tab.name.includes("Facturación")).length;
+                console.log(`size ${size}`);
+
+                const newTab = {
+                    name: action.payload.name + ` # ${ size + 1 }`,
+                    routePage: action.payload.routePage
+                };
+
+                localStorage.setItem('tabs', JSON.stringify({
+                    tabs: [... state.tabs, newTab],
+                    currentTab: newTab
+                }));
+
+                return {
+                    tabs: [... state.tabs, newTab],
+                    currentTab: newTab
+                }
+
             } else {
                 return {
                     ...state,
@@ -46,7 +69,6 @@ export const tabsReducer = (state = initialState, action ) => {
                 }
             }
             
-        
         case types.SelectTab:
             return {
                 ...state,
