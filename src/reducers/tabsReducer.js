@@ -68,6 +68,14 @@ export const tabsReducer = (state = initialState, action ) => {
             }
             
         case types.SelectTab:
+
+            localStorage.setItem('tabs', JSON.stringify({
+                ...state,
+                currentTab : {
+                    ...action.payload
+                },
+            }));
+
             return {
                 ...state,
                 currentTab : {
