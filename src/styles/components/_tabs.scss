@@ -1,47 +1,34 @@
-.well {
-    background: #eeefff;
-    padding: 15px;
+.Tabs_li {
+    display: inline-block;
 }
 
 .tab {
     background: transparent;
-    padding: 5px 15px;
-    color: #1122ff;
     border: none;
+    color: $secundary;
     cursor: pointer;
-}
-
-.tab-content {
-    padding: 15px 5px;
+    padding: 5px 15px;
 }
 
 .tab.active {
-    background: #fff;
-    color: #000;
+    background: $primary;
     border: 1px solid #ddd;
+    color: #F2F4F4;
 }
 
-.nav-tabs {
-    margin-top: 10px;
+.tab-delete {
+    background: transparent;
+    border: none;
+    color: $primary;
+    cursor: pointer;
+    padding: 5px 15px;
 }
 
-.Tabs_li {
-    // background-color: red;
-    height: 50%;
-    display: inline-block;
-}
-
-.tabs_main {
-    // background-color: red;
-    width: 50%;
-    display: flex;
-    border: 1px black solid;
-    // height: 30px;
-    // width: 250px;
-}
-
-.tabs_menu ol {
-    display: inline-block;
-    background-color: green;
-    
+.tab-delete.active {
+    background: $secundary;
+    border-top-right-radius: 15%;
+    border: none;
+    color: #F4F7F7;
+    cursor: pointer;
+    padding: 5px 15px;
 }
