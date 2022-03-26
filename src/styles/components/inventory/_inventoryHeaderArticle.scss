@@ -1,0 +1,166 @@
+.inventory_header-article-main {
+    grid-area: header-article;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-areas: 
+        'first-line first-line first-line first-line first-line first-line'
+        'codigo-barras codigo-barras codigo-barras familias familias familias'
+        'codigo-barras codigo-barras codigo-barras familias familias familias'
+        'last-line last-line last-line last-line last-line last-line';
+    grid-template-rows: 45px 38px 38px 30px;
+    grid-template-columns: 50px;
+    background-color: brown;
+}
+
+.inventory_header-article-first-line {
+    grid-area: first-line;
+    display: grid;
+    grid-template-areas: 
+        'codigo desc checks presentacion';
+    grid-template-columns: 15% 40% 30% 15%;
+    background-color: aqua;
+}
+
+.inventory_header-article-first-line-codigo{
+    grid-area: codigo;
+    display: grid;
+    grid-template-areas: 
+        'labelCodigoProducto'
+        'inputCodigoProducto';
+    // background-color: red;
+}
+
+#lblCodigoProducto {
+    grid-area: labelCodigoProducto;
+    font-size: 15px;
+    text-align: start;
+    padding-left: 15px;
+}
+
+#txtCodigoProducto {
+    grid-area: inputCodigoProducto;
+    height: 75%;
+    margin-left: 15px;
+    width: 90%;
+    font-size: 15px;
+}
+
+.inventory_header-article-first-line-desc{
+    grid-area: desc;
+    display: grid;
+    grid-template-areas: 
+        'labelDescripcion'
+        'inputDescripcion';
+    // background-color: green;
+}
+
+#lblDescripcion {
+    grid-area: labelDescripcion;
+    font-size: 15px;
+    text-align: start;
+    padding-left: 15px;
+}
+
+#txtDescripcion {
+    grid-area: inputDescripcion;
+    height: 75%;
+    margin-left: 15px;
+    width: 95%;
+    font-size: 15px;
+}
+
+
+.inventory_header-article-first-line-checks{
+    grid-area: checks;
+    display: grid;
+    grid-template-areas: 
+        'actualizado completos contado';
+    grid-template-columns: 30% 37% 34%;
+    // background-color: yellow;
+}
+
+.inventory_header-article-first-line-checks-Actualizado {
+    grid-area: actualizado;
+    padding-top: 5px;
+    // background-color: red;
+}
+
+.inventory_header-article-first-line-checks-Completos {
+    grid-area: completos;
+    padding-top: 5px;
+    // background-color: blue;
+}
+
+.inventory_header-article-first-line-checks-contado {
+    grid-area: contado;
+    padding-top: 5px;
+    // background-color: green;
+}
+
+#lblActualizado {
+    font-size: 15px;
+}
+
+#lblCompletos {
+    font-size: 15px;
+}
+
+#lblContado {
+    font-size: 15px;
+}
+
+.inventory_header-article-first-line-presentacion{
+    grid-area: presentacion;
+    display: grid;
+    grid-template-areas: 
+        'labelPresentacion'
+        'inputsPresentacion';
+    // grid-template-rows: ;
+    // background-color: blue;
+}
+
+#lblPresentacion {
+    grid-area: labelPresentacion;
+    font-size: 15px;
+    text-align: start;
+    padding-left: 5px;
+}
+
+.inventory_header-article-first-line-presentacion-inputs {
+    grid-area: inputsPresentacion;
+    display: grid;
+    grid-template-areas: 
+        'inputCantidad inputMedida';
+    grid-template-columns: 70px 120px;
+}
+
+#txtcantidadPresentacion {
+   grid-area: inputCantidad;
+   height: 80%;
+   margin-left: 5px; 
+   font-size: 15px;
+}
+
+#cbomedidaPresentacion {
+    grid-area: inputMedida; 
+    height: 80%;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+
+.inventory_header-article-codigo-barras {
+    grid-area: codigo-barras;
+    background-color: blueviolet;
+}
+
+.inventory_header-article-familias {
+    grid-area: familias;
+    background-color: goldenrod;
+}
+
+.inventory_header-article-last-line {
+    grid-area: last-line;
+    background-color: chartreuse;
+}

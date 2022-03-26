@@ -1,0 +1,28 @@
+.inventory_main {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'header-article header-article header-article'
+        'main main main'
+        'footer footer footer';
+    grid-template-rows: 40px 150px 298px 60px;
+}
+
+.inventory_header {
+    grid-area: header;
+}
+
+.inventory_header-article {
+    grid-area: header-article;
+}
+
+.inventory_main {
+    grid-area: main;
+    background-color: coral;
+}
+
+.inventory_footer {
+    grid-area: footer;
+    background-color: chartreuse;
+}

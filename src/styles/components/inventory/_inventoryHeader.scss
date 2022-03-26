@@ -1,0 +1,80 @@
+.inventory_header-main {
+    background-color: #787877;
+    color: white;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'header-codigo header-existencia header-usuario';
+    grid-template-columns: 33% 33% 34%;
+}
+
+.inventory_header-codigo {
+    grid-area: header-codigo;
+    display: grid;
+    grid-template-areas: 
+        'labelCodigo inputCodigo';
+}
+
+#lblCodigo {
+    font-size: 15px;
+    grid-area: labelCodigo;
+    margin-right: 15px;
+    text-align: right;
+}
+
+#txtCodigo {
+    color: red;
+    font-size: 15px;
+    grid-area: inputCodigo;
+    height: 50%;
+    margin-top: 10px;
+    padding-left: 5px;
+    width: 75%;
+}
+
+.inventory_header-existencia {
+    grid-area: header-existencia;
+    display: grid;
+    grid-template-areas: 
+        'checkExistencia labelExistencia';
+    grid-template-columns: 60% 40%;
+}
+
+.inventory_header-existencia-input {
+    grid-area: checkExistencia;
+}
+
+.inventory_header-existencia-input input {
+    margin-left: 90%;
+    margin-top: 12px;
+}
+
+#lblExistencia {
+    font-size: 15px;
+    grid-area: labelExistencia;
+    padding-left: 5px;
+    padding-top: 10px;
+    text-align: start;
+}
+
+.inventory_header-Usuario {
+    grid-area: header-usuario;
+    display: grid;
+    grid-template-areas: 
+        'labelUsuario inputUsuario';
+    grid-template-columns: 20% 80%;
+}
+
+#lblUsuario {
+    font-size: 15px;
+    grid-area: labelUsuario;
+    padding-top: 10px;
+}
+
+#txtUsuario {
+    font-size: 15px;
+    grid-area: inputUsuario;
+    height: 50%;
+    margin-top: 10px;
+    width: 90%;
+}

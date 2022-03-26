@@ -1,10 +1,25 @@
-import React from 'react'
+import { InventoryHeader } from './InventoryHeader'
+import { InventoryHeaderArticle } from './InventoryHeaderArticle'
 
 export const InventoryPage = () => {
   return (
-    <div className='inventory'>
+    <div className='inventory inventory_main'>
 
-      <h1>InventoryPage</h1>
+      <div className='inventory_header'>
+          <InventoryHeader />
+      </div>
+
+      <div className='inventory_header-article'>  
+         <InventoryHeaderArticle />
+      </div>
+
+      <div className='inventory_main'>
+          <h1>Main</h1>
+      </div>
+
+      <div className='inventory_footer'>
+          <h1>Footer</h1>
+      </div>
 
     </div>
   )
