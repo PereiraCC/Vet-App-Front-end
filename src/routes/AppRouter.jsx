@@ -6,14 +6,16 @@ import {
     Redirect
 } from 'react-router-dom';
 
-import { BillingPage } from '../components/Billing/BillingPage';
-import { BuysPage } from '../components/Buys/BuysPage';
-import { InventoryPage } from '../components/Inventory/InventoryPage';
-import { ReportsPage } from '../components/Reports/ReportsPage';
 import { Navbar } from '../components/Shared/Navbar';
 import { Tabs } from '../components/Shared/Tabs';
 
 import { VetPage } from '../components/VetPage';
+import { BillingPage } from '../components/Billing/BillingPage';
+import { BuysPage } from '../components/Buys/BuysPage';
+import { InventoryPage } from '../components/Inventory/InventoryPage';
+import { ReportsPage } from '../components/Reports/ReportsPage';
+import { NothingPage } from '../components/Shared/NothingPage';
+
 
 export const AppRouter = () => {
   return (
@@ -55,7 +57,13 @@ export const AppRouter = () => {
                     component={ ReportsPage }
                 />
 
-                <Redirect to="/" />
+                <Route 
+                    exact
+                    path="/nothing"
+                    component={ NothingPage }
+                />
+
+                <Redirect to="/nothing" />
 
             </Switch>
         </div>

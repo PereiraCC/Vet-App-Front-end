@@ -19,30 +19,33 @@ export const IteamsTab = () => {
     }
 
     return (
-        <ul>
-            {tabs.map(tab => {
-              return (
-                <li className="Tabs_li" key={tab.name}>
+        (tabs.length !== 0) 
+            ?
+            <ul>
+                {tabs.map(tab => {
+                return (
+                    <li className="Tabs_li" key={tab.name}>
 
-                    <button
-                        className={currentTab.name == tab.name ? "tab active" : "tab"}
-                        onClick={() => handleSelectTab(tab)}
-                    >
-                        <Redirect to={currentTab.routePage} />
-                        {tab.name}
-                    </button>
-                   
-                    <button
-                        className={currentTab.name == tab.name ? "tab-delete active" : "tab-delete"}
-                        onClick={() => handleDeleteTab(tab)}
-                    >
-                        <Redirect to={currentTab.routePage} />
-                            X   
-                    </button>
-                </li>
-              );
-            })}
+                        <button
+                            className={currentTab.name == tab.name ? "tab active" : "tab"}
+                            onClick={() => handleSelectTab(tab)}
+                        >
+                            <Redirect to={currentTab.routePage} />
+                            {tab.name}
+                        </button>
+                    
+                        <button
+                            className={currentTab.name == tab.name ? "tab-delete active" : "tab-delete"}
+                            onClick={() => handleDeleteTab(tab)}
+                        >
+                            <Redirect to={currentTab.routePage} />
+                                X   
+                        </button>
+                    </li>
+                );
+                })}
 
-        </ul>
+            </ul>
+            : <Redirect to={currentTab.routePage} />
     )
 }

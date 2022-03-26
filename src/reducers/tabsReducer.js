@@ -8,10 +8,8 @@ import { types } from "../types/types";
 // }
 
 const initialState = JSON.parse(localStorage.getItem('tabs')) || {
-    tabs: [
-        { name: "Inicio", routePage: '/' }
-    ],
-    currentTab: { name: "Inicio", routePage: '/' }
+    tabs: [],
+    currentTab: { name: 'Nada', routePage: '/nothing' }
 };
 
 export const tabsReducer = (state = initialState, action ) => {
@@ -89,12 +87,12 @@ export const tabsReducer = (state = initialState, action ) => {
 
                 localStorage.setItem('tabs', JSON.stringify({
                     tabs: [],
-                    currentTab : {}
+                    currentTab : { name: 'Nada', routePage: '/nothing' }
                 }));
                 
                 return {
                     tabs: [],
-                    currentTab : {}
+                    currentTab : { name: 'Nada', routePage: '/nothing' }
                 }
 
             } else {

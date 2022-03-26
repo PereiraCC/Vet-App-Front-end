@@ -1,12 +1,15 @@
 
-
+// Base and settings
 @import './base/settings';
 @import './base/base';
 
+// Components shared
 @import './components/vet';
 @import './components/navbar';
 @import './components/tabs';
+@import './components/nothing';
 
+// Billing components
 @import './components/billing/billing';
 @import './components/billing/billing_header';
 @import './components/billing/billing_header-customer';
