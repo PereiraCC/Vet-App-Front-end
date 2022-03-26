@@ -55,7 +55,50 @@ export const InventoryHeaderArticle = () => {
             </div>
 
             <div className='inventory_header-article-codigo-barras'>
-                <p>Codigo barras</p>
+                
+                <div className='inventory_header-article-codigo-barras-Codigos'>
+
+                    <div className='inventory_header-article-codigo-barras-codigoOne'>
+                        <p id='lblCodigoBarrasOne'>Código Barras</p>
+                        <div className='inventory_header-article-codigo-barras-codigoOne-input'>
+                            <input name='codigoBarrasOne' id='txtCodigoBarrasOne'/>
+                        </div>
+                    </div>
+
+                    <div className='inventory_header-article-codigo-barras-codigoTwo'>
+                        <p id='lblCodigoBarrasTwo'>Código Barras #2</p>
+                        <div className='inventory_header-article-codigo-barras-codigoTwo-input'>
+                            <input name='codigoBarrasOne' id='txtCodigoBarrasTwo'/>
+                        </div>
+                    </div>
+
+                    <div className='inventory_header-article-codigo-barras-codigoThree'>
+                        <p id='lblCodigoBarrasThree'>Código Barras #3</p>
+                        <div className='inventory_header-article-codigo-barras-codigoThree-input'>
+                            <input name='codigoBarrasOne' id='txtCodigoBarrasThree'/>
+                        </div>
+                    </div>
+
+                </div>       
+
+                <div className='inventory_header-article-codigo-barras-checks'>
+
+                    <div className='inventory_header-article-codigo-barras-checks-mostrar'>
+                        <div className="inventory_header-article-codigo-barras-checks-mostrar-input"> 
+                            <input type="checkbox" id="checkMostrar" name="mostrar" value="mostrar" />
+                        </div>
+                        <label for="checkMostrar" id="lblMostrar">Mostrar</label>
+                    </div>
+
+                    <div className='inventory_header-article-codigo-barras-checks-rebaja'>
+                        <div className="inventory_header-article-codigo-barras-checks-rebaja-input"> 
+                            <input type="checkbox" id="checkRebaja" name="rebaja" value="rebaja" />
+                        </div>
+                        <label for="checkRebaja" id="lblRebaja">Rebaja otro Artículo</label>
+                    </div>
+
+                </div>
+
             </div>
 
             <div className='inventory_header-article-familias'>
