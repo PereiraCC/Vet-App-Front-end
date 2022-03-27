@@ -4,7 +4,7 @@
     grid-template-areas: 
         'header header header'
         'header-article header-article header-article'
-        'main main main'
+        'body body body'
         'footer footer footer';
     grid-template-rows: 40px 150px 298px 60px;
 }
@@ -15,11 +15,11 @@
 
 .inventory_header-article {
     grid-area: header-article;
-    background-color: white;
+    border: 1px solid black;
 }
 
-.inventory_main {
-    grid-area: main;
+.inventory_body {
+    grid-area: body;
     background-color: coral;
 }
 

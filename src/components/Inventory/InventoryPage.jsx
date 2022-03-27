@@ -1,3 +1,4 @@
+import { InventoryBody } from './InventoryBody'
 import { InventoryHeader } from './InventoryHeader'
 import { InventoryHeaderArticle } from './InventoryHeaderArticle'
 
@@ -13,8 +14,8 @@ export const InventoryPage = () => {
          <InventoryHeaderArticle />
       </div>
 
-      <div className='inventory_main'>
-          <h1>Main</h1>
+      <div className='inventory_body'>
+          <InventoryBody />
       </div>
 
       <div className='inventory_footer'>
