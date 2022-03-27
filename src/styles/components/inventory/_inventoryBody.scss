@@ -3,12 +3,13 @@
     grid-template-areas: 
         'costo precioVenta'
         'bodega existencias';
-    grid-template-rows: 220px 80px
+    grid-template-rows: 220px 80px;
+    grid-template-columns: 55% 45%;
 }
 
 .inventory_body-costo{
     grid-area: costo;
-    background-color: red;
+    // background-color: red;
 }
 
 .inventory_body-precioVenta{

@@ -1,0 +1,43 @@
+.inventory_body-costo-main {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'tabs'
+        'content';
+    grid-template-rows: 15% 85%;
+}
+
+.inventory_body-costo-tabs {
+    grid-area: tabs;
+    padding-right: 25%;
+    padding-top: 3px;
+}
+
+.inventory-tabs {
+    display: inline-block;
+}
+
+.inventory-tab {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 5px;
+    padding: 5px 15px;
+}
+
+.inventory-tab.active {
+    background: $primary;
+    border-top-right-radius: 15%;
+    border: 1px solid #ddd;
+    color: #F2F4F4;
+}
+
+.inventory_body-costo-content {
+    grid-area: content;
+    background-color: chartreuse;
+}
+
+
+
