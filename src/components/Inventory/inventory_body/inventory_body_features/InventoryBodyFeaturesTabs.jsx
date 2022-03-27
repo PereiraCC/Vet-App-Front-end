@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { SelectTabInventory } from '../../actions/inventory';
 
-export const InventoryBodyCostoTabs = () => {
+import { SelectTabInventory } from '../../../../actions/inventory';
+
+export const InventoryBodyFeaturesTabs = () => {
 
     const dispatch = useDispatch();
 
@@ -14,6 +15,7 @@ export const InventoryBodyCostoTabs = () => {
 
     return (
         <ul>
+            
             <li className="inventory-tabs">
                 <button 
                     className={currentTabInventory == 'UltimoCosto' ? "inventory-tab active" : "inventory-tab"}
@@ -22,6 +24,7 @@ export const InventoryBodyCostoTabs = () => {
                     Ultimo Costo
                 </button>
             </li>
+
             <li className="inventory-tabs">
                 <button 
                     className={currentTabInventory == 'Bodega2' ? "inventory-tab active" : "inventory-tab"}
@@ -30,6 +33,7 @@ export const InventoryBodyCostoTabs = () => {
                     Bodega 2
                 </button>
             </li>
+
             <li className="inventory-tabs">
                 <button 
                     className={currentTabInventory == 'Varios' ? "inventory-tab active" : "inventory-tab"}
@@ -38,6 +42,7 @@ export const InventoryBodyCostoTabs = () => {
                     Varios
                 </button>
             </li>
+
             <li className="inventory-tabs">
                 <button 
                     className={currentTabInventory == 'Categoria' ? "inventory-tab active" : "inventory-tab"}
@@ -46,6 +51,7 @@ export const InventoryBodyCostoTabs = () => {
                     Categoría
                 </button>
             </li>
+
             <li className="inventory-tabs">
                 <button 
                     className={currentTabInventory == 'Relacionados' ? "inventory-tab active" : "inventory-tab"}
@@ -54,6 +60,7 @@ export const InventoryBodyCostoTabs = () => {
                     Relacionados
                 </button>
             </li>
+
         </ul>
     )
 }

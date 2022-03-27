@@ -1,4 +1,4 @@
-.inventory_body-costo-main {
+.inventory_body-features-main {
     display: grid;
     height: 100%;
     grid-template-areas: 
@@ -7,7 +7,7 @@
     grid-template-rows: 15% 85%;
 }
 
-.inventory_body-costo-tabs {
+.inventory_body-features-tabs {
     grid-area: tabs;
     padding-right: 25%;
     padding-top: 3px;
@@ -34,7 +34,7 @@
     color: #F2F4F4;
 }
 
-.inventory_body-costo-content {
+.inventory_body-features-content {
     grid-area: content;
     background-color: chartreuse;
 }

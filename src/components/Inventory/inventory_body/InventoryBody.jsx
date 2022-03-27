@@ -1,12 +1,12 @@
-import { InventoryBodyCosto } from "./InventoryBodyCosto"
+import { InventoryBodyFeatures } from "./inventory_body_features/InventoryBodyFeatures"
 
 export const InventoryBody = () => {
   return (
     
         <div className="inventory_body-main">
             
-            <div className="inventory_body-costo">
-                <InventoryBodyCosto />
+            <div className="inventory_body-features">
+                <InventoryBodyFeatures />
             </div>
 
             <div className="inventory_body-precioVenta">

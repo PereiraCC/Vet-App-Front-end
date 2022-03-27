@@ -1,6 +1,6 @@
-import { InventoryBody } from './InventoryBody'
 import { InventoryHeader } from './InventoryHeader'
 import { InventoryHeaderArticle } from './InventoryHeaderArticle'
+import { InventoryBody } from './inventory_body/InventoryBody'
 
 export const InventoryPage = () => {
   return (

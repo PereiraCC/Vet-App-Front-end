@@ -1,14 +1,14 @@
 .inventory_body-main{
     display: grid;
     grid-template-areas: 
-        'costo precioVenta'
+        'features precioVenta'
         'bodega existencias';
     grid-template-rows: 220px 80px;
     grid-template-columns: 55% 45%;
 }
 
-.inventory_body-costo{
-    grid-area: costo;
+.inventory_body-features{
+    grid-area: features;
     // background-color: red;
 }
 
