@@ -1,8 +1,8 @@
 .inventory_header-article-main {
+    display: grid;
     grid-area: header-article;
     padding-left: 15px;
     padding-right: 15px;
-    display: grid;
     grid-template-areas: 
         'first-line first-line first-line first-line first-line first-line'
         'codigo-barras codigo-barras codigo-barras familias familias familias'
@@ -18,7 +18,6 @@
     grid-template-areas: 
         'codigo desc checks presentacion';
     grid-template-columns: 15% 40% 30% 15%;
-    // background-color: aqua;
 }
 
 .inventory_header-article-first-line-codigo{
@@ -27,22 +26,21 @@
     grid-template-areas: 
         'labelCodigoProducto'
         'inputCodigoProducto';
-    // background-color: red;
 }
 
 #lblCodigoProducto {
-    grid-area: labelCodigoProducto;
     font-size: 15px;
-    text-align: start;
+    grid-area: labelCodigoProducto;
     padding-left: 15px;
+    text-align: start;
 }
 
 #txtCodigoProducto {
+    font-size: 15px;
     grid-area: inputCodigoProducto;
     height: 75%;
     margin-left: 15px;
     width: 90%;
-    font-size: 15px;
 }
 
 .inventory_header-article-first-line-desc{
@@ -51,22 +49,21 @@
     grid-template-areas: 
         'labelDescripcion'
         'inputDescripcion';
-    // background-color: green;
 }
 
 #lblDescripcion {
-    grid-area: labelDescripcion;
     font-size: 15px;
-    text-align: start;
+    grid-area: labelDescripcion;
     padding-left: 15px;
+    text-align: start;
 }
 
 #txtDescripcion {
+    font-size: 15px;
     grid-area: inputDescripcion;
     height: 75%;
     margin-left: 15px;
     width: 95%;
-    font-size: 15px;
 }
 
 .inventory_header-article-first-line-checks{
@@ -75,25 +72,21 @@
     grid-template-areas: 
         'actualizado completos contado';
     grid-template-columns: 30% 37% 34%;
-    // background-color: yellow;
 }
 
 .inventory_header-article-first-line-checks-Actualizado {
     grid-area: actualizado;
     padding-top: 5px;
-    // background-color: red;
 }
 
 .inventory_header-article-first-line-checks-Completos {
     grid-area: completos;
     padding-top: 5px;
-    // background-color: blue;
 }
 
 .inventory_header-article-first-line-checks-contado {
     grid-area: contado;
     padding-top: 5px;
-    // background-color: green;
 }
 
 #lblActualizado {
@@ -114,15 +107,13 @@
     grid-template-areas: 
         'labelPresentacion'
         'inputsPresentacion';
-    // grid-template-rows: ;
-    // background-color: blue;
 }
 
 #lblPresentacion {
-    grid-area: labelPresentacion;
     font-size: 15px;
-    text-align: start;
+    grid-area: labelPresentacion;
     padding-left: 5px;
+    text-align: start;
 }
 
 .inventory_header-article-first-line-presentacion-inputs {
@@ -134,28 +125,26 @@
 }
 
 #txtcantidadPresentacion {
+   font-size: 15px;
    grid-area: inputCantidad;
    height: 80%;
    margin-left: 5px; 
-   font-size: 15px;
 }
 
 #cbomedidaPresentacion {
+    font-size: 14px;
     grid-area: inputMedida; 
     height: 80%;
-    font-size: 14px;
     padding-left: 5px;
 }
 
 .inventory_header-article-codigo-barras {
     grid-area: codigo-barras;
-    // background-color: yellowgreen;
     display: grid;
     grid-template-areas: 
         'codigosBarras'
         'checks';
     grid-template-rows: 60% 40%;
-
 }
 
 .inventory_header-article-codigo-barras-Codigos {
@@ -165,7 +154,6 @@
         'codigoOne codigoTwo codigoThree';
     grid-template-columns: 200px 200px 215px;
     grid-template-rows: 50px 50px 50px;
-    // background-color: red;
 }
 
 .inventory_header-article-codigo-barras-codigoOne {
@@ -178,11 +166,11 @@
 }
 
 #lblCodigoBarrasOne {
-    grid-area: lblcodigosBarrasOne;
     font-size: 15px;
-    text-align: start;
+    grid-area: lblcodigosBarrasOne;
     padding-left: 25px;
     padding-top: 5px;
+    text-align: start;
 }
 
 .inventory_header-article-codigo-barras-codigoOne-input {
@@ -202,15 +190,14 @@
         'lblcodigosBarrasTwo'
         'inputcodigosBarrasTwo';
     grid-template-rows: 50% 50%;
-    // background-color: blue;
 }
 
 #lblCodigoBarrasTwo {
-    grid-area: lblcodigosBarrasTwo;
     font-size: 15px;
-    text-align: start;
+    grid-area: lblcodigosBarrasTwo;
     padding-left: 25px;
     padding-top: 5px;
+    text-align: start;
 }
 
 .inventory_header-article-codigo-barras-codigoTwo-input {
@@ -230,21 +217,20 @@
         'lblcodigosBarrasThree'
         'inputcodigosBarrasThree';
     grid-template-rows: 50% 50%;
-    // background-color: green;
 }
 
 #lblCodigoBarrasThree {
-    grid-area: lblcodigosBarrasThree;
     font-size: 15px;
-    text-align: start;
+    grid-area: lblcodigosBarrasThree;
     padding-left: 25px;
     padding-top: 5px;
+    text-align: start;
 }
 
 .inventory_header-article-codigo-barras-codigoThree-input {
     grid-area: inputcodigosBarrasThree;
-    margin-top: 2px;
     margin-right: 15px;
+    margin-top: 2px;
 }
 
 #txtCodigoBarrasThree {
@@ -258,7 +244,6 @@
     display: grid;
     grid-template-areas: 
         'checkMostrar checkRebaja';
-    // background-color: yellow;
 }
 
 .inventory_header-article-codigo-barras-checks-mostrar {
@@ -267,22 +252,19 @@
     grid-template-areas: 
         'inputMostrar labelMostrar';
         grid-template-columns: 50% 50%;
-    // background-color: aqua;
 }
 
 .inventory_header-article-codigo-barras-checks-mostrar-input {
     grid-area: inputMostrar;
-    padding-top: 5px;
     padding-left: 80%;
-    // background-color: red;
+    padding-top: 5px;
 }
 
 #lblMostrar {
-    grid-area: labelMostrar;
-    text-align: start;
-    padding-top: 5px;
     font-size: 15px;
-    // background-color: green;
+    grid-area: labelMostrar;
+    padding-top: 5px;
+    text-align: start;
 }
 
 .inventory_header-article-codigo-barras-checks-rebaja {
@@ -290,29 +272,142 @@
     display: grid;
     grid-template-areas: 
         'inputRebaja labelRebaja';
-    // background-color: yellow;
 }
 
 .inventory_header-article-codigo-barras-checks-rebaja-input {
     grid-area: inputRebaja;
-    padding-top: 5px;
     padding-left: 80%;
+    padding-top: 5px;
 }
 
 #lblRebaja {
-    grid-area: labelRebaja;
-    text-align: start;
-    padding-top: 5px;
     font-size: 15px;
+    grid-area: labelRebaja;
+    padding-top: 5px;
+    text-align: start;
 }
 
 
 .inventory_header-article-familias {
     grid-area: familias;
-    background-color: goldenrod;
+    display: grid;
+    grid-template-areas: 
+        'familia'
+        'ubicacion'
+        'proveedor';
+    grid-template-rows: 33% 33% 34%;
+}
+
+.inventory_header-article-familias-familia {
+    grid-area: familia;
+    display: grid;
+    grid-template-areas: 
+        'labelFamilia cboFamilia';
+    grid-template-columns: 20% 62%;
+}
+
+#lblFamilia {
+    font-size: 15px;
+    grid-area: labelFamilia;
+    padding-top: 5px;
+}
+
+.inventory_header-article-familias-familia-cbo {
+    grid-area: cboFamilia;
+    justify-content: start;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+#cbofamilia {
+    width: 100%;
+}
+
+.inventory_header-article-familias-ubicacion {
+    grid-area: ubicacion;
+    display: grid;
+    grid-template-areas: 
+        'labelUbicacion cboUbicacion';
+    grid-template-columns: 20% 62%;
+}
+
+#lblUbicacion {
+    font-size: 15px;
+    grid-area: labelUbicacion;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.inventory_header-article-familias-ubicacion-cbo {
+    grid-area: cboUbicacion;
+    justify-content: start;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+#cboubicacion {
+    width: 100%;
+}
+
+.inventory_header-article-familias-proveedor {
+    grid-area: proveedor;
+    display: grid;
+    grid-template-areas: 
+        'labelProveedor cboProveedor';
+    grid-template-columns: 20% 62%;
+}
+
+#lblProveedor {
+    font-size: 15px;
+    grid-area: labelProveedor;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.inventory_header-article-familias-proveedor-cbo {
+    grid-area: cboProveedor;
+    justify-content: start;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+#cboproveedor {
+    width: 100%;
 }
 
 .inventory_header-article-last-line {
     grid-area: last-line;
-    background-color: chartreuse;
+    display: grid;
+    grid-template-areas: 
+        'labelPantalla inputsPantalla';
+    grid-template-columns: 10% 60%;
+}
+
+#lblPantalla {
+    font-size: 15px;
+    grid-area: labelPantalla;
+    padding-top: 5px;
+}
+
+.inventory_header-article-last-line-inputs {
+    grid-area: inputsPantalla;
+    display: grid;
+    grid-template-areas: 
+        'checkPantalla comboboxPantalla';
+    grid-template-columns: 8% 65%;
+}
+
+.inventory_header-article-last-line-inputs-checks {
+    grid-area: checkPantalla;
+    padding-top: 8px;
+}
+
+.inventory_header-article-last-line-inputs-cbo{
+    grid-area: comboboxPantalla;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+#cboPantalla {
+    width: 100%;
 }

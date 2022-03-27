@@ -1,4 +1,3 @@
-import React from 'react'
 
 export const InventoryHeaderArticle = () => {
   return (
@@ -102,11 +101,55 @@ export const InventoryHeaderArticle = () => {
             </div>
 
             <div className='inventory_header-article-familias'>
-                <p>Familias</p>
+                
+                <div className='inventory_header-article-familias-familia'>
+                    <p id='lblFamilia'>Familia</p>
+                    <div className='inventory_header-article-familias-familia-cbo'>
+                        <select name="familia" id="cbofamilia">
+                            <option value="general">General</option>
+                            <option value="medicamentos">Medicamentos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div className='inventory_header-article-familias-ubicacion'>
+                    <p id='lblUbicacion'>Ubicación</p>
+                    <div className='inventory_header-article-familias-ubicacion-cbo'>
+                        <select name="ubicacion" id="cboubicacion">
+                            <option value="23general">23/General</option>
+                            <option value="28general">28/General</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div className='inventory_header-article-familias-proveedor'>
+                    <p id='lblProveedor'>Proveedor</p>
+                    <div className='inventory_header-article-familias-proveedor-cbo'>
+                        <select name="proveedor" id="cboproveedor">
+                            <option value="EmpresaA">EmpresaA</option>
+                            <option value="EmpresaB">EmpresaB</option>
+                        </select>
+                    </div>
+                </div>
+
             </div>
 
             <div className='inventory_header-article-last-line'>
-                <p>Pantalla</p>
+                <p id='lblPantalla'>Pantalla</p>
+                <div className='inventory_header-article-last-line-inputs'>
+
+                    <div className='inventory_header-article-last-line-inputs-checks'>
+                        <input type="checkbox" id="checkPantalla" name="pantalla" value="pantalla" />
+                    </div>
+
+                    <div className='inventory_header-article-last-line-inputs-cbo'>
+                        <select name="familia" id="cboPantalla">
+                                <option value="mobil">Mobil</option>
+                                <option value="mobiil2">Mobiil2</option>
+                        </select>
+                    </div>
+                   
+                </div>
             </div>
 
         </div>
