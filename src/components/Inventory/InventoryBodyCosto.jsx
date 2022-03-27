@@ -1,43 +1,36 @@
+import { useSelector } from 'react-redux';
+
+import { InventoryBodyCostoTabs } from './InventoryBodyCostoTabs'
 
 export const InventoryBodyCosto = () => {
-  return (
+
+    const state = useSelector( state => state.inventory );
+    const { currentTabInventory } = state;
+
+    return (
 
         <div className="inventory_body-costo-main">
 
             <div className="inventory_body-costo-tabs">
-                <ul>
-                    <li className="inventory-tabs">
-                        <button className="inventory-tab active">
-                            Ultimo Costo
-                        </button>
-                    </li>
-                    <li className="inventory-tabs">
-                        <button className="inventory-tab">
-                            Bodega 2
-                        </button>
-                    </li>
-                    <li className="inventory-tabs">
-                        <button className="inventory-tab">
-                            Varios
-                        </button>
-                    </li>
-                    <li className="inventory-tabs">
-                        <button className="inventory-tab">
-                            Categoría
-                        </button>
-                    </li>
-                    <li className="inventory-tabs">
-                        <button className="inventory-tab">
-                            Relacionados
-                        </button>
-                    </li>
-                </ul>
+                <InventoryBodyCostoTabs />
             </div>
             
 
             <div className="inventory_body-costo-content">
-                <p>Content</p>
+
+                { 
+                    ( currentTabInventory === 'UltimoCosto' )
+                        ? <p>UltimoCosto</p>
+                        : ( currentTabInventory === 'Bodega2' )
+                            ? <p>Bodega2</p>
+                            : ( currentTabInventory === 'Varios' )
+                                ? <p>Varios</p>
+                                : ( currentTabInventory === 'Categoria' )
+                                    ? <p>Categoria</p>
+                                    : <p>Relacionados</p>
+                }
+                
             </div>
         </div>
-  )
+    )
 }
