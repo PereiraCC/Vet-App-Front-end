@@ -1,0 +1,49 @@
+.inventory_body-featuresUC {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'moneda'
+        'impuesto'
+        'Base'
+        'Fletes'
+        'OCargo'
+        'Costo'
+        'CostoR';
+    grid-template-rows: 14% 14% 14% 14% 14% 14% 15%;
+    // grid-template-columns: 55% 45%;
+}
+
+.inventory_body-featuresUC-moneda {
+    grid-area: moneda;
+    background-color: red;
+}
+
+.inventory_body-featuresUC-impuesto {
+    grid-area: impuesto;
+    background-color: blue;
+}
+
+.inventory_body-featuresUC-base {
+    grid-area: Base;
+    background-color: green;
+}
+
+.inventory_body-featuresUC-fletes {
+    grid-area: Fletes;
+    background-color: yellow;
+}
+
+.inventory_body-featuresUC-OCargo {
+    grid-area: OCargo;
+    background-color: blueviolet;
+}
+
+.inventory_body-featuresUC-costo {
+    grid-area: Costo;
+    background-color: brown;
+}
+
+.inventory_body-featuresUC-costoR {
+    grid-area: CostoR;
+    background-color: aqua;
+}
