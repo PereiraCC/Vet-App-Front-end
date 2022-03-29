@@ -4,12 +4,11 @@
         'features precioVenta'
         'bodega existencias';
     grid-template-rows: 220px 80px;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
 }
 
 .inventory_body-features{
     grid-area: features;
-    // background-color: red;
 }
 
 .inventory_body-precioVenta{
