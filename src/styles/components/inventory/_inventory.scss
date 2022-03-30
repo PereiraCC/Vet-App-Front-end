@@ -16,11 +16,12 @@
 .inventory_header-article {
     grid-area: header-article;
     border: 1px solid black;
+    background-color: azure;
 }
 
 .inventory_body {
     grid-area: body;
-    // background-color: coral;
+    border: 1px solid black;
 }
 
 .inventory_footer {

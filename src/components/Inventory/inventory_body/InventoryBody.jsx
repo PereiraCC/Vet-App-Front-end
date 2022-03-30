@@ -1,4 +1,5 @@
 import { InventoryBodyFeatures } from "./inventory_body_features/InventoryBodyFeatures"
+import { InventoryBodyPrecioVenta } from "./inventory_body_precio/InventoryBodyPrecioVenta"
 
 export const InventoryBody = () => {
   return (
@@ -10,7 +11,7 @@ export const InventoryBody = () => {
             </div>
 
             <div className="inventory_body-precioVenta">
-                <p>Precio Venta</p>
+                <InventoryBodyPrecioVenta />
             </div>
 
             <div className="inventory_body-bodega">
