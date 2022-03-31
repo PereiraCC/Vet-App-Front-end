@@ -1,0 +1,152 @@
+.inventory_footer-main {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconActualizar iconNuevo iconInhabilitar iconBuscar iconCerrar';
+    grid-template-columns: 10% 10% 10% 10% 10%;
+}
+
+.inventory_footer-Actualizar {
+    grid-area: iconActualizar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconAct'
+        'lblAct';
+    grid-template-rows: 60% 40%;
+}
+
+.inventory_footer-Actualizar-icon {
+    color: #F68A1D;
+    grid-area: iconAct;
+    padding-top: 4px;
+}
+
+#iconAct {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblActualizar {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblAct;
+    text-align: center;
+}
+
+.inventory_footer-Nuevo {
+    grid-area: iconNuevo;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconNew'
+        'lblNew';
+    grid-template-rows: 60% 40%;
+}
+
+.inventory_footer-Nuevo-icon {
+    color: #F68A1D;
+    grid-area: iconNew;
+    padding-top: 4px;
+}
+
+#iconNue {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblNuevo {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblNew;
+    text-align: center;
+}
+
+.inventory_footer-Inhabilitar {
+    grid-area: iconInhabilitar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconInh'
+        'lblInh';
+    grid-template-rows: 60% 40%;
+}
+
+.inventory_footer-Inhabilitar-icon {
+    color: #F68A1D;
+    grid-area: iconInh;
+    padding-top: 4px;
+}
+
+#iconInh {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblInhabilitar {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblInh;
+    text-align: center;
+}
+
+.inventory_footer-Buscar {
+    grid-area: iconBuscar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconBus'
+        'lblBus';
+    grid-template-rows: 60% 40%;
+}
+
+.inventory_footer-Buscar-icon {
+    color: #F68A1D;
+    grid-area: iconBus;
+    padding-top: 4px;
+}
+
+#iconBus {
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+#lblBuscar {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblBus;
+    text-align: center;
+}
+
+.inventory_footer-Cerrar {
+    grid-area: iconCerrar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconCer'
+        'lblCer';
+    grid-template-rows: 60% 40%;
+}
+
+.inventory_footer-Cerrar-icon {
+    color: #F68A1D;
+    grid-area: iconCer;
+    padding-top: 4px;
+}
+
+#iconCer {
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+#lblCerrar {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblCer;
+    text-align: center;
+}

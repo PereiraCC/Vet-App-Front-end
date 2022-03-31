@@ -1,3 +1,4 @@
+import { InventoryFooter } from './InventoryFooter'
 import { InventoryHeader } from './InventoryHeader'
 import { InventoryHeaderArticle } from './InventoryHeaderArticle'
 import { InventoryBody } from './inventory_body/InventoryBody'
@@ -19,7 +20,7 @@ export const InventoryPage = () => {
       </div>
 
       <div className='inventory_footer'>
-          <h1>Footer</h1>
+          <InventoryFooter />
       </div>
 
     </div>
