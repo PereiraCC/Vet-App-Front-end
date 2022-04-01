@@ -1,11 +1,33 @@
-import React from 'react'
 
 export const BuysPage = () => {
-  return (
-    <div className='buys'>
+    return (
 
-      <h1>BuysPage</h1>
+        <div className='buys buys_main'>
 
-    </div>
-  )
+            <div className='buys_header'>
+                <p>Header</p>
+            </div>
+
+            <div className='buys_proveedor'>
+                <p>Proveedor</p>
+            </div>
+
+            <div className='buys_headerFactura'>
+                <p>Header Factura</p>
+            </div>
+
+            <div className='buys_ArticulosDetalleTable'>
+                <p>Articulos Detalle table</p>
+            </div>
+
+            <div className='buys_icons'>
+                <p>Icons</p>
+            </div>
+
+            <div className='buys_footer'>
+                <p>Footer</p>
+            </div>
+
+        </div>
+    )
 }
