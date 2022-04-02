@@ -5,7 +5,7 @@ export const BillingItems = () => {
       <div className="billing_iteams-main">
 
           <div className="billing_iteams-title">
-              <p id="lblTitle">Artículo a Facturar</p>
+              <p id="lblTitleIteams">Artículo a Facturar</p>
           </div>
 
           <div className="billing_iteams-header">

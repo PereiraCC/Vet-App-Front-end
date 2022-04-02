@@ -1,4 +1,5 @@
 import { BuysHeader } from './BuysHeader';
+import { BuysHeaderFactura } from './BuysHeaderFactura';
 import { BuysProveedor } from './BuysProveedor';
 
 export const BuysPage = () => {
@@ -15,7 +16,7 @@ export const BuysPage = () => {
             </div>
 
             <div className='buys_headerFactura'>
-                <p>Header Factura</p>
+                <BuysHeaderFactura />
             </div>
 
             <div className='buys_ArticulosDetalleTable'>

@@ -4,13 +4,13 @@ export const BillingConditions = () => {
       <div className="billing_conditions-main">
 
           <div className="billing_conditions-title">
-              <p id="lblTitle">Condicciones de factura</p>
+              <p id="lblTitleConditions">Condicciones de factura</p>
           </div>
 
           <div className="billing_conditions-coin-change">
               
               <div className="billing_conditions-coin">
-                  <p id="lblMoneda">Moneda</p>
+                  <p id="lblMonedaCondition">Moneda</p>
                   <select name="moneda" id="cboMoneda">
                     <option value="Colon">Colon</option>
                     <option value="Dolar">Dolar</option>
