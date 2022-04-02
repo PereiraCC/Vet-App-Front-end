@@ -1,4 +1,5 @@
 import { BuysArticulosHeader } from "./BuysArticulosHeader"
+import { BuysArticuloTable } from "./BuysArticuloTable"
 
 export const BuysArticulos = () => {
     return (
@@ -13,7 +14,7 @@ export const BuysArticulos = () => {
             </div>
 
             <div className='buys_articulos-table'>
-                <p>Table</p>
+                <BuysArticuloTable />
             </div>
 
             <div className='buys_articulos-footer'>
