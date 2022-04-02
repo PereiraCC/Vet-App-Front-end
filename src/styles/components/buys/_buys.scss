@@ -7,7 +7,8 @@
         'body body body body body body'
         'icons icons icons icons icons icons'
         'footer footer footer footer footer footer';
-    grid-template-rows: 40px 110px 310px 60px 28px;
+    grid-template-rows: 40px 90px 330px 60px 28px;
+    grid-template-columns: 30%;
 }
 
 .buys_header {
@@ -17,7 +18,7 @@
 
 .buys_proveedor {
     grid-area: header-proveedor;
-    background-color: blueviolet;
+    border: 1px solid black;
 }
 
 .buys_headerFactura {

@@ -1,4 +1,5 @@
 import { BuysHeader } from './BuysHeader';
+import { BuysProveedor } from './BuysProveedor';
 
 export const BuysPage = () => {
     return (
@@ -10,7 +11,7 @@ export const BuysPage = () => {
             </div>
 
             <div className='buys_proveedor'>
-                <p>Proveedor</p>
+                <BuysProveedor />
             </div>
 
             <div className='buys_headerFactura'>
