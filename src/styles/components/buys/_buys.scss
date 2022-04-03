@@ -7,7 +7,7 @@
         'body body body body body body'
         'icons icons icons icons icons icons'
         'footer footer footer footer footer footer';
-    grid-template-rows: 30px 80px 350px 60px 28px;
+    grid-template-rows: 30px 80px 360px 50px 28px;
     grid-template-columns: 43%;
 }
 
@@ -33,7 +33,7 @@
 
 .buys_icons {
     grid-area: icons;
-    // background-color: yellowgreen;
+    background-color: yellowgreen;
 }
 
 .buys_footer {
