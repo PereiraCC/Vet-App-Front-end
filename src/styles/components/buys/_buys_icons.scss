@@ -1,0 +1,227 @@
+.buys_icons-main{
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'btnNuevo btnRegistrar btnEliminar btnimprimir btnetiquetas btnCerrar btnCalcular btnImportarFactura';
+    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 16%;
+}
+
+.buys_icons-nuevo{
+    grid-area: btnNuevo;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconNue'
+        'lblNue';
+    grid-template-rows: 60% 40%;
+}
+
+.buys_icons-nuevo-icon {
+    color: #F68A1D;
+    grid-area: iconNue;
+    padding-top: 4px;
+}
+
+#iconNuevoB {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblNuevoB {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblNue;
+    text-align: center;
+}
+
+.buys_icons-registrar{
+    grid-area: btnRegistrar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconReg'
+        'lblReg';
+    grid-template-rows: 60% 40%;
+}
+
+.buys_icons-registrar-icon {
+    color: #F68A1D;
+    grid-area: iconReg;
+    padding-top: 4px;
+}
+
+#iconRegistrarB {
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+#lblRegistrarB {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblReg;
+    text-align: center;
+}
+
+.buys_icons-eliminar{
+    grid-area: btnEliminar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconEli'
+        'lblEli';
+    grid-template-rows: 60% 40%;
+}
+
+.buys_icons-eliminar-icon {
+    color: #F68A1D;
+    grid-area: iconEli;
+    padding-top: 4px;
+}
+
+#iconEliminarB {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblEliminarB {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblEli;
+    text-align: center;
+}
+
+.buys_icons-imprimir{
+    grid-area: btnimprimir;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconImp'
+        'lblImp';
+    grid-template-rows: 60% 40%;
+}
+
+.buys_icons-imprimir-icon {
+    color: #F68A1D;
+    grid-area: iconImp;
+    padding-top: 4px;
+}
+
+#iconImprimirB {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblImprimirB {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblImp;
+    text-align: center;
+}
+
+.buys_icons-etiquetas{
+    grid-area: btnetiquetas;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconEti'
+        'lblEti';
+    grid-template-rows: 60% 40%;
+}
+
+.buys_icons-etiquetas-icon {
+    color: #F68A1D;
+    grid-area: iconEti;
+    padding-top: 4px;
+}
+
+#iconEtiquetasB {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblEtiquetasB {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblEti;
+    text-align: center;
+}
+
+.buys_icons-cerrar{
+    grid-area: btnCerrar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconCer'
+        'lblCer';
+    grid-template-rows: 60% 40%;
+}
+
+.buys_icons-cerrar-icon {
+    color: #F68A1D;
+    grid-area: iconCer;
+    padding-top: 4px;
+}
+
+#iconCerrarB {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblCerrarB {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblCer;
+    text-align: center;
+}
+
+.buys_icons-calcular{
+    grid-area: btnCalcular;
+    height: 100%;
+    grid-template-areas: 
+        'iconCal'
+        'lblCal';
+    grid-template-rows: 60% 40%;
+}
+
+.buys_icons-calcular-icon {
+    color: #F68A1D;
+    grid-area: iconCal;
+    padding-top: 4px;
+}
+
+#iconCalcularB {
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+#lblCalcularB {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblCal;
+    text-align: center;
+}
+
+.buys_icons-importarFactura{
+    grid-area: btnImportarFactura;
+    padding-bottom: 8px;
+    padding-top: 8px;
+
+    :hover {
+        background-color: #F68A1D;
+        color: white;
+    }
+}
+
+#btnImpFacturaE {
+    cursor: pointer;
+    font-size: 15px;
+    height: 100%;
+    width: 95%;
+}

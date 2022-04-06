@@ -1,6 +1,7 @@
 import { BuysArticulos } from './BuysArticulos';
 import { BuysHeader } from './BuysHeader';
 import { BuysHeaderFactura } from './BuysHeaderFactura';
+import { BuysIcons } from './BuysIcons';
 import { BuysProveedor } from './BuysProveedor';
 
 export const BuysPage = () => {
@@ -25,7 +26,7 @@ export const BuysPage = () => {
             </div>
 
             <div className='buys_icons'>
-                <p>Icons</p>
+                <BuysIcons />
             </div>
 
             <div className='buys_footer'>
