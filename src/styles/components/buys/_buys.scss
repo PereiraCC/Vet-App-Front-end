@@ -7,7 +7,7 @@
         'body body body body body body'
         'icons icons icons icons icons icons'
         'footer footer footer footer footer footer';
-    grid-template-rows: 30px 80px 360px 50px 28px;
+    grid-template-rows: 30px 80px 350px 50px 38px;
     grid-template-columns: 43%;
 }
 
@@ -28,16 +28,15 @@
 
 .buys_ArticulosDetalleTable {
     grid-area: body;
-    // background-color: yellow;
     border: 1px solid black;
 }
 
 .buys_icons {
     grid-area: icons;
-    // background-color: yellowgreen;
+    border: 1px solid black;
 }
 
 .buys_footer {
     grid-area: footer;
-    background-color: green;
+    // background-color: green;
 }

@@ -1,4 +1,5 @@
 import { BuysArticulos } from './BuysArticulos';
+import { BuysFooter } from './BuysFooter';
 import { BuysHeader } from './BuysHeader';
 import { BuysHeaderFactura } from './BuysHeaderFactura';
 import { BuysIcons } from './BuysIcons';
@@ -30,7 +31,7 @@ export const BuysPage = () => {
             </div>
 
             <div className='buys_footer'>
-                <p>Footer</p>
+                <BuysFooter />
             </div>
 
         </div>
