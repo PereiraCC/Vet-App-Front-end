@@ -1,5 +1,5 @@
 import * as AiIcons from 'react-icons/ai';
-import { FaFileInvoiceDollar } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaHandshake} from 'react-icons/fa';
 import { MdInventory2 } from 'react-icons/md';
 import { HiDocumentReport } from 'react-icons/hi';
 
@@ -32,6 +32,12 @@ export const SidebarData = [
         title: 'Reportes',
         path: '/reports',
         icon: <HiDocumentReport />,
+        cName: 'vet_nav-text'
+    },
+    {
+        title: 'Proveedores',
+        path: '/providers',
+        icon: <FaHandshake />,
         cName: 'vet_nav-text'
     },
 ];

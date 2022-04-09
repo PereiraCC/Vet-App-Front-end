@@ -15,6 +15,7 @@ import { BuysPage } from '../components/Buys/BuysPage';
 import { InventoryPage } from '../components/Inventory/InventoryPage';
 import { ReportsPage } from '../components/Reports/ReportsPage';
 import { NothingPage } from '../components/Shared/NothingPage';
+import { ProvidersPage } from '../components/providers/ProvidersPage';
 
 
 export const AppRouter = () => {
@@ -55,6 +56,12 @@ export const AppRouter = () => {
                     exact
                     path="/reports"
                     component={ ReportsPage }
+                />
+
+                <Route 
+                    exact
+                    path="/providers"
+                    component={ ProvidersPage }
                 />
 
                 <Route 
