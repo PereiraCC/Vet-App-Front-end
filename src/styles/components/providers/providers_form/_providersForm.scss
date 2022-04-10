@@ -94,12 +94,15 @@
     grid-template-areas: 
         'lblDireccion inputDireccion';
     grid-template-columns: 15% 45%;
-    // background-color: coral;
 }
 
 .providers_form-personal-6 {
     grid-area: line6;
-    background-color: yellow;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'lblObservacion inputObservacion';
+    grid-template-columns: 15% 45%;
 }
 
 .providers_form-personal-7 {

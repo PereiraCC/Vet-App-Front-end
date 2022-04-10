@@ -115,7 +115,14 @@ export const ProvidersForm = () => {
                 </div>
 
                 <div className='providers_form-personal-6'>
-                    <p>line 6</p>
+                    
+                    <div className='providers_form-personal-6-label-observacion'>
+                            <p id='lblobservacionProviders' >Observación</p>
+                    </div>
+                    <div className='providers_form-personal-6-input-observacion'>
+                        <input name='observacionProviders' id='txtobservacionProviders' />
+                    </div>
+
                 </div>
 
                 <div className='providers_form-personal-7'>
