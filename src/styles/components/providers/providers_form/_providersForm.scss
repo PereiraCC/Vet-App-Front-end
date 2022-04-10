@@ -80,7 +80,12 @@
 
 .providers_form-personal-4 {
     grid-area: line4;
-    background-color: chartreuse;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'emailPro seriesPro';
+    grid-template-columns: 60% 40%;
+    // background-color: chartreuse;
 }
 
 .providers_form-personal-5 {

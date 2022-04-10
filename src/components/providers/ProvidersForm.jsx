@@ -80,7 +80,27 @@ export const ProvidersForm = () => {
                 </div>
 
                 <div className='providers_form-personal-4'>
-                    <p>line 4</p>
+
+                    <div className='providers_form-personal-4-email' >
+
+                        <div className='providers_form-personal-4-label-email'>
+                            <p id='lblEmailProviders'>E-Mail</p>
+                        </div>
+                        <div className='providers_form-personal-4-input-email'>
+                            <input name='emailProviders' id='txtEmailProviders' />
+                        </div>
+
+                    </div>
+
+                    <div className='providers_form-personal-4-series' >
+
+                        <div className="providers_form-personal-4-check-series-input"> 
+                            <input type="checkbox" id="checkSeries" name="series" value="Productosseries" />
+                        </div>
+                        <label for="checkSeries" id="lblSeries">Productos con Series</label>
+
+                    </div>
+
                 </div>
 
                 <div className='providers_form-personal-5'>
