@@ -116,5 +116,11 @@
 
 .providers_form-accounting {
     grid-area: accounting;
-    background-color: navajowhite;
+    display: grid;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-areas: 
+        'inputs-accounting checks-accounting';
+    grid-template-columns: 60% 40%;
 }

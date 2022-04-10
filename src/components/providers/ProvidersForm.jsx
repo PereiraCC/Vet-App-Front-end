@@ -154,7 +154,57 @@ export const ProvidersForm = () => {
             </div>
 
             <div className='providers_form-accounting'>
-                <p>accounting</p>
+                
+                <div className='providers_form-accounting-inputs'>
+
+                    <div className='providers_form-accounting-inputs-firstLine'>
+
+                        <div className='providers_form-accounting-inputs-firstLine-plazo' >
+
+                            <div className='providers_form-accounting-inputs-firstLine-label-plazo'>
+                                <p id='lblPlazoProviders'>Plazo</p>
+                            </div>
+                            <div className='providers_form-accounting-inputs-firstLine-input-plazo'>
+                                <input name='plazoProviders' id='txtPlazoProviders' />
+                            </div>
+                            <div className='providers_form-accounting-inputs-firstLine-label-plazo-dias'>
+                                <p id='lblPlazoDiasProviders'>días</p>
+                            </div>
+
+                        </div>
+
+                        <div className='providers_form-accounting-inputs-firstLine-limite' >
+
+                            <div className='providers_form-accounting-inputs-firstLine-label-limite'>
+                                <p id='lblLimiteProviders'>Limite de Crédito</p>
+                            </div>
+                            <div className='providers_form-accounting-inputs-firstLine-input-limite'>
+                                <input name='limiteProviders' id='txtLimiteProviders' />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className='providers_form-accounting-inputs-SecondLine'>
+                        
+                        <div className='providers_form-accounting-inputs-SecondLine-label-cuenta'>
+                            <p id='lblCuentaProviders'>Cuenta Contable</p>
+                        </div>
+
+                        <div className='providers_form-accounting-inputs-SecondLine-inputs-cuenta'>
+                            <input name='cuenta1Providers' id='txtCuenta1Providers' />
+                            <input name='cuenta2Providers' id='txtCuenta2Providers' />
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className='providers_form-accounting-check'>
+                    <p>Checks</p>
+                </div>
+
             </div>
 
         </div>
