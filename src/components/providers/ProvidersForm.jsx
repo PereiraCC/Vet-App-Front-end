@@ -126,7 +126,29 @@ export const ProvidersForm = () => {
                 </div>
 
                 <div className='providers_form-personal-7'>
-                    <p>line 7</p>
+                    
+                    <div className='providers_form-personal-7-contacto' >
+
+                        <div className='providers_form-personal-7-label-contacto'>
+                            <p id='lblContactoProviders'>Contacto</p>
+                        </div>
+                        <div className='providers_form-personal-7-input-contacto'>
+                            <input name='contactoProviders' id='txtContactoProviders' />
+                        </div>
+
+                    </div>
+
+                    <div className='providers_form-personal-7-telefonoContacto' >
+
+                        <div className='providers_form-personal-7-label-telefonoContacto'>
+                            <p id='lblTelefonoContactoProviders'>Teléfono</p>
+                        </div>
+                        <div className='providers_form-personal-7-input-telefonoContacto'>
+                            <input name='telefonoContactoProviders' id='txtTelefonoContactoProviders' />
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>

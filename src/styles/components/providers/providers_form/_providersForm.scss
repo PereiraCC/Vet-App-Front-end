@@ -107,7 +107,11 @@
 
 .providers_form-personal-7 {
     grid-area: line7;
-    background-color: yellowgreen;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'contactoPro telefonoContactoPro';
+    grid-template-columns: 60% 40%;
 }
 
 .providers_form-accounting {
