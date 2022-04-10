@@ -1,3 +1,4 @@
+import { ProvidersForm } from "./ProvidersForm"
 
 export const ProvidersPage = () => {
     return (
@@ -8,7 +9,7 @@ export const ProvidersPage = () => {
             </div>
 
             <div className='providers_form'>
-                <p>form</p>
+                <ProvidersForm />
             </div>
 
             <div className='providers_table'>
