@@ -85,12 +85,16 @@
     grid-template-areas: 
         'emailPro seriesPro';
     grid-template-columns: 60% 40%;
-    // background-color: chartreuse;
 }
 
 .providers_form-personal-5 {
     grid-area: line5;
-    background-color: coral;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'lblDireccion inputDireccion';
+    grid-template-columns: 15% 45%;
+    // background-color: coral;
 }
 
 .providers_form-personal-6 {

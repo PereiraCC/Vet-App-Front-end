@@ -104,7 +104,14 @@ export const ProvidersForm = () => {
                 </div>
 
                 <div className='providers_form-personal-5'>
-                    <p>line 5</p>
+                    
+                    <div className='providers_form-personal-5-label-direccion'>
+                            <p id='lblDireccionProviders' >Dirección</p>
+                    </div>
+                    <div className='providers_form-personal-5-input-direccion'>
+                        <input name='DireccionProviders' id='txtDireccionProviders' />
+                    </div>
+
                 </div>
 
                 <div className='providers_form-personal-6'>
