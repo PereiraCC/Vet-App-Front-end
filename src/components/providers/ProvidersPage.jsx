@@ -1,4 +1,5 @@
 import { ProvidersForm } from "./ProvidersForm"
+import { ProvidersTable } from "./ProvidersTable"
 
 export const ProvidersPage = () => {
     return (
@@ -13,7 +14,7 @@ export const ProvidersPage = () => {
             </div>
 
             <div className='providers_table'>
-                <p>table</p>
+                <ProvidersTable />
             </div>
 
             <div className='providers_icons'>

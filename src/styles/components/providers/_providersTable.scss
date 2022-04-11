@@ -1,0 +1,103 @@
+.providers_table-main {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'titleTable'
+        'bodyTable';
+    grid-template-rows: 10% 90%;
+}
+
+.providers_table-title {
+    background-color: #3D62DB;
+    grid-area: titleTable;
+}
+
+#lblTitleProviders {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 2px;
+    text-align: center;
+}
+
+.providers_table-table {
+    border: 1px solid #3D62DB;
+    grid-area: bodyTable;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.providers_table-main-table {
+    width: 100%;
+}
+
+.providers_table-table-header-p {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 1%;
+}
+
+.providers_table-table-header-tipo {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 2%;
+}
+
+.providers_table-table-header-banco {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.providers_table-table-header-cuenta {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.providers_table-table-header-moneda {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 5%;
+}
+
+.providers_table-table-p {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.providers_table-table-tipo {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.providers_table-table-banco {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.providers_table-table-cuenta {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.providers_table-table-moneda {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
