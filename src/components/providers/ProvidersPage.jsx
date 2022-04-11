@@ -1,4 +1,5 @@
 import { ProvidersForm } from "./ProvidersForm"
+import { ProvidersIcons } from "./ProvidersIcons"
 import { ProvidersTable } from "./ProvidersTable"
 
 export const ProvidersPage = () => {
@@ -18,7 +19,7 @@ export const ProvidersPage = () => {
             </div>
 
             <div className='providers_icons'>
-                <p>icons</p>
+                <ProvidersIcons />
             </div>
 
         </div>
