@@ -202,7 +202,68 @@ export const ProvidersForm = () => {
                 </div>
 
                 <div className='providers_form-accounting-check'>
-                    <p>Checks</p>
+
+                    <div className='providers_form-accounting-check-firstLine'>
+                        
+                        <div className='providers_form-accounting-check-firstLine-check-utilidad' >
+
+                            <div className="providers_form-accounting-check-firstLine-check-utilidad-input"> 
+                                <input type="checkbox" id="checkUtilidad" name="utilidad" value="utilidad" />
+                            </div>
+                            <label for="checkUtilidad" id="lblUtilidadProviders">Utilidad Fija</label>
+
+                        </div>
+
+                        <div className='providers_form-accounting-check-firstLine-label-utilidad' >
+                            <p id='lblUtilidadProvidersResul'>0</p>
+                        </div>
+
+                    </div>
+
+                    <div className='providers_form-accounting-check-secondLine'>
+                        
+                        <div className='providers_form-accounting-check-secondLine-check-costo' >
+
+                            <div className="providers_form-accounting-check-secondLine-check-costo-input"> 
+                                <input type="checkbox" id="checkCosto" name="costo" value="costo" />
+                            </div>
+                            <label for="checkCosto" id="lblCostoProviders">Costo Total</label>
+
+                        </div>
+
+                        <div className='providers_form-accounting-check-secondLine-check-imp' >
+
+                            <div className="providers_form-accounting-check-secondLine-check-imp-input"> 
+                                <input type="checkbox" id="checkImp" name="imp" value="imp" />
+                            </div>
+                            <label for="checkImp" id="lblImpProviders">Imp. Incluido</label>
+
+                        </div>
+
+                    </div>
+
+                    <div className='providers_form-accounting-check-thirdLine'>
+                        
+                        <div className='providers_form-accounting-check-thirdLine-check-actualizado' >
+
+                            <div className="providers_form-accounting-check-thirdLine-check-actualizado-input"> 
+                                <input type="checkbox" id="checkActualizado" name="actualizado" value="actualizado" />
+                            </div>
+                            <label for="checkActualizado" id="lblActualizadoProviders">Actualizado</label>
+
+                        </div>
+
+                        <div className='providers_form-accounting-check-thirdLine-check-inhabilitar' >
+
+                            <div className="providers_form-accounting-check-thirdLine-check-inhabilitar-input"> 
+                                <input type="checkbox" id="checkInhabilitar" name="inhabilitar" value="inhabilitar" />
+                            </div>
+                            <label for="checkInhabilitar" id="lblInhabilitarProviders">Inhabilitar</label>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
