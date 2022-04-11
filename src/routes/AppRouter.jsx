@@ -16,6 +16,7 @@ import { InventoryPage } from '../components/Inventory/InventoryPage';
 import { ReportsPage } from '../components/Reports/ReportsPage';
 import { NothingPage } from '../components/Shared/NothingPage';
 import { ProvidersPage } from '../components/providers/ProvidersPage';
+import { CustomersPage } from '../components/customers/CustomersPage';
 
 
 export const AppRouter = () => {
@@ -68,6 +69,12 @@ export const AppRouter = () => {
                     exact
                     path="/nothing"
                     component={ NothingPage }
+                />
+
+                <Route 
+                    exact
+                    path="/customers"
+                    component={ CustomersPage }
                 />
 
                 <Redirect to="/nothing" />

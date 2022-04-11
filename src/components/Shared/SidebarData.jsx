@@ -2,6 +2,7 @@ import * as AiIcons from 'react-icons/ai';
 import { FaFileInvoiceDollar, FaHandshake} from 'react-icons/fa';
 import { MdInventory2 } from 'react-icons/md';
 import { HiDocumentReport } from 'react-icons/hi';
+import { BsFillPeopleFill } from 'react-icons/bs';
 
 export const SidebarData = [
     {
@@ -38,6 +39,12 @@ export const SidebarData = [
         title: 'Proveedores',
         path: '/providers',
         icon: <FaHandshake />,
+        cName: 'vet_nav-text'
+    },
+    {
+        title: 'Clientes',
+        path: '/customers',
+        icon: <BsFillPeopleFill />,
         cName: 'vet_nav-text'
     },
 ];
