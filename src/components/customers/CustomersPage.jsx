@@ -1,3 +1,4 @@
+import { CustomersHeader } from "./CustomersHeader"
 
 export const CustomersPage = () => {
     return (
@@ -5,7 +6,7 @@ export const CustomersPage = () => {
         <div className="customers customers-main">
 
             <div className="customers-header">
-                <p>Header cliente</p>
+                <CustomersHeader />
             </div>
 
             <div className="customers-body">
