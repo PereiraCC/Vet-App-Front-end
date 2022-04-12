@@ -2,10 +2,12 @@ import { createStore, combineReducers } from 'redux';
 
 import { tabsReducer } from '../reducers/tabsReducer';
 import { InventoryReducer } from '../reducers/inventoryReducer';
+import { CustomersReducer } from '../reducers/customersReducer';
 
 const reducers = combineReducers({
     tabs: tabsReducer,
-    inventory: InventoryReducer
+    inventory: InventoryReducer,
+    customers: CustomersReducer,
 });
 
 export const store = createStore(

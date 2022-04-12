@@ -1,10 +1,15 @@
 
 export const types = {
 
+    // Tabs actions
     AddTab: '[Tabs] AddTab',
     SelectTab: '[Tabs] SelectTab',
     DeleteTab: '[Tabs] DeleteTab',
 
-    SelectTabInventory: '[Inventory] SelectTabInventory'
+    // Inventory actions
+    SelectTabInventory: '[Inventory] SelectTabInventory',
+    
+    // Customers actions
+    SelectTabCustomers: '[Customers] SelectTabCustomers',
 
 }
