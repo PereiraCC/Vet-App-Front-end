@@ -1,3 +1,4 @@
+import { CustomersBody } from "./customersBody/CustomersBody"
 import { CustomersHeader } from "./CustomersHeader"
 
 export const CustomersPage = () => {
@@ -10,7 +11,7 @@ export const CustomersPage = () => {
             </div>
 
             <div className="customers-body">
-                <p>Body cliente</p>
+                <CustomersBody />
             </div>
 
             <div className="customers-footer">
