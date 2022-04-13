@@ -1,4 +1,4 @@
-import * as AiIcons from 'react-icons/ai';
+import { AiFillHome, AiFillSetting, AiOutlineShoppingCart } from 'react-icons/ai';
 import { FaFileInvoiceDollar, FaHandshake} from 'react-icons/fa';
 import { MdInventory2 } from 'react-icons/md';
 import { HiDocumentReport } from 'react-icons/hi';
@@ -8,7 +8,7 @@ export const SidebarData = [
     {
         title: 'Inicio',
         path: '/',
-        icon: <AiIcons.AiFillHome />,
+        icon: <AiFillHome />,
         cName: 'vet_nav-text'
     },
     {
@@ -26,7 +26,7 @@ export const SidebarData = [
     {
         title: 'Compras',
         path: '/buys',
-        icon: <AiIcons.AiOutlineShoppingCart />,
+        icon: <AiOutlineShoppingCart />,
         cName: 'vet_nav-text'
     },
     {
@@ -45,6 +45,12 @@ export const SidebarData = [
         title: 'Clientes',
         path: '/customers',
         icon: <BsFillPeopleFill />,
+        cName: 'vet_nav-text'
+    },
+    {
+        title: 'Configuración',
+        path: '/settings',
+        icon: <AiFillSetting />,
         cName: 'vet_nav-text'
     },
 ];
