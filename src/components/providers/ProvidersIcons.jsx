@@ -19,7 +19,7 @@ export const ProvidersIcons = () => {
                 <div className="providers_icons-Buscar-icon">
                     <FaSearch id='iconBusP'/>
                 </div>
-                <p id='lblBuscar'>Buscar</p>
+                <p id='lblBuscarP'>Buscar</p>
             </div>
 
             <div className="providers_icons-registrar">
