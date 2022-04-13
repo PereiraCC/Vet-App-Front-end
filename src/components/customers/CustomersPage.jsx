@@ -1,5 +1,6 @@
-import { CustomersBody } from "./customersBody/CustomersBody"
-import { CustomersHeader } from "./CustomersHeader"
+import { CustomersBody } from './customersBody/CustomersBody';
+import { CustomersHeader } from './CustomersHeader';
+import { CustomersIcons } from './CustomersIcons';
 
 export const CustomersPage = () => {
     return (
@@ -15,9 +16,8 @@ export const CustomersPage = () => {
             </div>
 
             <div className="customers-footer">
-                <p>Footer icons cliente</p>
+                <CustomersIcons />
             </div>
         </div>
-
     )
 }

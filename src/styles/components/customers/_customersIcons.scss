@@ -1,0 +1,152 @@
+.customers_icons-main {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'btnNuevo btnBuscar btnRegistrar btnEliminar btnCerrar';
+    grid-template-columns: 8% 8% 8% 8% 8%;
+}
+
+.customers_icons-nuevo {
+    grid-area: btnNuevo;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconNue'
+        'lblNue';
+    grid-template-rows: 60% 40%;
+}
+
+.customers_icons-nuevo-icon {
+    color: #F68A1D;
+    grid-area: iconNue;
+    padding-top: 4px;
+}
+
+#iconNuevoC {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblNuevoC {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblNue;
+    text-align: center;
+}
+
+.customers_icons-Buscar {
+    grid-area: btnBuscar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconBuscar'
+        'lblBuscar';
+    grid-template-rows: 60% 40%;
+}
+
+.customers_icons-Buscar-icon {
+    color: #F68A1D;
+    grid-area: iconBuscar;
+    padding-top: 4px;
+}
+
+#iconBusC {
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+#lblBuscarC {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblBuscar;
+    text-align: center;
+}
+
+.customers_icons-registrar {
+    grid-area: btnRegistrar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconReg'
+        'lblReg';
+    grid-template-rows: 60% 40%;
+}
+
+.customers_icons-registrar-icon {
+    color: #F68A1D;
+    grid-area: iconReg;
+    padding-top: 4px;
+}
+
+#iconRegistrarC {
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+#lblRegistrarC {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblReg;
+    text-align: center;
+}
+
+.customers_icons-eliminar {
+    grid-area: btnEliminar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconEli'
+        'lblEli';
+    grid-template-rows: 60% 40%;
+}
+
+.customers_icons-eliminar-icon {
+    color: #F68A1D;
+    grid-area: iconEli;
+    padding-top: 4px;
+}
+
+#iconEliminarC {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblEliminarC {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblEli;
+    text-align: center;
+}
+
+.customers_icons-cerrar {
+    grid-area: btnCerrar;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'iconCerrar'
+        'lblCerrar';
+    grid-template-rows: 60% 40%;
+}
+
+.customers_icons-cerrar-icon {
+    color: #F68A1D;
+    grid-area: iconCerrar;
+    padding-top: 4px;
+}
+
+#iconCerrarC {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblCerrarC {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblCerrar;
+    text-align: center;
+}

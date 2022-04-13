@@ -15,10 +15,9 @@
 
 .customers-body {
     grid-area: body;
-    // background-color: blueviolet;
 }
 
 .customers-footer {
     grid-area: footer;
-    background-color: brown;
+    border: 1px solid black;
 }
