@@ -1,3 +1,4 @@
+import { SettingsIcons } from './SettingsIcons';
 import { SettingsBody } from './settings_body/SettingsBody';
 
 export const SettingsPage = () => {
@@ -13,7 +14,7 @@ export const SettingsPage = () => {
             </div>
 
             <div className='settings_main-icons'>
-                <p>Configuración icons</p>
+                <SettingsIcons />
             </div>
         </div>
     )
