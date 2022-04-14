@@ -3,11 +3,13 @@ import { createStore, combineReducers } from 'redux';
 import { tabsReducer } from '../reducers/tabsReducer';
 import { InventoryReducer } from '../reducers/inventoryReducer';
 import { CustomersReducer } from '../reducers/customersReducer';
+import { SettingsReducer } from '../reducers/settingsReducer';
 
 const reducers = combineReducers({
     tabs: tabsReducer,
     inventory: InventoryReducer,
     customers: CustomersReducer,
+    settings: SettingsReducer
 });
 
 export const store = createStore(
