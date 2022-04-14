@@ -12,4 +12,7 @@ export const types = {
     // Customers actions
     SelectTabCustomers: '[Customers] SelectTabCustomers',
 
+    // Settings actions
+    SelectTabSettings: '[Settings] SelectTabSettings',
+
 }

@@ -1,13 +1,25 @@
+import { useDispatch, useSelector } from 'react-redux';
+
+import { SelectTabSettings } from '../../../actions/settings';
 
 export const SettingsBodyTabs = () => {
+
+    const dispatch = useDispatch();
+
+    const state = useSelector( state => state.settings );
+    const { currentTabSettings } = state;
+
+    const handleSelectTabSettings = (nameTab) => {
+        dispatch( SelectTabSettings( nameTab ) );
+    }
+
     return (
         <ul>
             
             <li className="settings-tabs">
                 <button 
-                    // className={currentTabCustomers == 'DatosGenerales' ? "customers-tab active" : "customers-tab"}
-                    // onClick={ () => handleSelectTabCustomers('DatosGenerales') }
-                    className='customers-tab active'
+                    className={currentTabSettings == 'Empresas' ? "settings-tab active" : "settings-tab"}
+                    onClick={ () => handleSelectTabSettings('Empresas') }
                 >
                     Empresas
                 </button>
@@ -15,9 +27,8 @@ export const SettingsBodyTabs = () => {
 
             <li className="settings-tabs">
                 <button 
-                    // className={currentTabCustomers == 'CreditoDescuento' ? "customers-tab active" : "customers-tab"}
-                    // onClick={ () => handleSelectTabCustomers('CreditoDescuento') }
-                    className='customers-tab'
+                    className={currentTabSettings == 'Valores' ? "settings-tab active" : "settings-tab"}
+                    onClick={ () => handleSelectTabSettings('Valores') }
                 >
                     Valores
                 </button>
@@ -25,9 +36,8 @@ export const SettingsBodyTabs = () => {
 
             <li className="settings-tabs">
                 <button 
-                    // className={currentTabCustomers == 'EncargadoCompras' ? "customers-tab active" : "customers-tab"}
-                    // onClick={ () => handleSelectTabCustomers('EncargadoCompras') }
-                    className='customers-tab'
+                    className={currentTabSettings == 'Logo' ? "settings-tab active" : "settings-tab"}
+                    onClick={ () => handleSelectTabSettings('Logo') }
                 >
                     Logo
                 </button>
@@ -35,9 +45,8 @@ export const SettingsBodyTabs = () => {
 
             <li className="settings-tabs">
                 <button 
-                    // className={currentTabCustomers == 'ReferenciasBancarias' ? "customers-tab active" : "customers-tab"}
-                    // onClick={ () => handleSelectTabCustomers('ReferenciasBancarias') }
-                    className='customers-tab'
+                    className={currentTabSettings == 'NotificacionesCorreo' ? "settings-tab active" : "settings-tab"}
+                    onClick={ () => handleSelectTabSettings('NotificacionesCorreo') }
                 >
                     Notificaciones de correo
                 </button>
@@ -45,9 +54,8 @@ export const SettingsBodyTabs = () => {
 
             <li className="settings-tabs">
                 <button 
-                    // className={currentTabCustomers == 'ReferenciasComerciales' ? "customers-tab active" : "customers-tab"}
-                    // onClick={ () => handleSelectTabCustomers('ReferenciasComerciales') }
-                    className='customers-tab'
+                    className={currentTabSettings == 'Permiso' ? "settings-tab active" : "settings-tab"}
+                    onClick={ () => handleSelectTabSettings('Permiso') }
                 >
                     Permiso
                 </button>
