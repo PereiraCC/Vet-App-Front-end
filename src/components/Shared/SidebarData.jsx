@@ -1,5 +1,5 @@
 import { AiFillHome, AiFillSetting, AiOutlineShoppingCart } from 'react-icons/ai';
-import { FaFileInvoiceDollar, FaHandshake} from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaHandshake, FaCashRegister} from 'react-icons/fa';
 import { MdInventory2 } from 'react-icons/md';
 import { HiDocumentReport } from 'react-icons/hi';
 import { BsFillPeopleFill } from 'react-icons/bs';
@@ -45,6 +45,12 @@ export const SidebarData = [
         title: 'Clientes',
         path: '/customers',
         icon: <BsFillPeopleFill />,
+        cName: 'vet_nav-text'
+    },
+    {
+        title: 'Cierre de caja',
+        path: '/closecash',
+        icon: <FaCashRegister />,
         cName: 'vet_nav-text'
     },
     {

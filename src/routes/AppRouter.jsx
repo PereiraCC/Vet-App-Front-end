@@ -18,6 +18,7 @@ import { NothingPage } from '../components/Shared/NothingPage';
 import { ProvidersPage } from '../components/providers/ProvidersPage';
 import { CustomersPage } from '../components/customers/CustomersPage';
 import { SettingsPage } from '../components/Settings/SettingsPage';
+import { CloseCashPage } from '../components/CloseCash/CloseCashPage';
 
 
 export const AppRouter = () => {
@@ -76,6 +77,12 @@ export const AppRouter = () => {
                     exact
                     path="/customers"
                     component={ CustomersPage }
+                />
+
+                <Route 
+                    exact
+                    path="/closecash"
+                    component={ CloseCashPage }
                 />
 
                 <Route 
