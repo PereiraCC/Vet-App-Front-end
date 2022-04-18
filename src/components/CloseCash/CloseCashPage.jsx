@@ -1,3 +1,4 @@
+import { CloseCashPeriodo } from './CloseCashPeriodo';
 
 export const CloseCashPage = () => {
     return (
@@ -7,7 +8,7 @@ export const CloseCashPage = () => {
             <div className='closeCash_left-box'>
                 
                 <div className='closeCash_left-box-periodo'>
-                    <p>Período</p>
+                    <CloseCashPeriodo />
                 </div>
 
                 <div className='closeCash_left-box-apertura'>

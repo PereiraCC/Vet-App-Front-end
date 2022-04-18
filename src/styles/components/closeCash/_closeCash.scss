@@ -1,7 +1,7 @@
 .closeCash_main {
-    text-align: center;
     display: grid;
     height: 100%;
+    text-align: center;
     grid-template-areas: 
         'left-side right-side';
     grid-template-columns: 45% 55%;
@@ -9,20 +9,18 @@
 }
 
 .closeCash_left-box {
-    grid-area: left-side;
     display: grid;
+    grid-area: left-side;
     height: 100%;
     grid-template-areas: 
         'periodo'
         'apertura'
         'general';
     grid-template-rows: 20% 15% 65%;
-    background-color: aqua;
 }
 
 .closeCash_left-box-periodo {
     grid-area: periodo;
-    background-color: chartreuse;
 }
 
 .closeCash_left-box-apertura {
@@ -36,8 +34,8 @@
 }
 
 .closeCash_right-box {
-    grid-area: right-side;
     display: grid;
+    grid-area: right-side;
     height: 100%;
     grid-template-areas: 
         'cierre'
