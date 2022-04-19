@@ -39,12 +39,12 @@
         'cierre'
         'detalle-tarjetas'
         'detalle-operaciones';
-    grid-template-rows: 45% 15% 40%;
+    grid-template-rows: 55% 15% 30%;
 }
 
 .closeCash_right-box-cierre {
     grid-area: cierre;
-    background-color: aqua;
+    // background-color: aqua;
 }
 
 .closeCash_right-box-detalle-tarjetas {
