@@ -29,7 +29,6 @@
 
 .closeCash_left-box-general {
     grid-area: general;
-    background-color: coral;
 }
 
 .closeCash_right-box {
@@ -41,7 +40,6 @@
         'detalle-tarjetas'
         'detalle-operaciones';
     grid-template-rows: 45% 15% 40%;
-    background-color: brown;
 }
 
 .closeCash_right-box-cierre {

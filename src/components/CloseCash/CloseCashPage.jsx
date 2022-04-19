@@ -1,4 +1,5 @@
 import { CloseCashApertura } from './CloseCashApertura';
+import { CloseCashGeneral } from './CloseCashGeneral';
 import { CloseCashPeriodo } from './CloseCashPeriodo';
 
 export const CloseCashPage = () => {
@@ -17,7 +18,7 @@ export const CloseCashPage = () => {
                 </div>
 
                 <div className='closeCash_left-box-general'>
-                    <p>General</p>
+                    <CloseCashGeneral />
                 </div>
 
             </div>
