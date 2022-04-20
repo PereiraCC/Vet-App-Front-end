@@ -47,7 +47,41 @@ export const CloseCashCierreCaja = () => {
                 </div>
 
                 <div className='closeCash_cierreCaja-inputs-right'>
-                    <p>right</p>
+                    
+                    <div className='closeCash_cierreCaja-inputs-right-ventasContado'>
+                        <p id='lblVentasContadoCash'>Ventas Contado</p>
+                        <input type='text' id='txtVentasContadoCash' name='ventasContadoCash'/>
+                    </div>
+
+                    <div className='closeCash_cierreCaja-inputs-right-ventasCredito'>
+                        <p id='lblVentasCreditoCash'>Ventas Crédito</p>
+                        <input type='text' id='txtVentasCreditoCash' name='ventasCreditoCash'/>
+                    </div>
+
+                    <div className='closeCash_cierreCaja-inputs-right-entradasSalidas'>
+
+                        <div className='closeCash_cierreCaja-inputs-right-entradas'>
+                            <p id='lblEntradasCash'>Entradas</p>
+                            <input type='text' id='txtEntradasCash' name='entradasCash'/>
+                        </div>
+
+                        <div className='closeCash_cierreCaja-inputs-right-salidas'>
+                            <p id='lblSalidasCash'>Salidas</p>
+                            <input type='text' id='txtSalidasCash' name='salidasCash'/>
+                        </div>
+
+                    </div>
+
+                    <div className='closeCash_cierreCaja-inputs-right-totalCajero'>
+                        <p id='lblTotalCajeroCash'>Total Cajero</p>
+                        <input type='text' id='txtTotalCajeroCash' name='totalCajeroCash'/>
+                    </div>
+
+                    <div className='closeCash_cierreCaja-inputs-right-montoDepositar'>
+                        <p id='lblMontoDepositarCash'>Monto a Depositar</p>
+                        <input type='text' id='txtMontoDepositarCash' name='montoDepositarCash'/>
+                    </div>
+
                 </div>
 
             </div>

@@ -173,6 +173,7 @@
 #lblTotalSistemaCash {
     color: #5691FE;
     font-size: 13px;
+    font-weight: bold;
     grid-area: titleTotalSistema;
     padding-top: 2px;
     text-align: center;
@@ -212,6 +213,7 @@
 #lblDiferencialCash {
     color: #5691FE;
     font-size: 13px;
+    font-weight: bold;
     grid-area: lblDiferencialCaja;
     padding-right: 2px;
     padding-top: 2px;
@@ -241,7 +243,196 @@
 }
 
 .closeCash_cierreCaja-inputs-right {
+    display: grid;
     grid-area: right;
-    background-color: green;
+    height: 100%;
+    grid-template-areas: 
+        'ventasContado'
+        'ventasCredito'
+        'entradasSalidas'
+        'totalCajero'
+        'montoDepositar';
+    grid-template-rows: 16.4% 16.4% 33.4% 16.4% 16.4%;
 }
 
+.closeCash_cierreCaja-inputs-right-ventasContado {
+    display: grid;
+    grid-area: ventasContado;
+    height: 100%;
+    grid-template-areas: 
+        'titlesVentasContado'
+        'inputVentasContado';
+    grid-template-rows: 40% 60%;
+}
+
+#lblVentasContadoCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: titlesVentasContado;
+    padding-top: 2px;
+    text-align: center;
+}
+
+#txtVentasContadoCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: inputVentasContado;
+    height: 75%;
+    margin-left: 20%;
+    margin-top: 4px;
+    text-align: end;
+    width: 60%;
+}
+
+.closeCash_cierreCaja-inputs-right-ventasCredito {
+    display: grid;
+    grid-area: ventasCredito;
+    grid-template-areas: 
+        'titlesVentasCredito'
+        'inputVentasCredito';
+    grid-template-rows: 40% 60%;
+}
+
+#lblVentasCreditoCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: titlesVentasCredito;
+    padding-top: 2px;
+    text-align: center;
+}
+
+#txtVentasCreditoCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: inputVentasCredito;
+    height: 75%;
+    margin-left: 20%;
+    margin-top: 4px;
+    text-align: end;
+    width: 60%;
+}
+
+.closeCash_cierreCaja-inputs-right-entradasSalidas {
+    display: grid;
+    grid-area: entradasSalidas;
+    height: 50%;
+    grid-template-areas: 
+        'entradas salidas';
+    grid-template-columns: 50% 50%;
+}
+
+.closeCash_cierreCaja-inputs-right-entradas {
+    display: grid;
+    grid-area: entradas;
+    grid-template-areas: 
+        'titlesEntradas'
+        'inputEntradas';
+    grid-template-rows: 40% 60%;
+}
+
+#lblEntradasCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: titlesEntradas;
+    padding-right: 30px;
+    padding-top: 2px;
+    text-align: end;
+}
+
+#txtEntradasCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: inputEntradas;
+    height: 75%;
+    margin-left: 40%;
+    margin-top: 4px;
+    text-align: end;
+    width: 55%;
+}
+
+.closeCash_cierreCaja-inputs-right-salidas {
+    display: grid;
+    grid-area: salidas;
+    grid-template-areas: 
+        'titlesSalidas'
+        'inputSalidas';
+    grid-template-rows: 40% 60%;
+}
+
+#lblSalidasCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: titlesSalidas;
+    padding-left: 30px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtSalidasCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: inputSalidas;
+    height: 75%;
+    margin-left: 5%;
+    margin-top: 4px;
+    text-align: end;
+    width: 55%;
+}
+
+.closeCash_cierreCaja-inputs-right-totalCajero {
+    display: grid;
+    grid-area: totalCajero;
+    grid-template-areas: 
+        'titlesTotalCajero'
+        'inputTotalCajero';
+    grid-template-rows: 40% 60%;
+}
+
+#lblTotalCajeroCash {
+    color: #5691FE;
+    font-size: 13px;
+    font-weight: bold;
+    grid-area: titlesTotalCajero;
+    padding-top: 2px;
+    text-align: center;
+}
+
+#txtTotalCajeroCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: inputTotalCajero;
+    height: 75%;
+    margin-left: 20%;
+    margin-top: 4px;
+    text-align: end;
+    width: 60%;
+}
+
+.closeCash_cierreCaja-inputs-right-montoDepositar {
+    display: grid;
+    grid-area: montoDepositar;
+    grid-template-areas: 
+        'titlesMontoDepositar'
+        'inputMontoDepositar';
+    grid-template-rows: 40% 60%;
+}
+
+#lblMontoDepositarCash {
+    color: #5691FE;
+    font-size: 13px;
+    font-weight: bold;
+    grid-area: titlesMontoDepositar;
+    padding-top: 2px;
+    text-align: center;
+}
+
+#txtMontoDepositarCash {
+    color: #5691FE;
+    font-size: 13px;
+    grid-area: inputMontoDepositar;
+    height: 75%;
+    margin-left: 20%;
+    margin-top: 4px;
+    text-align: end;
+    width: 60%;
+}
