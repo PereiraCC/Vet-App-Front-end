@@ -1,0 +1,85 @@
+.closeCash_detalleTarjetas-main {
+    border: 1px solid #C1C4B9;
+    display: grid;
+    height: 105px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-areas: 
+        'title'
+        'table';
+    grid-template-rows: 20% 80%;
+}
+
+.closeCash_detalleTarjetas-title {
+    border-bottom: 1px solid #C1C4B9;
+    color: #5691FE;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: title;
+    padding-left: 15px;
+    text-align: start;
+}
+
+.closeCash_detalleTarjetas-table {
+    grid-area: table;
+}
+
+.closeCash_detalleTarjetas-table-main {
+    width: 100%;
+}
+
+.closeCash_detalleTarjetas-table-header-tarjeta {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleTarjetas-table-header-moneda {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 5%;
+}
+
+.closeCash_detalleTarjetas-table-header-totalCajero {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleTarjetas-table-header-totalSistema {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleTarjetas-table-tarjeta {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.closeCash_detalleTarjetas-table-moneda {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.closeCash_detalleTarjetas-table-totalCajero {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: end;
+}
+
+.closeCash_detalleTarjetas-table-totalSistema {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: end;
+}

@@ -1,5 +1,6 @@
 import { CloseCashApertura } from './CloseCashApertura';
 import { CloseCashCierreCaja } from './CloseCashCierreCaja';
+import { CloseCashDetalleTarjetas } from './CloseCashDetalleTarjetas';
 import { CloseCashGeneral } from './CloseCashGeneral';
 import { CloseCashPeriodo } from './CloseCashPeriodo';
 
@@ -31,7 +32,7 @@ export const CloseCashPage = () => {
                 </div>
 
                 <div className='closeCash_right-box-detalle-tarjetas'>
-                    <p>Detalle tarjetas</p>
+                    <CloseCashDetalleTarjetas />
                 </div>
 
                 <div className='closeCash_right-box-detalle-operaciones'>
