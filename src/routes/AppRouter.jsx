@@ -33,6 +33,7 @@ import { PresentationsPage } from '../components/Presentations/PresentationsPage
 import { CoinsPage } from '../components/Coins/CoinsPage';
 import { WineriesPage } from '../components/Wineries/WineriesPage';
 import { FamilyPage } from '../components/Family/FamilyPage';
+import { OpenCashPage } from '../components/OpenCash/OpenCashPage';
 
 
 export const AppRouter = () => {
@@ -61,6 +62,12 @@ export const AppRouter = () => {
                     exact
                     path="/initial/inventory"
                     component={ InventoryPage }
+                />
+
+                <Route 
+                    exact
+                    path="/initial/cash/opencash"
+                    component={ OpenCashPage }
                 />
 
                 <Route 

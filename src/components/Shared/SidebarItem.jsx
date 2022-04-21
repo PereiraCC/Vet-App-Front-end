@@ -9,6 +9,9 @@ export const SidebarItem = ({ item, index}) => {
     const [subnav, setSubnav] = useState(false);
     const showSubNav = () => setSubnav(!subnav);
 
+    const [subnavIteams, setSubnavIteams] = useState(false);
+    const showSubNavIteams = () => setSubnavIteams(!subnavIteams);
+
     const dispatch = useDispatch();
 
     const stateTab = useSelector( state => state.tabs );
@@ -40,13 +43,45 @@ export const SidebarItem = ({ item, index}) => {
             { 
                 
                 subnav  && item.subNav.map((subItem, index) => {
+
                     return (
-                        <div onClick={ (e) => handleAddTab(subItem) } key={index}>
-                            <Link to={currentTab.routePage} className='vet_nav-sub-menu' >
-                                    {subItem.icon}
-                                    <span className='vet_nav-span'>{subItem.title}</span>
-                            </Link>
-                        </div>
+
+                        subItem.subNavIteams 
+                            ?   
+                                <div key={index}>
+                                    <div onClick={ showSubNavIteams } className='vet_nav-sub-menu-sub'>
+                                        {subItem.icon}
+                                        <span className='vet_nav-span-sub-menu'>{subItem.title}</span>
+                                        <div>
+                                            { 
+                                                subItem.subNavIteams && subnavIteams  
+                                                ? item.iconOpened : subItem.subNavIteams 
+                                                ? item.iconClosed : null 
+                                            }
+                                        </div>
+                                    </div>
+
+                                    {
+                                        subnavIteams  && subItem.subNavIteams.map((subItem, index) => {
+
+                                            return (
+
+                                                <div onClick={ (e) => handleAddTab(subItem) } key={index}>
+                                                    <Link to={currentTab.routePage} className='vet_nav-sub-menu-iteams' >
+                                                            {subItem.icon}
+                                                            <span className='vet_nav-span'>{subItem.title}</span>
+                                                    </Link>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            :   <div onClick={ (e) => handleAddTab(subItem) } key={index}>
+                                    <Link to={currentTab.routePage} className='vet_nav-sub-menu' >
+                                            {subItem.icon}
+                                            <span className='vet_nav-span'>{subItem.title}</span>
+                                    </Link>
+                                </div>
                     )
                 })
             }
