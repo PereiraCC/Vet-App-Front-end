@@ -34,6 +34,7 @@ import { CoinsPage } from '../components/Coins/CoinsPage';
 import { WineriesPage } from '../components/Wineries/WineriesPage';
 import { FamilyPage } from '../components/Family/FamilyPage';
 import { OpenCashPage } from '../components/OpenCash/OpenCashPage';
+import { LoginPage } from '../components/Auth/LoginPage';
 
 
 export const AppRouter = () => {
@@ -194,6 +195,13 @@ export const AppRouter = () => {
                     exact
                     path="/reports"
                     component={ ReportsPage }
+                />
+
+                {/* TODO: Change */}
+                <Route 
+                    exact
+                    path="/login"
+                    component={ LoginPage }
                 />
 
                 <Route 

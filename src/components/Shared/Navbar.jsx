@@ -80,7 +80,7 @@ export const Navbar = () => {
                         </li>
 
                         <li className="vet_nav-text_user">
-                            <Link to="#">
+                            <Link to="/login">
                                 <BiLogOut />
                                 <span className='vet_nav-span'>Cerrar Session</span>
                             </Link>

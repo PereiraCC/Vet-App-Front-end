@@ -9,6 +9,9 @@
 @import './components/tabs';
 @import './components/nothing';
 
+// Login components
+@import 'components/auth/login';
+
 // Billing components
 @import './components/billing/billing';
 @import './components/billing/billing_header';
