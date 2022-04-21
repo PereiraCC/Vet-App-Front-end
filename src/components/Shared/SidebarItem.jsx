@@ -19,7 +19,7 @@ export const SidebarItem = ({ item, index}) => {
 
     const handleAddTab = (subItem) => {
         dispatch( HideSidebar() );
-        dispatch( addTab(subItem.title, subItem.path) );
+        dispatch( addTab((subItem.title === 'Facturación') ? 'Venta' : subItem.title, subItem.path) );
     }
 
     return (

@@ -23,8 +23,8 @@ export const tabsReducer = (state = initialState, action ) => {
             if(listTab === undefined ) {
 
                 const newTab = {
-                    name: (action.payload.name === 'Facturación') ? action.payload.name + ' # 1' : action.payload.name,
-                    routePage: (action.payload.name === 'Facturación') ? action.payload.routePage + '/1' : action.payload.routePage,
+                    name: (action.payload.name === 'Venta') ? action.payload.name + ' # 1' : action.payload.name,
+                    routePage: (action.payload.name === 'Venta') ? action.payload.routePage + '/1' : action.payload.routePage,
                 };
 
                 localStorage.setItem('tabs', JSON.stringify({
@@ -37,9 +37,9 @@ export const tabsReducer = (state = initialState, action ) => {
                     currentTab: newTab
                 }
                 
-            } else if(listTab.name.includes("Facturación")){
+            } else if(listTab.name.includes("Venta")){
 
-                const size = state.tabs.filter(tab => tab.name.includes("Facturación")).length;
+                const size = state.tabs.filter(tab => tab.name.includes("Venta")).length;
 
                 const newTab = {
                     name: action.payload.name + ` # ${ size + 1 }`,
