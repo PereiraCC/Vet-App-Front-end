@@ -61,6 +61,15 @@ export const CustomersBodyTabs = () => {
                 </button>
             </li>
 
+            <li className="customers-tabs">
+                <button 
+                    className={currentTabCustomers == 'CartaExoneracion' ? "customers-tab active" : "customers-tab"}
+                    onClick={ () => handleSelectTabCustomers('CartaExoneracion') }
+                >
+                    Carta Exconeración
+                </button>
+            </li>
+
         </ul>
     )
 }

@@ -7,6 +7,7 @@ import { CustomersBodyDatosGenerales } from './CustomersBodyDatosGenerales';
 import { CustomersBodyEncargadoCompras } from './CustomersBodyEncargadoCompras';
 import { CustomersBodyReferenciasBancarias } from './CustomersBodyReferenciasBancarias';
 import { CustomersBodyReferenciasComerciales } from './CustomersBodyReferenciasComerciales';
+import { CustomersBodyCartaExoneracion } from './CustomersBodyCartaExoneracion';
 
 export const CustomersBody = () => {
 
@@ -31,6 +32,9 @@ export const CustomersBody = () => {
 
             case 'ReferenciasComerciales':
                 return <CustomersBodyReferenciasComerciales />
+
+            case 'CartaExoneracion':
+                    return <CustomersBodyCartaExoneracion />
         
             default:
                 break;
