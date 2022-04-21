@@ -11,6 +11,5 @@ export const Sidebar = () => {
           <SidebarItem key={index} item={item} />
         )
       })
-
     ) 
 }
