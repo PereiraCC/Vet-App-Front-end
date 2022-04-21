@@ -8,7 +8,7 @@ export const Sidebar = () => {
      
       SidebarData.map((item, index) => {
         return (
-          <SidebarItem key={index} item={item} />
+          <SidebarItem key={index} index={index} item={item} />
         )
       })
     ) 

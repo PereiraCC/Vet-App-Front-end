@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { FaBars } from 'react-icons/fa';
@@ -7,16 +6,31 @@ import { IconContext } from 'react-icons';
 import { BiLogOut } from 'react-icons/bi';
 
 import { Sidebar } from './Sidebar';
+import { useDispatch, useSelector } from 'react-redux';
+import { HideSidebar, HideSidebarUser, ShowSidebar, ShowSidebarUser } from '../../actions/sidebar';
 
 export const Navbar = () => {
 
-    const [ sidebar, setSidebar ] = useState(false);
-    const [ sidebarUser, setSidebarUser ] = useState(false);
+    const dispatch = useDispatch();
+
+    const state = useSelector( state => state.sidebar );
+    const { sidebar, sidebarUser } = state;
 
     const showSidebar = () => {
-        setSidebar(!sidebar);
+        dispatch( ShowSidebar() );
     }
-    const showSidebarUser = () => setSidebarUser(!sidebarUser);
+
+    const hideSidebar = () => {
+        dispatch( HideSidebar() );
+    }
+
+    const showSidebarUser = () => {
+        dispatch( ShowSidebarUser() );
+    }
+
+    const hideSidebarUser = () => {
+        dispatch( HideSidebarUser() );
+    }
 
     return (
         <>
@@ -46,7 +60,7 @@ export const Navbar = () => {
                     <ul className='vet_nav-menu-items'>
 
                         <li className='vet_navbar-toggle'>
-                            <Link to="#" className='vet_menu-bars' onClick={ showSidebar }>
+                            <Link to="#" className='vet_menu-bars' onClick={ hideSidebar }>
                                 <AiOutlineClose />
                             </Link>
                         </li>
@@ -56,7 +70,7 @@ export const Navbar = () => {
                 </nav>
 
                 <nav className={ sidebarUser ? 'vet_nav-menu-user active' : 'vet_nav-menu-user' } >
-                    <ul className='vet_nav-menu-items' onClick={ showSidebarUser }>
+                    <ul className='vet_nav-menu-items' onClick={ hideSidebarUser }>
 
                         <li className='vet_navbar-toggle-right'>
                             <Link to="#" className='vet_menu-bars-right'>
@@ -64,7 +78,7 @@ export const Navbar = () => {
                             </Link>
                         </li>
 
-                        <li className="vet_nav-text">
+                        <li className="vet_nav-text_user">
                             <Link to="#">
                                 <BiLogOut />
                                 <span className='vet_nav-span'>Cerrar Session</span>
