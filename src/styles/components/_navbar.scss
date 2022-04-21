@@ -187,20 +187,35 @@
 
 .vet_nav-menu-bars-right {
     width: 100%;
-    justify-items: end;
-    text-align: end;
-
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'name icon';
+    grid-template-columns: 95% 5%;
 }
 
 .vet_nav-text-right {
     font-size: 20px;
     color: #fff;
-    margin-right: 25px;
+    text-align: end;
+    padding-right: 10px;
+    padding-top: 12px;
+    grid-area: name;
 }
 
-.vet_nav-text-right:hover {
-    cursor: pointer;
-    text-decoration: underline;
+.vet_nav-icon-right {
+    grid-area: icon;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#iconUser {
+    width: 40px;
+    height: 35px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .vet_nav-menu-user {

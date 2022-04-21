@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaUserCircle } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 import { BiLogOut } from 'react-icons/bi';
@@ -47,11 +47,12 @@ export const Navbar = () => {
                     <span className='vet_nav-text-menu'>Menú</span>
 
                     <div className='vet_nav-menu-bars-right'>
-                        <span className='vet_nav-text-right'
-                            onClick={ showSidebarUser }
-                        >
-                            Carlos Pereira Coto
-                        </span>
+                        <div className='vet_nav-text-right'>
+                            <span>CP</span>
+                        </div>
+                        <div className='vet_nav-icon-right'>
+                            <FaUserCircle onClick={ showSidebarUser } id='iconUser'/>
+                        </div>
                     </div>
                 </div>
                 
