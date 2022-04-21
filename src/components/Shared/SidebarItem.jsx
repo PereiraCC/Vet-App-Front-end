@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { HideSidebar, HideSubNavInicio, ShowSubNavInicio } from '../../actions/sidebar';
+import { HideSidebar } from '../../actions/sidebar';
 import { addTab } from '../../actions/tabs';
 
 export const SidebarItem = ({ item, index}) => {
