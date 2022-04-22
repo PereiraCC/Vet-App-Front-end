@@ -1,0 +1,114 @@
+.closeCash_detalleOperaciones-main {
+    border: 1px solid #C1C4B9;
+    display: grid;
+    height: 130px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-areas: 
+        'title'
+        'table';
+    grid-template-rows: 15% 85%;
+}
+
+.closeCash_detalleOperaciones-title {
+    border-bottom: 1px solid #C1C4B9;
+    color: #5691FE;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: title;
+    padding-left: 15px;
+    text-align: start;
+}
+
+.closeCash_detalleOperaciones-table {
+    grid-area: table;
+}
+
+.closeCash_detalleOperaciones-table-main {
+    width: 100%;
+}
+
+.closeCash_detalleOperaciones-table-header-factura {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleOperaciones-table-header-tipo {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleOperaciones-table-header-moneda {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleOperaciones-table-header-formaPago {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleOperaciones-table-header-pago {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleOperaciones-table-header-equivalencia {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.closeCash_detalleOperaciones-table-factura {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.closeCash_detalleOperaciones-table-tipo {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.closeCash_detalleOperaciones-table-moneda {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.closeCash_detalleOperaciones-table-formaPago {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.closeCash_detalleOperaciones-table-pago {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.closeCash_detalleOperaciones-table-equivalencia {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+

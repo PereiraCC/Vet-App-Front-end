@@ -1,0 +1,24 @@
+.nothing_main {
+    display: grid;
+    grid-template-areas: 
+        'Title'
+        'Image';
+    grid-template-rows: 80px 495px;
+}
+
+.nothing_title {
+    background-color: #E9D7A2;
+    font-size: 20px;
+    grid-area: Title;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.nothing_Image {
+    background-color: #E9D7A2;
+    background-image: url("/src/assets/NothingImage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: Image;
+}
+

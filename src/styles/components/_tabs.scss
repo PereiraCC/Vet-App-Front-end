@@ -1,0 +1,34 @@
+.Tabs_li {
+    display: inline-block;
+}
+
+.tab {
+    background: transparent;
+    border: none;
+    color: $secundary;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.tab.active {
+    background: $primary;
+    border: 1px solid #ddd;
+    color: #F2F4F4;
+}
+
+.tab-delete {
+    background: transparent;
+    border: none;
+    color: $primary;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.tab-delete.active {
+    background: $secundary;
+    border-top-right-radius: 15%;
+    border: none;
+    color: #F4F7F7;
+    cursor: pointer;
+    padding: 5px 15px;
+}

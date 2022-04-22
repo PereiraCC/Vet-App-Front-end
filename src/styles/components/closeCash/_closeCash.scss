@@ -1,0 +1,55 @@
+.closeCash_main {
+    display: grid;
+    height: 100%;
+    text-align: center;
+    grid-template-areas: 
+        'left-side right-side';
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 548px;
+}
+
+.closeCash_left-box {
+    display: grid;
+    grid-area: left-side;
+    height: 100%;
+    grid-template-areas: 
+        'periodo'
+        'apertura'
+        'general';
+    grid-template-rows: 20% 15% 65%;
+}
+
+.closeCash_left-box-periodo {
+    grid-area: periodo;
+}
+
+.closeCash_left-box-apertura {
+    grid-area: apertura;
+}
+
+.closeCash_left-box-general {
+    grid-area: general;
+}
+
+.closeCash_right-box {
+    display: grid;
+    grid-area: right-side;
+    height: 100%;
+    grid-template-areas: 
+        'cierre'
+        'detalle-tarjetas'
+        'detalle-operaciones';
+    grid-template-rows: 55% 20% 25%;
+}
+
+.closeCash_right-box-cierre {
+    grid-area: cierre;
+}
+
+.closeCash_right-box-detalle-tarjetas {
+    grid-area: detalle-tarjetas;
+}
+
+.closeCash_right-box-detalle-operaciones {
+    grid-area: detalle-operaciones;
+}

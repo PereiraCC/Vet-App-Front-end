@@ -1,3 +1,81 @@
-main, body {
-    background-color: red;
-}
+
+// Base and settings
+@import './base/settings';
+@import './base/base';
+
+// Components shared
+@import './components/vet';
+@import './components/navbar';
+@import './components/tabs';
+@import './components/nothing';
+
+// Login components
+@import 'components/auth/login';
+
+// Billing components
+@import './components/billing/billing';
+@import './components/billing/billing_header';
+@import './components/billing/billing_header-customer';
+@import './components/billing/billing_conditions';
+@import './components/billing/billing_totals';
+@import './components/billing/billing_iteams';
+@import './components/billing/billing_footer';
+
+// Inventory components
+@import './components/inventory/inventory';
+@import './components/inventory/inventoryHeader';
+@import './components/inventory/inventoryHeaderArticle';
+@import './components/inventory/inventoryBody';
+@import './components/inventory/inventoryBodyFeatures';
+@import './components/inventory/inventoryBodyFeaturesUltimoCosto';
+@import './components/inventory/inventoryBodyPrecioVenta';
+@import './components/inventory/inventoryBodyBodega';
+@import './components/inventory/inventoryBodyExistencias';
+@import './components/inventory/inventoryFooter';
+
+// Buys components
+@import './components/buys/buys';
+@import './components/buys/buys_header';
+@import './components/buys/buys_proveedor';
+@import './components/buys/buys_header_factura';
+@import './components/buys/buys_articulos';
+@import './components/buys/buys_articulos_header';
+@import './components/buys/buys_articulos_table';
+@import './components/buys/buys_articulos_footer';
+@import './components/buys/buys_icons';
+@import './components/buys/buys_footer';
+
+// Providers components
+@import './components/providers/providers';
+@import './components/providers/providers_form/providersForm';
+@import './components/providers/providers_form/providersFormLine2';
+@import './components/providers/providers_form/providersFormLine3';
+@import './components/providers/providers_form/providersFormLine4';
+@import './components/providers/providers_form/providersFormLine5';
+@import './components/providers/providers_form/providersFormLine6';
+@import './components/providers/providers_form/providersFormLine7';
+@import './components/providers/providers_form/providersFormAccoInputs';
+@import './components/providers/providersTable';
+@import './components/providers/providersIcons';
+
+// Customers components
+@import './components/customers/customers';
+@import './components/customers/customersHeader';
+@import './components/customers/customersBody';
+@import './components/customers/customersBodyDatosGenerales';
+@import './components/customers/customersIcons';
+
+// Settings components
+@import './components/settings/settings';
+@import './components/settings/settingsBody';
+@import './components/settings/settingsBodyEmpresa';
+@import './components/settings/settingsIcons';
+
+// Close Cash components
+@import './components/closeCash/closeCash';
+@import './components/closeCash/closeCashPeriodo';
+@import './components/closeCash/closeCashApertura';
+@import './components/closeCash/closeCashGeneral';
+@import './components/closeCash/closeCashCierreCaja';
+@import './components/closeCash/closeCashDetalleTarjetas';
+@import './components/closeCash/CloseCashDetalleOperaciones.scss';

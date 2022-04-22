@@ -1,0 +1,36 @@
+.buys_articulos-main {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'header'
+        'table'
+        'footer';
+    grid-template-rows: 6% 20% 59% 15%;
+}
+
+.buys_articulos-title {
+    grid-area: title;
+    background-color: #3D62DB;
+}
+
+#lblArticulosTitle {
+    font-size: 15px;
+    color: white;
+}
+
+.buys_articulos-header {
+    grid-area: header;
+    border: 1px solid black;
+}
+
+.buys_articulos-table {
+    grid-area: table;
+    border: 1px solid black;
+    // background-color: brown;
+}
+
+.buys_articulos-footer {
+    grid-area: footer;
+    // background-color: red;
+}

@@ -1,0 +1,42 @@
+.buys_main {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'header-proveedor header-proveedor header-factura header-factura header-factura header-factura'
+        'body body body body body body'
+        'icons icons icons icons icons icons'
+        'footer footer footer footer footer footer';
+    grid-template-rows: 30px 80px 350px 50px 38px;
+    grid-template-columns: 43%;
+}
+
+.buys_header {
+    grid-area: header;
+    background-color: #3D59A9;
+}
+
+.buys_proveedor {
+    grid-area: header-proveedor;
+    border: 1px solid black;
+}
+
+.buys_headerFactura {
+    grid-area: header-factura;
+    border: 1px solid black;
+}
+
+.buys_ArticulosDetalleTable {
+    grid-area: body;
+    border: 1px solid black;
+}
+
+.buys_icons {
+    grid-area: icons;
+    border: 1px solid black;
+}
+
+.buys_footer {
+    grid-area: footer;
+    // background-color: green;
+}

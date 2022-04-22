@@ -1,0 +1,188 @@
+.billing_conditions-main{
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'coin'
+        'orders'
+        'squares';
+    grid-template-rows: 20px 50px 20px 40px;
+}
+
+.billing_conditions-title{
+    grid-area: title;
+}
+
+#lblTitleConditions {
+    font-size: 15px;
+    padding-left: 15px;
+    text-align: start;
+}
+
+.billing_conditions-coin-change{
+    grid-area: coin;
+    display: grid;
+    grid-template-areas: 
+        'moneda cambio';
+    grid-template-columns: 50% 50%;
+}
+
+.billing_conditions-coin {
+    grid-area: moneda;
+    display: grid;
+    grid-template-areas: 
+        'labelMoneda'
+        'inputMoneda';
+    grid-template-rows: 50% 50%;
+}
+
+#lblMonedaCondition {
+    font-size: 15px;
+    grid-area: labelMoneda;
+}
+
+#cboMoneda {
+    grid-area: inputMoneda;
+    margin-left: 25px;
+    text-align: center;
+    width: 80%;
+}
+
+.billing_conditions-change {
+    grid-area: cambio;
+    display: grid;
+    grid-template-areas: 
+        'labelCambio'
+        'inputCambio';
+    grid-template-rows: 50% 50%;
+}
+
+#lblTipoCambioTitle {
+    font-size: 15px;
+    grid-area: labelCambio;
+}
+
+#lblTipoCambioResul {
+    font-size: 15px;
+    grid-area: inputCambio;
+}
+
+.billing_conditions-orders{
+    grid-area: orders;
+    display: grid;
+    grid-template-areas: 
+        'labelOrden inputOrden';
+    grid-template-columns: 50% 50%;
+}
+
+#lblCompraTitle{
+    font-size: 15px;
+    grid-area: labelOrden;
+}
+
+#lblCompraResul{
+    font-size: 15px;
+    grid-area: inputOrden;
+}
+
+
+.billing_conditions-squares{
+    grid-area: squares;
+    display: grid;
+    grid-template-areas: 
+        'checkOne checkTwo';
+    grid-template-columns: 50% 50%;
+}
+
+.billing_conditions-check-buttons-one{
+    grid-area: checkOne;
+    display: grid;
+    grid-template-areas: 
+        'taller'
+        'mascota';
+    grid-template-rows: 50% 50%;
+}
+
+.billing_conditions-check-buttons-one-taller{
+    grid-area: taller;
+    display: grid;
+    grid-template-areas: 
+        'inputTaller labelTaller';
+    grid-template-columns: 50% 50%;
+}
+
+.billing_conditions-check-buttons-one-taller-input{    
+    grid-area: inputTaller;
+    padding-left: 70%;
+}
+
+#lblTaller {
+    font-size: 15px;
+    grid-area: labelTaller;
+    text-align: start;
+}
+
+.billing_conditions-check-buttons-one-mascota {
+    grid-area: mascota;
+    display: grid;
+    grid-template-areas: 
+        'inputMascota labelMascota';
+    grid-template-columns: 50% 50%;
+}
+
+.billing_conditions-check-buttons-one-mascota-input {
+    grid-area: inputMascota;
+    padding-left: 70%;
+}
+
+#lblMascota {
+    font-size: 15px;
+    grid-area: labelMascota;
+    text-align: start;
+}
+
+.billing_conditions-check-buttons-two{
+    grid-area: checkTwo;
+    display: grid;
+    grid-template-areas: 
+        'agente'
+        'pd';
+    grid-template-rows: 50% 50%;
+}
+
+.billing_conditions-check-buttons-two-agente{
+    grid-area: agente;
+    display: grid;
+    grid-template-areas: 
+        'inputAgente labelAgente';
+    grid-template-columns: 50% 50%;
+}
+
+.billing_conditions-check-buttons-two-agente-input {
+    grid-area: inputAgente;
+    padding-left: 70%;
+}
+
+#lblAgente {
+    font-size: 15px;
+    grid-area: labelAgente;
+    text-align: start;
+}
+
+.billing_conditions-check-buttons-two-pd {
+    grid-area: pd;
+    display: grid;
+    grid-template-areas: 
+        'inputPD labelPD';
+    grid-template-columns: 50% 50%;
+}
+
+.billing_conditions-check-buttons-two-PD-input {
+    grid-area: inputPD;
+    padding-left: 70%;
+}
+
+#lblPD {
+    font-size: 15px;
+    grid-area: labelPD;
+    text-align: start;
+}

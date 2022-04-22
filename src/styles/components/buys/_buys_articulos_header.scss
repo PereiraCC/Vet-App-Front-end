@@ -1,0 +1,439 @@
+.buys_articulos-header-main {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'firstLine'
+        'secondLine'
+        'thirdLine'
+        'fourthLine';
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.buys_articulos-header-firstLine {
+    grid-area: firstLine;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'codigoArticulo descArticulo';
+    grid-template-columns: 20% 80%;
+}
+
+.buys_articulos-header-firstLine-codigo {
+    grid-area: codigoArticulo;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lblCodigoArticulo inputCodigoArticulo';
+    grid-template-columns: 40% 60%;
+    gap: 5px;
+}
+
+#lblCodigoArticulo {
+    background-color: #EEF2E6;
+    color: #476ACD;
+    font-size: 15px;
+    grid-area: lblCodigoArticulo;
+    padding-top: 1px;
+}
+
+#txtCodigoArticulo {
+    border: none;
+    color: black;
+    font-size: 12px;
+    grid-area: inputCodigoArticulo;
+    height: 80%;
+    margin-top: 1px;
+    padding-left: 5px;
+    text-align: start;
+    width: 90%;
+}
+
+.buys_articulos-header-firstLine-desc {
+    grid-area: descArticulo;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lblDescArticulo inputDescArticulo';
+    grid-template-columns: 15% 85%;
+    gap: 5px;
+}
+
+#lblDescArticulo {
+    background-color: #EEF2E6;
+    color: #476ACD;
+    font-size: 15px;
+    grid-area: lblDescArticulo;
+}
+
+#txtDescArticulo {
+    border: none;
+    color: #6A6A6B;
+    font-size: 12px;
+    grid-area: inputDescArticulo;
+    height: 80%;
+    margin-top: 1px;
+    padding-left: 5px;
+    text-align: start;
+    width: 90%;
+}
+
+.buys_articulos-header-secondLine {
+    grid-area: secondLine;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lblCantidadArticulo lblBaseArticulo lblFletesArticulo lblOtrosArticulo lblCostoArticulo lblDescArticulo lblCabysArticulo lblImpArticulo lblTotalCompraArticulo';
+    grid-template-columns: 15% 8% 8% 8% 10% 11% 15% 11% 11%;
+    gap: 5px;
+}
+
+#lblCantidadArticulo {
+    background-color: #EEF2E6;
+    color: #476ACD;
+    font-size: 15px;
+    grid-area: lblCantidadArticulo;
+}
+
+#lblBaseArticulo {
+    background-color: #AAAEA2;
+    color: white;
+    font-size: 15px;
+    grid-area: lblBaseArticulo;
+}
+
+#lblFletesArticulo {
+    background-color: #AAAEA2;
+    color: white;
+    font-size: 15px;
+    grid-area: lblFletesArticulo;
+}
+
+#lblOtrosArticulo {
+    background-color: #AAAEA2;
+    color: white;
+    font-size: 15px;
+    grid-area: lblOtrosArticulo;
+}
+
+#lblCostoArticulo {
+    background-color: #EEF2E6;
+    color: #476ACD;
+    font-size: 15px;
+    grid-area: lblCostoArticulo;
+    text-align: start;
+}
+
+.buys_articulos-header-secondLine-descuento-articulo {
+    grid-area: lblDescArticulo;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lblDescArticulo inputDescArticulo';
+    grid-template-columns: 50% 50%;
+}
+
+#lblDescuentoArticulo {
+    background-color: #EEF2E6;
+    color: #476ACD;
+    font-size: 15px;
+    grid-area: lblDescArticulo;
+}
+
+#inputTipoDescuentoArticulo {
+    border: none;
+    color: #476ACD;
+    font-size: 12px;
+    grid-area: inputDescArticulo;
+    height: 90%;
+    text-align: center;
+}
+
+#lblCabysArticulo{
+    background-color: #AAAEA2;
+    color: white;
+    font-size: 15px;
+    grid-area: lblCabysArticulo;
+}
+
+.buys_articulos-header-secondLine-impuesto-articulo {
+    grid-area: lblImpArticulo;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lbImpArticulo inputImpArticulo';
+    grid-template-columns: 50% 50%;
+}
+
+#lblImpuestoArticulo {
+    background-color: #EEF2E6;
+    color: #476ACD;
+    font-size: 15px;
+    grid-area: lbImpArticulo;
+}
+
+#inputTipoImpArticulo {
+    border: none;
+    color: #476ACD;
+    font-size: 12px;
+    grid-area: inputImpArticulo;
+    height: 90%;
+    text-align: center;
+}
+
+#lblTotalCompraArticulo {
+    background-color: #EEF2E6;
+    color: #476ACD;
+    font-size: 15px;
+    grid-area: lblTotalCompraArticulo;
+    text-align: start;
+}
+
+.buys_articulos-header-thirdLine {
+    grid-area: thirdLine;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'txtCantidadArticulo txtBaseArticulo txtFletesArticulo txtOtrosArticulo txtCostoArticulo txtDescArticulo txtCabysArticulo txtImpArticulo txtTotalCompraArticulo';
+    grid-template-columns: 15% 8% 8% 8% 10% 11% 15% 11% 11%;
+    gap: 5px;
+}
+
+.buys_articulos-header-thirdLine-cantidad-articulo {
+    grid-area: txtCantidadArticulo;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'inputCantidad buttonCantidad inputRegalias';
+    grid-template-columns: 40% 20% 40%;
+    gap: 5px;
+}
+
+#txtCantidadArticulo {
+    border: none;
+    color: #3A52CD;
+    font-size: 14px;
+    grid-area: inputCantidad;
+    height: 85%;
+    margin-left: 15px;
+    text-align: right;
+    width: 80%;
+}
+
+#btnMoreCantidad {
+    background-color: #AAAEA2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    grid-area: buttonCantidad;
+    height: 85%;
+}
+
+#txtRegaliasArticulo {
+    border: none;
+    color: #3A52CD;
+    font-size: 14px;
+    grid-area: inputRegalias;
+    height: 85%;
+    text-align: right;
+    width: 80%;
+}
+
+#txtbaseArticulo {
+    border: none;
+    color: #3A52CD;
+    font-size: 14px;
+    grid-area: txtBaseArticulo;
+    height: 85%;
+    text-align: right;
+}
+
+#txtfletesArticulo {
+    border: none;
+    color: #3A52CD;
+    font-size: 14px;
+    grid-area: txtFletesArticulo;
+    height: 85%;
+    text-align: right;
+}
+
+#txtotrosArticulo {
+    border: none;
+    color: #3A52CD;
+    font-size: 14px;
+    grid-area: txtOtrosArticulo;
+    height: 85%;
+    text-align: right;
+}
+
+#txtcostoArticulo {
+    border: none;
+    color: #74656B;
+    font-size: 14px;
+    grid-area: txtCostoArticulo;
+    height: 85%;
+    text-align: right;
+}
+
+#txtdescArticulo {
+    border: none;
+    color: #3A52CD;
+    font-size: 14px;
+    grid-area: txtDescArticulo;
+    height: 85%;
+    text-align: right;
+}
+
+#txtcabysArticulo {
+    border: none;
+    color: #3A52CD;
+    font-size: 14px;
+    grid-area: txtCabysArticulo;
+    height: 85%;
+    text-align: right;
+}
+
+#txtimpArticulo {
+    border: none;
+    color: #74656B;
+    font-size: 14px;
+    grid-area: txtImpArticulo;
+    height: 85%;
+    text-align: right;
+}
+
+#txttotalCompraArticulo {
+    border: none;
+    color: #74656B;
+    font-size: 14px;
+    grid-area: txtTotalCompraArticulo;
+    height: 85%;
+    text-align: center;
+}
+
+.buys_articulos-header-fourthLine {
+    grid-area: fourthLine;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'checkBonificado codigoP cantidadP costoP subtotalP';
+    grid-template-columns: 20% 20% 20% 20% 18%;
+    gap: 5px;
+}
+
+.buys_articulos-header-fourthLine-check {
+    grid-area: checkBonificado;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'inputBonificado lblBonificado';
+    grid-template-columns: 50% 50%;
+}
+
+.buys_articulos-header-fourthLine-check-input {
+    grid-area: inputBonificado;
+    margin-left: 80%;
+    padding-top: 1px;
+}
+
+#lblBonificado {
+    font-size: 15px;
+    grid-area: lblBonificado;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.buys_articulos-header-fourthLine-codigo {
+    grid-area: codigoP;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lblCodigo2 inputCodigo2';
+    grid-template-columns: 50% 50%;
+}
+
+#lblCodigo2P {
+    background-color: #EEF2E6;
+    font-size: 15px;
+    grid-area: lblCodigo2;
+    height: 80%;
+}
+
+#txtCodigo2P {
+    border: none;
+    font-size: 14px;
+    grid-area: inputCodigo2;
+    height: 80%;
+    padding-left: 10px;
+}
+
+.buys_articulos-header-fourthLine-cantidad {
+    grid-area: cantidadP;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lblCantidad inputCantidad';
+    grid-template-columns: 50% 50%;
+}
+
+#lblCantidadP {
+    background-color: #EEF2E6;
+    font-size: 15px;
+    grid-area: lblCantidad;
+    height: 80%;
+}
+
+#txtCantidadP {
+    border: none;
+    font-size: 14px;
+    grid-area: inputCantidad;
+    height: 80%;
+    padding-left: 10px;
+}
+
+.buys_articulos-header-fourthLine-costo {
+    grid-area: costoP;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lblCosto inputCosto';
+    grid-template-columns: 50% 50%;
+}
+
+#lblCostoP {
+    background-color: #EEF2E6;
+    font-size: 15px;
+    grid-area: lblCosto;
+    height: 80%;
+}
+
+#txtCostoP {
+    border: none;
+    font-size: 14px;
+    grid-area: inputCosto;
+    height: 80%;
+    padding-left: 10px;
+}
+
+.buys_articulos-header-fourthLine-subtotal {
+    grid-area: subtotalP;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'lblSubTotal inputSubTotal';
+    grid-template-columns: 50% 50%;
+}
+
+#lblSubTotalP {
+    background-color: #EEF2E6;
+    font-size: 15px;
+    grid-area: lblSubTotal;
+    height: 80%;
+}
+
+#txtSubTotalP {
+    border: none;
+    font-size: 14px;
+    grid-area: inputSubTotal;
+    height: 80%;
+    padding-left: 10px;
+}

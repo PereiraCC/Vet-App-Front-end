@@ -1,0 +1,54 @@
+.buys_proveedor-main {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'title'
+        'inputs';
+    grid-template-rows: 50% 50%;
+}
+
+.buys_proveedor-title {
+    grid-area: title;
+    padding-left: 55px;
+    padding-top: 20px;
+    text-align: start;
+}
+
+#lblTitleProveedor {
+    color: #4C58DC;
+    font-size: 15px;
+}
+
+.buys_proveedor-inputs {
+    grid-area: inputs;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'inputCodigo inputNombre';
+    grid-template-columns: 20% 80%;
+}
+
+.buys_proveedor-inputs-codigo {
+    grid-area: inputCodigo;
+    padding-top: 5px;
+}
+
+#txtcodigoProveedor {
+    color: #4C58DC;
+    font-size: 15px;
+    margin-left: 50px;
+    text-align: start;
+    width: 50%;
+}
+
+.buys_proveedor-inputs-nombre {
+    grid-area: inputNombre;
+    padding-top: 5px;
+}
+
+#txtnombreProveedor {
+    font-size: 15px;
+    right: 0px;
+    text-align: start;
+    width: 95%;
+}
