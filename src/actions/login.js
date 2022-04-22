@@ -9,6 +9,10 @@ export const login = ( centro, username, password) => ({
     }
 });
 
+export const logout = () => ({
+    type: types.logout,
+});
+
 export const setErrorCentro = ( err ) => ({
     type: types.loginSetErrorCentro,
     payload: err

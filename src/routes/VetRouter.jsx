@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Switch } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
 import { Navbar } from '../components/Shared/Navbar';
 import { Tabs } from '../components/Shared/Tabs';
@@ -31,7 +31,7 @@ import { FamilyPage } from '../components/Family/FamilyPage';
 import { OpenCashPage } from '../components/OpenCash/OpenCashPage';
 import { PrivateRoute } from './PrivateRoute';
 
-export const VetRouter = ({ isAuthenticated }) => {
+export const VetRouter = ({ isAuthenticated}) => {
 
     return (
 
@@ -223,8 +223,6 @@ export const VetRouter = ({ isAuthenticated }) => {
                     path="/nothing"
                     component={ NothingPage }
                 />
-
-                <Redirect to="/nothing" />
 
             </Switch>
         </div>

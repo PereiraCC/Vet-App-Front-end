@@ -1,7 +1,7 @@
 import { types } from '../types/types';
 
 const initialState = {
-    auth: {
+    auth: JSON.parse(localStorage.getItem('auth')) || {
         centro: null,
         username: null,
         password: null,
@@ -19,12 +19,32 @@ export const loginReducer = ( state = initialState, action ) => {
     switch (action.type) {
 
         case types.login:
+
+            localStorage.setItem('auth', JSON.stringify({
+                centro: action.payload.centro,
+                username: action.payload.username,
+                password: action.payload.password
+            }));
+
             return {
                 ...state,
                 auth :{
                     centro: action.payload.centro,
                     username: action.payload.username,
                     password: action.payload.password
+                }
+            }
+
+        case types.logout:
+
+            localStorage.setItem('auth', null);
+
+            return {
+                ...state,
+                auth : {
+                    centro: null,
+                    username: null,
+                    password: null,
                 }
             }
 

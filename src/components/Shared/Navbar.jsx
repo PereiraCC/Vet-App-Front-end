@@ -8,6 +8,8 @@ import { BiLogOut } from 'react-icons/bi';
 import { Sidebar } from './Sidebar';
 import { useDispatch, useSelector } from 'react-redux';
 import { HideSidebar, HideSidebarUser, ShowSidebar, ShowSidebarUser } from '../../actions/sidebar';
+import { logout } from '../../actions/login';
+import { DeleteAllTab } from '../../actions/tabs';
 
 export const Navbar = () => {
 
@@ -30,6 +32,11 @@ export const Navbar = () => {
 
     const hideSidebarUser = () => {
         dispatch( HideSidebarUser() );
+    }
+
+    const Logout = () => {
+        dispatch( DeleteAllTab() );
+        dispatch( logout() );
     }
 
     return (
@@ -80,10 +87,10 @@ export const Navbar = () => {
                         </li>
 
                         <li className="vet_nav-text_user">
-                            <Link to="/login">
+                            <a onClick={ Logout }>
                                 <BiLogOut />
-                                <span className='vet_nav-span'>Cerrar Session</span>
-                            </Link>
+                                <span className='vet_nav-span'>Cerrar sesion</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>

@@ -5,10 +5,10 @@ import {
     Switch,
     Redirect
 } from 'react-router-dom';
-import { AuthRouter } from './AuthRouter';
-import { PublicRoute } from './PublicRoute';
 
+import { AuthRouter } from './AuthRouter';
 import { VetRouter } from './VetRouter';
+import { PublicRoute } from './PublicRoute';
 
 export const AppRouter = () => {
     
@@ -19,11 +19,12 @@ export const AppRouter = () => {
     const [isLoggedIn, setIsLoggedIn] = useState( false );
 
     useEffect(() => {
-
+        
         // TODO: CALL API REST FOR JSW ACTIVE
-        if( auth.username !== null ) {
+        if( auth?.username ) {
+
             console.log('entro');
-            // dispatch( login( user.uid, user.displayName ));
+            // dispatch( login( auth.centro, auth.username, auth.password ));
             setIsLoggedIn( true );
 
         } else {
@@ -32,7 +33,7 @@ export const AppRouter = () => {
 
         // setChecking( false );
 
-    }, [ dispatch, setIsLoggedIn, auth ] );
+    }, [ dispatch, setIsLoggedIn, auth] );
 
     return (
         <Router>
