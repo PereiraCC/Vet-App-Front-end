@@ -1,5 +1,14 @@
 import { types } from '../types/types';
 
+export const login = ( centro, username, password) => ({
+    type: types.login,
+    payload: {
+        centro,
+        username,
+        password
+    }
+});
+
 export const setErrorCentro = ( err ) => ({
     type: types.loginSetErrorCentro,
     payload: err

@@ -1,6 +1,11 @@
 import { types } from '../types/types';
 
 const initialState = {
+    auth: {
+        centro: null,
+        username: null,
+        password: null,
+    },
     loading: false,
     msgErrors: {
         centro: null,
@@ -12,6 +17,17 @@ const initialState = {
 export const loginReducer = ( state = initialState, action ) => {
 
     switch (action.type) {
+
+        case types.login:
+            return {
+                ...state,
+                auth :{
+                    centro: action.payload.centro,
+                    username: action.payload.username,
+                    password: action.payload.password
+                }
+            }
+
         case types.loginSetErrorCentro:
             return {
                 ...state,

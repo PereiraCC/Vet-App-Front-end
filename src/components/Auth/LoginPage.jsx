@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { useForm } from '../../hooks/useForm';
 import { 
+    login,
     removeErrorCentro, removeErrorPassword, removeErrorUserName, 
     setErrorCentro, setErrorPassword, setErrorUserName } from '../../actions/login';
 
@@ -23,11 +24,8 @@ export const LoginPage = () => {
         e.preventDefault();
 
         if( isFormValid() ){
-        //   dispatch( startLoginEmailPassword( email, password ) );
-            console.log('valid');
-        } else {
-            console.log('invalid');
-        }
+            dispatch( login( centro, username, password ) );
+        } 
     }
 
     const isFormValid = () => {
