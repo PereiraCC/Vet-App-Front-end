@@ -1,219 +1,60 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
     Redirect
 } from 'react-router-dom';
+import { AuthRouter } from './AuthRouter';
+import { PublicRoute } from './PublicRoute';
 
-import { Navbar } from '../components/Shared/Navbar';
-import { Tabs } from '../components/Shared/Tabs';
-
-import { VetPage } from '../components/VetPage';
-import { BillingPage } from '../components/Billing/BillingPage';
-import { BuysPage } from '../components/Buys/BuysPage';
-import { InventoryPage } from '../components/Inventory/InventoryPage';
-import { ReportsPage } from '../components/Reports/ReportsPage';
-import { NothingPage } from '../components/Shared/NothingPage';
-import { ProvidersPage } from '../components/providers/ProvidersPage';
-import { CustomersPage } from '../components/customers/CustomersPage';
-import { SettingsPage } from '../components/Settings/SettingsPage';
-import { CloseCashPage } from '../components/CloseCash/CloseCashPage';
-import { RepaymentPage } from '../components/repayment/RepaymentPage';
-import { InventoryAdjustmentPage } from '../components/InventoryAdjustment/InventoryAdjustmentPage';
-import { WineriesAdjustmentPage } from '../components/WineriesAdjustment/WineriesAdjustmentPage';
-import { LoansPage } from '../components/Loans/LoansPage';
-import { CollectPage } from '../components/Collect/CollectPage';
-import { PaysPage } from '../components/Pays/PaysPage';
-import { CollectAdjustmentPage } from '../components/CollectAdjustment/CollectAdjustmentPage';
-import { PaysAdjustmentPage } from '../components/PaysAdjustment/PaysAdjustmentPage';
-import { ReturnsPage } from '../components/Returns/ReturnsPage';
-import { LocationsPage } from '../components/Locations/LocationsPage';
-import { PresentationsPage } from '../components/Presentations/PresentationsPage';
-import { CoinsPage } from '../components/Coins/CoinsPage';
-import { WineriesPage } from '../components/Wineries/WineriesPage';
-import { FamilyPage } from '../components/Family/FamilyPage';
-import { OpenCashPage } from '../components/OpenCash/OpenCashPage';
-import { LoginPage } from '../components/Auth/LoginPage';
-
+import { VetRouter } from './VetRouter';
 
 export const AppRouter = () => {
-  return (
-    <Router>
+    
+    const dispatch = useDispatch();
+    const { auth } = useSelector( state => state.login );
 
-        <Navbar />
+    // const [checking, setChecking] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState( false );
 
-        <Tabs />
+    useEffect(() => {
 
-        <div>
-            <Switch>
-                <Route 
-                    exact
-                    path="/initial"
-                    component={ VetPage }
-                />
+        // TODO: CALL API REST FOR JSW ACTIVE
+        if( auth.username !== null ) {
+            console.log('entro');
+            // dispatch( login( user.uid, user.displayName ));
+            setIsLoggedIn( true );
 
-                <Route 
-                    exact
-                    path="/initial/customers"
-                    component={ CustomersPage }
-                />
+        } else {
+            setIsLoggedIn( false );
+        }
 
-                <Route 
-                    exact
-                    path="/initial/inventory"
-                    component={ InventoryPage }
-                />
+        // setChecking( false );
 
-                <Route 
-                    exact
-                    path="/initial/cash/opencash"
-                    component={ OpenCashPage }
-                />
+    }, [ dispatch, setIsLoggedIn, auth ] );
 
-                <Route 
-                    exact
-                    path="/initial/cash/closecash"
-                    component={ CloseCashPage }
-                />
+    return (
+        <Router>
 
-                <Route 
-                    exact
-                    path={`/initial/billing/:billingId`}
-                    component={ BillingPage }
-                />
+            <div>
+                <Switch>
+                    
+                    <PublicRoute 
+                        path="/auth" 
+                        component={ AuthRouter }
+                        isAuthenticated={ isLoggedIn }
+                    />
 
-                <Route 
-                    exact
-                    path="/initial/repayment"
-                    component={ RepaymentPage }
-                />
+                    <VetRouter
+                        exact
+                        isAuthenticated={ isLoggedIn }
+                    />
 
-                <Route 
-                    exact
-                    path="/buys/buy"
-                    component={ BuysPage }
-                />
+                    <Redirect to="/auth/login" />
 
-                <Route 
-                    exact
-                    path="/buys/providers"
-                    component={ ProvidersPage }
-                />
-
-                <Route 
-                    exact
-                    path="/buys/inventoryadjustment"
-                    component={ InventoryAdjustmentPage }
-                />
-
-                <Route 
-                    exact
-                    path="/buys/wineryadjustment"
-                    component={ WineriesAdjustmentPage }
-                />
-
-                <Route 
-                    exact
-                    path="/buys/loans"
-                    component={ LoansPage }
-                />
-
-                <Route 
-                    exact
-                    path="/sales/billing/:billingId"
-                    component={ BillingPage }
-                />
-
-                <Route 
-                    exact
-                    path="/sales/collect"
-                    component={ CollectPage }
-                />
-
-                <Route 
-                    exact
-                    path="/sales/pay"
-                    component={ PaysPage }
-                />
-
-                <Route 
-                    exact
-                    path="/sales/adjustmentcollect"
-                    component={ CollectAdjustmentPage }
-                />
-
-                <Route 
-                    exact
-                    path="/sales/payadjustment"
-                    component={ PaysAdjustmentPage }
-                />
-
-                <Route 
-                    exact
-                    path="/sales/returns"
-                    component={ ReturnsPage }
-                />
-
-                <Route 
-                    exact
-                    path="/parameters/settings"
-                    component={ SettingsPage }
-                />
-
-                <Route 
-                    exact
-                    path="/parameters/locations"
-                    component={ LocationsPage }
-                />
-
-                <Route 
-                    exact
-                    path="/parameters/presentations"
-                    component={ PresentationsPage }
-                />
-
-                <Route 
-                    exact
-                    path="/parameters/coins"
-                    component={ CoinsPage }
-                />
-
-                <Route 
-                    exact
-                    path="/parameters/wineries"
-                    component={ WineriesPage }
-                />
-
-                <Route 
-                    exact
-                    path="/parameters/family"
-                    component={ FamilyPage }
-                />
-
-                <Route 
-                    exact
-                    path="/reports"
-                    component={ ReportsPage }
-                />
-
-                {/* TODO: Change */}
-                <Route 
-                    exact
-                    path="/login"
-                    component={ LoginPage }
-                />
-
-                <Route 
-                    exact
-                    path="/nothing"
-                    component={ NothingPage }
-                />
-
-                <Redirect to="/nothing" />
-
-            </Switch>
-        </div>
-    </Router>
-  )
+                </Switch>
+            </div>
+        </Router>
+    ) 
 }
