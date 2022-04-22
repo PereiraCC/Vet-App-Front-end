@@ -10,6 +10,7 @@ export const NothingPage = () => {
             </div>
 
             <div className='nothing_Image'>
+                <img src='../../assets/NothingImage.png' alt='logo'  className='nothing_Image-img'/>
             </div>
         </div>
   )
