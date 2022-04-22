@@ -24,3 +24,7 @@ export const DeleteTab = ( name, routePage ) => ({
         routePage
     }
 })
+
+export const DeleteAllTab = () => ({
+    type: types.DeleteAllTabs
+})

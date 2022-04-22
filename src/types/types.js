@@ -11,9 +11,11 @@ export const types = {
     AddTab: '[Tabs] AddTab',
     SelectTab: '[Tabs] SelectTab',
     DeleteTab: '[Tabs] DeleteTab',
+    DeleteAllTabs: '[Tabs] DeleteAllTabs',
 
     // Login
     login : '[Login] Login',
+    logout : '[Login] Logout',
     loginSetErrorCentro    : '[Login] Set Error Centro',
     loginRemoveErrorCentro : '[Login] Remove Error Centro',
     loginSetErrorUserName    : '[Login] Set Error UserName',

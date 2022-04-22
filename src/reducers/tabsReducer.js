@@ -115,6 +115,18 @@ export const tabsReducer = (state = initialState, action ) => {
 
             }
 
+        case types.DeleteAllTabs:
+            
+            localStorage.setItem('tabs', JSON.stringify({
+                tabs: [],
+                currentTab : { name: 'Nada', routePage: '/nothing' }
+            }));
+            
+            return {
+                tabs: [],
+                currentTab : { name: 'Nada', routePage: '/nothing' }
+            }
+
         default:
             return state;
     }
