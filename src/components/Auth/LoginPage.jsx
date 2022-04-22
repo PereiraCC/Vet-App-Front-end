@@ -68,7 +68,7 @@ export const LoginPage = () => {
             <div className='login-page'>
 
                 <div className='login_form-content-left'>
-                    <img src='../../assets/NothingImage.png' alt='logo' className='login-form-img' />
+                    <img src='../../images/NothingImage.png' alt='logo' className='login-form-img' />
                 </div>                
 
                 <div className='login_form-content-right'>
