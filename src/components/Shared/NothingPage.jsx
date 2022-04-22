@@ -10,7 +10,7 @@ export const NothingPage = () => {
             </div>
 
             <div className='nothing_Image'>
-                <img src='./Vet-App-Front-end/images/NothingImage.png' alt='logo'  className='nothing_Image-img'/>
+                <img src='/Vet-App-Front-end/images/NothingImage.png' alt='logo'  className='nothing_Image-img'/>
             </div>
         </div>
   )
