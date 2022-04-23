@@ -1,5 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 
+import nothingImage from '../../assets/NothingImage.png';
+
 import { useForm } from '../../hooks/useForm';
 import { 
     login,
@@ -68,7 +70,12 @@ export const LoginPage = () => {
             <div className='login-page'>
 
                 <div className='login_form-content-left'>
-                    <img src='./public/assets/NothingImage.png' alt='logo' className='login-form-img' />
+                    <img 
+                        // src='/public/assets/NothingImage.png' 
+                        src={ nothingImage }
+                        alt='logo' 
+                        className='login-form-img' 
+                    />
                 </div>                
 
                 <div className='login_form-content-right'>

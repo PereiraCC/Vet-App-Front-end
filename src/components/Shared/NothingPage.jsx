@@ -1,4 +1,6 @@
 
+import nothingImage from '../../assets/NothingImage.png';
+
 export const NothingPage = () => {
 
   return (
@@ -10,7 +12,12 @@ export const NothingPage = () => {
             </div>
 
             <div className='nothing_Image'>
-                <img src='./public/assets/NothingImage.png' alt='logo'  className='nothing_Image-img'/>
+                <img 
+                    // src='/public/assets/NothingImage.png' 
+                    src={ nothingImage }
+                    alt='logo'  
+                    className='nothing_Image-img'
+                />
             </div>
         </div>
   )
