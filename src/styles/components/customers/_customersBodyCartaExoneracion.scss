@@ -428,6 +428,109 @@
 
 .customers_body-carta-second-box {
     grid-area: secondBox;
-    padding-bottom: 1%;
-    background-color: brown;
+    padding-bottom: 5px; 
+    padding-top: 5px; 
+    border: 1px solid black;
+}
+
+.customers_body-carta-second-box-table-main {
+    width: 100%;
+}
+
+.customers_body-carta-second-box-table-header-tipo {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.customers_body-carta-second-box-table-header-numeroDocumento {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.customers_body-carta-second-box-table-header-fechaEmision {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.customers_body-carta-second-box-table-header-fechaVence {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.customers_body-carta-second-box-table-header-porcentaje {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.customers_body-carta-second-box-table-header-impuesto {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.customers_body-carta-second-box-table-header-nota {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.customers_body-carta-second-box-table-tipo {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.customers_body-carta-second-box-table-numeroDocumento {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.customers_body-carta-second-box-table-fechaEmision {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.customers_body-carta-second-box-table-fechaVence {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.customers_body-carta-second-box-table-porcentaje {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.customers_body-carta-second-box-table-impuesto {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.customers_body-carta-second-box-table-nota {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
 }

@@ -91,7 +91,32 @@ export const CustomersBodyCartaExoneracion = () => {
             </div>
 
             <div className='customers_body-carta-second-box'>
-                <p>Second box</p>
+                
+                <table className='customers_body-carta-second-box-table-main'>
+                    <thead>
+                        <tr>
+                            <th className='customers_body-carta-second-box-table-header-tipo'>Tipo Exoneracion</th>
+                            <th className='customers_body-carta-second-box-table-header-numeroDocumento'>Numero Documento</th>
+                            <th className='customers_body-carta-second-box-table-header-fechaEmision'>Fecha Emision</th>
+                            <th className='customers_body-carta-second-box-table-header-fechaVence'>Fecha Vence</th>
+                            <th className='customers_body-carta-second-box-table-header-porcentaje'>Porcentaje Compra</th>
+                            <th className='customers_body-carta-second-box-table-header-impuesto'>Impuesto</th>
+                            <th className='customers_body-carta-second-box-table-header-nota'>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td className='customers_body-carta-second-box-table-tipo'>test</td>
+                            <td className='customers_body-carta-second-box-table-numeroDocumento'>test</td>
+                            <td className='customers_body-carta-second-box-table-fechaEmision'>test</td>
+                            <td className='customers_body-carta-second-box-table-fechaVence'>test</td>
+                            <td className='customers_body-carta-second-box-table-porcentaje'>test</td>
+                            <td className='customers_body-carta-second-box-table-impuesto'>test</td>
+                            <td className='customers_body-carta-second-box-table-nota'>test</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
 
         </div>
