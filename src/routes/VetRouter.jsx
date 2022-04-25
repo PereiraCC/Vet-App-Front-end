@@ -22,7 +22,6 @@ import { CollectPage } from '../components/Collect/CollectPage';
 import { PaysPage } from '../components/Pays/PaysPage';
 import { CollectAdjustmentPage } from '../components/CollectAdjustment/CollectAdjustmentPage';
 import { PaysAdjustmentPage } from '../components/PaysAdjustment/PaysAdjustmentPage';
-import { ReturnsPage } from '../components/Returns/ReturnsPage';
 import { LocationsPage } from '../components/Locations/LocationsPage';
 import { PresentationsPage } from '../components/Presentations/PresentationsPage';
 import { CoinsPage } from '../components/Coins/CoinsPage';
@@ -164,8 +163,8 @@ export const VetRouter = ({ isAuthenticated}) => {
                 <PrivateRoute 
                     isAuthenticated={ isAuthenticated }
                     exact
-                    path="/sales/returns"
-                    component={ ReturnsPage }
+                    path="/sales/repayment"
+                    component={ RepaymentPage }
                 />
 
                 <PrivateRoute 

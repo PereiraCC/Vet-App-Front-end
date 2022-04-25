@@ -142,7 +142,7 @@ export const SidebarData = [
             },
             {
                 title: 'Devoluciones',
-                path: '/sales/returns',
+                path: '/sales/repayment',
                 icon: <MdAssignmentReturned />,
                 cName: 'vet_nav-text'
             },
