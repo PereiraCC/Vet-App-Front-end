@@ -17,9 +17,9 @@ export const ProvidersIcons = () => {
 
             <div className='providers_icons-Buscar'>
                 <div className="providers_icons-Buscar-icon">
-                    <FaSearch id='iconBusP'/>
+                    <FaSearch id='iconBusPro'/>
                 </div>
-                <p id='lblBuscarP'>Buscar</p>
+                <p id='lblBuscarPro'>Buscar</p>
             </div>
 
             <div className="providers_icons-registrar">
@@ -38,9 +38,9 @@ export const ProvidersIcons = () => {
 
             <div className="providers_icons-cerrar">
                 <div className="providers_icons-cerrar-icon">
-                    <ImCancelCircle id='iconCerrarP'/>
+                    <ImCancelCircle id='iconCerrarPro'/>
                 </div>
-                <p id='lblCerrarP'>Cerrar</p>
+                <p id='lblCerrarPro'>Cerrar</p>
             </div>
 
         </div>
