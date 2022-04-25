@@ -1,3 +1,4 @@
+import { RepaymentBody } from "./RepaymentBody"
 
 export const RepaymentPage = () => {
     return (
@@ -15,6 +16,7 @@ export const RepaymentPage = () => {
                     </div>
 
                 </div>
+                
                 <div className='repayment_header-labels'>
                     <p id='lblTitleDevoluciones'>Devoluciones del Cliente</p>
                 </div>
@@ -22,7 +24,7 @@ export const RepaymentPage = () => {
             </div>
 
             <div className='repayment_body'>
-                <p>Body</p>
+                <RepaymentBody />
             </div>
 
             <div className='repayment_table'>

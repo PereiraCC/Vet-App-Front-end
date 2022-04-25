@@ -8,7 +8,7 @@
         'table'
         'totals'
         'icons';
-    grid-template-rows: 38px 200px 150px 100px 60px;
+    grid-template-rows: 38px 240px 150px 60px 60px;
 }
 
 .repayment_header {
@@ -63,7 +63,7 @@
 
 .repayment_body {
     grid-area: body;
-    background-color: blueviolet;
+    // background-color: blueviolet;
 }
 
 .repayment_table {
