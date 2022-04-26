@@ -1,0 +1,152 @@
+.repayment_icons-main {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'btnNuevo btnBuscar btnRegistrar btnAnular btnCerrar';
+    grid-template-columns: 8% 8% 8% 8% 8%;
+}
+
+.repayment_icons-nuevo {
+    display: grid;
+    grid-area: btnNuevo;
+    height: 100%;
+    grid-template-areas: 
+        'iconNue'
+        'lblNue';
+    grid-template-rows: 60% 40%;
+}
+
+.repayment_icons-nuevo-icon {
+    color: #F68A1D;
+    grid-area: iconNue;
+    padding-top: 4px;
+}
+
+#iconNuevoD {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblNuevoD {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblNue;
+    text-align: center;
+}
+
+.repayment_icons-Buscar {
+    display: grid;
+    grid-area: btnBuscar;
+    height: 100%;
+    grid-template-areas: 
+        'iconBus'
+        'lblBus';
+    grid-template-rows: 60% 40%;
+}
+
+.repayment_icons-Buscar-icon {
+    color: #F68A1D;
+    grid-area: iconBus;
+    padding-top: 4px;
+}
+
+#iconBusDev {
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+#lblBuscarDev {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblBus;
+    text-align: center;
+}
+
+.repayment_icons-registrar {
+    display: grid;
+    grid-area: btnRegistrar;
+    height: 100%;
+    grid-template-areas: 
+        'iconReg'
+        'lblReg';
+    grid-template-rows: 60% 40%;
+}
+
+.repayment_icons-registrar-icon {
+    color: #F68A1D;
+    grid-area: iconReg;
+    padding-top: 4px;
+}
+
+#iconRegistrarD {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblRegistrarD {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblReg;
+    text-align: center;
+}
+
+.repayment_icons-anular {
+    display: grid;
+    grid-area: btnAnular;
+    height: 100%;
+    grid-template-areas: 
+        'iconAnu'
+        'lblAnu';
+    grid-template-rows: 60% 40%;
+}
+
+.repayment_icons-anular-icon {
+    color: #F68A1D;
+    grid-area: iconAnu;
+    padding-top: 4px;
+}
+
+#iconAnularD {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblAnularD {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblAnu;
+    text-align: center;
+}
+
+.repayment_icons-cerrar {
+    display: grid;
+    grid-area: btnCerrar;
+    height: 100%;
+    grid-template-areas: 
+        'iconCer'
+        'lblCer';
+    grid-template-rows: 60% 40%;
+}
+
+.repayment_icons-cerrar-icon {
+    color: #F68A1D;
+    grid-area: iconCer;
+    padding-top: 4px;
+}
+
+#iconCerrarD {
+    cursor: pointer;
+    height: 100%;
+    width: 25%;
+}
+
+#lblCerrarD {
+    font-size: 14px;
+    font-weight: 600;
+    grid-area: lblCer;
+    text-align: center;
+}
