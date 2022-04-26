@@ -1,5 +1,6 @@
 import { RepaymentBody } from './RepaymentBody';
 import { RepaymentTable } from './RepaymentTable';
+import { RepaymentTotals } from './RepaymentTotals';
 
 export const RepaymentPage = () => {
     return (
@@ -33,7 +34,7 @@ export const RepaymentPage = () => {
             </div>
 
             <div className='repayment_totals'>
-                <p>Totales</p>
+                <RepaymentTotals />
             </div>
 
             <div className='repayment_icons'>
