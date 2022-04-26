@@ -1,6 +1,7 @@
 import { OpenCashDatosCajero } from './OpenCashDatosCajero';
 import { OpenCashDetalleDenominacion } from './OpenCashDetalleDenominacion';
 import { OpenCashDetalleTotal } from './OpenCashDetalleTotal';
+import { OpenCashFooter } from './OpenCashFooter';
 import { OpenCashIcons } from './OpenCashIcons';
 
 export const OpenCashPage = () => {
@@ -28,7 +29,7 @@ export const OpenCashPage = () => {
             </div>
 
             <div className='openCash_main-footer'>
-                <p>Footer</p>
+                <OpenCashFooter />
             </div>
 
         </div>
