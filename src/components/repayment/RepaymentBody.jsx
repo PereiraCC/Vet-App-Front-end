@@ -100,7 +100,46 @@ export const RepaymentBody = () => {
             </div>
 
             <div className='repayment_body-rightSide'>
-                <p>right Side</p>
+                
+                <div className='repayment_body-rightSide-title'>
+                    <p id='lblTitleRightSide'>Artículo que se Pueden Devolver</p>
+                </div>
+
+                <div className='repayment_body-rightSide-table'>
+                    <table className='repayment_body-table-main'>
+                        <thead>
+                            <tr>
+                                <th className='repayment_body-table-header-idVenta'>Id Venta</th>
+                                <th className='repayment_body-table-header-CodigoArt'>Código Artículo</th>
+                                <th className='repayment_body-table-header-Codigo'>Código</th>
+                                <th className='repayment_body-table-header-Descrip'>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className='repayment_body-table-idVenta'>test</td>
+                                <td className='repayment_body-table-CodigoArt'>test</td>
+                                <td className='repayment_body-table-Codigo'>test</td>
+                                <td className='repayment_body-table-Descrip'>test</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className='repayment_body-rightSide-inputs'>
+                    
+                    <div className='repayment_body-rightSide-inputs-vete'>
+                        <p id='lblVeteDevoluciones'>Vete</p>
+                        <input type='text' name='veteDevoluciones' id='txtVeteDevoluciones' />
+                    </div>
+
+                    <div className='repayment_body-rightSide-inputs-cantBod'>
+                        <p id='lblCantBodDevoluciones'>Cantidad Bodega</p>
+                        <input type='text' name='cantBodDevoluciones' id='txtCantBodDevoluciones' />
+                    </div>
+
+                </div>
+
             </div>
 
         </div>

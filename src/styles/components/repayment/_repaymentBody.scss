@@ -452,6 +452,160 @@
 }
 
 .repayment_body-rightSide {
+    display: grid;
     grid-area: rightSide;
-    background-color: yellow;
+    height: 100%;
+    padding: 10px;
+    grid-template-areas: 
+        'title'
+        'table'
+        'inputs';
+    grid-template-rows: 10% 75% 15%;
+}
+
+.repayment_body-rightSide-title {
+    background-color: #EEF2E6;
+    border: 1px solid black;
+    color: #3D59A9;
+    grid-area: title;
+}
+
+#lblTitleRightSide {
+    font-size: 15px;
+    padding-left: 5px;
+    padding-top: 1px;
+    text-align: start;
+}
+
+.repayment_body-rightSide-table {
+    border: 1px solid black;
+    grid-area: table;
+}
+
+.repayment_body-table-main {
+    width: 100%;
+}
+
+.repayment_body-table-header-idVenta {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.repayment_body-table-header-CodigoArt {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.repayment_body-table-header-Codigo {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.repayment_body-table-header-Descrip {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.repayment_body-table-idVenta {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.repayment_body-table-CodigoArt {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.repayment_body-table-Codigo {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.repayment_body-table-Descrip {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.repayment_body-rightSide-inputs {
+    display: grid;
+    gap: 5px;
+    grid-area: inputs;
+    height: 100%;
+    margin-right: 5px;
+    padding-top: 5px;
+    grid-template-areas: 
+        'vete cantBod';
+    grid-template-columns: 50% 50%;
+}
+
+.repayment_body-rightSide-inputs-vete {
+    display: grid;
+    gap: 5px;
+    grid-area: vete;
+    height: 100%;
+    margin-right: 5px;
+    grid-template-areas: 
+        'lblVete inputVete';
+    grid-template-columns: 50% 50%;
+}
+
+#lblVeteDevoluciones {
+    background-color: #EEF2E6;
+    border: 1px solid black;
+    color: #3D59A9;
+    font-size: 14px;
+    grid-area: lblVete;
+    height: 65%;
+}
+
+#txtVeteDevoluciones {
+    font-size: 15px;
+    grid-area: inputVete;
+    height: 65%;
+    text-align: start;
+    width: 95%;
+}
+
+.repayment_body-rightSide-inputs-cantBod {
+    display: grid;
+    gap: 5px;
+    grid-area: cantBod;
+    height: 100%;
+    margin-right: 5px;
+    grid-template-areas: 
+        'lblCantBod inputCantBod';
+    grid-template-columns: 50% 50%;
+}
+
+#lblCantBodDevoluciones {
+    background-color: #EEF2E6;
+    border: 1px solid black;
+    color: #3D59A9;
+    font-size: 14px;
+    grid-area: lblCantBod;
+    height: 65%;
+}
+
+#txtCantBodDevoluciones {
+    font-size: 15px;
+    grid-area: inputCantBod;
+    height: 65%;
+    text-align: start;
+    width: 95%;
 }
