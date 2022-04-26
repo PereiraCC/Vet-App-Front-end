@@ -1,0 +1,142 @@
+.openCash_DetalleDenominacion-main {
+    border: 1px solid black;
+    display: grid;
+    height: 95%;
+    margin-left: 25px;
+    margin-right: 25px;
+    grid-template-areas: 
+        'title'
+        'table'
+        'inputs';
+    grid-template-rows: 10% 75% 15%;
+}
+
+.openCash_DetalleDenominacion-title {
+    background-color: #3D62DB;
+    grid-area: title;
+}
+
+#lblOpenCashDetalleDenominacionTitle {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 2px;
+    text-align: center;
+}
+
+.openCash_DetalleDenominacion-table {
+    grid-area: table;
+}
+
+.openCash_DetalleDenominacion-table {
+    width: 100%;
+}
+
+.openCash_DetalleDenominacion-header-moneda {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.openCash_DetalleDenominacion-header-tipo {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.openCash_DetalleDenominacion-header-denominacion {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}   
+
+.openCash_DetalleDenominacion-header-cantidad {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.openCash_DetalleDenominacion-header-total {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 8%;
+}
+
+.openCash_DetalleDenominacion-moneda {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.openCash_DetalleDenominacion-tipo {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.openCash_DetalleDenominacion-denominacion {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.openCash_DetalleDenominacion-cantidad {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.openCash_DetalleDenominacion-total {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.openCash_DetalleDenominacion-inputs {
+    border-top: 1px solid black;
+    display: grid;
+    grid-area: inputs;
+    height: 95%;
+    grid-template-areas: 
+        'input1 input2';
+    grid-template-columns: 85% 15%;
+}
+
+.openCash_DetalleDenominacion-inputs-input1 {
+    grid-area: input1;
+    margin-left: 75%;
+    padding-left: 10%;
+}
+
+#txtinput1DetalleDenominacion {
+    color: #5B83B8;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-left: 25px;
+    text-align: end;
+    width: 95%;
+}
+
+.openCash_DetalleDenominacion-inputs-input2 {
+    color: #5B83B8;
+    font-size: 15px;
+    grid-area: input2;
+}
+
+#txtinput2DetalleDenominacion {
+    color: #5B83B8;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: end;
+    width: 90%;
+}
