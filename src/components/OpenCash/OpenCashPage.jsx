@@ -1,4 +1,5 @@
 import { OpenCashDatosCajero } from './OpenCashDatosCajero';
+import { OpenCashDetalleTotal } from './OpenCashDetalleTotal';
 
 export const OpenCashPage = () => {
     return (
@@ -13,7 +14,7 @@ export const OpenCashPage = () => {
             </div>
 
             <div className='openCash_main-detalleTotal'>
-                <p>Detalle total</p>
+                <OpenCashDetalleTotal />
             </div>
 
             <div className='openCash_main-detalleDenominacion'>

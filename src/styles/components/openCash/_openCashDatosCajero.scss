@@ -1,10 +1,10 @@
 .openCash_datosCajero-main {
+    border: 1px solid black;
     display: grid;
     height: 85%;
     margin-left: 25px;
     margin-right: 25px;
     margin-top: 5px;
-    border: 1px solid black;
     grid-template-areas: 
         'title'
         'inputs';
@@ -12,8 +12,8 @@
 }
 
 .openCash_datosCajero-title {
-    grid-area: title;
     background-color: #3D62DB;
+    grid-area: title;
 }
 
 #lblOpenCash_datosCajeroTitle {
@@ -25,74 +25,71 @@
 }
 
 .openCash_datosCajero-inputs {
-    grid-area: inputs;
     display: grid;
+    grid-area: inputs;
     height: 100%;
     grid-template-areas: 
         'cajero nCaja';
     grid-template-columns: 70% 30%;
-    // background-color: blue;
 }
 
 .openCash_datosCajero-inputs-cajero {
-    grid-area: cajero;
     display: grid;
+    grid-area: cajero;
     height: 100%;
     grid-template-areas: 
         'lblcajero inputcajero1 inputcajero2';
-    grid-template-columns: 20% 50% 30%;
-    // background-color: red;
+    grid-template-columns: 20% 20% 60%;
 }
 
 #lblCajeroOpenCash {
-    grid-area: lblcajero;
     color: #316DDD;
     font-size: 15px;
+    grid-area: lblcajero;
     padding-top: 5px;
     text-align: center;
 }
 
 #txtOpenCash_datosCajeroCajero1 {
-    grid-area: inputcajero1;
-    text-align: center;
-    height: 70%;
-    width: 95%;
-    margin-top: 5px;
     font-size: 15px;
+    grid-area: inputcajero1;
+    height: 70%;
+    margin-top: 5px;
+    text-align: center;
+    width: 95%;
 }
 
 #txtOpenCash_datosCajeroCajero2 {
-    grid-area: inputcajero2;
-    text-align: center;
-    height: 70%;
-    width: 95%;
-    margin-top: 5px;
     font-size: 15px;
+    grid-area: inputcajero2;
+    height: 70%;
+    margin-top: 5px;
+    text-align: center;
+    width: 95%;
 }
 
 .openCash_datosCajero-inputs-nCaja {
-    grid-area: nCaja;
     display: grid;
+    grid-area: nCaja;
     height: 100%;
     grid-template-areas: 
         'lblNCaja cboNCaja';
     grid-template-columns: 40% 50% ;
-    // background-color: green;
 }
 
 #lblNCajaOpenCash {
-    grid-area: lblNCaja;
     color: #316DDD;
     font-size: 15px;
+    grid-area: lblNCaja;
     padding-top: 5px;
     text-align: center;
 }
 
 #cboNCajaOpenCash {
-    grid-area: cboNCaja;
-    text-align: center;
-    height: 70%;
-    width: 95%;
-    margin-top: 5px;
     font-size: 15px;
+    grid-area: cboNCaja;
+    height: 70%;
+    margin-top: 5px;
+    text-align: center;
+    width: 95%;
 }
