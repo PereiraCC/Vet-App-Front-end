@@ -1,0 +1,51 @@
+.openCash_main {
+    display: grid;
+    height: 100%;
+    text-align: center;
+    grid-template-areas: 
+        'header'
+        'datosCajero'
+        'detalleTotal'
+        'detalleDenominacion'
+        'icons'
+        'footer';
+    grid-template-rows: 30px 60px 150px 218px 60px 30px;
+}
+
+.openCash_main-title {
+    background-color: #3D59A9;
+    grid-area: header;
+}
+
+#lblOpenCashTitle {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 3px;
+    text-align: center;
+}
+
+.openCash_main-datosCajero {
+    grid-area: datosCajero;
+    background-color: blueviolet;
+}
+
+.openCash_main-detalleTotal {
+    grid-area: detalleTotal;
+    background-color: brown;
+}
+
+.openCash_main-detalleDenominacion {
+    grid-area: detalleDenominacion;
+    background-color: chartreuse;
+}
+
+.openCash_main-icons {
+    grid-area: icons;
+    background-color: chocolate;
+}
+
+.openCash_main-footer {
+    grid-area: footer;
+    background-color: red;
+}
