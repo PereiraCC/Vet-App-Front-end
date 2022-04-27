@@ -1,4 +1,5 @@
 import { InventoryAdjustmentDatos } from './InventoryAdjustmentDatos';
+import { InventoryAdjustmentTable } from './InventoryAdjustmentTable';
 
 export const InventoryAdjustmentPage = () => {
     return (
@@ -13,7 +14,7 @@ export const InventoryAdjustmentPage = () => {
             </div>
 
             <div className='inventory_adjustment-table'>
-                <p>Table</p>
+                <InventoryAdjustmentTable />
             </div>
 
             <div className='inventory_adjustment-icons'>
