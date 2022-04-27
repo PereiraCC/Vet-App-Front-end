@@ -289,7 +289,208 @@
 }
 
 .inventory_adjustment-datos-secondBox-inputs {
+    border: 1px solid #9DA297;
+    display: grid;
     grid-area: inputsRight;
-    background-color: green;
+    height: 85%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    grid-template-areas: 
+        'firstLineI'
+        'secondLineI'
+        'thirdLineI';
+    grid-template-rows: 33% 33% 33%;
 }
 
+.inventory_adjustment-datos-secondBox-inputs-firstLine {
+    display: grid;
+    grid-area: firstLineI;
+    height: 100%;
+    grid-template-areas: 
+        'obser cantidad';
+    grid-template-columns: 75% 25%;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-firstLine-obser {
+    display: grid;
+    grid-area: obser;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 2px;
+    grid-template-areas: 
+        'lblObser'
+        'inputObser';
+    grid-template-rows: 40% 60%;
+}
+
+#lblObservacionInventoryAd {
+    background-color: #DDE1D5;
+    font-size: 14px;
+    grid-area: lblObser;
+    margin-top: 2px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#txtObservacionInventoryAd {
+    font-size: 14px;
+    grid-area: inputObser;
+    height: 70%;
+    margin-top: 2px;
+    text-align: start;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-firstLine-cantidad {
+    display: grid;
+    grid-area: cantidad;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 2px;
+    grid-template-areas: 
+        'lblCantidad'
+        'inputCantidad';
+    grid-template-rows: 40% 60%;
+}
+
+#lblCantidadInventoryAd {
+    background-color: #DDE1D5;
+    font-size: 14px;
+    grid-area: lblCantidad;
+    margin-top: 2px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#txtCantidadInventoryAd {
+    font-size: 14px;
+    grid-area: inputCantidad;
+    height: 70%;
+    margin-top: 2px;
+    text-align: start;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-secondLine {
+    display: grid;
+    grid-area: secondLineI;
+    height: 100%;
+    grid-template-areas: 
+        'cuentaC productoA';
+    grid-template-columns: 40% 40%;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-secondLine-cuentaContable {
+    display: grid;
+    grid-area: cuentaC;
+    height: 100%;
+    grid-template-areas: 
+        'lblcuentaC inputcuentaC';
+    grid-template-columns: 50% 50%;
+}
+
+#lblCuentaInventoryAd {
+    background-color: #DDE1D5;
+    font-size: 15px;
+    grid-area: lblcuentaC;
+    height: 45%;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: 2px;
+}
+
+#txtCuentaInventoryAd {
+    font-size: 14px;
+    grid-area: inputcuentaC;
+    height: 45%;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: start;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-secondLine-productoA {
+    display: grid;
+    grid-area: productoA;
+    height: 100%;
+    grid-template-areas: 
+        'lblDescrip1 checkProductoA';
+    grid-template-columns: 30% 70%;
+}
+
+#lblDescripInventoryAd1 {
+    background-color: #DDE1D5;
+    font-size: 15px;
+    grid-area: lblDescrip1;
+    height: 45%;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: 2px;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-secondLine-productoA-check {
+    display: grid;
+    grid-area: checkProductoA;
+    height: 100%;
+    padding-top: 12px;
+    grid-template-areas: 
+        'inputProductoA lblProductoA';
+    grid-template-columns: 10% 70%;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-secondLine-productoA-check-input {
+    grid-area: inputProductoA;
+}
+
+#lblproductoActInventoryAd {
+    color: #B3BAB2;
+    font-size: 15px;
+    grid-area: lblProductoA;
+    text-align: start;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-thirdLine {
+    display: grid;
+    grid-area: thirdLineI;
+    height: 100%;
+    grid-template-areas: 
+        'gasto v2';
+    grid-template-columns: 40% 10%;
+}
+
+.inventory_adjustment-datos-secondBox-inputs-thirdLine-gasto {
+    display: grid;
+    grid-area: gasto;
+    height: 100%;
+    grid-template-areas: 
+        'lblGasto inputGasto';
+    grid-template-columns: 50% 50%;
+}
+
+#lblGastoInventoryAd {
+    background-color: #DDE1D5;
+    font-size: 15px;
+    grid-area: lblGasto;
+    height: 45%;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: 2px;
+}
+
+#txtGastoInventoryAd {
+    font-size: 14px;
+    grid-area: inputGasto;
+    height: 45%;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#lblV2InventoryAd {
+    font-size: 15px;
+    grid-area: v2;
+    padding-top: 10px;
+}

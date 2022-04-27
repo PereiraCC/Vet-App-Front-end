@@ -73,7 +73,56 @@ export const InventoryAdjustmentDatos = () => {
                 </div>
 
                 <div className='inventory_adjustment-datos-secondBox-inputs'>
-                    <p>Inputs</p>
+                    
+                    <div className='inventory_adjustment-datos-secondBox-inputs-firstLine'>
+
+                        <div className='inventory_adjustment-datos-secondBox-inputs-firstLine-obser'>
+                            <p id='lblObservacionInventoryAd'>Observación</p>
+                            <input type='text' id='txtObservacionInventoryAd' name='observacionInventoryAd' />
+                        </div>
+
+                        <div className='inventory_adjustment-datos-secondBox-inputs-firstLine-cantidad'>
+                            <p id='lblCantidadInventoryAd'>Cantidad</p>
+                            <input type='text' id='txtCantidadInventoryAd' name='cantidadInventoryAd' />
+                        </div>
+
+                    </div>
+
+                    <div className='inventory_adjustment-datos-secondBox-inputs-secondLine'>
+
+                        <div className='inventory_adjustment-datos-secondBox-inputs-secondLine-cuentaContable'>
+                            <p id='lblCuentaInventoryAd'>Cuenta Contable</p>
+                            <input type='text' id='txtCuentaInventoryAd' name='cuentaInventoryAd' />
+                        </div>
+
+                        <div className='inventory_adjustment-datos-secondBox-inputs-secondLine-productoA'>
+                            <p id='lblDescripInventoryAd1'>Descripción</p>
+                            <div className='inventory_adjustment-datos-secondBox-inputs-secondLine-productoA-check'>
+                                <div className="inventory_adjustment-datos-secondBox-inputs-secondLine-productoA-check-input"> 
+                                    <input type="checkbox" id="checkproductoAct" name="productoAct" value="productoAct" />
+                                </div>
+                                <label for="checkproductoAct" id="lblproductoActInventoryAd">Producto Actualizado</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className='inventory_adjustment-datos-secondBox-inputs-thirdLine'>
+                        
+                        <div className='inventory_adjustment-datos-secondBox-inputs-thirdLine-gasto'>
+                            <p id='lblGastoInventoryAd'>Gasto</p>
+                            <input type='text' id='txtGastoInventoryAd' name='gastoInventoryAd' />
+                            <select id='txtGastoInventoryAd' name='gastoInventoryAd'>
+                                <option value="gasto1">Gasto 1</option>
+                                <option value="gasto2">Gasto 2</option>
+                                <option value="gasto3">Gasto 3</option>
+                            </select>
+                        </div>
+
+                        <p id='lblV2InventoryAd'>v.2</p>
+
+                    </div>
+
                 </div>
 
             </div>
