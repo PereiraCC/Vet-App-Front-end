@@ -1,3 +1,4 @@
+import { InventoryAdjustmentDatos } from './InventoryAdjustmentDatos';
 
 export const InventoryAdjustmentPage = () => {
     return (
@@ -8,7 +9,7 @@ export const InventoryAdjustmentPage = () => {
             </div>
 
             <div className='inventory_adjustment-datos'>
-                <p>Datos de Inventario</p>
+                <InventoryAdjustmentDatos />
             </div>
 
             <div className='inventory_adjustment-table'>

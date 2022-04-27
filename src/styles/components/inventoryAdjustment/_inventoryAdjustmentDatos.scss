@@ -1,0 +1,217 @@
+.inventory_adjustment-datos-main {
+    border: 1px solid black;
+    display: grid;
+    height: 95%;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+    grid-template-areas: 
+        'firstBox'
+        'secondBox';
+    grid-template-rows: 25% 75%;
+}
+
+.inventory_adjustment-datos-firstBox {
+    display: grid;
+    grid-area: firstBox;
+    height: 100%;
+    grid-template-areas: 
+        'firstBoxTitle'
+        'firstBoxInputs';
+    grid-template-rows: 28% 73%;
+}
+
+.inventory_adjustment-datos-firstBox-title {
+    grid-area: firstBoxTitle;
+}
+
+#lbldatosInventario {
+    color: #9DA297;
+    font-size: 12px;
+    padding-left: 15px;
+    text-align: start;
+}
+
+.inventory_adjustment-datos-firstBox-inputs {
+    display: grid;
+    grid-area: firstBoxInputs;
+    height: 100%;
+    grid-template-areas: 
+        'codigo descrip existencia costoUnit';
+    grid-template-columns: 15% 60% 12.5% 12.5%;
+}
+
+.inventory_adjustment-datos-firstBox-inputs-codigo {
+    display: grid;
+    grid-area: codigo;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    grid-template-areas: 
+        'lblCodigo'
+        'inoutCodigo';
+    grid-template-rows: 40% 60%;
+}
+
+#lblCodigoInventoryAd {
+    background-color: #DDE1D5;
+    font-size: 14px;
+    grid-area: lblCodigo;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#txtCodigoInventoryAd {
+    font-size: 14px;
+    grid-area: inoutCodigo;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+}
+
+.inventory_adjustment-datos-firstBox-inputs-descrip {
+    display: grid;
+    grid-area: descrip;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    grid-template-areas: 
+        'lblDescrip'
+        'inputDescrip';
+    grid-template-rows: 40% 60%;
+}
+
+#lblDescripInventoryAd {
+    background-color: #DDE1D5;
+    font-size: 14px;
+    grid-area: lblDescrip;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#txtDescripInventoryAd {
+    font-size: 14px;
+    grid-area: inputDescrip;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+}
+
+.inventory_adjustment-datos-firstBox-inputs-existencia {
+    display: grid;
+    grid-area: existencia;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    grid-template-areas: 
+        'lblExistencia'
+        'inputExistencia';
+    grid-template-rows: 40% 60%;
+}
+
+#lblExistenciaInventoryAd {
+    background-color: #DDE1D5;
+    font-size: 14px;
+    grid-area: lblExistencia;
+    padding-left: 5px;
+    text-align: start;
+    width: 100%;
+}
+
+#txtExistenciaInventoryAd {
+    font-size: 14px;
+    grid-area: inputExistencia;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 100%;
+}
+
+.inventory_adjustment-datos-firstBox-inputs-costoUnit {
+    display: grid;
+    grid-area: costoUnit;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    grid-template-areas: 
+        'lblCostoUnit'
+        'inputCostoUnit';
+    grid-template-rows: 40% 60%;
+}
+
+#lblCostoInventoryAd {
+    background-color: #DDE1D5;
+    font-size: 14px;
+    grid-area: lblCostoUnit;
+    padding-left: 5px;
+    text-align: start;
+    width: 100%;
+}
+
+#txtCostoInventoryAd {
+    font-size: 14px;
+    grid-area: inputCostoUnit;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 100%;
+}
+
+.inventory_adjustment-datos-secondBox {
+    grid-area: secondBox;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'movimientos inputsRight';
+    grid-template-columns: 30% 70%;
+    // background-color: blue;
+}
+
+.inventory_adjustment-datos-secondBox-movimientos {
+    grid-area: movimientos;
+    display: grid;
+    height: 85%;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #9DA297;
+    grid-template-areas: 
+        'titlemovimientos'
+        'entrada'
+        'salida'
+        'muerteAnimales';
+    grid-template-rows: 15% 25% 25% 35%;
+    // background-color: red;
+}
+
+#lblMovimientosIventario {
+    grid-area: titlemovimientos;
+    color: #9DA297;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-top: 5px;
+    text-align: start;
+    // background-color: aqua;
+}
+
+.inventory_adjustment-datos-secondBox-movimientos-entrada {
+    grid-area: entrada;
+    background-color: blueviolet;
+}
+
+.inventory_adjustment-datos-secondBox-movimientos-salida {
+    grid-area: salida;
+    background-color: brown;
+}
+
+.inventory_adjustment-datos-secondBox-movimientos-muerteAnimales {
+    grid-area: muerteAnimales;
+    background-color: violet;
+}
+
+
+.inventory_adjustment-datos-secondBox-inputs {
+    grid-area: inputsRight;
+    background-color: green;
+}
+
