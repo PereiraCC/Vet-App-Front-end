@@ -42,23 +42,32 @@ export const InventoryAdjustmentDatos = () => {
                     <p id='lblMovimientosIventario'>Movimientos</p>
 
                     <div className='inventory_adjustment-datos-secondBox-movimientos-entrada'>
-                        {/* TODO:Radio Button */}
-                        {/* <div className='inventory_adjustment-datos-secondBox-movimientos-entrada-check'>
-                            <div className="inventory_adjustment-datos-secondBox-movimientos-entrada-check-input"> 
-                                <input type="checkbox" id="checkEntrada" name="entradaInventory" value="entradaInventory" />
-                            </div>
-                            <label for="checkEntrada" id="lblEntradaInventoryAd">Entrada</label>
-                        </div> */}
+                        
+                        <div className='inventory_adjustment-datos-secondBox-movimientos-entrada-radio'>
+                            <input type="radio" id="rbMovimientosEntrada" name="movimientosEntrada" value="movimientosEntrada"/>
+                            <label for="rbMovimientosEntrada" id='lblRadioEntradaInv'>Entrada</label>
+                        </div>
+                        <p id='lblResulEntradaInventoryAd'>0.00</p>
 
-                        <p id='lblResulEntradaInventoryAd'>Entrada</p>
                     </div>
 
                     <div className='inventory_adjustment-datos-secondBox-movimientos-salida'>
-                        <p id='lblSalidaInventoryAd'>Salida</p>
+                        
+                        <div className='inventory_adjustment-datos-secondBox-movimientos-salida-radio'>
+                            <input type="radio" id="rbMovimientosSalida" name="movimientosSalida" value="movimientosSalida"/>
+                            <label for="rbMovimientosSalida" id='lblRadioSalidaInv'>Salida</label>
+                        </div>
+                        <p id='lblSalidaInventoryAd'>0.00</p>
+
                     </div>
 
                     <div className='inventory_adjustment-datos-secondBox-movimientos-muerteAnimales'>
-                        <p id='lblmuerteAnimalesInventoryAd'>Muerte Animales</p>
+
+                        <div className="inventory_adjustment-datos-secondBox-movimientos-muerteAnimales-input"> 
+                            <input type="checkbox" id="checkMuerteA" name="muerteA" value="muerteA" />
+                        </div>
+                        <label for="checkMuerteA" id="lblmuerteAnimalesInventoryAd">Muerte Animales</label>
+
                     </div>
 
                 </div>
