@@ -1,3 +1,4 @@
+import { LoansDatosProducto } from './LoansDatosProducto';
 import { LoansDatosTraslado } from './LoansDatosTraslado';
 
 export const LoansPage = () => {
@@ -13,7 +14,7 @@ export const LoansPage = () => {
             </div>
 
             <div className='loans_datosProductos'>
-                <p>Datos de los productos</p>
+                <LoansDatosProducto />
             </div>
 
             <div className='loans_icons'>
