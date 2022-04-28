@@ -1,5 +1,6 @@
 import { WineriesAdjustmentDatos } from './WineriesAdjustmentDatos';
 import { WineriesAdjustmentDetalleAjuste } from './WineriesAdjustmentDetalleAjuste';
+import { WineriesAdjustmentTable } from './WineriesAdjustmentTable';
 
 export const WineriesAdjustmentPage = () => {
     return (
@@ -24,7 +25,7 @@ export const WineriesAdjustmentPage = () => {
             </div>
 
             <div className='wineries_adjustment-table'>
-                <p>table</p>
+                <WineriesAdjustmentTable />
             </div>
 
             <div className='wineries_adjustment-icons'>
