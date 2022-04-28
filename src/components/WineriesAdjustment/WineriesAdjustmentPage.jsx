@@ -1,3 +1,4 @@
+import { WineriesAdjustmentDatos } from "./WineriesAdjustmentDatos"
 
 export const WineriesAdjustmentPage = () => {
     return (
@@ -14,7 +15,7 @@ export const WineriesAdjustmentPage = () => {
             </div>
 
             <div className='wineries_adjustment-datos'>
-                <p>datos</p>
+                <WineriesAdjustmentDatos />
             </div>
 
             <div className='wineries_adjustment-detalleAjuste'>
