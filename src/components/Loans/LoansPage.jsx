@@ -1,5 +1,6 @@
 import { LoansDatosProducto } from './LoansDatosProducto';
 import { LoansDatosTraslado } from './LoansDatosTraslado';
+import { LoansIcons } from './LoansIcons';
 
 export const LoansPage = () => {
     return (
@@ -18,7 +19,7 @@ export const LoansPage = () => {
             </div>
 
             <div className='loans_icons'>
-                <p>icons</p>
+                <LoansIcons />
             </div>
 
         </div>
