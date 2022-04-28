@@ -1,3 +1,4 @@
+import { LoansDatosTraslado } from './LoansDatosTraslado';
 
 export const LoansPage = () => {
     return (
@@ -8,7 +9,7 @@ export const LoansPage = () => {
             </div>
 
             <div className='loans_datosTraslado'>
-                <p>Datos del traslado</p>
+                <LoansDatosTraslado />
             </div>
 
             <div className='loans_datosProductos'>
