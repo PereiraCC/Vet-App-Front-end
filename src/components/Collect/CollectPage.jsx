@@ -1,4 +1,5 @@
 import { CollectBody } from './CollectBody';
+import { CollectFooter } from './CollectFooter';
 import { CollectTable } from './CollectTable';
 
 export const CollectPage = () => {
@@ -23,7 +24,7 @@ export const CollectPage = () => {
             </div>
 
             <div className='collect_main-footer'>
-                <p>Footer</p>
+                <CollectFooter />
             </div>
 
         </div>
