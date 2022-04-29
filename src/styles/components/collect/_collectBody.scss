@@ -211,6 +211,380 @@
 }
 
 .collect_body-secondLine {
+    display: grid;
     grid-area: secondLine;
-    background-color: yellowgreen;
+    height: 100%;
+    grid-template-areas: 
+        'facturas tipoAjuste datosFactura';
+    grid-template-columns: 33% 20% 47%;
+}
+
+.collect_body-secondLine-facturas {
+    border: 1px solid black;
+    display: grid;
+    grid-area: facturas;
+    height: 100%;
+    padding: 5px;
+    grid-template-areas: 
+        'lblfacturas'
+        'tablefacturas';
+    grid-template-rows: 15% 85%;
+}
+
+#lblFacturasCollect {
+    border: 1px solid black;
+    font-size: 15px;
+    grid-area: lblfacturas;
+    padding-top: 1px;
+}
+
+.collect_body-secondLine-facturas-table {
+    border: 1px solid black;
+    grid-area: tablefacturas;
+}
+
+.collect_body-table {
+    width: 100%;
+}
+
+.collect_body-table-header-numeroFactura {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 6%;
+}
+
+.collect_body-table-header-fecha {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 6%;
+}
+
+.collect_body-table-numeroFactura {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.collect_body-table-fecha {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.collect_body-secondLine-facturas-tipoAjuste {
+    border: 1px solid black;
+    display: grid;
+    grid-area: tipoAjuste;
+    height: 100%;
+    padding: 5px;
+    grid-template-areas: 
+        'lbltipoAjuste'
+        'checkstipoAjuste';
+    grid-template-rows: 15% 85%;
+}
+
+#lblTipoAjusteCollect {
+    background-color: #3B62DD;
+    border: 1px solid black;
+    color: white;
+    font-size: 15px;
+    grid-area: lbltipoAjuste;
+    padding-top: 1px;
+}
+
+.collect_body-secondLine-facturas-tipoAjuste-checks {
+    display: grid;
+    grid-area: checkstipoAjuste;
+    height: 100%;
+    padding-top: 15px;
+    grid-template-areas: 
+        'notaCredito'
+        'notaDebito';
+    grid-template-rows: 40% 40%;
+}
+
+.collect_body-secondLine-facturas-tipoAjuste-checks-credito-radio {
+    grid-area: notaCredito;
+    padding-top: 10px;
+}
+
+#lblNotaCreaditoCollect {
+    font-size: 15px;
+    padding-left: 9px;
+}
+
+.collect_body-secondLine-facturas-tipoAjuste-checks-debito-radio {
+    grid-area: notaDebito;
+    padding-top: 10px;
+}
+
+#lblNotaDebitoCollect {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.collect_body-secondLine-facturas-datosFactura {
+    border: 1px solid black;
+    display: grid;
+    grid-area: datosFactura;
+    height: 100%;
+    padding: 5px;
+    grid-template-areas: 
+        'lbldatosFactura'
+        'inputsdatosFactura';
+    grid-template-rows: 15% 85%;
+}
+
+#lblDatosFacturaCollect {
+    background-color: #3B62DD;
+    border: 1px solid black;
+    color: white;
+    font-size: 15px;
+    grid-area: lbldatosFactura;
+    padding-top: 1px;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs {
+    display: grid;
+    grid-area: inputsdatosFactura;
+    height: 100%;
+    grid-template-areas: 
+        'leftSide rightSide';
+    grid-template-columns: 50% 50%;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-leftSide {
+    display: grid;
+    grid-area: leftSide;
+    height: 100%;
+    grid-template-areas: 
+        'facturaNo'
+        'fecha'
+        'saldo'
+        'cuentaCont';
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-leftSide-factura {
+    display: grid;
+    grid-area: facturaNo;
+    height: 100%;
+    grid-template-areas: 
+        'lblfacturaNo txtfacturaNo';
+    grid-template-columns: 50% 50%;
+}
+
+#lblFacturaNoCollect {
+    color: #5962E1;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblfacturaNo;
+    padding-top: 4px;
+}
+
+#txtFacturaNoCollect {
+    font-size: 14px;
+    grid-area: txtfacturaNo;
+    height: 65%;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-leftSide-fecha {
+    display: grid;
+    grid-area: fecha;
+    height: 100%;
+    grid-template-areas: 
+        'lblfecha txtfecha';
+    grid-template-columns: 50% 50%;
+}
+
+#lblFecha2Collect {
+    color: #5962E1;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblfecha;
+    padding-top: 4px;
+}
+
+#txtFecha2Collect {
+    font-size: 14px;
+    grid-area: txtfecha;
+    height: 65%;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-leftSide-saldo {
+    display: grid;
+    grid-area: saldo;
+    height: 100%;
+    grid-template-areas: 
+        'lblsaldo txtsaldo';
+    grid-template-columns: 50% 50%;
+}
+
+#lblSaldoCollect {
+    color: #5962E1;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblsaldo;
+    padding-top: 4px;
+}
+
+#txtSaldoCollect {
+    font-size: 14px;
+    grid-area: txtsaldo;
+    height: 65%;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-leftSide-cuentaCont {
+    display: grid;
+    grid-area: cuentaCont;
+    height: 100%;
+    grid-template-areas: 
+        'lblcuentaCont txtcuentaCont';
+    grid-template-columns: 50% 50%;
+}
+
+#lblCuentaContCollect {
+    color: #5962E1;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblcuentaCont;
+    padding-top: 4px;
+}
+
+#txtCuentaContCollect {
+    font-size: 14px;
+    grid-area: txtcuentaCont;
+    height: 65%;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-rightSide {
+    display: grid;
+    grid-area: rightSide;
+    height: 100%;
+    grid-template-areas: 
+        'ajuste'
+        'montoFactura'
+        'saldoActual'
+        'descrip';
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-rightSide-ajuste {
+    display: grid;
+    grid-area: ajuste;
+    height: 100%;
+    grid-template-areas: 
+        'lblajuste txtajuste';
+    grid-template-columns: 50% 50%;
+}
+
+#lblAjusteCollect {
+    color: #5962E1;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblajuste;
+    padding-top: 4px;
+}
+
+#txtAjusteCollect {
+    font-size: 14px;
+    grid-area: txtajuste;
+    height: 65%;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-rightSide-montoFactura {
+    display: grid;
+    grid-area: montoFactura;
+    height: 100%;
+    grid-template-areas: 
+        'lblmontoFactura txtmontoFactura';
+    grid-template-columns: 50% 50%;
+}
+
+#lblMontoFacturaCollect {
+    color: #5962E1;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblmontoFactura;
+    padding-top: 4px;
+}
+
+#txtMontoFacturaCollect {
+    font-size: 14px;
+    grid-area: txtmontoFactura;
+    height: 65%;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-rightSide-saldoActual {
+    display: grid;
+    grid-area: saldoActual;
+    height: 100%;
+    grid-template-areas: 
+        'lblsaldoActual txtsaldoActual';
+    grid-template-columns: 50% 50%;
+}
+
+#lblSaldoActualCollect {
+    color: #5962E1;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblsaldoActual;
+    padding-top: 4px;
+}
+
+#txtSaldoActualCollect {
+    font-size: 14px;
+    grid-area: txtsaldoActual;
+    height: 65%;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: start;
+}
+
+.collect_body-secondLine-facturas-datosFactura-inputs-rightSide-Descrip {
+    display: grid;
+    grid-area: descrip;
+    height: 100%;
+    grid-template-areas: 
+        'lblDescrip txtDescrip';
+    grid-template-columns: 50% 50%;
+}
+
+#lblDescripCollect {
+    color: #5962E1;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblDescrip;
+    padding-top: 4px;
+}
+
+#txtDescripCollect {
+    font-size: 14px;
+    grid-area: txtDescrip;
+    height: 65%;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: start;
 }

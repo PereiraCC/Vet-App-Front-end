@@ -57,7 +57,107 @@ export const CollectBody = () => {
             </div>
 
             <div className='collect_body-secondLine'>
-                <p id='lblCollectsecondLine'>SecondLine</p>
+                
+                <div className='collect_body-secondLine-facturas'>
+
+                    <p id='lblFacturasCollect'>Facturas Pendiente de Pago</p>
+
+                    <div className='collect_body-secondLine-facturas-table'>
+                        <table className='collect_body-table'>
+                            <thead>
+                                <tr>
+                                    <th className='collect_body-table-header-numeroFactura'>Factura No.</th>
+                                    <th className='collect_body-table-header-fecha'>Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className='collect_body-table-numeroFactura'>test</td>
+                                    <td className='collect_body-table-fecha'>test</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </div>
+
+                <div className='collect_body-secondLine-facturas-tipoAjuste'>
+                    
+                    <p id='lblTipoAjusteCollect'>Tipo de Ajuste</p>
+
+                    <div className='collect_body-secondLine-facturas-tipoAjuste-checks'>
+                        
+                        <div className='collect_body-secondLine-facturas-tipoAjuste-checks-credito-radio'>
+                            <input type="radio" id="rbNotaCreaditoCollect" name="notaCreaditoCollect" value="notaCreaditoCollect"/>
+                            <label for="rbNotaCreaditoCollect" id='lblNotaCreaditoCollect'>Nota Crédito</label>
+                        </div>
+
+                        <div className='collect_body-secondLine-facturas-tipoAjuste-checks-debito-radio'>
+                            <input type="radio" id="rbNotaDebitoCollect" name="notaDebitoCollect" value="notaDebitoCollect"/>
+                            <label for="rbNotaDebitoCollect" id='lblNotaDebitoCollect'>Nota Débito</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className='collect_body-secondLine-facturas-datosFactura'>
+
+                    <p id='lblDatosFacturaCollect'>Datos de la Factura</p>
+
+                    <div className='collect_body-secondLine-facturas-datosFactura-inputs'>
+
+                        <div className='collect_body-secondLine-facturas-datosFactura-inputs-leftSide'>
+                            
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-leftSide-factura'>
+                                <p id='lblFacturaNoCollect'>Factura No.</p>
+                                <input type='text' id='txtFacturaNoCollect' name='facturaNoCollect'/>
+                            </div>
+
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-leftSide-fecha'>
+                                <p id='lblFecha2Collect'>Fecha</p>
+                                <input type="date" id="txtFecha2Collect" name="fechaCollect"/>
+                            </div>
+
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-leftSide-saldo'>
+                                <p id='lblSaldoCollect'>Saldo ₡</p>
+                                <input type='text' id='txtSaldoCollect' name='saldoCollect'/>
+                            </div>
+
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-leftSide-cuentaCont'>
+                                <p id='lblCuentaContCollect'>Cuenta Cont</p>
+                                <input type='text' id='txtCuentaContCollect' name='cuentaContCollect'/>
+                            </div>
+
+                        </div>
+
+                        <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide'>
+                            
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-ajuste'>
+                                <p id='lblAjusteCollect'>Ajuste ₡</p>
+                                <input type='text' id='txtAjusteCollect' name='ajusteCollect'/>
+                            </div>
+
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-montoFactura'>
+                                <p id='lblMontoFacturaCollect'>Monto Factura ₡</p>
+                                <input type="date" id="txtMontoFacturaCollect" name="montoFacturaCollect"/>
+                            </div>
+
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-saldoActual'>
+                                <p id='lblSaldoActualCollect'>Saldo Actual ₡</p>
+                                <input type='text' id='txtSaldoActualCollect' name='saldoActualCollect'/>
+                            </div>
+
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-Descrip'>
+                                <p id='lblDescripCollect'>Descripción</p>
+                                <input type='text' id='txtDescripCollect' name='DescripCollect'/>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
