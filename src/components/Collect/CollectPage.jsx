@@ -1,4 +1,5 @@
 import { CollectBody } from './CollectBody';
+import { CollectTable } from './CollectTable';
 
 export const CollectPage = () => {
     return (
@@ -18,7 +19,7 @@ export const CollectPage = () => {
             </div>
 
             <div className='collect_main-table'>
-                <p>Table</p>
+                <CollectTable />
             </div>
 
             <div className='collect_main-footer'>
