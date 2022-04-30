@@ -9,7 +9,7 @@
         'table'
         'observaciones'
         'icons';
-    grid-template-rows: 25px 60px 200px 150px 60px 53px;
+    grid-template-rows: 25px 65px 195px 150px 60px 53px;
 }
 
 .pays_main-header {
@@ -25,7 +25,6 @@
 
 .pays_main-datosProveedor {
     grid-area: datosProveedor;
-    background-color: blueviolet;
 }
 
 .pays_main-body {
