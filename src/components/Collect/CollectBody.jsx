@@ -81,25 +81,6 @@ export const CollectBody = () => {
                    
                 </div>
 
-                <div className='collect_body-secondLine-facturas-tipoAjuste'>
-                    
-                    <p id='lblTipoAjusteCollect'>Tipo de Ajuste</p>
-
-                    <div className='collect_body-secondLine-facturas-tipoAjuste-checks'>
-                        
-                        <div className='collect_body-secondLine-facturas-tipoAjuste-checks-credito-radio'>
-                            <input type="radio" id="rbNotaCreaditoCollect" name="notaCreaditoCollect" value="notaCreaditoCollect"/>
-                            <label for="rbNotaCreaditoCollect" id='lblNotaCreaditoCollect'>Nota Crédito</label>
-                        </div>
-
-                        <div className='collect_body-secondLine-facturas-tipoAjuste-checks-debito-radio'>
-                            <input type="radio" id="rbNotaDebitoCollect" name="notaDebitoCollect" value="notaDebitoCollect"/>
-                            <label for="rbNotaDebitoCollect" id='lblNotaDebitoCollect'>Nota Débito</label>
-                        </div>
-
-                    </div>
-                </div>
-
                 <div className='collect_body-secondLine-facturas-datosFactura'>
 
                     <p id='lblDatosFacturaCollect'>Datos de la Factura</p>
@@ -118,40 +99,39 @@ export const CollectBody = () => {
                                 <input type="date" id="txtFecha2Collect" name="fechaCollect"/>
                             </div>
 
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-leftSide-monto'>
+                                <p id='lblMontoCollect'>Monto ₡</p>
+                                <input type='text' id='txtMontoCollect' name='montoCollect'/>
+                            </div>
+
                             <div className='collect_body-secondLine-facturas-datosFactura-inputs-leftSide-saldo'>
                                 <p id='lblSaldoCollect'>Saldo ₡</p>
                                 <input type='text' id='txtSaldoCollect' name='saldoCollect'/>
-                            </div>
-
-                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-leftSide-cuentaCont'>
-                                <p id='lblCuentaContCollect'>Cuenta Cont</p>
-                                <input type='text' id='txtCuentaContCollect' name='cuentaContCollect'/>
                             </div>
 
                         </div>
 
                         <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide'>
                             
-                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-ajuste'>
-                                <p id='lblAjusteCollect'>Ajuste ₡</p>
-                                <input type='text' id='txtAjusteCollect' name='ajusteCollect'/>
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-intereses'>
+                                <p id='lblInteresesCollect'>Intereses ₡</p>
+                                <input type='text' id='txtInteresesCollect' name='interesesCollect'/>
                             </div>
 
-                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-montoFactura'>
-                                <p id='lblMontoFacturaCollect'>Monto Factura ₡</p>
-                                <input type="date" id="txtMontoFacturaCollect" name="montoFacturaCollect"/>
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-saldoPrevio'>
+                                <p id='lblSaldoPrevioCollect'>Saldo Previo ₡</p>
+                                <input type="text" id="txtSaldoPrevioCollect" name="saldoPrevioCollect"/>
+                            </div>
+
+                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-abono'>
+                                <p id='lblAbonoCollect'>Abono</p>
+                                <input type='text' id='txtAbonoCollect' name='abonoCollect'/>
                             </div>
 
                             <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-saldoActual'>
                                 <p id='lblSaldoActualCollect'>Saldo Actual ₡</p>
                                 <input type='text' id='txtSaldoActualCollect' name='saldoActualCollect'/>
                             </div>
-
-                            <div className='collect_body-secondLine-facturas-datosFactura-inputs-rightSide-Descrip'>
-                                <p id='lblDescripCollect'>Descripción</p>
-                                <input type='text' id='txtDescripCollect' name='DescripCollect'/>
-                            </div>
-
 
                         </div>
 
