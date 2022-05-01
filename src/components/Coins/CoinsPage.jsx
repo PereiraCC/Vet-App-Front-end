@@ -61,9 +61,9 @@ export const CoinsPage = () => {
 
                 <div className='coins-icons-Editar'>
                     <div className='coins-icons-Editar-icon'>
-                        <AiFillEdit id='iconEditP'/>
+                        <AiFillEdit id='iconEditCoins'/>
                     </div>
-                    <p id='lblEditarP'>Editar</p>
+                    <p id='lblEditCoins'>Editar</p>
                 </div>
 
                 <div className='coins-icons-registrar'>
