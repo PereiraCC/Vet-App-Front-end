@@ -12,4 +12,4 @@ Este es el repositorio para manejar la aplicacion web de SUVESA en la tecnologia
 5. Iniciar el servidor de desarrollo con el comando: ``` yarn dev ```
 
 #### Fecha
-22/04/2022
+01/05/2022
