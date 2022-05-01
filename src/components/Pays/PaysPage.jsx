@@ -1,5 +1,6 @@
 import { PaysBody } from './PaysBody/PaysBody';
 import { PaysDatosProveedor } from './PaysDatosProveedor';
+import { PaysObservaciones } from './PaysObservaciones';
 import { PaysTable } from './PaysTable';
 
 export const PaysPage = () => {
@@ -23,7 +24,7 @@ export const PaysPage = () => {
             </div>
 
             <div className='pays_main-observaciones'>
-                <p>Observaciones</p>
+                <PaysObservaciones />
             </div>
 
             <div className='pays_main-icons'>
