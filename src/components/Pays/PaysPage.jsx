@@ -1,3 +1,4 @@
+import { PaysBody } from './PaysBody/PaysBody';
 import { PaysDatosProveedor } from './PaysDatosProveedor';
 
 export const PaysPage = () => {
@@ -13,7 +14,7 @@ export const PaysPage = () => {
             </div>
 
             <div className='pays_main-body'>
-                <p>Body</p>
+                <PaysBody />
             </div>
 
             <div className='pays_main-table'>
