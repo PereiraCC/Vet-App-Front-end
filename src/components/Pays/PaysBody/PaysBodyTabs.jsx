@@ -1,12 +1,23 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { SelectTabPays } from '../../../actions/pays';
 
 export const PaysBodyTabs = () => {
+
+    const dispatch = useDispatch();
+
+    const state = useSelector( state => state.pays );
+    const { currentTabPays } = state;
+
+    const handleSelectTabPays = (nameTab) => {
+        dispatch( SelectTabPays( nameTab ) );
+    }
+
     return (
         <ul>
             <li className="pays-tabs">
                 <button 
-                    // className={currentTabCustomers == 'DatosGenerales' ? "customers-tab active" : "customers-tab"}
-                    className="pays-tab active"
-                    // onClick={ () => handleSelectTabCustomers('DatosGenerales') }
+                    className={currentTabPays == 'DatosAbono' ? "pays-tab active" : "pays-tab"}
+                    onClick={ () => handleSelectTabPays('DatosAbono') }
                 >
                     Datos del Abono
                 </button>
@@ -14,9 +25,8 @@ export const PaysBodyTabs = () => {
 
             <li className="pays-tabs">
                 <button 
-                    className="pays-tab"
-                    // className={currentTabCustomers == 'CreditoDescuento' ? "customers-tab active" : "customers-tab"}
-                    // onClick={ () => handleSelectTabCustomers('CreditoDescuento') }
+                    className={currentTabPays == 'DetalleFactura' ? "pays-tab active" : "pays-tab"}
+                    onClick={ () => handleSelectTabPays('DetalleFactura') }
                 >
                     Detalle de la(s) Factura(s) a Abonar
                 </button>

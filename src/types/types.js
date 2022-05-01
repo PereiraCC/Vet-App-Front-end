@@ -34,4 +34,7 @@ export const types = {
     // Settings actions
     SelectTabSettings: '[Settings] SelectTabSettings',
 
+    // Pays actions
+    SelectTabPays: '[Pays] SelectTabPays',
+
 }

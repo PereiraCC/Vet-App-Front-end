@@ -1,6 +1,28 @@
-import { PaysBodyTabs } from "./PaysBodyTabs"
+import { useSelector } from 'react-redux';
+import { PaysBodyDatosAbono } from './PaysBodyDatosAbono';
+import { PaysBodyDetalleFactura } from './PaysBodyDetalleFactura';
+import { PaysBodyTabs } from './PaysBodyTabs';
 
 export const PaysBody = () => {
+
+    const state = useSelector( state => state.pays );
+    const { currentTabPays } = state;
+
+    const redirectComponent = () => {
+
+        switch (currentTabPays) {
+
+            case 'DatosAbono':
+                return <PaysBodyDatosAbono />
+
+            case 'DetalleFactura':
+                return <PaysBodyDetalleFactura />
+        
+            default:
+                break;
+        }
+    }
+
     return (
         <div className='pays_body-main'>
 
@@ -36,7 +58,9 @@ export const PaysBody = () => {
                 </div>
 
                 <div className='pays_body-tabs-body'>
-                    <p>Body</p>
+                    { 
+                        redirectComponent()
+                    }
                 </div>
 
             </div>
