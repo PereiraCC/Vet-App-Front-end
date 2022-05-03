@@ -59,7 +59,6 @@ export const PaysAdjustmentDatosGenerales = () => {
 
                 <div className='pays_adjustment-DatosGeneral-secondLine-observaciones'>
                     <p id='lblObservacionesDatosGPaysT'>Observaciones:</p>
-                    {/* <input type='text' id='txtObservacionesDatosGPaysT' name='observacionesDatosGPaysT'/> */}
                     <textarea 
                         id='txtObservacionesDatosGPaysT' 
                         name='observacionesDatosGPaysT'
