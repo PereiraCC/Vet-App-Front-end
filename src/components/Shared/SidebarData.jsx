@@ -95,6 +95,18 @@ export const SidebarData = [
                 cName: 'vet_nav-text'
             },
             {
+                title: 'Abono Pagar',
+                path: '/buys/pay',
+                icon: <GiPayMoney />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Ajuste Pagar',
+                path: '/buys/payadjustment',
+                icon: <GiPayMoney />,
+                cName: 'vet_nav-text'
+            },
+            {
                 title: 'Prestamos',
                 path: '/buys/loans',
                 icon: <GiReceiveMoney />,
@@ -123,21 +135,9 @@ export const SidebarData = [
                 cName: 'vet_nav-text'
             },
             {
-                title: 'Abono Pagar',
-                path: '/sales/pay',
-                icon: <GiPayMoney />,
-                cName: 'vet_nav-text'
-            },
-            {
                 title: 'Ajuste Cobrar',
                 path: '/sales/adjustmentcollect',
                 icon: <GiTakeMyMoney />,
-                cName: 'vet_nav-text'
-            },
-            {
-                title: 'Ajuste Pagar',
-                path: '/sales/payadjustment',
-                icon: <GiPayMoney />,
                 cName: 'vet_nav-text'
             },
             {

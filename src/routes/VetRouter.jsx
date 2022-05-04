@@ -121,6 +121,20 @@ export const VetRouter = ({ isAuthenticated}) => {
                 <PrivateRoute 
                     isAuthenticated={ isAuthenticated }
                     exact
+                    path="/buys/pay"
+                    component={ PaysPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/buys/payadjustment"
+                    component={ PaysAdjustmentPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
                     path="/buys/loans"
                     component={ LoansPage }
                 />
@@ -142,22 +156,8 @@ export const VetRouter = ({ isAuthenticated}) => {
                 <PrivateRoute 
                     isAuthenticated={ isAuthenticated }
                     exact
-                    path="/sales/pay"
-                    component={ PaysPage }
-                />
-
-                <PrivateRoute 
-                    isAuthenticated={ isAuthenticated }
-                    exact
                     path="/sales/adjustmentcollect"
                     component={ CollectAdjustmentPage }
-                />
-
-                <PrivateRoute 
-                    isAuthenticated={ isAuthenticated }
-                    exact
-                    path="/sales/payadjustment"
-                    component={ PaysAdjustmentPage }
                 />
 
                 <PrivateRoute 
