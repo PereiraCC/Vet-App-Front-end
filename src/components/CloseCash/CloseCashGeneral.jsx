@@ -111,6 +111,21 @@ export const CloseCashGeneral = () => {
 
                 </div>
 
+                <div className='closeCash_general-inputs-totales'>
+                    
+                    <div className='closeCash_general-inputs-totales-title'>
+                        <p id='lblTotalesCajeroCash'>Total Cajero</p>
+                        <p id='lblTotalesMedioCash'>/</p>
+                        <p id='lblTotalesSistemaCash'>Total Sistema</p>
+                    </div>
+                    
+                    <div className='closeCash_general-inputs-totales-inputs'>
+                        <input type='text' id='txttotalesCajero' name='totalesCajero' value='0.00'/>
+                        <input type='text' id='txttotalesSistema' name='totalesSistema' value='0.00'/>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>

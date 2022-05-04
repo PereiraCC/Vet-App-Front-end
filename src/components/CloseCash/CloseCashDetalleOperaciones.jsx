@@ -32,6 +32,14 @@ export const CloseCashDetalleOperaciones = () => {
                 </table>
             </div>
 
+            <div className='closeCash_detalleOperaciones-user'>
+                
+                <p id='lblUserCloseCash'>Usuario →</p>
+                <input id='txtUserCloseCash' name='userCloseCash' type='text' />
+                <p id='lblSistemaCloseCash'>SISTEMA</p>
+
+            </div>
+
         </div>
     )
 }

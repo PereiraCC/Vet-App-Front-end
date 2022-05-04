@@ -2,8 +2,8 @@
     border: 1px solid #C1C4B9;
     display: grid;
     height: 97%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 5px;
     grid-template-areas: 
         'title'
@@ -34,8 +34,9 @@
         'chequesColones'
         'chequesDolares'
         'depositosColones'
-        'depositosDolares';
-    grid-template-rows: 9% 11.3% 11.3% 11.3% 11.3% 11.3% 11.3% 11.3% 11.3%;
+        'depositosDolares'
+        'totales';
+    grid-template-rows: 8% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
 
 .closeCash_general-inputs-titles {
@@ -340,6 +341,65 @@
 }
 
 #txtDepositosDolares2 {
+    color: #5691FE;
+    font-size: 13px;
+    text-align: end;
+}
+
+.closeCash_general-inputs-totales {
+    display: grid;
+    grid-area: totales;
+    height: 100%;
+    grid-template-areas: 
+        'titleTotales'
+        'inputsTotales';
+    grid-template-rows: 40% 60%;
+}
+
+.closeCash_general-inputs-totales-title {
+    display: grid;
+    grid-area: titleTotales;
+    height: 100%;
+    grid-template-areas: 
+        'totalcajero totalmedio totalsistema';
+    grid-template-columns: 45% 10% 45%;
+}
+
+#lblTotalesCajeroCash {
+    color: #5691FE;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: totalcajero;
+    text-align: end;
+}
+
+#lblTotalesMedioCash {
+    color: #5691FE;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: totalmedio;
+}
+
+#lblTotalesSistemaCash {
+    color: #5691FE;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: totalsistema;
+    text-align: start;
+}
+
+.closeCash_general-inputs-totales-inputs {
+    grid-area: inputsTotales;
+    padding-top: 1px;
+}
+
+#txttotalesCajero {
+    color: #5691FE;
+    font-size: 13px;
+    text-align: end;
+}
+
+#txttotalesSistema {
     color: #5691FE;
     font-size: 13px;
     text-align: end;
