@@ -1,5 +1,6 @@
 import { PaysAdjustmentBody } from "./PaysAdjustmentBody"
 import { PaysAdjustmentDatosGenerales } from "./PaysAdjustmentDatosGenerales"
+import { PaysAdjustmentFooter } from "./PaysAdjustmentFooter"
 import { PaysAdjustmentIcons } from "./PaysAdjustmentIcons"
 
 export const PaysAdjustmentPage = () => {
@@ -24,7 +25,7 @@ export const PaysAdjustmentPage = () => {
             </div>
 
             <div className='pays_adjustment-footer'>
-                <p>Footer</p>
+                <PaysAdjustmentFooter />
             </div>
 
         </div>
