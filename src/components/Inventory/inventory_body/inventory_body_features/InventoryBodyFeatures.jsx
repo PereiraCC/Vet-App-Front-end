@@ -7,6 +7,8 @@ import { InventoryBodyFeaturesCategoria } from './InventoryBodyFeaturesCategoria
 import { InventoryBodyFeaturesRelacionados } from './InventoryBodyFeaturesRelacionados';
 import { InventoryBodyFeaturesUltimoCosto } from './InventoryBodyFeaturesUltimoCosto';
 import { InventoryBodyFeaturesVarios } from './InventoryBodyFeaturesVarios';
+import { InventoryBodyFeaturesSerie } from './InventoryBodyFeaturesSerie';
+import { InventoryBodyFeaturesDetalle } from './InventoryBodyFeaturesDetalle';
 
 export const InventoryBodyFeatures = () => {
 
@@ -31,6 +33,12 @@ export const InventoryBodyFeatures = () => {
 
             case 'Relacionados':
                 return <InventoryBodyFeaturesRelacionados />
+
+            case 'Serie':
+                    return <InventoryBodyFeaturesSerie />
+
+            case 'Detalle':
+                return <InventoryBodyFeaturesDetalle />
         
             default:
                 break;

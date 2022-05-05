@@ -61,6 +61,24 @@ export const InventoryBodyFeaturesTabs = () => {
                 </button>
             </li>
 
+            <li className="inventory-tabs">
+                <button 
+                    className={currentTabInventory == 'Serie' ? "inventory-tab active" : "inventory-tab"}
+                    onClick={ () => handleSelectTabInventory('Serie') }
+                >
+                    Serie
+                </button>
+            </li>
+
+            <li className="inventory-tabs">
+                <button 
+                    className={currentTabInventory == 'Detalle' ? "inventory-tab active" : "inventory-tab"}
+                    onClick={ () => handleSelectTabInventory('Detalle') }
+                >
+                    Detalle Articulos
+                </button>
+            </li>
+
         </ul>
     )
 }
