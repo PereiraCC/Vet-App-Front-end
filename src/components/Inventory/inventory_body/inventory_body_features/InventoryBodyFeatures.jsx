@@ -20,7 +20,7 @@ export const InventoryBodyFeatures = () => {
             case 'UltimoCosto':
                 return <InventoryBodyFeaturesUltimoCosto />
 
-            case 'Bodega2':
+            case 'Bodega':
                 return <InventoryBodyFeaturesBodega />
             
             case 'Varios':

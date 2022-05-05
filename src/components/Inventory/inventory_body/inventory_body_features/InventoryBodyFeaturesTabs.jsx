@@ -27,10 +27,10 @@ export const InventoryBodyFeaturesTabs = () => {
 
             <li className="inventory-tabs">
                 <button 
-                    className={currentTabInventory == 'Bodega2' ? "inventory-tab active" : "inventory-tab"}
-                    onClick={ () => handleSelectTabInventory('Bodega2') }
+                    className={currentTabInventory == 'Bodega' ? "inventory-tab active" : "inventory-tab"}
+                    onClick={ () => handleSelectTabInventory('Bodega') }
                 >
-                    Bodega 2
+                    Bodega
                 </button>
             </li>
 
