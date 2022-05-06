@@ -1,0 +1,165 @@
+.settings_body-valores-main {
+    display: grid;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    grid-template-areas: 
+        'inputs'
+        'check';
+    grid-template-rows: 50% 10%;
+}
+
+.settings_body-valores-inputs {
+    display: grid;
+    grid-area: inputs;
+    height: 100%;
+    grid-template-areas: 
+        'leftSide rightSide';
+    grid-template-columns: 50% 50%;
+}
+
+.settings_body-valores-inputs-leftSide {
+    display: grid;
+    gap: 5px;
+    grid-area: leftSide;
+    height: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    grid-template-areas: 
+        'impuesto'
+        'intereses'
+        'nCajeros'
+        'activar';
+    grid-template-rows: 24% 24% 24% 24%;
+}
+
+.settings_body-valores-inputs-leftSide-impuesto {
+    display: grid;
+    grid-area: impuesto;
+    height: 100%;
+    margin-left: 50%;
+    margin-right: 15%;
+    grid-template-areas: 
+        'lblimpuesto'
+        'inputimpuesto';
+    grid-template-rows: 50% 50%;
+    background-color: aqua;
+}
+
+#lblImpuestoVentaSettingsB {
+    background-color: #E3E3E3;
+    color: #0300FF;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblimpuesto;
+    padding-top: 1px;
+    text-align: center;
+}
+
+#txtImpuestoVentaSettingsB {
+    color: #0300FF;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: inputimpuesto;
+    text-align: end;
+}
+
+.settings_body-valores-inputs-leftSide-intereses {
+    display: grid;
+    grid-area: intereses;
+    height: 100%;
+    margin-left: 50%;
+    margin-right: 15%;
+    grid-template-areas: 
+        'lblintereses'
+        'inputintereses';
+    grid-template-rows: 50% 50%;
+}
+
+#lblInteresesSettingsB {
+    background-color: #E3E3E3;
+    color: #0300FF;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblintereses;
+    padding-top: 1px;
+    text-align: center;
+}
+
+#txtInteresesSettingsB {
+    color: #0300FF;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: inputintereses;
+    text-align: end;
+}
+
+.settings_body-valores-inputs-leftSide-numeroCajeros {
+    display: grid;
+    grid-area: nCajeros;
+    height: 100%;
+    margin-left: 50%;
+    margin-right: 15%;
+    grid-template-areas: 
+        'lblnumeroCajeros'
+        'inputnumeroCajeros';
+    grid-template-rows: 50% 50%;
+    background-color: red;
+}
+
+#lblnumeroCajerosSettingsB {
+    background-color: #E3E3E3;
+    color: #0300FF;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblnumeroCajeros;
+    padding-top: 1px;
+    text-align: center;
+}
+
+#txtnumeroCajerosSettingsB {
+    color: #0300FF;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: inputnumeroCajeros;
+    text-align: end;
+}
+
+.settings_body-valores-inputs-leftSide-activar {
+    display: grid;
+    grid-area: activar;
+    height: 100%;
+    margin-left: 50%;
+    margin-right: 15%;
+    grid-template-areas: 
+        'checkactivarR lblactivarR';
+    grid-template-columns: 10% 60%;
+}
+
+.settings_body-valores-inputs-leftSide-activar-input {
+    grid-area: checkactivarR;
+    padding-top: 5px;
+}
+
+#lblActivarSettingsB {
+    color: #0300FF;
+    font-size: 15px;
+    font-weight: bold;
+    grid-area: lblactivarR;
+    height: 50%;
+    padding-left: 2px;
+    padding-top: 5px;
+    text-align: start;
+}
+
+.settings_body-valores-inputs-rightSide {
+    grid-area: rightSide;
+    background-color: blue;
+}
+
+.settings_body-valores-check {
+    grid-area: check;
+    background-color: gold;
+}
