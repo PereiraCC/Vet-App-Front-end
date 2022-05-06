@@ -10,21 +10,39 @@
 
 .customers_header-title {
     background-color: #3D59A9;
+    display: grid;
     grid-area: title;
+    height: 100%;
+    grid-template-areas: 
+        'inputTitle lbltitle';
+    grid-template-columns: 20% 60%;
+}
+
+.customers_header-title-input {
+    grid-area: inputTitle;
+    padding-top: 10px;
+}
+
+#inputTitleCustomers {
+    color: red;
+    font-size: 15px;
+    text-align: center;
 }
 
 #lblTitleCustomers {
     color: white;
     font-size: 25px;
+    grid-area: lbltitle;
+    padding-top: 5px;
     text-align: center;
 }
 
 .customers_header-firstLine {
+    display: grid;
     grid-area: firstLine;
+    height: 100%;
     margin-left: 5%;
     margin-right: 5%;
-    display: grid;
-    height: 100%;
     grid-template-areas: 
         'nombre cedula';
     grid-template-columns: 70% 30%;
@@ -32,8 +50,8 @@
 }
 
 .customers_header-firstLine-Nombre {
-    grid-area: nombre;
     display: grid;
+    grid-area: nombre;
     height: 100%;
     grid-template-areas: 
         'labelNombre'

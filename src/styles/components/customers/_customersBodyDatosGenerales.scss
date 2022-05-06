@@ -605,6 +605,12 @@
     height: 100%;
     text-align: center;
     width: 100%;
+
+    &:hover {
+        background-color: #C0C0C0;
+        color: #EEF2E6;
+        cursor: pointer;
+    }
 }
 
 .customers_body-datos-secondBox-checks-registradoMAG {

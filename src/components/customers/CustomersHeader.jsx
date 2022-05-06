@@ -4,6 +4,11 @@ export const CustomersHeader = () => {
         <div className="customers_header-main">
 
             <div className="customers_header-title">
+
+                <div className='customers_header-title-input'>
+                    <input type="text" id='inputTitleCustomers' name='titleCustomers'/>
+                </div>
+
                 <p id="lblTitleCustomers">Formulario de Clientes</p>
             </div>
 
