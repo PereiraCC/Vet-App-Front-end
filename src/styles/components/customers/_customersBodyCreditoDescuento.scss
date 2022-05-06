@@ -1,0 +1,72 @@
+.customers_body-credito-main {
+    background-color: #F0F0F0;
+    display: grid;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    grid-template-areas: 
+        'btn'
+        'check'
+        'box';
+    grid-template-rows: 15% 10% 75%;
+}
+
+.customers_body-credito-btn {
+    grid-area: btn;
+    padding-right: 77.5%;
+    padding-top: 15px;
+}
+
+#btnActivarOpeCustomersCre {
+    color: #3E67E1;
+    font-size: 15px;
+    height: 80%;
+}
+
+.customers_body-credito-check {
+    background-color: #C0C0C0;
+    display: grid;
+    grid-area: check;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    grid-template-areas: 
+        'checkActivarCre lblActivarCre';
+    grid-template-columns: 2% 15%;
+}
+
+.customers_body-credito-check-input {
+    grid-area: checkActivarCre;
+    padding-top: 5px;
+}
+
+#lblActivarCre {
+    color: black;
+    font-size: 15px;
+    grid-area: lblActivarCre;
+    padding-left: 5px;
+    padding-top: 4px;
+    text-align: start;
+}
+
+.customers_body-credito-box {
+    background-color: #C0C0C0;
+    display: grid;
+    grid-area: box;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    grid-template-areas: 
+        'leftSide rightSide';
+    grid-template-columns: 50% 50%;
+}
+
+.customers_body-credito-box-leftSide {
+    grid-area: leftSide;
+    background-color: red;
+}
+
+.customers_body-credito-box-rightSide {
+    grid-area: rightSide;
+    background-color: blue;
+}
