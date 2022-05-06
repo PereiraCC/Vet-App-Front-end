@@ -36,15 +36,6 @@ export const SettingsBodyTabs = () => {
 
             <li className="settings-tabs">
                 <button 
-                    className={currentTabSettings == 'Logo' ? "settings-tab active" : "settings-tab"}
-                    onClick={ () => handleSelectTabSettings('Logo') }
-                >
-                    Logo
-                </button>
-            </li>
-
-            <li className="settings-tabs">
-                <button 
                     className={currentTabSettings == 'NotificacionesCorreo' ? "settings-tab active" : "settings-tab"}
                     onClick={ () => handleSelectTabSettings('NotificacionesCorreo') }
                 >

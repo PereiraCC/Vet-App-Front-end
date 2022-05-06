@@ -8,8 +8,9 @@
         'firstLine'
         'secondLine'
         'thirdLine'
-        'fourthLine';
-    grid-template-rows: 15% 15% 15% 15%;
+        'fourthLine'
+        'fifthLine';
+    grid-template-rows: 15% 15% 15% 15% 40%;
 }
 
 .settings_body-empresas-firstLine {
@@ -25,7 +26,7 @@
 }
 
 .settings_body-empresas-firstLine-title {
-    background-color: #EEF2E6;
+    background-color: #E3E3E3;
     color: #311BB9;
     grid-area: TitlefirstLine;
     margin-left: 5%;
@@ -73,7 +74,7 @@
 }
 
 .settings_body-empresas-secondLine-cedula-title {
-    background-color: #EEF2E6;
+    background-color: #E3E3E3;
     color: #311BB9;
     font-size: 15px;
     grid-area: TitleCedulaSettings;
@@ -107,7 +108,7 @@
 }
 
 .settings_body-empresas-secondLine-telefono-title {
-    background-color: #EEF2E6;
+    background-color: #E3E3E3;
     color: #311BB9;
     font-size: 15px;
     grid-area: TitleTelefonoSettings;
@@ -152,7 +153,7 @@
 }
 
 .settings_body-empresas-thirdLine-frase-title {
-    background-color: #EEF2E6;
+    background-color: #E3E3E3;
     color: #311BB9;
     font-size: 15px;
     grid-area: TitleFraseSettings;
@@ -185,7 +186,7 @@
 }
 
 .settings_body-empresas-thirdLine-fax-title {
-    background-color: #EEF2E6;
+    background-color: #E3E3E3;
     color: #311BB9;
     font-size: 15px;
     grid-area: TitleFaxSettings;
@@ -218,7 +219,7 @@
 }
 
 .settings_body-empresas-fourthLine-title {
-    background-color: #EEF2E6;
+    background-color: #E3E3E3;
     color: #311BB9;
     grid-area: TitleFourthLine;
     margin-left: 5%;
@@ -240,4 +241,56 @@
     margin-top: 8px;
     text-align: start;
     width: 100%;
+}
+
+.settings_body-empresas-fifthLine {
+    grid-area: fifthLine;
+    display: grid;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-areas: 
+        'btnLogo'
+        'imageLogo';
+    grid-template-rows: 15% 85%;
+}
+
+.settings_body-empresas-fifthLine-btn {
+    grid-area: btnLogo;
+    text-align: start;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#btnSubirLogo {
+    background-color: #E3E3E3;
+    width: 15%;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 2px;
+    height: 100%;
+    border: 1px solid #4F4F4F;
+
+    &:hover {
+        background-color: #4F4F4F;
+        color: #E3E3E3;
+        cursor: pointer;
+    }
+}
+
+#fileSelector {
+    display: none;
+}
+
+.settings_body-empresas-fifthLine-image {
+    grid-area: imageLogo;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+.settings_body-empresas-fifthLine-image-logo {
+    height: 100%;
+    width: 250px;
 }

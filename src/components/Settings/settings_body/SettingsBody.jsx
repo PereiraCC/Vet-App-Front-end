@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { SettingsBodyTabs } from './SettingsBodyTabs';
 
 import { SettingsBodyEmpresas } from './SettingsBodyEmpresas';
-import { SettingsBodyLogo } from './SettingsBodyLogo';
 import { SettingsBodyNotificaciones } from './SettingsBodyNotificaciones';
 import { SettingsBodyPermiso } from './SettingsBodyPermiso';
 import { SettingsBodyValores } from './SettingsBodyValores';
@@ -22,9 +21,6 @@ export const SettingsBody = () => {
 
             case 'Valores':
                 return <SettingsBodyValores />
-            
-            case 'Logo':
-                return <SettingsBodyLogo />
 
             case 'NotificacionesCorreo':
                 return <SettingsBodyNotificaciones />
