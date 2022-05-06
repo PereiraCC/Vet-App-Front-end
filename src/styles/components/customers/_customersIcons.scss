@@ -2,8 +2,17 @@
     height: 100%;
     display: grid;
     grid-template-areas: 
+        'icons user';
+    grid-template-columns: 60% 40%;
+}
+
+.customers_icons-icon {
+    grid-area: icons;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
         'btnNuevo btnBuscar btnRegistrar btnEliminar btnCerrar';
-    grid-template-columns: 8% 8% 8% 8% 8%;
+    grid-template-columns: 13% 13% 13% 13% 13%;
 }
 
 .customers_icons-nuevo {
@@ -149,4 +158,46 @@
     font-weight: 600;
     grid-area: lblCerrar;
     text-align: center;
+}
+
+.customers_icons-user {
+    display: grid;
+    grid-area: user;
+    grid-template-areas: 
+        'lblUser inputUser lblSistema';
+    grid-template-columns: 25% 20% 30%;
+}
+
+#lblUserCustomers {
+    background-color: #3D62DB;
+    color: white;
+    font-size: 15px;
+    grid-area: lblUser;
+    height: 40%;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+#txtUserCustomers {
+    font-size: 15px;
+    grid-area: inputUser;
+    height: 40%;
+    margin-top: 20px;
+    text-align: start;
+    width: 80%;
+}
+
+#lblSistemaCustomers {
+    background-color: #A0A0A0;
+    color: white;
+    font-size: 15px;
+    grid-area: lblSistema;
+    height: 40%;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-top: 2px;
+    text-align: start;
+    width: 100%;
 }
