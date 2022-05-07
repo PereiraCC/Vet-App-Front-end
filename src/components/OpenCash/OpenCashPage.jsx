@@ -20,10 +20,6 @@ export const OpenCashPage = () => {
                 <OpenCashDetalleTotal />
             </div>
 
-            <div className='openCash_main-detalleDenominacion'>
-                <OpenCashDetalleDenominacion />
-            </div>
-
             <div className='openCash_main-icons'>
                 <OpenCashIcons />
             </div>

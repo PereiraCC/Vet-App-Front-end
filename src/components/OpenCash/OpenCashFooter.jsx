@@ -10,7 +10,7 @@ export const OpenCashFooter = () => {
                 <label for="checkAnulada" id="lblAnuladaOC">Anulada</label>
             </div>
 
-            <div className='openCash_footer-user'>
+            {/* <div className='openCash_footer-user'>
                 
                 <div className='openCash_footer-user-title'>
                     <p>Usuario →</p>
@@ -24,7 +24,7 @@ export const OpenCashFooter = () => {
                     <p>SISTEMA</p>
                 </div>
 
-            </div>
+            </div> */}
 
         </div>
     )
