@@ -14,9 +14,9 @@ export const InventoryBodyFeaturesUltimoCosto = () => {
                         <option value="Dolar">Dolar</option>
                     </select>
                 </div>
-                <div className="inventory_body-featuresUC-moneda-inputMoneda">
+                {/* <div className="inventory_body-featuresUC-moneda-inputMoneda">
                     <input name="moneda" id="txtMoneda" readOnly/>
-                </div>
+                </div> */}
 
             </div>
 
@@ -41,9 +41,9 @@ export const InventoryBodyFeaturesUltimoCosto = () => {
                 <div className="inventory_body-featuresUC-base-inputBase">
                     <input name="base" id="txtBase"/>
                 </div>
-                <div className="inventory_body-featuresUC-base-inputBase2">
+                {/* <div className="inventory_body-featuresUC-base-inputBase2">
                     <input name="base2" id="txtBase2" readOnly/>
-                </div>
+                </div> */}
 
             </div>
 
@@ -53,9 +53,9 @@ export const InventoryBodyFeaturesUltimoCosto = () => {
                 <div className="inventory_body-featuresUC-fletes-inputFletes">
                     <input name="fletes" id="txtFletes"/>
                 </div>
-                <div className="inventory_body-featuresUC-fletes-inputFletes2">
+                {/* <div className="inventory_body-featuresUC-fletes-inputFletes2">
                     <input name="fletes2" id="txtFletes2" readOnly/>
-                </div>
+                </div> */}
 
             </div>
 
@@ -65,9 +65,9 @@ export const InventoryBodyFeaturesUltimoCosto = () => {
                 <div className="inventory_body-featuresUC-OCargo-inputOCargo">
                     <input name="OCargo" id="txtOCargo"/>
                 </div>
-                <div className="inventory_body-featuresUC-OCargo-inputOCargo2">
+                {/* <div className="inventory_body-featuresUC-OCargo-inputOCargo2">
                     <input name="OCargo2" id="txtOCargo2" readOnly/>
-                </div>
+                </div> */}
 
             </div>
 
@@ -77,9 +77,9 @@ export const InventoryBodyFeaturesUltimoCosto = () => {
                 <div className="inventory_body-featuresUC-Costo-inputCosto">
                     <input name="Costo" id="txtCosto"/>
                 </div>
-                <div className="inventory_body-featuresUC-Costo-inputCosto2">
+                {/* <div className="inventory_body-featuresUC-Costo-inputCosto2">
                     <input name="Costo2" id="txtCosto2" readOnly/>
-                </div>
+                </div> */}
 
             </div>
 

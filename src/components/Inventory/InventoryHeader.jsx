@@ -15,9 +15,11 @@ export const InventoryHeader = () => {
                 <label for="checkExistencia" id="lblExistencia">Validar Existencia</label>
             </div>
 
-            <div className='inventory_header-Usuario'>
-                <p id='lblUsuario'>Usuario</p>
-                <input name='usuario' id='txtUsuario'/>
+            <div className='inventory_header-inhabilitado'>
+                <div className="inventory_header-inhabilitado-input"> 
+                    <input type="checkbox" id="checkinhabilitadoInv" name="inhabilitadoInventory" value="inhabilitadoInventory" />
+                </div>
+                <label for="checkinhabilitadoInv" id="lblinhabilitadoInv">Inhabilitado</label>
             </div>
 
         </div>

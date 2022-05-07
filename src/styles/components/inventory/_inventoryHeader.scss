@@ -4,7 +4,7 @@
     display: grid;
     height: 100%;
     grid-template-areas: 
-        'header-codigo header-existencia header-usuario';
+        'header-codigo header-existencia header-inhabilitado';
     grid-template-columns: 33% 33% 34%;
 }
 
@@ -57,24 +57,23 @@
     text-align: start;
 }
 
-.inventory_header-Usuario {
-    grid-area: header-usuario;
+.inventory_header-inhabilitado {
+    grid-area: header-inhabilitado;
     display: grid;
     grid-template-areas: 
-        'labelUsuario inputUsuario';
-    grid-template-columns: 20% 80%;
+        'checkInhabilitado labelInhabilitado';
+    grid-template-columns: 5% 17%;
 }
 
-#lblUsuario {
-    font-size: 15px;
-    grid-area: labelUsuario;
-    padding-top: 10px;
+.inventory_header-inhabilitado-input {
+    grid-area: checkInhabilitado;
+    padding-top: 12px;
 }
 
-#txtUsuario {
+#lblinhabilitadoInv {
     font-size: 15px;
-    grid-area: inputUsuario;
-    height: 50%;
+    grid-area: labelInhabilitado;
+    text-align: start;
     margin-top: 10px;
-    width: 90%;
+    height: 50%;
 }

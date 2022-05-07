@@ -58,14 +58,14 @@ export const InventoryBodyFeaturesVarios = () => {
 
             <div className='inventory_body-featuresVarios-secondBox'>
                 
-                <div className='inventory_body-featuresVarios-secondBox-check'>
+                {/* <div className='inventory_body-featuresVarios-secondBox-check'>
                     
                     <div className="inventory_body-featuresVarios-secondBox-check-promo-bonif"> 
                         <input type="checkbox" id="checkbonif" name="bonifInventory" value="bonifInventory" />
                     </div>
                     <label for="checkbonif" id="lblbonifInventory">Bonificado</label>
 
-                </div>
+                </div> */}
 
                 <div className='inventory_body-featuresVarios-secondBox-maximos'>
                     
@@ -75,12 +75,17 @@ export const InventoryBodyFeaturesVarios = () => {
                         <p id="lblDescPorInventory">%</p>
                     </div>
 
-                    <div className='inventory_body-featuresVarios-secondBox-maximos-comision'>
+                    {/* <div className='inventory_body-featuresVarios-secondBox-maximos-comision'>
                         <p id="lblMaxComisionInventory">Máximo Comisión</p>
                         <input type="text" id="txtMaxComisionInventory" name="maxComisionInventory" />
                         <p id="lblComiPorInventory">%</p>
-                    </div>
+                    </div> */}
 
+                </div>
+
+                <div className='inventory_body-featuresVarios-secondBox-precio'>
+                    <p id="lblPrecioInventory">Precio</p>
+                    <input type="number" id="txtPrecioInventory" name="precioInventory" />
                 </div>
 
             </div>
@@ -98,14 +103,14 @@ export const InventoryBodyFeaturesVarios = () => {
 
                     </div>
 
-                    <div className='inventory_body-featuresVarios-thirdBox-leftSide-orden'>
+                    {/* <div className='inventory_body-featuresVarios-thirdBox-leftSide-orden'>
 
                         <div className="inventory_body-featuresVarios-thirdBox-leftSide-orden-input"> 
                             <input type="checkbox" id="checkorden" name="ordenInventory" value="ordenInventory" />
                         </div>
                         <label for="checkorden" id="lblordenInventory">Orden</label>
 
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -113,14 +118,14 @@ export const InventoryBodyFeaturesVarios = () => {
                     
                     <div className='inventory_body-featuresVarios-thirdBox-rightSide-first'>
 
-                        <div className='inventory_body-featuresVarios-thirdBox-rightSide-first-lote'>
+                        {/* <div className='inventory_body-featuresVarios-thirdBox-rightSide-first-lote'>
 
                             <div className="inventory_body-featuresVarios-thirdBox-rightSide-first-lote-input"> 
                                 <input type="checkbox" id="checklote" name="loteInventory" value="loteInventory" />
                             </div>
                             <label for="checklote" id="lblloteInventory">Lote</label>
 
-                        </div>
+                        </div> */}
 
                         <div className='inventory_body-featuresVarios-thirdBox-rightSide-first-servicio'>
 
@@ -131,25 +136,25 @@ export const InventoryBodyFeaturesVarios = () => {
 
                         </div>
 
-                        <div className='inventory_body-featuresVarios-thirdBox-rightSide-first-inhabilitado'>
+                        {/* <div className='inventory_body-featuresVarios-thirdBox-rightSide-first-inhabilitado'>
 
                             <div className="inventory_body-featuresVarios-thirdBox-rightSide-first-inhabilitado-input"> 
                                 <input type="checkbox" id="checkinhabilitado" name="inhabilitadoInventory" value="inhabilitadoInventory" />
                             </div>
                             <label for="checkinhabilitado" id="lblinhabilitadoInventory">Inhabilitado</label>
 
-                        </div>
+                        </div> */}
 
                     </div>
 
-                    <div className='inventory_body-featuresVarios-thirdBox-rightSide-second'>
+                    {/* <div className='inventory_body-featuresVarios-thirdBox-rightSide-second'>
                     
                         <div className="inventory_body-featuresVarios-thirdBox-rightSide-second-requiere-input"> 
                             <input type="checkbox" id="checkrequire" name="requireInventory" value="requireInventory" />
                         </div>
                         <label for="checkrequire" id="lblrequireInventory">Require</label>
 
-                    </div>
+                    </div> */}
 
                 </div>
 

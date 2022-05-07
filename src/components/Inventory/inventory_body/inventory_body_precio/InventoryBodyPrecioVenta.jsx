@@ -46,7 +46,7 @@ export const InventoryBodyPrecioVenta = () => {
 
             </div>
 
-            <div className="inventory_body-precio-venta-camposB">
+            {/* <div className="inventory_body-precio-venta-camposB">
                 
                 <div className="inventory_body-precio-venta-camposB-inputOne">
                     <input name="moneda" id="txtPrecioVentaCampoBOne"/>
@@ -60,9 +60,9 @@ export const InventoryBodyPrecioVenta = () => {
                     <input name="moneda" id="txtPrecioVentaCampoBThree" readOnly/>
                 </div>
 
-            </div>
+            </div> */}
 
-            <div className="inventory_body-precio-venta-camposC">
+            {/* <div className="inventory_body-precio-venta-camposC">
             
                 <div className="inventory_body-precio-venta-camposC-inputOne">
                     <input name="moneda" id="txtPrecioVentaCampoCOne"/>
@@ -76,9 +76,9 @@ export const InventoryBodyPrecioVenta = () => {
                     <input name="moneda" id="txtPrecioVentaCampoCThree" readOnly/>
                 </div>
 
-            </div>
+            </div> */}
 
-            <div className="inventory_body-precio-venta-camposD">
+            {/* <div className="inventory_body-precio-venta-camposD">
 
                 <div className="inventory_body-precio-venta-camposD-inputOne">
                     <input name="moneda" id="txtPrecioVentaCampoDOne"/>
@@ -92,7 +92,7 @@ export const InventoryBodyPrecioVenta = () => {
                     <input name="moneda" id="txtPrecioVentaCampoDThree" readOnly/>
                 </div>
 
-            </div>
+            </div> */}
 
             <div className="inventory_body-precio-venta-camposP">
                

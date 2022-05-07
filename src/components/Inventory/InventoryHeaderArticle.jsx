@@ -1,3 +1,4 @@
+import { FaSearch } from 'react-icons/fa';
 
 export const InventoryHeaderArticle = () => {
   return (
@@ -7,8 +8,15 @@ export const InventoryHeaderArticle = () => {
             <div className='inventory_header-article-first-line'>
               
               <div className='inventory_header-article-first-line-codigo'>
-                  <p id='lblCodigoProducto'>Código</p>
-                  <input name="codigoProducto" id='txtCodigoProducto'/>
+
+                    <div className='inventory_header-article-first-line-codigo-input'>
+                        <p id='lblCodigoProducto'>Código</p>
+                        <input name="codigoProducto" id='txtCodigoProducto'/>
+                    </div>
+
+                    <div className='inventory_header-article-first-line-codigo-icon'>
+                        <FaSearch id='btnSearchCliente'/>
+                    </div>
               </div>
 
               <div className='inventory_header-article-first-line-desc'>

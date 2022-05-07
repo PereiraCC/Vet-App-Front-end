@@ -178,35 +178,34 @@
     grid-area: secondBox;
     height: 100%;
     grid-template-areas: 
-        'checkBon'
-        'maximos';
-    grid-template-rows: 30% 70%;
+        'maximos precio';
+    grid-template-columns: 50% 50%;
 }
 
-.inventory_body-featuresVarios-secondBox-check {
-    display: grid;
-    grid-area: checkBon;
-    height: 100%;
-    grid-template-areas: 
-        'checkbonif lblbonif';
-    grid-template-columns: 10% 50%;
-}
+// .inventory_body-featuresVarios-secondBox-check {
+//     display: grid;
+//     grid-area: checkBon;
+//     height: 100%;
+//     grid-template-areas: 
+//         'checkbonif lblbonif';
+//     grid-template-columns: 10% 50%;
+// }
 
-.inventory_body-featuresVarios-secondBox-check-promo-bonif {
-    grid-area: checkbonif;
-    padding-left: 80%;
-    padding-top: 3px;
-}
+// .inventory_body-featuresVarios-secondBox-check-promo-bonif {
+//     grid-area: checkbonif;
+//     padding-left: 80%;
+//     padding-top: 3px;
+// }
 
-#lblbonifInventory {
-    color: red;
-    font-size: 15px;
-    font-weight: bold;
-    grid-area: lblbonif;
-    padding-left: 2px;
-    padding-top: 2px;
-    text-align: start;
-}
+// #lblbonifInventory {
+//     color: red;
+//     font-size: 15px;
+//     font-weight: bold;
+//     grid-area: lblbonif;
+//     padding-left: 2px;
+//     padding-top: 2px;
+//     text-align: start;
+// }
 
 .inventory_body-featuresVarios-secondBox-maximos {
     display: grid;
@@ -224,7 +223,8 @@
     height: 100%;
     grid-template-areas: 
         'lblMaxDesc inputMaxDesc lblDesPor';
-    grid-template-columns: 30% 8% 5%;
+    grid-template-columns: 50% 20% 10%;
+    // background-color: green;
 }
 
 #lblMaxDescuentoInventory {
@@ -232,7 +232,7 @@
     font-size: 15px;
     font-weight: bold;
     grid-area: lblMaxDesc;
-    padding-left: 30px;
+    margin-left: 20px;
     padding-top: 2px;
     text-align: center;
 }
@@ -240,7 +240,7 @@
 #txtMaxDescuentoInventory {
     color: #4169E1;
     grid-area: inputMaxDesc;
-    height: 90%;
+    height: 60%;
     text-align: start;
 }
 
@@ -249,7 +249,7 @@
     color: #4169E1;
     font-size: 15px;
     grid-area: lblDesPor;
-    height: 80%;
+    height: 60%;
     margin-left: 5px;
 }
 
@@ -288,13 +288,41 @@
     margin-left: 5px;
 }
 
+.inventory_body-featuresVarios-secondBox-precio {
+    grid-area: precio;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+        'lblPrecio'
+        'inputPrecio';
+    grid-template-rows: 40% 60%;
+}
+
+#lblPrecioInventory {
+    grid-area: lblPrecio;
+    color: black;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtPrecioInventory {
+    grid-area: inputPrecio;
+    height: 60%;
+    width: 47%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
 .inventory_body-featuresVarios-thirdBox {
     display: grid;
     grid-area: thirdBox;
     height: 100%;
     grid-template-areas: 
         'leftSide rightSide';
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;;
 }
 
 .inventory_body-featuresVarios-thirdBox-leftSide {
@@ -371,7 +399,7 @@
     grid-area: first;
     height: 100%;
     grid-template-areas: 
-        'lote'
+        // 'lote'
         'servicio'
         'inhabilitado';
     grid-template-rows: 33% 33% 33%;
@@ -408,12 +436,12 @@
     height: 100%;
     grid-template-areas: 
         'checkservicio lblservicio';
-    grid-template-columns: 20% 40%;
+    grid-template-columns: 10% 40%;
 }
 
 .inventory_body-featuresVarios-thirdBox-rightSide-first-servicio-input {
     grid-area: checkservicio;
-    padding-left: 80%;
+    padding-left: 50%;
     padding-top: 4px;
 }
 

@@ -45,15 +45,6 @@ export const InventoryBodyFeaturesTabs = () => {
 
             <li className="inventory-tabs">
                 <button 
-                    className={currentTabInventory == 'Categoria' ? "inventory-tab active" : "inventory-tab"}
-                    onClick={ () => handleSelectTabInventory('Categoria') }
-                >
-                    Categoría
-                </button>
-            </li>
-
-            <li className="inventory-tabs">
-                <button 
                     className={currentTabInventory == 'Relacionados' ? "inventory-tab active" : "inventory-tab"}
                     onClick={ () => handleSelectTabInventory('Relacionados') }
                 >

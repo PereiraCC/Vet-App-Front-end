@@ -24,8 +24,17 @@
     grid-area: codigo;
     display: grid;
     grid-template-areas: 
+        'inputs icon';
+    grid-template-columns: 85% 15%;
+}
+
+.inventory_header-article-first-line-codigo-input {
+    grid-area: inputs;
+    display: grid;
+    grid-template-areas: 
         'labelCodigoProducto'
         'inputCodigoProducto';
+    grid-template-rows: 50% 50%;
 }
 
 #lblCodigoProducto {
@@ -41,6 +50,21 @@
     height: 75%;
     margin-left: 15px;
     width: 90%;
+}
+
+.inventory_header-article-first-line-codigo-icon {
+    grid-area: icon;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+}
+
+#btnSearchCliente {
+    color: $secundary;
+    
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .inventory_header-article-first-line-desc{

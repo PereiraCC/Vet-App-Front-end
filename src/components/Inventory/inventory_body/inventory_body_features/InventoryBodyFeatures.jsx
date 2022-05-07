@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { InventoryBodyFeaturesTabs } from './InventoryBodyFeaturesTabs';
 
 import { InventoryBodyFeaturesBodega } from './InventoryBodyFeaturesBodega';
-import { InventoryBodyFeaturesCategoria } from './InventoryBodyFeaturesCategoria';
 import { InventoryBodyFeaturesRelacionados } from './InventoryBodyFeaturesRelacionados';
 import { InventoryBodyFeaturesUltimoCosto } from './InventoryBodyFeaturesUltimoCosto';
 import { InventoryBodyFeaturesVarios } from './InventoryBodyFeaturesVarios';
@@ -27,9 +26,6 @@ export const InventoryBodyFeatures = () => {
             
             case 'Varios':
                 return <InventoryBodyFeaturesVarios />
-
-            case 'Categoria':
-                return <InventoryBodyFeaturesCategoria />
 
             case 'Relacionados':
                 return <InventoryBodyFeaturesRelacionados />

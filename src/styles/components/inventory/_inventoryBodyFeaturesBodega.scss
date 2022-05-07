@@ -4,98 +4,99 @@
     height: 100%;
     padding-top: 5px;
     grid-template-areas: 
-        'inputs'
+        // 'inputs'
         'table';
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 100%;
 }
 
-.inventory_body-featuresBodega-inputs {
-    display: grid;
-    grid-area: inputs;
-    height: 100%;
-    grid-template-areas: 
-        'nombre existencia btn';
-    grid-template-columns: 42.5% 42.5% 15%;
-}
+// .inventory_body-featuresBodega-inputs {
+//     display: grid;
+//     grid-area: inputs;
+//     height: 100%;
+//     grid-template-areas: 
+//         'nombre existencia btn';
+//     grid-template-columns: 42.5% 42.5% 15%;
+// }
 
-.inventory_body-featuresBodega-inputs-nombre {
-    display: grid;
-    grid-area: nombre;
-    height: 100%;
-    grid-template-areas: 
-        'lblNombre'
-        'inputNombre';
-    grid-template-rows: 40% 60%;
-}
+// .inventory_body-featuresBodega-inputs-nombre {
+//     display: grid;
+//     grid-area: nombre;
+//     height: 100%;
+//     grid-template-areas: 
+//         'lblNombre'
+//         'inputNombre';
+//     grid-template-rows: 40% 60%;
+// }
 
-#lblNombreFeaturesBodegaInv {
-    color: #4184E8;
-    font-size: 15px;
-    grid-area: lblNombre;
-    margin-left: 20px;
-    padding-top: 2px;
-    text-align: start;
-}
+// #lblNombreFeaturesBodegaInv {
+//     color: #4184E8;
+//     font-size: 15px;
+//     grid-area: lblNombre;
+//     margin-left: 20px;
+//     padding-top: 2px;
+//     text-align: start;
+// }
 
-#txtNombreFeaturesBodegaInv {
-    font-size: 15px;
-    grid-area: inputNombre;
-    height: 75%;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: start;
-}
+// #txtNombreFeaturesBodegaInv {
+//     font-size: 15px;
+//     grid-area: inputNombre;
+//     height: 75%;
+//     margin-left: 20px;
+//     margin-right: 20px;
+//     text-align: start;
+// }
 
-.inventory_body-featuresBodega-inputs-existencia {
-    display: grid;
-    grid-area: existencia;
-    height: 100%;
-    grid-template-areas: 
-        'lblExistencia'
-        'inputExistencia';
-    grid-template-rows: 40% 60%;
-}
+// .inventory_body-featuresBodega-inputs-existencia {
+//     display: grid;
+//     grid-area: existencia;
+//     height: 100%;
+//     grid-template-areas: 
+//         'lblExistencia'
+//         'inputExistencia';
+//     grid-template-rows: 40% 60%;
+// }
 
-#lblExistenciaFeaturesBodegaInv {
-    color: #4184E8;
-    font-size: 15px;
-    grid-area: lblExistencia;
-    margin-left: 20px;
-    padding-top: 2px;
-    text-align: start;
-}
+// #lblExistenciaFeaturesBodegaInv {
+//     color: #4184E8;
+//     font-size: 15px;
+//     grid-area: lblExistencia;
+//     margin-left: 20px;
+//     padding-top: 2px;
+//     text-align: start;
+// }
 
-#txtExistenciaFeaturesBodegaInv {
-    font-size: 15px;
-    grid-area: inputExistencia;
-    height: 75%;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: start;
-}
+// #txtExistenciaFeaturesBodegaInv {
+//     font-size: 15px;
+//     grid-area: inputExistencia;
+//     height: 75%;
+//     margin-left: 20px;
+//     margin-right: 20px;
+//     text-align: start;
+// }
 
-.inventory_body-featuresBodega-inputs-btn {
-    color: #4184E8;
-    font-size: 15px;
-    grid-area: btn;
-    height: 50%;
-    margin-right: 10px;
-    margin-top: 20px;
-    text-align: center;
+// .inventory_body-featuresBodega-inputs-btn {
+//     color: #4184E8;
+//     font-size: 15px;
+//     grid-area: btn;
+//     height: 50%;
+//     margin-right: 10px;
+//     margin-top: 20px;
+//     text-align: center;
 
-    &:hover {
-        cursor: pointer;
-        background-color: #4184E8;
-        color: white;
-    }
-}
+//     &:hover {
+//         cursor: pointer;
+//         background-color: #4184E8;
+//         color: white;
+//     }
+// }
 
 .inventory_body-featuresBodega-table {
     border: 1px solid black;
     grid-area: table;
-    height: 95%;
+    height: 90%;
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-top: 5px;
 }
 
 .inventory_body-featuresBodega-table-main {

@@ -3,7 +3,7 @@ export const InventoryBodyFeaturesBodega = () => {
     return (
         <div className='inventory_body-featuresBodega'>
 
-            <div className='inventory_body-featuresBodega-inputs'>
+            {/* <div className='inventory_body-featuresBodega-inputs'>
                 
                 <div className='inventory_body-featuresBodega-inputs-nombre'>
                     <p id='lblNombreFeaturesBodegaInv'>Nombre Bodega</p>
@@ -17,7 +17,7 @@ export const InventoryBodyFeaturesBodega = () => {
 
                 <button className='inventory_body-featuresBodega-inputs-btn'>Agregar</button>
 
-            </div>
+            </div> */}
 
             <div className='inventory_body-featuresBodega-table'>
                 
