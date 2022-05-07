@@ -3,9 +3,9 @@ import { useSelector } from 'react-redux';
 import { SettingsBodyTabs } from './SettingsBodyTabs';
 
 import { SettingsBodyEmpresas } from './SettingsBodyEmpresas';
-import { SettingsBodyNotificaciones } from './SettingsBodyNotificaciones';
 import { SettingsBodyPermiso } from './SettingsBodyPermiso';
 import { SettingsBodyValores } from './SettingsBodyValores';
+import { SettingsBodyComunicaciones } from './SettingsBodyComunicaciones';
 
 export const SettingsBody = () => {
 
@@ -22,8 +22,8 @@ export const SettingsBody = () => {
             case 'Valores':
                 return <SettingsBodyValores />
 
-            case 'NotificacionesCorreo':
-                return <SettingsBodyNotificaciones />
+            case 'ComunicacionesCorreo':
+                return <SettingsBodyComunicaciones />
 
             case 'Permiso':
                 return <SettingsBodyPermiso />
