@@ -62,9 +62,9 @@ export const BuysHeaderFactura = () => {
                     <input name='orden' id='txtOrdenP' />
                 </div>
 
-                <div className='buys_headerFactura-secondLine-buttonRS'>
+                {/* <div className='buys_headerFactura-secondLine-buttonRS'>
                     <button id="btnRS">RS</button>
-                </div>
+                </div> */}
 
             </div>
 
@@ -102,9 +102,9 @@ export const BuysHeaderFactura = () => {
                         <input name='txtTranferencia' id='txtTranferencia' />
                     </div>
 
-                    <div className='buys_headerFactura-thirdLine-Trans-button'>
+                    {/* <div className='buys_headerFactura-thirdLine-Trans-button'>
                         <button id="btnAplicar">Aplicar</button>
-                    </div>
+                    </div> */}
 
                 </div>
 

@@ -14,7 +14,7 @@
     display: grid;
     grid-template-areas: 
         'numeroFactura tipo fecha dias vencimiento orden';
-    grid-template-columns: 18% 12% 20% 12% 20% 10%;
+    grid-template-columns: 20% 12% 20% 12% 20% 10%;
     gap: 4px;
     padding-top: 3px;
 }
@@ -90,8 +90,8 @@
     height: 100%;
     display: grid;
     grid-template-areas: 
-        'txtnumeroFactura txttipo txtfecha txtdias txtvencimiento txtorden btnRS';
-    grid-template-columns: 18% 12% 20% 12% 20% 10%;
+        'txtnumeroFactura txttipo txtfecha txtdias txtvencimiento txtorden';
+    grid-template-columns: 20% 12% 20% 12% 20% 10%;
     gap: 4px;
 }
 
@@ -159,20 +159,20 @@
     width: 80%;
 }
 
-.buys_headerFactura-secondLine-buttonRS {
-    grid-area: btnRS;
-    padding-bottom: 2px;
-    padding-right: 5px;
-    padding-top: 2px;
-}
+// .buys_headerFactura-secondLine-buttonRS {
+//     grid-area: btnRS;
+//     padding-bottom: 2px;
+//     padding-right: 5px;
+//     padding-top: 2px;
+// }
 
-#btnRS {
-    color: #2E05EC;
-    cursor: pointer;
-    font-size: 15px;
-    height: 100%;
-    width: 100%;
-}
+// #btnRS {
+//     color: #2E05EC;
+//     cursor: pointer;
+//     font-size: 15px;
+//     height: 100%;
+//     width: 100%;
+// }
 
 .buys_headerFactura-thirdLine {
     grid-area: thirdLine;
@@ -229,8 +229,8 @@
     height: 100%;
     display: grid;
     grid-template-areas: 
-        'checkTrans inputTrans btnTrans';
-    grid-template-columns: 25% 55% 20%;
+        'checkTrans inputTrans';
+    grid-template-columns: 25% 70%;
 }
 
 .buys_headerFactura-thirdLine-Trans-check {
@@ -268,17 +268,17 @@
     width: 90%;
 }
 
-.buys_headerFactura-thirdLine-Trans-button {
-    grid-area: btnTrans;
-    padding-bottom: 2px;
-    padding-left: 5px;
-    padding-top: 2px;
-}
+// .buys_headerFactura-thirdLine-Trans-button {
+//     grid-area: btnTrans;
+//     padding-bottom: 2px;
+//     padding-left: 5px;
+//     padding-top: 2px;
+// }
 
-#btnAplicar {
-    color: #2E05EC;
-    cursor: pointer;
-    font-size: 15px;
-    height: 100%;
-    width: 90%;
-}
+// #btnAplicar {
+//     color: #2E05EC;
+//     cursor: pointer;
+//     font-size: 15px;
+//     height: 100%;
+//     width: 90%;
+// }
