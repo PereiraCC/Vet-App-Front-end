@@ -21,7 +21,7 @@ export const RepaymentTotals = () => {
 
                 <div className='repayment_totals-inputs-transporte'>
                     <div className='repayment_totals-inputs-transporte-titles'>
-                        <button id='btnTransporteDevoluciones'>...</button>
+                        {/* <button id='btnTransporteDevoluciones'>...</button> */}
                         <p id='lblTransporteDevoluciones'>Transporte</p>
                     </div>
                     <input type='text' name='TransporteDevoluciones' id='txtTransporteDevoluciones'/>
