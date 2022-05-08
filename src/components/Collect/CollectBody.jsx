@@ -41,10 +41,10 @@ export const CollectBody = () => {
                         </select>
                     </div>
 
-                    <div className='collect_body-firstLine-monedas-tipoCambio'>
+                    {/* <div className='collect_body-firstLine-monedas-tipoCambio'>
                         <p id='lblTipoCambioCollect'>Tipo Cambio</p>
                         <input type='text' id='txtTipoCambioCollect' name='tipoCambioCollect'/>
-                    </div>
+                    </div> */}
 
                     <div className='collect_body-firstLine-monedas-fecha'>
                         <p id='lblFechaCollect'>Fecha</p>

@@ -42,11 +42,11 @@ export const InventoryAdjustmentIcons = () => {
                 <p id='lblCerrarinvA'>Cerrar</p>
             </div>
 
-            <div className="inventory_adjustment-icons-user">
+            {/* <div className="inventory_adjustment-icons-user">
                 <div className='inventory_adjustment-icons-user-label'>
                     <p id='lblUserinvA'>Usuario →</p>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

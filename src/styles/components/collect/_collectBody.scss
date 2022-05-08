@@ -133,9 +133,10 @@
     margin-right: 15px;
     grid-template-areas: 
         'monedaCollect'
-        'tipoCambioCollect'
+        // 'tipoCambioCollect'
         'fechaCollect';
-    grid-template-rows: 33% 33% 33%;
+    // grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
 }
 
 .collect_body-firstLine-monedas-moneda {
@@ -151,40 +152,40 @@
     color: #566DC7;
     font-weight: bold;
     grid-area: lblMoneda;
-    padding-top: 3px;
+    padding-top: 10px;
 }
 
 #cboMonedaCollect {
     font-size: 15px;
     grid-area: cboMoneda;
-    height: 80%;
-    margin-top: 2px;
+    height: 55%;
+    margin-top: 8px;
     text-align: start;
 }
 
-.collect_body-firstLine-monedas-tipoCambio {
-    display: grid;
-    grid-area: tipoCambioCollect;
-    height: 100%;
-    grid-template-areas: 
-        'lbltipoCambio inputtipoCambio';
-    grid-template-columns: 50% 50%;
-}
+// .collect_body-firstLine-monedas-tipoCambio {
+//     display: grid;
+//     grid-area: tipoCambioCollect;
+//     height: 100%;
+//     grid-template-areas: 
+//         'lbltipoCambio inputtipoCambio';
+//     grid-template-columns: 50% 50%;
+// }
 
-#lblTipoCambioCollect {
-    color: #566DC7;
-    font-weight: bold;
-    grid-area: lbltipoCambio;
-    padding-top: 3px;
-}
+// #lblTipoCambioCollect {
+//     color: #566DC7;
+//     font-weight: bold;
+//     grid-area: lbltipoCambio;
+//     padding-top: 3px;
+// }
 
-#txtTipoCambioCollect {
-    font-size: 15px;
-    grid-area: inputtipoCambio;
-    height: 80%;
-    margin-top: 2px;
-    text-align: start;
-}
+// #txtTipoCambioCollect {
+//     font-size: 15px;
+//     grid-area: inputtipoCambio;
+//     height: 80%;
+//     margin-top: 2px;
+//     text-align: start;
+// }
 
 .collect_body-firstLine-monedas-fecha {
     display: grid;
@@ -199,14 +200,14 @@
     color: #566DC7;
     font-weight: bold;
     grid-area: lblfecha;
-    padding-top: 3px;
+    padding-top: 10px;
 }
 
 #txtFechaCollect {
     font-size: 15px;
     grid-area: inputfecha;
-    height: 80%;
-    margin-top: 2px;
+    height: 55%;
+    margin-top: 8px;
     text-align: start;
 }
 

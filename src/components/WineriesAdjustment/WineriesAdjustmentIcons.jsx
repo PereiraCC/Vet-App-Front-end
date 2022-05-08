@@ -42,11 +42,11 @@ export const WineriesAdjustmentIcons = () => {
                 <p id='lblCerrarWA'>Cerrar</p>
             </div>
 
-            <div className="wineries_adjustment-user">
+            {/* <div className="wineries_adjustment-user">
                 <div className='wineries_adjustment-icons-user-label'>
                     <p id='lblUserWA'>Usuario →</p>
                 </div>
-            </div>
+            </div> */}
 
             <div className="wineries_adjustment-fecha">
                 <div className='wineries_adjustment-fecha-input'>

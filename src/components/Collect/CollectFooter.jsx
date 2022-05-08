@@ -59,9 +59,9 @@ export const CollectFooter = () => {
 
                     </div>
 
-                    <div className='collect_footer-icons-footer-user'>
+                    {/* <div className='collect_footer-icons-footer-user'>
                         <p id='lblUserCollect'>Usuario →</p>
-                    </div>
+                    </div> */}
 
                 </div>
 

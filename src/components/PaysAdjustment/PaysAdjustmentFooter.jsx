@@ -17,13 +17,13 @@ export const PaysAdjustmentFooter = () => {
 
             </div>
 
-            <div className='pays_adjustment-footer-right'>
+            {/* <div className='pays_adjustment-footer-right'>
                 
                 <p id='lblUserPaysAdjustment'>Usuario →</p>
                 <input type='text' id='txtUserPaysAdjustment' name='userPaysAdjustment'/>
                 <p id='lblSistemaPaysAdjustment'>Sistema</p>
 
-            </div>
+            </div> */}
 
 
         </div>

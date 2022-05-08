@@ -57,13 +57,13 @@ export const PaysIcons = () => {
 
                 </div>
 
-                <div className='pays_icons-footer-user'>
+                {/* <div className='pays_icons-footer-user'>
                     <p id='lblUserPays'>Usuario →</p>
                 </div>
 
                 <div className='pays_icons-footer-result'>
                     <input type="text" id="txtResultPays" name="resultPays" />
-                </div>
+                </div> */}
 
             </div>
 

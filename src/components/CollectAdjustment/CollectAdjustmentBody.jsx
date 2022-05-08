@@ -35,10 +35,10 @@ export const CollectAdjustmentBody = () => {
                         </select>
                     </div>
 
-                    <div className='collectAdjustment_body-firstLine-monedas-tipoCambio'>
+                    {/* <div className='collectAdjustment_body-firstLine-monedas-tipoCambio'>
                         <p id='lblTipoCambioCollectAdjustment'>Tipo Cambio</p>
                         <input type='text' id='txtTipoCambioCollectAdjustment' name='tipoCambioCollectAdjustment'/>
-                    </div>
+                    </div> */}
 
                     <div className='collectAdjustment_body-firstLine-monedas-fecha'>
                         <p id='lblFechaCollectAdjustment'>Fecha</p>

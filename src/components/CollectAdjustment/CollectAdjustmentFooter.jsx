@@ -59,9 +59,9 @@ export const CollectAdjustmentFooter = () => {
 
                     </div>
 
-                    <div className='collectAdjustment_footer-icons-footer-user'>
+                    {/* <div className='collectAdjustment_footer-icons-footer-user'>
                         <p id='lblUserCollectAdjustment'>Usuario →</p>
-                    </div>
+                    </div> */}
 
                 </div>
 
