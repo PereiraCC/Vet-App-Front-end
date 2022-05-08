@@ -2,7 +2,7 @@
     display: grid;
     height: 100%;
     grid-template-areas: 
-        'iconActualizar iconNuevo iconInhabilitar iconBuscar iconCerrar';
+        'iconActualizar iconNuevo iconBuscar iconCerrar';
     grid-template-columns: 10% 10% 10% 10% 10%;
 }
 
@@ -64,34 +64,34 @@
     text-align: center;
 }
 
-.inventory_footer-Inhabilitar {
-    grid-area: iconInhabilitar;
-    display: grid;
-    height: 100%;
-    grid-template-areas: 
-        'iconInh'
-        'lblInh';
-    grid-template-rows: 60% 40%;
-}
+// .inventory_footer-Inhabilitar {
+//     grid-area: iconInhabilitar;
+//     display: grid;
+//     height: 100%;
+//     grid-template-areas: 
+//         'iconInh'
+//         'lblInh';
+//     grid-template-rows: 60% 40%;
+// }
 
-.inventory_footer-Inhabilitar-icon {
-    color: #F68A1D;
-    grid-area: iconInh;
-    padding-top: 4px;
-}
+// .inventory_footer-Inhabilitar-icon {
+//     color: #F68A1D;
+//     grid-area: iconInh;
+//     padding-top: 4px;
+// }
 
-#iconInh {
-    cursor: pointer;
-    height: 100%;
-    width: 25%;
-}
+// #iconInh {
+//     cursor: pointer;
+//     height: 100%;
+//     width: 25%;
+// }
 
-#lblInhabilitar {
-    font-size: 14px;
-    font-weight: 600;
-    grid-area: lblInh;
-    text-align: center;
-}
+// #lblInhabilitar {
+//     font-size: 14px;
+//     font-weight: 600;
+//     grid-area: lblInh;
+//     text-align: center;
+// }
 
 .inventory_footer-Buscar {
     grid-area: iconBuscar;

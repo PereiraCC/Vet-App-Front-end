@@ -18,7 +18,7 @@ export const BillingHeader = () => {
 
           <div className='billing_header-ficha'>
               <p id="Ficha">Ficha #</p>
-              <input id="txtFicha" name="txtFicha"/>
+              <input id="txtFicha" name="txtFicha" readOnly/>
           </div>
 
           <div className='billing_header-buttons'>
@@ -29,7 +29,7 @@ export const BillingHeader = () => {
                 </div>
             </div>
 
-            <div className="billing_image-nomoney">
+            {/* <div className="billing_image-nomoney">
                 <div className='billing_image-icon'>
                   <MdOutlineMoneyOffCsred id='imageNoMoney'/>
                 </div>
@@ -39,7 +39,7 @@ export const BillingHeader = () => {
                 <div className='billing_image-icon'>
                   <AiOutlineFileSync id='imageFileAsync'/>
                 </div>
-            </div>
+            </div> */}
             
           </div>
         </div>

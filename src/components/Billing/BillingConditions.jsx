@@ -17,10 +17,10 @@ export const BillingConditions = () => {
                   </select>
               </div>
 
-              <div className="billing_conditions-change">
+              {/* <div className="billing_conditions-change">
                   <p id="lblTipoCambioTitle">Tipo Cambio</p>
                   <p id="lblTipoCambioResul">1</p>
-              </div>
+              </div> */}
 
           </div>
 
@@ -33,7 +33,7 @@ export const BillingConditions = () => {
               
               <div className="billing_conditions-check-buttons-one">
 
-                <div className="billing_conditions-check-buttons-one-taller">
+                {/* <div className="billing_conditions-check-buttons-one-taller">
                   <div className="billing_conditions-check-buttons-one-taller-input"> 
                     <input type="checkbox" id="checkTaller" name="taller" value="taller" />
                   </div>
@@ -45,7 +45,7 @@ export const BillingConditions = () => {
                     <input type="checkbox" id="checkMascota" name="mascota" value="mascota" />
                   </div>
                   <label for="checkMascota" id="lblMascota">Mascota</label>
-                </div>
+                </div> */}
 
               </div>
 

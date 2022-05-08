@@ -4,13 +4,8 @@
     grid-template-areas: 
         'titulo'
         'moneda'
-        'titulos'
-        'camposA'
-        // 'camposB'
-        // 'camposC'
-        // 'camposD'
-        'camposP';
-    grid-template-rows: 10% 12.5% 12.5% 12.5% 12.5%;
+        'table';
+    grid-template-rows: 10% 12.5% 72%;
 }
 
 .inventory_body-precio-venta-titulo {
@@ -62,328 +57,382 @@
     width: 75%;
 }
 
-.inventory_body-precio-venta-titulos {
-    grid-area: titulos;
-    display: grid;
-    height: 100%;
-    grid-template-areas: 
-        'lblUtilidad lblPrecioVenta lblPrecioIV';
-    grid-template-columns: 33% 25% 25%;
-    padding-top: 4px;
+.inventory_body-precio-venta-table {
+    border: 1px solid black;
+    grid-area: table;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-#lblUtilidad {
-    font-size: 15px;
-    font-weight: 600;
-    grid-area: lblUtilidad;
-    text-decoration: underline;
+.inventory_body-precio-venta-table-main {
+    width: 100%;
 }
 
-#lblPrecioVenta {
-    font-size: 15px;
-    font-weight: 600;
-    grid-area: lblPrecioVenta;
-    text-decoration: underline;
-}
-
-#lblPrecioIV {
-    font-size: 15px;
-    font-weight: 600;
-    grid-area: lblPrecioIV;
-    text-decoration: underline;
-}
-
-.inventory_body-precio-venta-camposA {
-    grid-area: camposA;
-    display: grid;
-    height: 100%;
-    grid-template-areas: 
-        'inputOneA lblCampoA inputTwoA lblCampoASuma inputThreeA';
-    grid-template-columns: 28% 5% 23% 5% 25%;
-}
-
-.inventory_body-precio-venta-camposA-inputOne {
-    grid-area: inputOneA;
-    padding-left: 30%;
-    padding-top: 4px;
-}
-
-#txtPrecioVentaCampoAOne {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
-
-#lblCampoA {
-    font-size: 15px;
-    grid-area: lblCampoA;
-    padding-top: 6px;
-}
-
-.inventory_body-precio-venta-camposA-inputTwo {
-    grid-area: inputTwoA;
-    padding-right: 2%;
-    padding-top: 4px;
-}
-
-#txtPrecioVentaCampoATwo {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
-
-#lblCampoASuma {
-    font-size: 15px;
-    grid-area: lblCampoASuma;
+.inventory_body-precio-venta-table-header-utilidad {
+    background-color: #BFBCC1;
     padding-left: 5px;
-    padding-top: 5px;
+    text-align: start;
+    width: 5%;
+}
+
+.inventory_body-precio-venta-table-header-precioVenta {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 5%;
+}
+
+.inventory_body-precio-venta-table-header-precioIV {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 5%;
+}
+
+.inventory_body-precio-venta-table-utilidad {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
     text-align: start;
 }
 
-.inventory_body-precio-venta-camposA-inputThree {
-    grid-area: inputThreeA;
-    padding-right: 20%;
-    padding-top: 4px;
-}
-
-#txtPrecioVentaCampoAThree {
+.inventory_body-precio-venta-table-precioVenta {
+    border: 1px solid #BFBCC1;
     font-size: 15px;
-    text-align: right;
-    width: 90%;
-}
-
-.inventory_body-precio-venta-camposB {
-    grid-area: camposB;
-    display: grid;
-    height: 100%;
-    grid-template-areas: 
-        'inputOneB lblCampoB inputTwoB lblCampoBSuma inputThreeB';
-    grid-template-columns: 28% 5% 23% 5% 25%;
-}
-
-.inventory_body-precio-venta-camposB-inputOne {
-    grid-area: inputOneB;
-    padding-left: 30%;
-    padding-top: 4px;
-}
-
-#txtPrecioVentaCampoBOne {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
-
-#lblCampoB {
-    font-size: 15px;
-    grid-area: lblCampoB;
-    padding-top: 6px;
-}
-
-.inventory_body-precio-venta-camposB-inputTwo {
-    grid-area: inputTwoB;
-    padding-right: 2%;
-    padding-top: 4px;
-}
-
-#txtPrecioVentaCampoBTwo {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
-
-#lblCampoBSuma {
-    font-size: 15px;
-    grid-area: lblCampoBSuma;
     padding-left: 5px;
-    padding-top: 5px;
     text-align: start;
 }
 
-.inventory_body-precio-venta-camposB-inputThree {
-    grid-area: inputThreeB;
-    padding-right: 20%;
-    padding-top: 4px;
-}
-
-#txtPrecioVentaCampoBThree {
+.inventory_body-precio-venta-table-precioIV {
+    border: 1px solid #BFBCC1;
     font-size: 15px;
-    text-align: right;
-    width: 90%;
-}
-
-.inventory_body-precio-venta-camposC {
-    grid-area: camposC;
-    display: grid;
-    height: 100%;
-    grid-template-areas: 
-        'inputOneC lblCampoC inputTwoC lblCampoCSuma inputThreeC';
-    grid-template-columns: 28% 5% 23% 5% 25%;
-}
-
-.inventory_body-precio-venta-camposC-inputOne {
-    grid-area: inputOneC;
-    padding-left: 30%;
-    padding-top: 4px;
-}
-
-#txtPrecioVentaCampoCOne {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
-
-#lblCampoC {
-    font-size: 15px;
-    grid-area: lblCampoC;
-    padding-top: 6px;
-}
-
-.inventory_body-precio-venta-camposC-inputTwo {
-    grid-area: inputTwoC;
-    padding-right: 2%;
-    padding-top: 4px;
-}
-
-#txtPrecioVentaCampoCTwo {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
-
-#lblCampoCSuma {
-    font-size: 15px;
-    grid-area: lblCampoCSuma;
     padding-left: 5px;
-    padding-top: 5px;
     text-align: start;
 }
 
-.inventory_body-precio-venta-camposC-inputThree {
-    grid-area: inputThreeC;
-    padding-right: 20%;
-    padding-top: 4px;
-}
+// .inventory_body-precio-venta-titulos {
+//     grid-area: titulos;
+//     display: grid;
+//     height: 100%;
+//     grid-template-areas: 
+//         'lblUtilidad lblPrecioVenta lblPrecioIV';
+//     grid-template-columns: 33% 25% 25%;
+//     padding-top: 4px;
+// }
 
-#txtPrecioVentaCampoCThree {
-    font-size: 15px;
-    text-align: right;
-    width: 90%;
-}
+// #lblUtilidad {
+//     font-size: 15px;
+//     font-weight: 600;
+//     grid-area: lblUtilidad;
+//     text-decoration: underline;
+// }
 
-.inventory_body-precio-venta-camposD {
-    grid-area: camposD;
-    display: grid;
-    height: 100%;
-    grid-template-areas: 
-        'inputOneD lblCampoD inputTwoD lblCampoDSuma inputThreeD';
-    grid-template-columns: 28% 5% 23% 5% 25%;
-}
+// #lblPrecioVenta {
+//     font-size: 15px;
+//     font-weight: 600;
+//     grid-area: lblPrecioVenta;
+//     text-decoration: underline;
+// }
 
-.inventory_body-precio-venta-camposD-inputOne {
-    grid-area: inputOneD;
-    padding-left: 30%;
-    padding-top: 4px;
-}
+// #lblPrecioIV {
+//     font-size: 15px;
+//     font-weight: 600;
+//     grid-area: lblPrecioIV;
+//     text-decoration: underline;
+// }
 
-#txtPrecioVentaCampoDOne {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
+// .inventory_body-precio-venta-camposA {
+//     grid-area: camposA;
+//     display: grid;
+//     height: 100%;
+//     grid-template-areas: 
+//         'inputOneA lblCampoA inputTwoA lblCampoASuma inputThreeA';
+//     grid-template-columns: 28% 5% 23% 5% 25%;
+// }
 
-#lblCampoD {
-    font-size: 15px;
-    grid-area: lblCampoD;
-    padding-top: 6px;
-}
+// .inventory_body-precio-venta-camposA-inputOne {
+//     grid-area: inputOneA;
+//     padding-left: 30%;
+//     padding-top: 4px;
+// }
 
-.inventory_body-precio-venta-camposD-inputTwo {
-    grid-area: inputTwoD;
-    padding-right: 2%;
-    padding-top: 4px;
-}
+// #txtPrecioVentaCampoAOne {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
 
-#txtPrecioVentaCampoDTwo{
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
+// #lblCampoA {
+//     font-size: 15px;
+//     grid-area: lblCampoA;
+//     padding-top: 6px;
+// }
 
-#lblCampoDSuma {
-    font-size: 15px;
-    grid-area: lblCampoDSuma;
-    padding-left: 5px;
-    padding-top: 5px;
-    text-align: start;
-}
+// .inventory_body-precio-venta-camposA-inputTwo {
+//     grid-area: inputTwoA;
+//     padding-right: 2%;
+//     padding-top: 4px;
+// }
 
-.inventory_body-precio-venta-camposD-inputThree {
-    grid-area: inputThreeD;
-    padding-right: 20%;
-    padding-top: 4px;
-}
+// #txtPrecioVentaCampoATwo {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
 
-#txtPrecioVentaCampoDThree {
-    font-size: 15px;
-    text-align: right;
-    width: 90%;
-}
+// #lblCampoASuma {
+//     font-size: 15px;
+//     grid-area: lblCampoASuma;
+//     padding-left: 5px;
+//     padding-top: 5px;
+//     text-align: start;
+// }
 
-.inventory_body-precio-venta-camposP {
-    grid-area: camposP;
-    display: grid;
-    height: 100%;
-    grid-template-areas: 
-        'inputOneP lblCampoP inputTwoP lblCampoPSuma inputThreeP';
-    grid-template-columns: 28% 5% 23% 5% 25%;
-}
+// .inventory_body-precio-venta-camposA-inputThree {
+//     grid-area: inputThreeA;
+//     padding-right: 20%;
+//     padding-top: 4px;
+// }
 
-.inventory_body-precio-venta-camposP-inputOne {
-    grid-area: inputOneP;
-    padding-left: 30%;
-    padding-top: 4px;
-}
+// #txtPrecioVentaCampoAThree {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 90%;
+// }
 
-#txtPrecioVentaCampoPOne {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
+// .inventory_body-precio-venta-camposB {
+//     grid-area: camposB;
+//     display: grid;
+//     height: 100%;
+//     grid-template-areas: 
+//         'inputOneB lblCampoB inputTwoB lblCampoBSuma inputThreeB';
+//     grid-template-columns: 28% 5% 23% 5% 25%;
+// }
 
-#lblCampoP {
-    font-size: 15px;
-    grid-area: lblCampoP;
-    padding-top: 6px;
-}
+// .inventory_body-precio-venta-camposB-inputOne {
+//     grid-area: inputOneB;
+//     padding-left: 30%;
+//     padding-top: 4px;
+// }
 
-.inventory_body-precio-venta-camposP-inputTwo {
-    grid-area: inputTwoP;
-    padding-right: 2%;
-    padding-top: 4px;
-}
+// #txtPrecioVentaCampoBOne {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
 
-#txtPrecioVentaCampoPTwo {
-    font-size: 15px;
-    text-align: right;
-    width: 80%;
-}
+// #lblCampoB {
+//     font-size: 15px;
+//     grid-area: lblCampoB;
+//     padding-top: 6px;
+// }
 
-#lblCampoPSuma {
-    font-size: 15px;
-    grid-area: lblCampoPSuma;
-    padding-left: 5px;
-    padding-top: 5px;
-    text-align: start;
-}
+// .inventory_body-precio-venta-camposB-inputTwo {
+//     grid-area: inputTwoB;
+//     padding-right: 2%;
+//     padding-top: 4px;
+// }
 
-.inventory_body-precio-venta-camposP-inputThree {
-    grid-area: inputThreeP;
-    padding-right: 20%;
-    padding-top: 4px;
-}
+// #txtPrecioVentaCampoBTwo {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
 
-#txtPrecioVentaCampoPThree {
-    font-size: 15px;
-    text-align: right;
-    width: 90%;
-}
+// #lblCampoBSuma {
+//     font-size: 15px;
+//     grid-area: lblCampoBSuma;
+//     padding-left: 5px;
+//     padding-top: 5px;
+//     text-align: start;
+// }
+
+// .inventory_body-precio-venta-camposB-inputThree {
+//     grid-area: inputThreeB;
+//     padding-right: 20%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoBThree {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 90%;
+// }
+
+// .inventory_body-precio-venta-camposC {
+//     grid-area: camposC;
+//     display: grid;
+//     height: 100%;
+//     grid-template-areas: 
+//         'inputOneC lblCampoC inputTwoC lblCampoCSuma inputThreeC';
+//     grid-template-columns: 28% 5% 23% 5% 25%;
+// }
+
+// .inventory_body-precio-venta-camposC-inputOne {
+//     grid-area: inputOneC;
+//     padding-left: 30%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoCOne {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
+
+// #lblCampoC {
+//     font-size: 15px;
+//     grid-area: lblCampoC;
+//     padding-top: 6px;
+// }
+
+// .inventory_body-precio-venta-camposC-inputTwo {
+//     grid-area: inputTwoC;
+//     padding-right: 2%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoCTwo {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
+
+// #lblCampoCSuma {
+//     font-size: 15px;
+//     grid-area: lblCampoCSuma;
+//     padding-left: 5px;
+//     padding-top: 5px;
+//     text-align: start;
+// }
+
+// .inventory_body-precio-venta-camposC-inputThree {
+//     grid-area: inputThreeC;
+//     padding-right: 20%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoCThree {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 90%;
+// }
+
+// .inventory_body-precio-venta-camposD {
+//     grid-area: camposD;
+//     display: grid;
+//     height: 100%;
+//     grid-template-areas: 
+//         'inputOneD lblCampoD inputTwoD lblCampoDSuma inputThreeD';
+//     grid-template-columns: 28% 5% 23% 5% 25%;
+// }
+
+// .inventory_body-precio-venta-camposD-inputOne {
+//     grid-area: inputOneD;
+//     padding-left: 30%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoDOne {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
+
+// #lblCampoD {
+//     font-size: 15px;
+//     grid-area: lblCampoD;
+//     padding-top: 6px;
+// }
+
+// .inventory_body-precio-venta-camposD-inputTwo {
+//     grid-area: inputTwoD;
+//     padding-right: 2%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoDTwo{
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
+
+// #lblCampoDSuma {
+//     font-size: 15px;
+//     grid-area: lblCampoDSuma;
+//     padding-left: 5px;
+//     padding-top: 5px;
+//     text-align: start;
+// }
+
+// .inventory_body-precio-venta-camposD-inputThree {
+//     grid-area: inputThreeD;
+//     padding-right: 20%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoDThree {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 90%;
+// }
+
+// .inventory_body-precio-venta-camposP {
+//     grid-area: camposP;
+//     display: grid;
+//     height: 100%;
+//     grid-template-areas: 
+//         'inputOneP lblCampoP inputTwoP lblCampoPSuma inputThreeP';
+//     grid-template-columns: 28% 5% 23% 5% 25%;
+// }
+
+// .inventory_body-precio-venta-camposP-inputOne {
+//     grid-area: inputOneP;
+//     padding-left: 30%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoPOne {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
+
+// #lblCampoP {
+//     font-size: 15px;
+//     grid-area: lblCampoP;
+//     padding-top: 6px;
+// }
+
+// .inventory_body-precio-venta-camposP-inputTwo {
+//     grid-area: inputTwoP;
+//     padding-right: 2%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoPTwo {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 80%;
+// }
+
+// #lblCampoPSuma {
+//     font-size: 15px;
+//     grid-area: lblCampoPSuma;
+//     padding-left: 5px;
+//     padding-top: 5px;
+//     text-align: start;
+// }
+
+// .inventory_body-precio-venta-camposP-inputThree {
+//     grid-area: inputThreeP;
+//     padding-right: 20%;
+//     padding-top: 4px;
+// }
+
+// #txtPrecioVentaCampoPThree {
+//     font-size: 15px;
+//     text-align: right;
+//     width: 90%;
+// }

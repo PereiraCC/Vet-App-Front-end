@@ -21,13 +21,6 @@ export const InventoryFooter = () => {
                 <p id='lblNuevo'>Nuevo</p>
             </div>
 
-            <div className='inventory_footer-Inhabilitar'>
-                <div className="inventory_footer-Inhabilitar-icon">
-                    <HiDocumentRemove id='iconInh'/>
-                </div>
-                <p id='lblInhabilitar'>Inhabilitar</p>
-            </div>
-
             <div className='inventory_footer-Buscar'>
                 <div className="inventory_footer-Buscar-icon">
                     <FaSearch id='iconBus'/>
