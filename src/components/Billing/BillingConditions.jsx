@@ -30,10 +30,27 @@ export const BillingConditions = () => {
           </div>
 
           <div className="billing_conditions-squares">
-              
-              <div className="billing_conditions-check-buttons-one">
 
-                {/* <div className="billing_conditions-check-buttons-one-taller">
+              <div className="billing_conditions-squares-agente">
+                  <p id="lblAgenteCondition">Agente</p>
+                  <select name="Agente" id="cboAgente">
+                    <option value="Juan">Juan</option>
+                    <option value="Pedro">Pedro</option>
+                  </select>
+              </div>
+
+              <div className="billing_conditions-squares-pd">
+                  <div className="billing_conditions-squares-PD-input">
+                    <input type="checkbox" id="checkPD" name="PD" value="PD" />
+                  </div>
+                  <label for="checkPD" id="lblPD">PD</label>
+              </div>
+
+          </div>
+              
+              {/* <div className="billing_conditions-check-buttons-one">
+
+                <div className="billing_conditions-check-buttons-one-taller">
                   <div className="billing_conditions-check-buttons-one-taller-input"> 
                     <input type="checkbox" id="checkTaller" name="taller" value="taller" />
                   </div>
@@ -45,11 +62,11 @@ export const BillingConditions = () => {
                     <input type="checkbox" id="checkMascota" name="mascota" value="mascota" />
                   </div>
                   <label for="checkMascota" id="lblMascota">Mascota</label>
-                </div> */}
+                </div>
 
-              </div>
+              </div> */}
 
-              <div className="billing_conditions-check-buttons-two">
+              {/* <div className="billing_conditions-check-buttons-two">
 
                   <div className="billing_conditions-check-buttons-two-agente">
                     <div className="billing_conditions-check-buttons-two-agente-input"> 
@@ -64,9 +81,7 @@ export const BillingConditions = () => {
                     </div>
                     <label for="checkPD" id="lblPD">PD</label>
                   </div>
-              </div>
-
-          </div>
+              </div> */}
       </div>
   )
 }

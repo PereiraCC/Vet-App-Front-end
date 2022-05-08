@@ -1,8 +1,7 @@
 import { SiHappycow } from 'react-icons/si';
-import { MdEmail } from 'react-icons/md';
-import { AiFillFileAdd } from 'react-icons/ai';
+import { AiFillFileAdd, AiFillEdit } from 'react-icons/ai';
 import { RiFileEditFill } from 'react-icons/ri';
-
+import { FaSearch } from 'react-icons/fa';
 
 export const BillingHeaderCustomer = () => {
   return (
@@ -11,9 +10,16 @@ export const BillingHeaderCustomer = () => {
 
           <div className="billing_header-customer-first">
 
-            <div className="billing_header-customer-first-cedula">
-                <p id="lblCedula">Cédula</p>
-                <input id="txtCedula" name="cedula"/>
+            <div className='billing_header-customer-first-cedula'>
+
+                <div className="billing_header-customer-first-cedula-input">
+                    <p id="lblCedula">Cédula</p>
+                    <input id="txtCedula" name="cedula"/>
+                </div>
+
+                <div className='billing_header-customer-first-cedula-input-icon'>
+                    <FaSearch id='btnSearchClienteBilling'/>
+                </div>
             </div>
 
             <div className="billing_header-customer-first-tipo">
@@ -31,10 +37,10 @@ export const BillingHeaderCustomer = () => {
 
             <div className="billing_header-customer-first-buttons">
                 <div className="button1">
-                    <SiHappycow id='button1'/>
+                    <AiFillEdit id='button1'/>
                 </div>
                 <div className="button2">
-                    <MdEmail id='button2'/>
+                    <SiHappycow id='button1'/>
                 </div>
                 <div className="button3">
                     <AiFillFileAdd id='button3'/>

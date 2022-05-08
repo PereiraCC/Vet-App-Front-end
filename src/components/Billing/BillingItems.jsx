@@ -79,7 +79,10 @@ export const BillingItems = () => {
                         <th className="billing_iteams-table-header-descrip">Descripcion</th>
                         <th className="billing_iteams-table-header-cantidad">Cant.</th>
                         <th className="billing_iteams-table-header-precioU">P.Unit</th>
-                        <th className="billing_iteams-table-header-desc">% Desc</th>
+                        <th className="billing_iteams-table-header-desc">
+                            <button id='btnPorcentaje'>%</button>
+                            DTO
+                        </th>
                         <th className="billing_iteams-table-header-imp">M. Imp</th>
                         <th className="billing_iteams-table-header-subtotal">SubTotal</th>
                     </tr>

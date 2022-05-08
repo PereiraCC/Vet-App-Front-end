@@ -19,9 +19,18 @@
     grid-area: cedula;
     display: grid;
     grid-template-areas: 
+        'inputs icon';
+    grid-template-columns: 85% 15%;
+}
+
+.billing_header-customer-first-cedula-input {
+    grid-area: inputs;
+    display: grid;
+    grid-template-areas: 
         'labelCedula'
         'inputCedula';
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 40% 60%;
+    // background-color: red;
 }
 
 #lblCedula {
@@ -35,7 +44,23 @@
     font-size: 15px;
     grid-area: inputCedula;
     margin-left: 15px;
-    width: 90%;
+    width: 85%;
+    height: 80%;
+}
+
+.billing_header-customer-first-cedula-input-icon {
+    grid-area: icon;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+}
+
+#btnSearchClienteBilling {
+    color: $secundary;
+    
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .billing_header-customer-first-tipo {

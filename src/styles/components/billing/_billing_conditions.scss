@@ -85,98 +85,150 @@
 }
 
 
+// .billing_conditions-squares{
+//     grid-area: squares;
+//     display: grid;
+//     grid-template-areas: 
+//         'checkOne checkTwo';
+//     grid-template-columns: 50% 50%;
+// }
+
+// .billing_conditions-check-buttons-one{
+//     grid-area: checkOne;
+//     display: grid;
+//     grid-template-areas: 
+//         'taller'
+//         'mascota';
+//     grid-template-rows: 50% 50%;
+// }
+
+// .billing_conditions-check-buttons-one-taller{
+//     grid-area: taller;
+//     display: grid;
+//     grid-template-areas: 
+//         'inputTaller labelTaller';
+//     grid-template-columns: 50% 50%;
+// }
+
+// .billing_conditions-check-buttons-one-taller-input{    
+//     grid-area: inputTaller;
+//     padding-left: 70%;
+// }
+
+// #lblTaller {
+//     font-size: 15px;
+//     grid-area: labelTaller;
+//     text-align: start;
+// }
+
+// .billing_conditions-check-buttons-one-mascota {
+//     grid-area: mascota;
+//     display: grid;
+//     grid-template-areas: 
+//         'inputMascota labelMascota';
+//     grid-template-columns: 50% 50%;
+// }
+
+// .billing_conditions-check-buttons-one-mascota-input {
+//     grid-area: inputMascota;
+//     padding-left: 70%;
+// }
+
+// #lblMascota {
+//     font-size: 15px;
+//     grid-area: labelMascota;
+//     text-align: start;
+// }
+
+// .billing_conditions-check-buttons-two{
+//     grid-area: checkTwo;
+//     display: grid;
+//     grid-template-areas: 
+//         'agente'
+//         'pd';
+//     grid-template-rows: 50% 50%;
+// }
+
+// .billing_conditions-check-buttons-two-agente{
+//     grid-area: agente;
+//     display: grid;
+//     grid-template-areas: 
+//         'inputAgente labelAgente';
+//     grid-template-columns: 50% 50%;
+// }
+
+// .billing_conditions-check-buttons-two-agente-input {
+//     grid-area: inputAgente;
+//     padding-left: 70%;
+// }
+
+// #lblAgente {
+//     font-size: 15px;
+//     grid-area: labelAgente;
+//     text-align: start;
+// }
+
+// .billing_conditions-check-buttons-two-pd {
+//     grid-area: pd;
+//     display: grid;
+//     grid-template-areas: 
+//         'inputPD labelPD';
+//     grid-template-columns: 50% 50%;
+// }
+
+// .billing_conditions-check-buttons-two-PD-input {
+//     grid-area: inputPD;
+//     padding-left: 70%;
+// }
+
+// #lblPD {
+//     font-size: 15px;
+//     grid-area: labelPD;
+//     text-align: start;
+// }
+
 .billing_conditions-squares{
+    display: grid;
     grid-area: squares;
-    display: grid;
     grid-template-areas: 
-        'checkOne checkTwo';
-    grid-template-columns: 50% 50%;
+        'agente pd';
+    grid-template-columns: 60% 40%;
 }
 
-.billing_conditions-check-buttons-one{
-    grid-area: checkOne;
+.billing_conditions-squares-agente {
     display: grid;
-    grid-template-areas: 
-        'taller'
-        'mascota';
-    grid-template-rows: 50% 50%;
-}
-
-.billing_conditions-check-buttons-one-taller{
-    grid-area: taller;
-    display: grid;
-    grid-template-areas: 
-        'inputTaller labelTaller';
-    grid-template-columns: 50% 50%;
-}
-
-.billing_conditions-check-buttons-one-taller-input{    
-    grid-area: inputTaller;
-    padding-left: 70%;
-}
-
-#lblTaller {
-    font-size: 15px;
-    grid-area: labelTaller;
-    text-align: start;
-}
-
-.billing_conditions-check-buttons-one-mascota {
-    grid-area: mascota;
-    display: grid;
-    grid-template-areas: 
-        'inputMascota labelMascota';
-    grid-template-columns: 50% 50%;
-}
-
-.billing_conditions-check-buttons-one-mascota-input {
-    grid-area: inputMascota;
-    padding-left: 70%;
-}
-
-#lblMascota {
-    font-size: 15px;
-    grid-area: labelMascota;
-    text-align: start;
-}
-
-.billing_conditions-check-buttons-two{
-    grid-area: checkTwo;
-    display: grid;
-    grid-template-areas: 
-        'agente'
-        'pd';
-    grid-template-rows: 50% 50%;
-}
-
-.billing_conditions-check-buttons-two-agente{
     grid-area: agente;
-    display: grid;
     grid-template-areas: 
-        'inputAgente labelAgente';
-    grid-template-columns: 50% 50%;
+        'labelAgente inputAgente';
+    grid-template-columns: 30% 70%;
 }
 
-.billing_conditions-check-buttons-two-agente-input {
-    grid-area: inputAgente;
-    padding-left: 70%;
-}
-
-#lblAgente {
+#lblAgenteCondition {
     font-size: 15px;
     grid-area: labelAgente;
-    text-align: start;
+    padding-top: 8px;
 }
 
-.billing_conditions-check-buttons-two-pd {
-    grid-area: pd;
+#cboAgente {
+    font-size: 15px;
+    grid-area: inputAgente;
+    height: 60%;
+    margin-top: 5px;
+    text-align: center;
+    text-align: center;
+    width: 100%;
+}
+
+.billing_conditions-squares-pd {
     display: grid;
+    grid-area: pd;
+    padding-top: 10px;
     grid-template-areas: 
         'inputPD labelPD';
     grid-template-columns: 50% 50%;
-}
+}   
 
-.billing_conditions-check-buttons-two-PD-input {
+.billing_conditions-squares-PD-input {
     grid-area: inputPD;
     padding-left: 70%;
 }
@@ -184,5 +236,7 @@
 #lblPD {
     font-size: 15px;
     grid-area: labelPD;
+    height: 50%;
     text-align: start;
+    width: 30%;
 }

@@ -66,11 +66,11 @@ export const BillingFooter = () => {
                     <div className='billing_footer-data-user-caja'>
                         <p>Caja #1</p>
                     </div>
-                    <div className='billing_footer-data-user-data'>
+                    {/* <div className='billing_footer-data-user-data'>
                         <p id='lblUser'>Usuario →</p>
                         <p id='lblPass'>****</p>
                         <p id='lblSistema'>SISTEMA</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
