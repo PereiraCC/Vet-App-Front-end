@@ -45,9 +45,35 @@ export const CoinsPage = () => {
                         <p id='lblCuentaContableM'>Cuenta contable</p>
                         <input type='text' name='monedaCuentaContable' id='txtCuentaContableM' />
                     </div>
+                    <div className='coins-body-secondLine-btn'>
+                        <button id='btnAddM'>Agregar</button>
+                    </div>
 
                 </div>
             
+            </div>
+
+            <div className='coins-table'>
+                <table className='coins-table-main'>
+                    <thead>
+                        <tr>
+                            <th className='coins-table-header-nombre'>Nombre Moneda</th>
+                            <th className='coins-table-header-valorCompra'>Valor Compra</th>
+                            <th className='coins-table-header-valorVenta'>Valor Venta</th>
+                            <th className='coins-table-header-simbolo'>Simbolo</th>
+                            <th className='coins-table-header-cuentaCon'>Cuenta Contable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td className='coins-table-nombre'>test</td>
+                            <td className='coins-table-valorCompra'>test</td>
+                            <td className='coins-table-valorVenta'>test</td>
+                            <td className='coins-table-simbolo'>test</td>
+                            <td className='coins-table-cuentaCon'>test</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div className='coins-icons'>
