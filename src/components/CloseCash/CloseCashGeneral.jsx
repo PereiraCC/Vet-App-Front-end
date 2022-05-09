@@ -7,9 +7,26 @@ export const CloseCashGeneral = () => {
                 <p>General</p>
             </div>
 
-            <div className='closeCash_general-inputs'>
+            <div className='closeCash_general-table'>
                 
-                <div className='closeCash_general-inputs-titles'>
+                <table className='closeCash_general-table-main'>
+                    <thead>
+                        <tr>
+                            <th className='closeCash_general-table-header-formaPago'>formaPago</th>
+                            <th className='closeCash_general-table-header-cajero'>cajero</th>
+                            <th className='closeCash_general-table-header-sistema'>sistema</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td className='closeCash_general-table-formaPago'>test</td>
+                            <td className='closeCash_general-table-cajero'>test</td>
+                            <td className='closeCash_general-table-sistema'>test</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                {/* <div className='closeCash_general-inputs-titles'>
                     <p id='lblCajeroCash'>Cajero</p>
                     <p id='lblMedioCash'>/</p>
                     <p id='lblSistemaCash'>Sistema</p>
@@ -124,7 +141,7 @@ export const CloseCashGeneral = () => {
                         <input type='text' id='txttotalesSistema' name='totalesSistema' value='0.00'/>
                     </div>
 
-                </div>
+                </div> */}
 
             </div>
 
