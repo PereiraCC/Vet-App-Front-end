@@ -1,11 +1,12 @@
 import { BsFillPeopleFill } from 'react-icons/bs';
+import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
 import { AiFillHome, AiFillSetting, AiOutlineShoppingCart } from 'react-icons/ai';
 import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins} from 'react-icons/fa';
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree} from 'react-icons/gi';
 import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill} from 'react-icons/ri';
-import { MdInventory2, MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned } from 'react-icons/md';
+import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned } from 'react-icons/md';
 
 export const SidebarData = [
     {
@@ -25,7 +26,7 @@ export const SidebarData = [
             {
                 title: 'Inventarios',
                 path: '/initial/inventory',
-                icon: <MdInventory2 />,
+                icon: <CgPill />,
                 cName: 'vet_nav-text'
             },
             {
@@ -85,7 +86,7 @@ export const SidebarData = [
             {
                 title: 'Ajuste Inventario',
                 path: '/buys/inventoryadjustment',
-                icon: <MdInventory2 />,
+                icon: <CgPill />,
                 cName: 'vet_nav-text'
             },
             {

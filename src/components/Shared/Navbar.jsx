@@ -5,6 +5,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 import { BiLogOut } from 'react-icons/bi';
 
+import { useEffect, useState } from 'react';
 import { Sidebar } from './Sidebar';
 import { useDispatch, useSelector } from 'react-redux';
 import { HideSidebar, HideSidebarUser, ShowSidebar, ShowSidebarUser } from '../../actions/sidebar';
@@ -12,6 +13,26 @@ import { logout } from '../../actions/login';
 import { DeleteAllTab } from '../../actions/tabs';
 
 export const Navbar = () => {
+
+    const locale = 'es';
+    const [today, setDate] = useState(new Date());
+
+    useEffect(() => {
+
+        const timer = setInterval(() => { 
+            setDate(new Date());
+        }, 60 * 1000);
+        
+        return () => {
+            clearInterval(timer);
+        }
+    }, []);
+
+    const day = today.toLocaleDateString(locale, { weekday: 'long' });
+    const date = `${day}, ${today.getDate()} ${today.toLocaleDateString(locale, { month: 'long' })}\n\n`;
+  
+    const time = today.toLocaleTimeString(locale, { hour: 'numeric', hour12: true, minute: 'numeric' });
+    
 
     const dispatch = useDispatch();
 
@@ -53,16 +74,35 @@ export const Navbar = () => {
                     
                     <span className='vet_nav-text-menu'>Menú</span>
 
+                
                     <div className='vet_nav-menu-bars-right'>
+
+                        <div className='vet_nav-shortcuts'>
+                            <p>Shortcuts</p>
+                        </div>
+
+                        <div className='vet_nav-date'>
+
+                            <div className='vet_nav-date-fecha'>
+                                <p>{date.toUpperCase() + time}</p>
+                            </div>
+
+                            <div className='vet_nav-date-tipoCambio'>
+                                <p>₡ 670</p>
+                            </div>
+
+                        </div>
+
                         <div className='vet_nav-text-right'>
                             <span>CP</span>
                         </div>
+
                         <div className='vet_nav-icon-right'>
                             <FaUserCircle onClick={ showSidebarUser } id='iconUser'/>
                         </div>
+
                     </div>
                 </div>
-                
 
                 <nav className={ sidebar ? 'vet_nav-menu active' : 'vet_nav-menu' } >
                     <ul className='vet_nav-menu-items'>
