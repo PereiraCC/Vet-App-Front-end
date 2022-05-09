@@ -66,7 +66,7 @@ export const ProvidersForm = () => {
 
                     </div>
 
-                    <div className='providers_form-personal-3-visitas' >
+                    {/* <div className='providers_form-personal-3-visitas' >
 
                         <div className='providers_form-personal-3-label-visitas'>
                             <p id='lblVisitasProviders'>Visitas al Mes</p>
@@ -75,7 +75,7 @@ export const ProvidersForm = () => {
                             <input name='visitasProviders' id='txtVisitasProviders' />
                         </div>
 
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -92,14 +92,14 @@ export const ProvidersForm = () => {
 
                     </div>
 
-                    <div className='providers_form-personal-4-series' >
+                    {/* <div className='providers_form-personal-4-series' >
 
                         <div className="providers_form-personal-4-check-series-input"> 
                             <input type="checkbox" id="checkSeries" name="series" value="Productosseries" />
                         </div>
                         <label for="checkSeries" id="lblSeries">Productos con Series</label>
 
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -157,7 +157,7 @@ export const ProvidersForm = () => {
                 
                 <div className='providers_form-accounting-inputs'>
 
-                    <div className='providers_form-accounting-inputs-firstLine'>
+                    {/* <div className='providers_form-accounting-inputs-firstLine'>
 
                         <div className='providers_form-accounting-inputs-firstLine-plazo' >
 
@@ -184,7 +184,7 @@ export const ProvidersForm = () => {
 
                         </div>
 
-                    </div>
+                    </div> */}
 
                     <div className='providers_form-accounting-inputs-SecondLine'>
                         
@@ -203,7 +203,7 @@ export const ProvidersForm = () => {
 
                 <div className='providers_form-accounting-check'>
 
-                    <div className='providers_form-accounting-check-firstLine'>
+                    {/* <div className='providers_form-accounting-check-firstLine'>
                         
                         <div className='providers_form-accounting-check-firstLine-check-utilidad' >
 
@@ -218,9 +218,9 @@ export const ProvidersForm = () => {
                             <p id='lblUtilidadProvidersResul'>0</p>
                         </div>
 
-                    </div>
+                    </div> */}
 
-                    <div className='providers_form-accounting-check-secondLine'>
+                    {/* <div className='providers_form-accounting-check-secondLine'>
                         
                         <div className='providers_form-accounting-check-secondLine-check-costo' >
 
@@ -240,7 +240,7 @@ export const ProvidersForm = () => {
 
                         </div>
 
-                    </div>
+                    </div> */}
 
                     <div className='providers_form-accounting-check-thirdLine'>
                         
