@@ -1,38 +1,19 @@
 import { Link } from 'react-router-dom';
-
-import { FaBars, FaUserCircle } from 'react-icons/fa';
-import { AiOutlineClose } from 'react-icons/ai';
-import { IconContext } from 'react-icons';
-import { BiLogOut } from 'react-icons/bi';
-
-import { useEffect, useState } from 'react';
-import { Sidebar } from './Sidebar';
 import { useDispatch, useSelector } from 'react-redux';
+
+import { AiOutlineClose } from 'react-icons/ai';
+import { BiLogOut } from 'react-icons/bi';
+import { FaBars, FaUserCircle } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
+
+import { Sidebar } from './Sidebar';
 import { HideSidebar, HideSidebarUser, ShowSidebar, ShowSidebarUser } from '../../actions/sidebar';
 import { logout } from '../../actions/login';
 import { DeleteAllTab } from '../../actions/tabs';
+import { DateNavbar } from './DateNavbar';
+import { ShortcutsNavbar } from './ShortcutsNavbar';
 
-export const Navbar = () => {
-
-    const locale = 'es';
-    const [today, setDate] = useState(new Date());
-
-    useEffect(() => {
-
-        const timer = setInterval(() => { 
-            setDate(new Date());
-        }, 60 * 1000);
-        
-        return () => {
-            clearInterval(timer);
-        }
-    }, []);
-
-    const day = today.toLocaleDateString(locale, { weekday: 'long' });
-    const date = `${day}, ${today.getDate()} ${today.toLocaleDateString(locale, { month: 'long' })}\n\n`;
-  
-    const time = today.toLocaleTimeString(locale, { hour: 'numeric', hour12: true, minute: 'numeric' });
-    
+export const Navbar = () => {   
 
     const dispatch = useDispatch();
 
@@ -77,14 +58,14 @@ export const Navbar = () => {
                 
                     <div className='vet_nav-menu-bars-right'>
 
-                        <div className='vet_nav-shortcuts'>
-                            <p>Shortcuts</p>
+                        <div>
+                            <ShortcutsNavbar />                            
                         </div>
 
                         <div className='vet_nav-date'>
 
                             <div className='vet_nav-date-fecha'>
-                                <p>{date.toUpperCase() + time}</p>
+                                <DateNavbar />
                             </div>
 
                             <div className='vet_nav-date-tipoCambio'>

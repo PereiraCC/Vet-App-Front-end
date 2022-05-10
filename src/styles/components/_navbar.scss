@@ -198,8 +198,69 @@
 
 .vet_nav-shortcuts {
     grid-area: shortcuts;
-    background-color: red;
+    margin-left: 65%;
+    display: grid;
+    grid-template-areas: 
+        'venta cliente caja inventarios proforma';
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    // background-color: red;
 }
+
+#iconVenta {
+    grid-area: venta;
+    margin-top: 8px;
+    width: 35px;
+    height: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#iconCliente {
+    grid-area: cliente;
+    margin-top: 8px;
+    width: 35px;
+    height: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#iconCaja {
+    grid-area: caja;
+    margin-top: 8px;
+    width: 35px;
+    height: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#iconInventario {
+    grid-area: inventarios;
+    margin-top: 8px;
+    width: 35px;
+    height: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#iconProforma {
+    grid-area: proforma;
+    margin-top: 8px;
+    width: 35px;
+    height: 30px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 
 .vet_nav-date {
     grid-area: date;
