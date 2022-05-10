@@ -44,15 +44,13 @@ export const CustomersIcons = () => {
                 </div>
             </div>
 
-            <div className='customers_icons-user'>
+            {/* <div className='customers_icons-user'>
                 
                 <p id='lblUserCustomers'>Usuario →</p>
                 <input id='txtUserCustomers' name='userCustomers' type='text' />
                 <p id='lblSistemaCustomers'>SISTEMA</p>
 
-            </div>
-
-            
+            </div> */}
 
         </div>
     )
