@@ -2,6 +2,8 @@
 export const SettingsBodyTarifas = () => {
     return (
         <div className='settings_body-tarifas-main'>
+
+            <p id='lblTitleTarifas'>Tarifas</p>
             
             <div className='settings_body-tarifas-inputs'>
                 

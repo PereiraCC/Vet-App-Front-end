@@ -4,10 +4,18 @@
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 20px;
-    grid-template-areas: 
+    grid-template-areas:
+        'title' 
         'inputs'
         'table';
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 10% 25% 65%;
+}
+
+#lblTitleTarifas {
+    grid-area: title;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .settings_body-tarifas-inputs {
@@ -16,7 +24,7 @@
     height: 95%;
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: 20px;
+    padding-top: 10px;
     grid-template-areas: 
         'tarifa descrip moneda btn';
     grid-template-columns: 25% 45% 15% 15%;
@@ -36,14 +44,14 @@
     font-size: 15px;
     font-weight: bold;
     grid-area: lblTarifa;
-    padding-top: 5px;
+    padding-top: 10px;
     text-align: start;
 }
 
 #txtTarifaSettingB {
     font-size: 15px;
     grid-area: txtTarifa;
-    height: 70%;
+    height: 60%;
     text-align: start;
     width: 95%;
 }
@@ -62,14 +70,14 @@
     font-size: 15px;
     font-weight: bold;
     grid-area: lblDescrip;
-    padding-top: 5px;
+    padding-top: 10px;
     text-align: start;
 }
 
 #txtDescripSettingB {
     font-size: 15px;
     grid-area: txtDescrip;
-    height: 70%;
+    height: 60%;
     text-align: start;
     width: 98%;
 }
@@ -88,26 +96,26 @@
     font-size: 15px;
     font-weight: bold;
     grid-area: lblMoneda;
-    padding-top: 5px;
+    padding-top: 10px;
     text-align: start;
 }
 
 #cboMonedaSettingB {
     font-size: 15px;
     grid-area: txtMoneda;
-    height: 70%;
+    height: 60%;
     text-align: start;
     width: 95%;
 }
 
 .settings_body-tarifas-inputs-btn {
     grid-area: btn;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 #btnAddTarifaSettingB {
     font-size: 15px;
-    height: 65%;
+    height: 60%;
     width: 85%;
 
     &:hover {

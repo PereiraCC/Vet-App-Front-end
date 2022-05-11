@@ -29,6 +29,7 @@ import { WineriesPage } from '../components/Wineries/WineriesPage';
 import { FamilyPage } from '../components/Family/FamilyPage';
 import { OpenCashPage } from '../components/OpenCash/OpenCashPage';
 import { PrivateRoute } from './PrivateRoute';
+import { CategoryPage } from '../components/Category/CategoryPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -207,6 +208,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/family"
                     component={ FamilyPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/category"
+                    component={ CategoryPage }
                 />
 
                 <PrivateRoute 

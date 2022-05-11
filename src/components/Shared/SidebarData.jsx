@@ -6,7 +6,7 @@ import { AiFillHome, AiFillSetting, AiOutlineShoppingCart } from 'react-icons/ai
 import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins} from 'react-icons/fa';
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree} from 'react-icons/gi';
 import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill} from 'react-icons/ri';
-import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned } from 'react-icons/md';
+import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory } from 'react-icons/md';
 
 export const SidebarData = [
     {
@@ -191,6 +191,12 @@ export const SidebarData = [
                 title: 'Familias',
                 path: '/parameters/family',
                 icon: <GiFamilyTree />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Categorias',
+                path: '/parameters/category',
+                icon: <MdCategory />,
                 cName: 'vet_nav-text'
             },
         ]
