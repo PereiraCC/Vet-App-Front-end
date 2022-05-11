@@ -193,7 +193,7 @@
     display: grid;
     grid-template-areas: 
         'shortcuts date name icon';
-    grid-template-columns: 62% 28% 5% 5%;
+    grid-template-columns: 55% 35% 5% 5%;
 }
 
 .vet_nav-shortcuts {
@@ -203,7 +203,6 @@
     grid-template-areas: 
         'venta cliente caja inventarios proforma';
     grid-template-columns: 20% 20% 20% 20% 20%;
-    // background-color: red;
 }
 
 #iconVenta {

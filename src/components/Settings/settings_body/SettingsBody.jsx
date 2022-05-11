@@ -6,6 +6,7 @@ import { SettingsBodyEmpresas } from './SettingsBodyEmpresas';
 import { SettingsBodyPermiso } from './SettingsBodyPermiso';
 import { SettingsBodyValores } from './SettingsBodyValores';
 import { SettingsBodyComunicaciones } from './SettingsBodyComunicaciones';
+import { SettingsBodyTarifas } from './SettingsBodyTarifas';
 
 export const SettingsBody = () => {
 
@@ -27,6 +28,9 @@ export const SettingsBody = () => {
 
             case 'Permiso':
                 return <SettingsBodyPermiso />
+
+            case 'Tarifas':
+                return <SettingsBodyTarifas />
         
             default:
                 break;
