@@ -2,6 +2,7 @@ import { types } from '../types/types';
 
 const initialState = {
     modalAddCustomerOpen: false,
+    modalEditCustomerOpen: false,
 };
 
 export const BillingReducer = (state = initialState, action) => {
@@ -18,6 +19,18 @@ export const BillingReducer = (state = initialState, action) => {
             return {
                 ...state,
                 modalAddCustomerOpen: false,
+            }
+
+        case types.billingOpenModelEditCustomer:
+            return {
+                ...state,
+                modalEditCustomerOpen: true,
+            }
+
+        case types.billingCloseModelEditCustomer:
+            return {
+                ...state,
+                modalEditCustomerOpen: false,
             }
     
         default:

@@ -5,9 +5,10 @@ import { AiFillFileAdd, AiFillEdit } from 'react-icons/ai';
 import { RiFileEditFill } from 'react-icons/ri';
 import { FaSearch } from 'react-icons/fa';
 
-import { OpenModalAddCustomer } from '../../actions/billing';
+import { OpenModalAddCustomer, OpenModalEditCustomer } from '../../actions/billing';
 
 import { BillingAddCustomerModal } from './BillingAddCustomerModal';
+import { BillingEditCustomerModal } from './BillingEditCustomerModal';
 
 export const BillingHeaderCustomer = () => {
 
@@ -15,6 +16,10 @@ export const BillingHeaderCustomer = () => {
 
     const handleAddUserClick = () => {
         dispatch( OpenModalAddCustomer() );
+    }
+
+    const handleEditUserClick = () => {
+        dispatch( OpenModalEditCustomer() );
     }
 
     return (
@@ -50,7 +55,7 @@ export const BillingHeaderCustomer = () => {
 
             <div className="billing_header-customer-first-buttons">
                 <div className="button1">
-                    <AiFillEdit id='button1'/>
+                    <AiFillEdit id='button1' onClick={ handleEditUserClick }/>
                 </div>
                 <div className="button2">
                     <SiHappycow id='button2'/>
@@ -103,6 +108,8 @@ export const BillingHeaderCustomer = () => {
           </div>
 
             <BillingAddCustomerModal/>
+
+            <BillingEditCustomerModal />
         </div>
   )
 }

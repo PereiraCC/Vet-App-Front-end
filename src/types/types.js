@@ -40,5 +40,7 @@ export const types = {
     // Billing actions
     billingOpenModelAddCustomer: '[Billing] Open Model Add Customer',
     billingCloseModelAddCustomer: '[Billing] Close Model Add Customer',
+    billingOpenModelEditCustomer: '[Billing] Open Model Edit Customer',
+    billingCloseModelEditCustomer: '[Billing] Close Model Edit Customer',
 
 }
