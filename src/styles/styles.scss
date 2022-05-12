@@ -8,6 +8,7 @@
 @import './components/navbar';
 @import './components/tabs';
 @import './components/nothing';
+@import './components/modal';
 
 // Login components
 @import 'components/auth/login';
@@ -20,6 +21,7 @@
 @import './components/billing/billing_totals';
 @import './components/billing/billing_iteams';
 @import './components/billing/billing_footer';
+@import './components/billing/billing_modalAddCustomer';
 
 // Inventory components
 @import './components/inventory/inventory';

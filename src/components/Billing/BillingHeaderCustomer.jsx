@@ -1,12 +1,25 @@
+import { useDispatch } from 'react-redux';
+
 import { SiHappycow } from 'react-icons/si';
 import { AiFillFileAdd, AiFillEdit } from 'react-icons/ai';
 import { RiFileEditFill } from 'react-icons/ri';
 import { FaSearch } from 'react-icons/fa';
 
+import { OpenModalAddCustomer } from '../../actions/billing';
+
+import { BillingAddCustomerModal } from './BillingAddCustomerModal';
+
 export const BillingHeaderCustomer = () => {
-  return (
+
+    const dispatch = useDispatch();
+
+    const handleAddUserClick = () => {
+        dispatch( OpenModalAddCustomer() );
+    }
+
+    return (
     
-      <div className="billing_header-customer-main">
+        <div className="billing_header-customer-main">
 
           <div className="billing_header-customer-first">
 
@@ -40,11 +53,12 @@ export const BillingHeaderCustomer = () => {
                     <AiFillEdit id='button1'/>
                 </div>
                 <div className="button2">
-                    <SiHappycow id='button1'/>
+                    <SiHappycow id='button2'/>
                 </div>
                 <div className="button3">
-                    <AiFillFileAdd id='button3'/>
+                    <AiFillFileAdd id='button3' onClick={ handleAddUserClick }/>
                 </div>
+
             </div>
 
           </div>
@@ -88,6 +102,7 @@ export const BillingHeaderCustomer = () => {
 
           </div>
 
-      </div>
+            <BillingAddCustomerModal/>
+        </div>
   )
 }

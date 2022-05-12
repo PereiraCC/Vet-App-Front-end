@@ -7,6 +7,7 @@ import { SettingsReducer } from '../reducers/settingsReducer';
 import { SidebarReducer } from '../reducers/sidebarReducer';
 import { loginReducer } from '../reducers/loginReducer';
 import { PaysReducer } from '../reducers/paysReducer';
+import { BillingReducer } from '../reducers/billingReducer';
 
 const reducers = combineReducers({
     tabs: tabsReducer,
@@ -15,7 +16,8 @@ const reducers = combineReducers({
     settings: SettingsReducer,
     sidebar: SidebarReducer,
     login: loginReducer,
-    pays: PaysReducer
+    pays: PaysReducer,
+    billing: BillingReducer
 });
 
 export const store = createStore(
