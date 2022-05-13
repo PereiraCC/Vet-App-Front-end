@@ -9,6 +9,7 @@ import { OpenModalAddCustomer, OpenModalEditCustomer } from '../../actions/billi
 
 import { BillingAddCustomerModal } from './BillingAddCustomerModal';
 import { BillingEditCustomerModal } from './BillingEditCustomerModal';
+import { BillingMAGCustomerModal } from './BillingMAGCustomerModal';
 
 export const BillingHeaderCustomer = () => {
 
@@ -110,6 +111,8 @@ export const BillingHeaderCustomer = () => {
             <BillingAddCustomerModal/>
 
             <BillingEditCustomerModal />
+
+            <BillingMAGCustomerModal />
         </div>
   )
 }
