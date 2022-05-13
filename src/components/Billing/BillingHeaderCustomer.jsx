@@ -5,7 +5,7 @@ import { AiFillFileAdd, AiFillEdit } from 'react-icons/ai';
 import { RiFileEditFill } from 'react-icons/ri';
 import { FaSearch } from 'react-icons/fa';
 
-import { OpenModalAddCustomer, OpenModalEditCustomer } from '../../actions/billing';
+import { OpenModalAddCustomer, OpenModalEditCustomer, OpenModalMAGCustomer } from '../../actions/billing';
 
 import { BillingAddCustomerModal } from './BillingAddCustomerModal';
 import { BillingEditCustomerModal } from './BillingEditCustomerModal';
@@ -22,6 +22,11 @@ export const BillingHeaderCustomer = () => {
     const handleEditUserClick = () => {
         dispatch( OpenModalEditCustomer() );
     }
+
+    const handleMAGUserClick = () => {
+        dispatch( OpenModalMAGCustomer() );
+    }
+
 
     return (
     
@@ -59,7 +64,7 @@ export const BillingHeaderCustomer = () => {
                     <AiFillEdit id='button1' onClick={ handleEditUserClick }/>
                 </div>
                 <div className="button2">
-                    <SiHappycow id='button2'/>
+                    <SiHappycow id='button2' onClick={ handleMAGUserClick }/>
                 </div>
                 <div className="button3">
                     <AiFillFileAdd id='button3' onClick={ handleAddUserClick }/>
