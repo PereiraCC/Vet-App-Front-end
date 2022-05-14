@@ -382,6 +382,7 @@
 
 #btnCatalogoImportarFModal {
     color: black;
+    font-size: 15px;
     height: 70%;
     width: 100%;
 
@@ -399,6 +400,7 @@
     background-color: $secundary;
     border: none;
     color: white;
+    font-size: 15px;
     height: 70%;
     margin-left: 25px;
     width: 70%;
@@ -416,7 +418,9 @@
     background-color: #F54B5A;
     border: none;
     color: white;
+    font-size: 15px;
     height: 70%;
+    padding-top: 5px;
     width: 80%;
 
     &:hover {

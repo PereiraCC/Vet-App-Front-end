@@ -1,3 +1,5 @@
+import { useDispatch } from 'react-redux';
+
 import { HiDocumentAdd } from 'react-icons/hi';
 import { FaRegSave } from 'react-icons/fa';
 import { RiDeleteBin2Fill } from 'react-icons/ri';
@@ -6,8 +8,16 @@ import { MdLabel } from 'react-icons/md';
 import { ImCancelCircle, ImCalculator } from 'react-icons/im';
 
 import { BuysImportarFacturaModal } from './BuysImportarFacturaModal';
+import { OpenModalImportarF } from '../../actions/buys';
 
 export const BuysIcons = () => {
+
+    const dispatch = useDispatch();
+
+    const handleOpenImportarFacturaModal = () => {
+        dispatch( OpenModalImportarF() );
+    }
+
     return (
         <div className="buys_icons-main">
 
@@ -61,7 +71,7 @@ export const BuysIcons = () => {
             </div>
 
             <div className="buys_icons-importarFactura">
-                <button id='btnImpFacturaE'>Importar Factura Electronica</button>
+                <button id='btnImpFacturaE' onClick={ handleOpenImportarFacturaModal }>Importar Factura Electronica</button>
             </div>
 
             <BuysImportarFacturaModal />

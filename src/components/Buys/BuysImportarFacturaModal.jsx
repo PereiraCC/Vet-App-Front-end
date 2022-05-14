@@ -1,24 +1,23 @@
 import Modal from 'react-modal';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { CloseModalEditCustomer } from '../../actions/billing';
+import { useDispatch, useSelector } from 'react-redux';
+import { CloseModalImportarF } from '../../actions/buys';
 import { customStyles } from '../../helpers/styleModal';
 
 Modal.setAppElement('#root');
 
 export const BuysImportarFacturaModal = () => {
 
-    // const dispatch = useDispatch();
-    // const { modalEditCustomerOpen } = useSelector(state => state.billing);
+    const dispatch = useDispatch();
+    const { modalImportarFOpen } = useSelector(state => state.buys);
 
     const closeModal = () => {
-        // dispatch( CloseModalEditCustomer() );
-        console.log('closeModal');
+        dispatch( CloseModalImportarF() );
     }
 
     return (
         <Modal
-            isOpen={ true }
-            onRequestClose={closeModal}
+            isOpen={ modalImportarFOpen }
+            onRequestClose={ closeModal }
             style={ customStyles }
             closeTimeoutMS={ 200 }
             className={'modal-importarFactura'}
@@ -109,11 +108,11 @@ export const BuysImportarFacturaModal = () => {
                     </div>
 
                     <div className='modal_importarFactura-buttons-aceptar'>
-                        <button id='btnAceptarImportarFModal'>Aceptar</button>
+                        <button  type='submit' id='btnAceptarImportarFModal'>Aceptar</button>
                     </div>
 
                     <div className='modal_importarFactura-buttons-cancelar'>
-                        <button id='btnCancelarImportarFModal'>Cancelar</button>
+                        <p id='btnCancelarImportarFModal' onClick={ closeModal }>Cancelar</p>
                     </div>
                 </div>
 

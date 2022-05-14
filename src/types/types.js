@@ -45,4 +45,8 @@ export const types = {
     billingOpenModelMAGCustomer: '[Billing] Open Model MAG Customer',
     billingCloseModelMAGCustomer: '[Billing] Close Model MAG Customer',
 
+    // Buys actions
+    buysOpenModelImportarF: '[Buys] Open Model Importar Factura',
+    buysCloseModelImportarF: '[Buys] Close Model Importar Factura',
+
 }

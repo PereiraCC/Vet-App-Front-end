@@ -8,6 +8,7 @@ import { SidebarReducer } from '../reducers/sidebarReducer';
 import { loginReducer } from '../reducers/loginReducer';
 import { PaysReducer } from '../reducers/paysReducer';
 import { BillingReducer } from '../reducers/billingReducer';
+import { BuysReducer } from '../reducers/buysReducer';
 
 const reducers = combineReducers({
     tabs: tabsReducer,
@@ -17,7 +18,8 @@ const reducers = combineReducers({
     sidebar: SidebarReducer,
     login: loginReducer,
     pays: PaysReducer,
-    billing: BillingReducer
+    billing: BillingReducer,
+    buys: BuysReducer
 });
 
 export const store = createStore(
