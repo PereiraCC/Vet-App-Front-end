@@ -1,10 +1,11 @@
-
 import { HiDocumentAdd } from 'react-icons/hi';
 import { FaRegSave } from 'react-icons/fa';
 import { RiDeleteBin2Fill } from 'react-icons/ri';
 import { AiFillPrinter } from 'react-icons/ai';
 import { MdLabel } from 'react-icons/md';
 import { ImCancelCircle, ImCalculator } from 'react-icons/im';
+
+import { BuysImportarFacturaModal } from './BuysImportarFacturaModal';
 
 export const BuysIcons = () => {
     return (
@@ -62,6 +63,8 @@ export const BuysIcons = () => {
             <div className="buys_icons-importarFactura">
                 <button id='btnImpFacturaE'>Importar Factura Electronica</button>
             </div>
+
+            <BuysImportarFacturaModal />
         </div>
     )
 }
