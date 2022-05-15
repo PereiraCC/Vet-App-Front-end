@@ -1,4 +1,5 @@
 import { LocationsHeader } from './LocationsHeader';
+import { LocationsUbicacionesE } from './LocationsUbicacionesE';
 
 export const LocationsPage = () => {
     return (
@@ -13,7 +14,7 @@ export const LocationsPage = () => {
             </div>
 
             <div className='locations_ubicacionesE'>
-                <p>ubicacionesE</p>
+                <LocationsUbicacionesE />
             </div>
 
             <div className='locations_icons'>
