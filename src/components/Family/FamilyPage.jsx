@@ -1,4 +1,5 @@
 import { FamilyFamilia } from './FamilyFamilia';
+import { FamilyIcons } from './FamilyIcons';
 import { FamilySubFamilia } from './FamilySubFamilia';
 
 export const FamilyPage = () => {
@@ -21,7 +22,7 @@ export const FamilyPage = () => {
             </div>
 
             <div className='family_icons'>
-                <p>icons</p>
+                <FamilyIcons />
             </div>
 
         </div>
