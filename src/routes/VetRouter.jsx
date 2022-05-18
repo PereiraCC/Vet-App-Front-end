@@ -30,6 +30,7 @@ import { FamilyPage } from '../components/Family/FamilyPage';
 import { OpenCashPage } from '../components/OpenCash/OpenCashPage';
 import { PrivateRoute } from './PrivateRoute';
 import { CategoryPage } from '../components/Category/CategoryPage';
+import { UsualCustomers } from '../components/UsualCustomers/UsualCustomers';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -173,6 +174,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/settings"
                     component={ SettingsPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/usualcostumers"
+                    component={ UsualCustomers }
                 />
 
                 <PrivateRoute 

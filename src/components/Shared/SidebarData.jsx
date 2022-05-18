@@ -166,7 +166,7 @@ export const SidebarData = [
             },
             {
                 title: 'Clientes Frecuentes',
-                path: '/parameters/customers',
+                path: '/parameters/usualcostumers',
                 icon: <BsFillPeopleFill />,
                 cName: 'vet_nav-text'
             },
