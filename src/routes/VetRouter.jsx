@@ -34,6 +34,7 @@ import { UsualCustomers } from '../components/UsualCustomers/UsualCustomers';
 import { AssignTab } from '../components/AssignTab/AssignTab';
 import { Rates } from '../components/Rates/Rates';
 import { DenominationCoins } from '../components/DenominationCoins/DenominationCoins';
+import { CategoryActions } from '../components/CategoryActions/CategoryActions';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -247,6 +248,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/category"
                     component={ CategoryPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/actions"
+                    component={ CategoryActions }
                 />
 
                 <PrivateRoute 
