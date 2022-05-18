@@ -2,7 +2,7 @@ import { BsFillPeopleFill } from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
-import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile } from 'react-icons/ai';
+import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile, AiFillInteraction } from 'react-icons/ai';
 import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt} from 'react-icons/fa';
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
@@ -222,6 +222,12 @@ export const SidebarData = [
                 title: 'Categorias',
                 path: '/parameters/category',
                 icon: <MdCategory />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Categoría de acción',
+                path: '/parameters/actions',
+                icon: <AiFillInteraction />,
                 cName: 'vet_nav-text'
             },
             {
