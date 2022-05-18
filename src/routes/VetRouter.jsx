@@ -31,6 +31,7 @@ import { OpenCashPage } from '../components/OpenCash/OpenCashPage';
 import { PrivateRoute } from './PrivateRoute';
 import { CategoryPage } from '../components/Category/CategoryPage';
 import { UsualCustomers } from '../components/UsualCustomers/UsualCustomers';
+import { AssignTab } from '../components/AssignTab/AssignTab';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -181,6 +182,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/usualcostumers"
                     component={ UsualCustomers }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/assigntab"
+                    component={ AssignTab }
                 />
 
                 <PrivateRoute 
