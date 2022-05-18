@@ -32,6 +32,7 @@ import { PrivateRoute } from './PrivateRoute';
 import { CategoryPage } from '../components/Category/CategoryPage';
 import { UsualCustomers } from '../components/UsualCustomers/UsualCustomers';
 import { AssignTab } from '../components/AssignTab/AssignTab';
+import { Rates } from '../components/Rates/Rates';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -189,6 +190,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/assigntab"
                     component={ AssignTab }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/rates"
+                    component={ Rates }
                 />
 
                 <PrivateRoute 
