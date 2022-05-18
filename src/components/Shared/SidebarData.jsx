@@ -2,9 +2,10 @@ import { BsFillPeopleFill } from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
-import { AiFillHome, AiFillSetting, AiOutlineShoppingCart } from 'react-icons/ai';
-import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins} from 'react-icons/fa';
+import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile } from 'react-icons/ai';
+import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt} from 'react-icons/fa';
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree} from 'react-icons/gi';
+import { ImTable2 } from 'react-icons/im';
 import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill} from 'react-icons/ri';
 import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory } from 'react-icons/md';
 
@@ -162,7 +163,25 @@ export const SidebarData = [
                 path: '/parameters/settings',
                 icon: <AiFillSetting />,
                 cName: 'vet_nav-text'
-            },,
+            },
+            {
+                title: 'Clientes Frecuentes',
+                path: '/parameters/customers',
+                icon: <BsFillPeopleFill />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Asignar Ficha Por Usuarios',
+                path: '/parameters/assigntab',
+                icon: <ImTable2 />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Tarifas',
+                path: '/parameters/rates',
+                icon: <FaMoneyBillAlt />,
+                cName: 'vet_nav-text'
+            },
             {
                 title: 'Ubicaciones',
                 path: '/parameters/locations',
@@ -182,6 +201,12 @@ export const SidebarData = [
                 cName: 'vet_nav-text'
             },
             {
+                title: 'Denominación monedas',
+                path: '/parameters/denominationcoins',
+                icon: <FaCoins />,
+                cName: 'vet_nav-text'
+            },
+            {
                 title: 'Bodegas',
                 path: '/parameters/wineries',
                 icon: <SiHomeassistantcommunitystore />,
@@ -197,6 +222,12 @@ export const SidebarData = [
                 title: 'Categorias',
                 path: '/parameters/category',
                 icon: <MdCategory />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Condicciones de Uso Firmado Contado',
+                path: '/parameters/terms',
+                icon: <AiFillProfile />,
                 cName: 'vet_nav-text'
             },
         ]
