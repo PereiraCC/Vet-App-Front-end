@@ -35,6 +35,7 @@ import { AssignTab } from '../components/AssignTab/AssignTab';
 import { Rates } from '../components/Rates/Rates';
 import { DenominationCoins } from '../components/DenominationCoins/DenominationCoins';
 import { CategoryActions } from '../components/CategoryActions/CategoryActions';
+import { Terms } from '../components/Terms/Terms';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -255,6 +256,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/actions"
                     component={ CategoryActions }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/terms"
+                    component={ Terms }
                 />
 
                 <PrivateRoute 
