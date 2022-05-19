@@ -20,7 +20,7 @@ export const tabsReducer = (state = initialState, action ) => {
 
             const listTab = state.tabs.find(tab => tab.name == action.payload.name ||tab.name.includes(action.payload.name));
             
-            if(listTab === undefined ) {
+            if(listTab === undefined || listTab.name.includes("Clientes")) {
 
                 const newTab = {
                     name: (action.payload.name === 'Venta') ? action.payload.name + ' # 1' : action.payload.name,
@@ -97,21 +97,45 @@ export const tabsReducer = (state = initialState, action ) => {
 
             } else {
 
-                const indexTab = state.tabs.findIndex( tab => tab.name.includes(action.payload.name));
+                if(action.payload.name.includes("Clientes")) {
+                    
+                    const indexTab = state.tabs.findIndex( tab => tab.name === action.payload.name);
+                    
+                    const newState = {
+                        tabs: (action.payload.name === "Clientes Frecuentes")
+                                ? state.tabs.filter(tab => !tab.name.trim().includes(action.payload.name.trim()))
+                                : state.tabs.filter(tab => !tab.name.trim().endsWith(action.payload.name.trim())),
+                        currentTab : (state.currentTab.name === action.payload.name)
+                                    ? {
+                                        name: state.tabs[(indexTab === 0) ? 1 : indexTab - 1].name,
+                                        routePage: state.tabs[(indexTab === 0) ? 1 : indexTab - 1].routePage, 
+                                    }
+                                    : state.currentTab
+                    }
+
+                    localStorage.setItem('tabs', JSON.stringify(newState));
+
+                    return newState;
+
+                } else {
+
+                    const indexTab = state.tabs.findIndex( tab => tab.name.includes(action.payload.name));
                 
-                const newState = {
-                    tabs: state.tabs.filter(tab => !tab.name.includes(action.payload.name)),
-                    currentTab : (state.currentTab.name === action.payload.name)
-                                ? {
-                                    name: state.tabs[(indexTab === 0) ? 1 : indexTab - 1].name,
-                                    routePage: state.tabs[(indexTab === 0) ? 1 : indexTab - 1].routePage, 
-                                }
-                                : state.currentTab
+                    const newState = {
+                        tabs: state.tabs.filter(tab => !tab.name.includes(action.payload.name)),
+                        currentTab : (state.currentTab.name === action.payload.name)
+                                    ? {
+                                        name: state.tabs[(indexTab === 0) ? 1 : indexTab - 1].name,
+                                        routePage: state.tabs[(indexTab === 0) ? 1 : indexTab - 1].routePage, 
+                                    }
+                                    : state.currentTab
+                    }
+
+                    localStorage.setItem('tabs', JSON.stringify(newState));
+
+                    return newState;
+
                 }
-
-                localStorage.setItem('tabs', JSON.stringify(newState));
-
-                return newState;
 
             }
 
