@@ -30,12 +30,12 @@ import { FamilyPage } from '../components/Family/FamilyPage';
 import { OpenCashPage } from '../components/OpenCash/OpenCashPage';
 import { PrivateRoute } from './PrivateRoute';
 import { CategoryPage } from '../components/Category/CategoryPage';
-import { UsualCustomers } from '../components/UsualCustomers/UsualCustomers';
 import { AssignTab } from '../components/AssignTab/AssignTab';
 import { Rates } from '../components/Rates/Rates';
 import { DenominationCoins } from '../components/DenominationCoins/DenominationCoins';
 import { CategoryActions } from '../components/CategoryActions/CategoryActions';
 import { Terms } from '../components/Terms/Terms';
+import { UsualCustomersPage } from '../components/UsualCustomers/UsualCustomersPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -184,8 +184,8 @@ export const VetRouter = ({ isAuthenticated}) => {
                 <PrivateRoute 
                     isAuthenticated={ isAuthenticated }
                     exact
-                    path="/parameters/usualcostumers"
-                    component={ UsualCustomers }
+                    path="/parameters/usualcustomers"
+                    component={ UsualCustomersPage }
                 />
 
                 <PrivateRoute 
