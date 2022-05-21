@@ -13,7 +13,7 @@ export const AssignTab = () => {
             </div>
 
             <div className='assign_tab-body'>
-
+                
                 <div className='assign_tab-body-user'>
                     <p id='lblUserAssingTab'>Usuario</p>
                     <select name='userAssingTab' id='cboUserAssingTab'>
