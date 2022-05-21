@@ -52,14 +52,14 @@ export const SettingsBodyTabs = () => {
                 </button>
             </li>
 
-            <li className="settings-tabs">
+            {/* <li className="settings-tabs">
                 <button 
                     className={currentTabSettings == 'Tarifas' ? "settings-tab active" : "settings-tab"}
                     onClick={ () => handleSelectTabSettings('Tarifas') }
                 >
                     Tarifas
                 </button>
-            </li>
+            </li> */}
 
         </ul>
     )

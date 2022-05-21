@@ -37,6 +37,9 @@ export const types = {
     // Pays actions
     SelectTabPays: '[Pays] SelectTabPays',
 
+    // Terms actions
+    SelectTabTerms: '[Terms] SelectTabTerms',
+
     // Billing actions
     billingOpenModelAddCustomer: '[Billing] Open Model Add Customer',
     billingCloseModelAddCustomer: '[Billing] Close Model Add Customer',
