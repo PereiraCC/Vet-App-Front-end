@@ -59,11 +59,52 @@ export const ProformaDatos = () => {
             </div>
 
             <div className='proforma_datos-condicciones'>
-                <p>Condicciones</p>
+                
+                <div className='proforma_datos-condicciones-title'>
+                    <p id='lblCondiccionesTitleProforma'>Condiciones de Cotización</p>
+                </div>
+
+                <div className='proforma_datos-condicciones-validez'>
+                    <p id='lblValidezCProforma'>Validez</p>
+                    <input type='text' id='txtValidezCProforma' name='validezCProforma' />
+                    <p id='lblValidezDiasCProforma'>Días</p>
+                </div>
+
+                <div className='proforma_datos-condicciones-tiempo'>
+                    <p id='lblTiempoCProforma'>Tiempo de Entrega</p>
+                    <input type='text' id='txtTiempoCProforma' name='tiempoCProforma' />
+                    <p id='lblTiempoDiasCProforma'>Días</p>
+                </div>
+
+                <div className='proforma_datos-condicciones-moneda'>
+                    <p id='lblMonedaCProforma'>Moneda</p>
+                    <select id='cboMonedaCProforma' name='monedaCProforma'>
+                        <option value='Colon'>Colon</option>
+                        <option value='Dólar'>Dólar</option>
+                    </select>
+                    <button id='btnMonedaCProforma'>...</button>
+                </div>
+
             </div>
 
             <div className='proforma_datos-formaPago'>
-                <p>Forma Pago</p>
+
+                <p id='lblTitleFormaPagoProforma'>Forma de Pago</p>
+
+                <div className='proforma_datos-formaPago-radios'>
+
+                    <div className='proforma_datos-formaPago-contado'>
+                        <input type="radio" id="rbContadoFormaPago" name="contadoFormaPago" value="contadoFormaPago" />
+                        <label for="rbContadoFormaPago" id='lblContadoFormaPago'>Contado</label>
+                    </div>
+
+                    <div className='proforma_datos-formaPago-credito'>
+                        <input type="radio" id="rbCreditoFormaPago" name="creditoFormaPago" value="creditoFormaPago" />
+                        <label for="rbCreditoFormaPago" id='lblCreditoFormaPago'>Crédito</label>
+                    </div>
+
+                </div>              
+
             </div>
 
         </div>
