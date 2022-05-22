@@ -1,0 +1,226 @@
+.proforma_datos-main {
+    border: 1px solid black;
+    display: grid;
+    height: 85%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10px;
+    grid-template-areas: 
+        'clientes condiciones formaPago';
+    grid-template-columns: 50% 25% 25%;
+}
+
+.proforma_datos-clientes {
+    border-right: 1px solid black;
+    display: grid;
+    grid-area: clientes;
+    margin-right: 5px;
+    grid-template-areas: 
+        'title'
+        'first'
+        'second';
+    grid-template-rows: 20% 40% 40%;
+}
+
+.proforma_datos-clientes-title {
+    background-color: #4169E1;
+    grid-area: title;
+}
+
+#lblClienteTitleProforma {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.proforma_datos-clientes-first {
+    display: grid;
+    grid-area: first;
+    grid-template-areas: 
+        'cedula tipo nombre btn';
+    grid-template-columns: 22% 18% 52% 8%;
+}
+
+.proforma_datos-clientes-first-cedula {
+    display: grid;
+    grid-area: cedula;
+    grid-template-areas: 
+        'lblcedula'
+        'txtcedula';
+    grid-template-rows: 45% 55%;
+}
+
+#lblClienteCedulaProforma {
+    font-size: 15px;
+    grid-area: lblcedula;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#txtClienteCedulaProforma {
+    font-size: 15px;
+    grid-area: txtcedula;
+    height: 85%;
+    margin-left: 5px;
+    text-align: start;
+    width: 95%;
+}
+
+.proforma_datos-clientes-first-tipo {
+    display: grid;
+    grid-area: tipo;
+    grid-template-areas: 
+        'lbltipo'
+        'txttipo';
+    grid-template-rows: 45% 55%;
+}
+
+#lblClienteTipoProforma {
+    font-size: 15px;
+    grid-area: lbltipo;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#cboClienteTipoProforma {
+    font-size: 15px;
+    grid-area: txttipo;
+    height: 85%;
+    margin-left: 5px;
+    text-align: start;
+    width: 90%;
+}
+
+.proforma_datos-clientes-first-nombre {
+    display: grid;
+    grid-area: nombre;
+    grid-template-areas: 
+        'lblNombre'
+        'txtNombre';
+    grid-template-rows: 45% 55%;
+}
+
+#lblClienteNombreProforma {
+    font-size: 15px;
+    grid-area: lblNombre;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#txtClienteNombreProforma {
+    font-size: 15px;
+    grid-area: txtNombre;
+    height: 85%;
+    margin-left: 5px;
+    text-align: start;
+    width: 95%;
+}
+
+.proforma_datos-clientes-first-btn {
+    grid-area: btn;
+}
+
+#btnCow {
+    color: $secundary;
+    cursor: pointer;
+    height: 100%;
+    height: 85%;
+    margin-top: 5px;
+    width: 50%;
+    
+    :hover {
+        background-color: #c7c7c7;
+    }
+}
+
+.proforma_datos-clientes-second {
+    display: grid;
+    grid-area: second;
+    grid-template-areas: 
+        'contacto telefono fecha';
+    grid-template-columns: 55% 30% 15%;
+}
+
+.proforma_datos-clientes-second-contacto {
+    display: grid;
+    grid-area: contacto;
+    grid-template-areas: 
+        'lblContacto'
+        'txtContacto';
+    grid-template-rows: 45% 55%;
+}
+
+#lblClienteContactoProforma {
+    font-size: 15px;
+    grid-area: lblContacto;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#txtClienteContactoProforma {
+    font-size: 15px;
+    grid-area: txtContacto;
+    height: 85%;
+    margin-left: 5px;
+    text-align: start;
+    width: 95%;
+}
+
+.proforma_datos-clientes-second-telefono {
+    display: grid;
+    grid-area: telefono;
+    grid-template-areas: 
+        'lblTelefono'
+        'txtTelefono';
+    grid-template-rows: 45% 55%;
+}
+
+#lblClienteTelefonoProforma {
+    font-size: 15px;
+    grid-area: lblTelefono;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#txtClienteTelefonoProforma {
+    font-size: 15px;
+    grid-area: txtTelefono;
+    height: 85%;
+    margin-left: 5px;
+    text-align: start;
+    width: 95%;
+}
+
+.proforma_datos-clientes-second-fecha {
+    display: grid;
+    grid-area: fecha;
+    grid-template-areas: 
+        'lblFecha'
+        'lblFecha2';
+    grid-template-rows: 45% 55%;
+}
+
+#lblClienteFechaProforma {
+    font-size: 15px;
+    grid-area: lblFecha;
+    padding-left: 5px;
+    text-align: start;
+}
+
+#lblClienteFechaValueProforma {
+    font-size: 15px;
+    grid-area: lblFecha2;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.proforma_datos-condicciones {
+    grid-area: condiciones;
+    background-color: chocolate;
+}
+
+.proforma_datos-formaPago {
+    grid-area: formaPago;
+    background-color: yellow;
+}

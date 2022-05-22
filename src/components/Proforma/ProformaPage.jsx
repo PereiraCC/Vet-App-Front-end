@@ -1,3 +1,4 @@
+import { ProformaDatos } from "./ProformaDatos"
 
 export const ProformaPage = () => {
     return (
@@ -14,7 +15,7 @@ export const ProformaPage = () => {
             </div>
 
             <div className='proforma-datos'>
-                <p>datos</p>
+                <ProformaDatos />
             </div>
 
             <div className='proforma-table'>
