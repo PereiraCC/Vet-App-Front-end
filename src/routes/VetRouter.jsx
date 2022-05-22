@@ -36,6 +36,8 @@ import { DenominationCoins } from '../components/DenominationCoins/DenominationC
 import { CategoryActions } from '../components/CategoryActions/CategoryActions';
 import { Terms } from '../components/Terms/Terms';
 import { UsualCustomersPage } from '../components/UsualCustomers/UsualCustomersPage';
+import { ProformaPage } from '../components/Proforma/ProformaPage';
+import { TrackingQuotesPage } from '../components/TrackingQuotes/TrackingQuotesPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -151,6 +153,20 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/sales/billing/:billingId"
                     component={ BillingPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/sales/budgets/proforma"
+                    component={ ProformaPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/sales/budgets/seguimiento"
+                    component={ TrackingQuotesPage }
                 />
 
                 <PrivateRoute 

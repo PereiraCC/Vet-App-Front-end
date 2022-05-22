@@ -1,9 +1,9 @@
-import { BsFillPeopleFill } from 'react-icons/bs';
+import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill} from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
 import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile, AiFillInteraction } from 'react-icons/ai';
-import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt} from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt, FaMoneyCheckAlt} from 'react-icons/fa';
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
 import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill} from 'react-icons/ri';
@@ -129,6 +129,26 @@ export const SidebarData = [
                 path: '/sales/billing',
                 icon: <FaFileInvoiceDollar />,
                 cName: 'vet_nav-text'
+            },
+            {
+                title: 'Presupuestos',
+                path: '/sales/budgets/proforma',
+                icon: <FaMoneyCheckAlt />,
+                iconClosed: <RiArrowDownSFill />,
+                iconOpened: <RiArrowUpSFill />,
+                cName: 'vet_nav-text',
+                subNavIteams: [
+                    {
+                        title: 'Proformas o Cotización',
+                        path: '/sales/budgets/proforma',
+                        icon: <BsFillFileEarmarkTextFill />,
+                    },
+                    {
+                        title: 'Seguimiento Cotizaciones',
+                        path: '/sales/budgets/seguimiento',
+                        icon: <BsFileCheckFill />,
+                    },
+                ]
             },
             {
                 title: 'Abono Cobrar',
