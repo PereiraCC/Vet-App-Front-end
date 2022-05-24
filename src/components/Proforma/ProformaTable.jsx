@@ -57,7 +57,32 @@ export const ProformaTable = () => {
             </div>
 
             <div className='proforma_table-body'>
-                <p>Body</p>
+                
+                <table className='proforma_table-body-main'>
+                    <thead>
+                        <tr>
+                            <th className='proforma_table-body-header-codigo'>Código</th>
+                            <th className='proforma_table-body-header-descripcion'>Descripcion</th>
+                            <th className='proforma_table-body-header-cant'>Cantidad</th>
+                            <th className='proforma_table-body-header-Punit'>P. Unit</th>
+                            <th className='proforma_table-body-header-desc'>% Desc</th>
+                            <th className='proforma_table-body-header-Mimp'>M. Imp</th>
+                            <th className='proforma_table-body-header-subtotal'>SubTotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th className='proforma_table-body-codigo'>test</th>
+                            <th className='proforma_table-body-descripcion'>test</th>
+                            <th className='proforma_table-body-cant'>test</th>
+                            <th className='proforma_table-body-Punit'>test</th>
+                            <th className='proforma_table-body-desc'>test</th>
+                            <th className='proforma_table-body-Mimp'>test</th>
+                            <th className='proforma_table-body-subtotal'>test</th>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
 
         </div>
