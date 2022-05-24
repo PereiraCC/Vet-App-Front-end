@@ -12,8 +12,8 @@
 }
 
 .proforma_table-headers {
-    grid-area: headers;
     display: grid;
+    grid-area: headers;
     grid-template-areas: 
         'title'
         'inputs';
@@ -21,25 +21,25 @@
 }
 
 #lblTitleTableArticulo {
-    grid-area: title;
-    text-align: start;
-    font-size: 15px;
-    padding-left: 5px;
-    color: white;
     background-color: #4169E1;
+    color: white;
+    font-size: 15px;
+    grid-area: title;
+    padding-left: 5px;
+    text-align: start;
 }
 
 .proforma_table-headers-inputs {
-    grid-area: inputs;
     display: grid;
+    grid-area: inputs;
     grid-template-areas: 
         'exonerar codigo precioUnit desc exist cantidad iv subtotal';
     grid-template-columns: 10% 23% 10% 10% 10% 12% 10% 15%;
 }
 
 .proforma_table-headers-inputs-exonerar {
-    grid-area: exonerar;
     display: grid;
+    grid-area: exonerar;
     grid-template-areas: 
         'inputexonerar lblexonerar';
     grid-template-columns: 30% 70%;
@@ -52,16 +52,16 @@
 
 #lblExonerarProforma {
     grid-area: lblexonerar;
-    margin-top: 20px;
-    text-align: start;
-    padding-left: 2px;
     height: 50%;
+    margin-top: 20px;
+    padding-left: 2px;
+    text-align: start;
     width: 80%;
 }
 
 .proforma_table-headers-inputs-codigo {
-    grid-area: codigo;
     display: grid;
+    grid-area: codigo;
     grid-template-areas: 
         'lblCodigo'
         'inputCodigo';
@@ -69,26 +69,26 @@
 }
 
 #lblTablecodigoProforma {
+    color: black;
+    font-size: 15px;
     grid-area: lblCodigo;
-    text-align: start;
     padding-left: 5px;
     padding-top: 1px;
-    font-size: 15px;
-    color: black;
+    text-align: start;
 }
 
 #txtTablecodigoProforma {
+    font-size: 15px;
     grid-area: inputCodigo;
     height: 80%;
-    width: 95%;
     margin-top: 2px;
     text-align: start;
-    font-size: 15px;
+    width: 95%;
 }
 
 .proforma_table-headers-inputs-precioUnit {
-    grid-area: precioUnit;
     display: grid;
+    grid-area: precioUnit;
     grid-template-areas: 
         'lblPrecioUnit'
         'inputPrecioUnit';
@@ -96,26 +96,26 @@
 }
 
 #lblTablePrecioUnitProforma {
+    color: black;
+    font-size: 15px;
     grid-area: lblPrecioUnit;
-    text-align: start;
     padding-left: 5px;
     padding-top: 1px;
-    font-size: 15px;
-    color: black;
+    text-align: start;
 }
 
 #txtTablePrecioUnitProforma {
+    font-size: 15px;
     grid-area: inputPrecioUnit;
     height: 80%;
-    width: 95%;
     margin-top: 2px;
     text-align: start;
-    font-size: 15px;
+    width: 95%;
 }
 
 .proforma_table-headers-inputs-desc {
-    grid-area: desc;
     display: grid;
+    grid-area: desc;
     grid-template-areas: 
         'lblDesc'
         'inputDesc';
@@ -123,26 +123,26 @@
 }
 
 #lblTableDescProforma {
+    color: black;
+    font-size: 15px;
     grid-area: lblDesc;
-    text-align: start;
     padding-left: 5px;
     padding-top: 1px;
-    font-size: 15px;
-    color: black;
+    text-align: start;
 }
 
 #txtTableDescProforma {
+    font-size: 15px;
     grid-area: inputDesc;
     height: 80%;
-    width: 95%;
     margin-top: 2px;
     text-align: start;
-    font-size: 15px;
+    width: 95%;
 }
 
 .proforma_table-headers-inputs-exist {
-    grid-area: exist;
     display: grid;
+    grid-area: exist;
     grid-template-areas: 
         'lblExist'
         'inputExist';
@@ -150,26 +150,26 @@
 }
 
 #lblTableExistProforma {
+    color: black;
+    font-size: 15px;
     grid-area: lblExist;
-    text-align: start;
     padding-left: 5px;
     padding-top: 1px;
-    font-size: 15px;
-    color: black;
+    text-align: start;
 }
 
 #txtTableExistProforma {
+    font-size: 15px;
     grid-area: inputExist;
     height: 80%;
-    width: 95%;
     margin-top: 2px;
     text-align: start;
-    font-size: 15px;
+    width: 95%;
 }
 
 .proforma_table-headers-inputs-cantidad {
-    grid-area: cantidad;
     display: grid;
+    grid-area: cantidad;
     grid-template-areas: 
         'lblCantidad'
         'inputCantidad';
@@ -177,26 +177,26 @@
 }
 
 #lblTableCantidadProforma {
+    color: black;
+    font-size: 15px;
     grid-area: lblCantidad;
-    text-align: start;
     padding-left: 5px;
     padding-top: 1px;
-    font-size: 15px;
-    color: black;
+    text-align: start;
 }
 
 #txtTableCantidadProforma {
+    font-size: 15px;
     grid-area: inputCantidad;
     height: 80%;
-    width: 95%;
     margin-top: 2px;
     text-align: start;
-    font-size: 15px;
+    width: 95%;
 }
 
 .proforma_table-headers-inputs-iv {
-    grid-area: iv;
     display: grid;
+    grid-area: iv;
     grid-template-areas: 
         'lblIV'
         'inputIV';
@@ -204,26 +204,26 @@
 }
 
 #lblTableIVProforma {
+    color: black;
+    font-size: 15px;
     grid-area: lblIV;
-    text-align: start;
     padding-left: 5px;
     padding-top: 1px;
-    font-size: 15px;
-    color: black;
+    text-align: start;
 }
 
 #txtTableIVProforma {
+    font-size: 15px;
     grid-area: inputIV;
     height: 80%;
-    width: 95%;
     margin-top: 2px;
     text-align: start;
-    font-size: 15px;
+    width: 95%;
 }
 
 .proforma_table-headers-inputs-subtotal {
-    grid-area: subtotal;
     display: grid;
+    grid-area: subtotal;
     grid-template-areas: 
         'lblSubtotalProforma'
         'inputSubtotalProforma';
@@ -231,26 +231,26 @@
 }
 
 #lblTableSubTotalProforma {
+    color: black;
+    font-size: 15px;
     grid-area: lblSubtotalProforma;
-    text-align: start;
     padding-left: 5px;
     padding-top: 1px;
-    font-size: 15px;
-    color: black;
+    text-align: start;
 }
 
 #txtTableSubTotalProforma {
+    font-size: 15px;
     grid-area: inputSubtotalProforma;
     height: 80%;
-    width: 95%;
     margin-top: 2px;
     text-align: start;
-    font-size: 15px;
+    width: 95%;
 }
 
 .proforma_table-body {
-    grid-area: body;
     border-top: 1px solid black;
+    grid-area: body;
 }
 
 .proforma_table-body-main {

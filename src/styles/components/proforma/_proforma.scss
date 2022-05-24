@@ -8,7 +8,7 @@
         'table'
         'totales'
         'icons';
-    grid-template-rows: 40px 120px 248px 80px 60px;
+    grid-template-rows: 40px 120px 238px 90px 60px;
 }
 
 .proforma-header {
@@ -70,7 +70,6 @@
 
 .proforma-totales {
     grid-area: totales;
-    background-color: chartreuse;
 }
 
 .proforma-icons {

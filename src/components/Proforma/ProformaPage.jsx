@@ -1,5 +1,6 @@
 import { ProformaDatos } from "./ProformaDatos"
 import { ProformaTable } from "./ProformaTable"
+import { ProformaTotals } from "./ProformaTotals"
 
 export const ProformaPage = () => {
     return (
@@ -24,7 +25,7 @@ export const ProformaPage = () => {
             </div>
 
             <div className='proforma-totales'>
-                <p>totales</p>
+                <ProformaTotals />
             </div>
 
             <div className='proforma-icons'>
