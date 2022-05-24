@@ -1,4 +1,5 @@
 import { ProformaDatos } from "./ProformaDatos"
+import { ProformaTable } from "./ProformaTable"
 
 export const ProformaPage = () => {
     return (
@@ -19,7 +20,7 @@ export const ProformaPage = () => {
             </div>
 
             <div className='proforma-table'>
-                <p>table</p>
+                <ProformaTable />
             </div>
 
             <div className='proforma-totales'>
