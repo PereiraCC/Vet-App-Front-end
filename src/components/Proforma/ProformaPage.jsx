@@ -1,4 +1,5 @@
 import { ProformaDatos } from "./ProformaDatos"
+import { ProformaIcons } from "./ProformaIcons"
 import { ProformaTable } from "./ProformaTable"
 import { ProformaTotals } from "./ProformaTotals"
 
@@ -29,7 +30,7 @@ export const ProformaPage = () => {
             </div>
 
             <div className='proforma-icons'>
-                <p>icons</p>
+                <ProformaIcons />
             </div>
 
         </div>
