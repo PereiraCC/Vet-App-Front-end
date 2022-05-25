@@ -20,7 +20,7 @@ export const tabsReducer = (state = initialState, action ) => {
 
             const listTab = state.tabs.find(tab => tab.name == action.payload.name ||tab.name.includes(action.payload.name));
             
-            if(listTab === undefined || listTab.name.includes("Clientes")) {
+            if(listTab === undefined) {
 
                 const newTab = {
                     name: (action.payload.name === 'Venta') ? action.payload.name + ' # 1' : action.payload.name,
@@ -35,6 +35,28 @@ export const tabsReducer = (state = initialState, action ) => {
                 return {
                     tabs: [... state.tabs, newTab],
                     currentTab: newTab
+                }
+                
+            } else if(listTab.name.includes("Clientes")) {
+
+                const isCustomers = state.tabs.find(tab => tab.name == action.payload.name ||tab.name.includes(action.payload.name));
+
+                if(isCustomers === undefined) {
+
+                    const newTab = {
+                        name: action.payload.name,
+                        routePage: action.payload.routePage
+                    };
+    
+                    localStorage.setItem('tabs', JSON.stringify({
+                        tabs: [... state.tabs, newTab],
+                        currentTab: newTab
+                    }));
+        
+                    return {
+                        tabs: [... state.tabs, newTab],
+                        currentTab: newTab
+                    }
                 }
                 
             } else if(listTab.name.includes("Venta")){
