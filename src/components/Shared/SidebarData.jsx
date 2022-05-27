@@ -85,15 +85,92 @@ export const SidebarData = [
                 cName: 'vet_nav-text'
             },
             {
-                title: 'Ajuste Inventario',
-                path: '/buys/inventoryadjustment',
+                title: 'Pedidos',
+                path: '/buys/orders/warehouseorders',
+                icon: <FaMoneyCheckAlt />,
+                iconClosed: <RiArrowDownSFill />,
+                iconOpened: <RiArrowUpSFill />,
+                cName: 'vet_nav-text',
+                subNavIteams: [
+                    {
+                        title: 'Pedidos a Bodega',
+                        path: '/buys/orders/warehouseorders',
+                        icon: <BsFillFileEarmarkTextFill />,
+                    },
+                    {
+                        title: 'Seguimiento Cotizaciones',
+                        path: '/buys/orders/checkorders',
+                        icon: <BsFileCheckFill />,
+                    },
+                ]
+            },
+            {
+                title: 'Bodegas',
+                path: '/buys/orders/wineryadjustment',
+                icon: <FaMoneyCheckAlt />,
+                iconClosed: <RiArrowDownSFill />,
+                iconOpened: <RiArrowUpSFill />,
+                cName: 'vet_nav-text',
+                subNavIteams: [
+                    {
+                        title: 'Ajuste Bodega',
+                        path: '/buys/wineryadjustment',
+                        icon: <SiHomeassistantcommunitystore />,
+                    },
+                    {
+                        title: 'Solicitud Bodega',
+                        path: '/buys/requestWinery',
+                        icon: <SiHomeassistantcommunitystore />,
+                    },
+                ]
+            },
+            {
+                title: 'Toma',
+                path: '/buys/orders/wineryadjustment',
+                icon: <FaMoneyCheckAlt />,
+                iconClosed: <RiArrowDownSFill />,
+                iconOpened: <RiArrowUpSFill />,
+                cName: 'vet_nav-text',
+                subNavIteams: [
+                    {
+                        title: 'Toma',
+                        path: '/buys/wineryadjustment',
+                        icon: <SiHomeassistantcommunitystore />,
+                    },
+                    {
+                        title: 'Pretoma',
+                        path: '/buys/requestWinery',
+                        icon: <SiHomeassistantcommunitystore />,
+                    },
+                    {
+                        title: 'Pretoma Fisica General',
+                        path: '/buys/requestWinery',
+                        icon: <SiHomeassistantcommunitystore />,
+                    },
+                ]
+            },
+            {
+                title: 'Orden de compra manual',
+                path: '/buys/inventoryadjustment', //TODO: CHANGLE LINK
                 icon: <CgPill />,
                 cName: 'vet_nav-text'
             },
             {
-                title: 'Ajuste Bodega',
-                path: '/buys/wineryadjustment',
-                icon: <SiHomeassistantcommunitystore />,
+                title: 'Devoluciones compra',
+                path: '/buys/inventoryadjustment', //TODO: CHANGLE LINK
+                icon: <CgPill />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Gastos',
+                path: '/buys/inventoryadjustment', //TODO: CHANGLE LINK
+                icon: <CgPill />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Ajuste Inventario',
+                path: '/buys/inventoryadjustment',
+                icon: <CgPill />,
                 cName: 'vet_nav-text'
             },
             {
@@ -233,6 +310,12 @@ export const SidebarData = [
                 cName: 'vet_nav-text'
             },
             {
+                title: 'Areas',
+                path: '/parameters/wineries',
+                icon: <SiHomeassistantcommunitystore />,
+                cName: 'vet_nav-text'
+            },
+            {
                 title: 'Familias',
                 path: '/parameters/family',
                 icon: <GiFamilyTree />,
@@ -241,6 +324,12 @@ export const SidebarData = [
             {
                 title: 'Categorias',
                 path: '/parameters/category',
+                icon: <MdCategory />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Convertir Saco por Kilos',
+                path: '/parameters/bagskilos',
                 icon: <MdCategory />,
                 cName: 'vet_nav-text'
             },

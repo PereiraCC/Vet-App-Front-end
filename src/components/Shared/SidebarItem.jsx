@@ -10,7 +10,34 @@ export const SidebarItem = ({ item, index}) => {
     const showSubNav = () => setSubnav(!subnav);
 
     const [subnavIteams, setSubnavIteams] = useState(false);
-    const showSubNavIteams = () => setSubnavIteams(!subnavIteams);
+    const showSubNavIteams = (subitem) => {
+        switch (subitem.title) {
+            case "Pedidos":
+                showSubnavIteamsPedidos();
+                break;
+
+            case "Toma":
+                showSubnavIteamsToma();
+                break;
+
+            case "Bodegas":
+                showSubnavIteamsBodega();
+                break;
+        
+            default:
+                break;
+        }
+        setSubnavIteams(!subnavIteams);
+    }
+
+    const [subnavIteamsPedidos, setSubnavIteamsPedidos] = useState(false);
+    const showSubnavIteamsPedidos = () => setSubnavIteamsPedidos(!subnavIteamsPedidos);
+
+    const [subnavIteamsToma, setSubnavIteamsToma] = useState(false);
+    const showSubnavIteamsToma = () => setSubnavIteamsToma(!subnavIteamsToma);
+
+    const [subnavIteamsBodega, setSubnavIteamsBodega] = useState(false);
+    const showSubnavIteamsBodega = () => setSubnavIteamsBodega(!subnavIteamsBodega);
 
     const dispatch = useDispatch();
 
@@ -49,7 +76,7 @@ export const SidebarItem = ({ item, index}) => {
                         subItem.subNavIteams 
                             ?   
                                 <div key={index}>
-                                    <div onClick={ showSubNavIteams } className='vet_nav-sub-menu-sub'>
+                                    <div onClick={ (e) => showSubNavIteams(subItem) } className='vet_nav-sub-menu-sub'>
                                         {subItem.icon}
                                         <span className='vet_nav-span-sub-menu'>{subItem.title}</span>
                                         <div>
@@ -63,16 +90,57 @@ export const SidebarItem = ({ item, index}) => {
 
                                     {
                                         subnavIteams  && subItem.subNavIteams.map((subItem, index) => {
+                                        
+                                            if(subnavIteamsPedidos){
 
-                                            return (
-
-                                                <div onClick={ (e) => handleAddTab(subItem) } key={index}>
-                                                    <Link to={currentTab.routePage} className='vet_nav-sub-menu-iteams' >
-                                                            {subItem.icon}
-                                                            <span className='vet_nav-span'>{subItem.title}</span>
-                                                    </Link>
-                                                </div>
-                                            )
+                                                if(subItem.title == 'Pedidos a Bodega' || subItem.title == 'Seguimiento Cotizaciones') {
+                                                    
+                                                    return (
+                                                        <div onClick={ (e) => handleAddTab(subItem) } key={index}>
+                                                            <Link to={currentTab.routePage} className='vet_nav-sub-menu-iteams' >
+                                                                    {subItem.icon}
+                                                                    <span className='vet_nav-span'>{subItem.title}</span>
+                                                            </Link>
+                                                        </div>
+                                                    )
+                                                }
+                                            } else if(subnavIteamsBodega) {
+                                                
+                                                if(subItem.title == 'Ajuste Bodega' || subItem.title == 'Solicitud Bodega') {
+                                                    
+                                                    return (
+                                                        <div onClick={ (e) => handleAddTab(subItem) } key={index}>
+                                                            <Link to={currentTab.routePage} className='vet_nav-sub-menu-iteams' >
+                                                                    {subItem.icon}
+                                                                    <span className='vet_nav-span'>{subItem.title}</span>
+                                                            </Link>
+                                                        </div>
+                                                    )
+                                                }
+                                            } else if(subnavIteamsToma) {
+                                                if(subItem.title == 'Toma' || subItem.title == 'Pretoma' || subItem.title == 'Pretoma Fisica General') {
+                                                    
+                                                    return (
+                                                        <div onClick={ (e) => handleAddTab(subItem) } key={index}>
+                                                            <Link to={currentTab.routePage} className='vet_nav-sub-menu-iteams' >
+                                                                    {subItem.icon}
+                                                                    <span className='vet_nav-span'>{subItem.title}</span>
+                                                            </Link>
+                                                        </div>
+                                                    )
+                                                }
+                                            }
+                                            else {
+                                                return (
+                                                    <div onClick={ (e) => handleAddTab(subItem) } key={index}>
+                                                        <Link to={currentTab.routePage} className='vet_nav-sub-menu-iteams' >
+                                                                {subItem.icon}
+                                                                <span className='vet_nav-span'>{subItem.title}</span>
+                                                        </Link>
+                                                    </div>
+                                                )
+                                            }
+                                            
                                         })
                                     }
                                 </div>
