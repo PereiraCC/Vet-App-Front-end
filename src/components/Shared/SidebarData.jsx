@@ -1,4 +1,4 @@
-import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill, BsCartCheckFill, BsFileEarmarkBinaryFill} from 'react-icons/bs';
+import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill, BsCartCheckFill, BsFileEarmarkBinaryFill, BsFileEarmarkFontFill} from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
@@ -134,8 +134,8 @@ export const SidebarData = [
                 subNavIteams: [
                     {
                         title: 'Toma',
-                        path: '/buys/wineryadjustment',
-                        icon: <SiHomeassistantcommunitystore />,
+                        path: '/buys/take',
+                        icon: <BsFileEarmarkFontFill />,
                     },
                     {
                         title: 'Pretoma',
