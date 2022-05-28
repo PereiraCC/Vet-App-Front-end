@@ -44,6 +44,7 @@ import { WarehouseOrdersPage } from '../components/WarehouseOrders/WarehouseOrde
 import { MovementItems } from '../components/MovementItems/MovementItems';
 import { RequestWineryPage } from '../components/RequestWinery/RequestWineryPage';
 import { PurchaseOrder } from '../components/PurchaseOrder/PurchaseOrder';
+import { PurchaseReturnsPage } from '../components/PurchaseReturns/PurchaseReturnsPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -166,6 +167,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/buys/purchaseorder"
                     component={ PurchaseOrder }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/buys/purchasereturns"
+                    component={ PurchaseReturnsPage }
                 />
 
                 <PrivateRoute 

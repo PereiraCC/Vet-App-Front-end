@@ -7,7 +7,7 @@ import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillA
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree, GiPowderBag} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
 import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill, RiFilePaper2Fill} from 'react-icons/ri';
-import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory, MdSdStorage } from 'react-icons/md';
+import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory, MdSdStorage, MdAssignmentReturn } from 'react-icons/md';
 
 export const SidebarData = [
     {
@@ -163,8 +163,8 @@ export const SidebarData = [
             },
             {
                 title: 'Devoluciones compra',
-                path: '/buys/inventoryadjustment', //TODO: CHANGLE LINK
-                icon: <CgPill />,
+                path: '/buys/purchasereturns',
+                icon: <MdAssignmentReturn />,
                 cName: 'vet_nav-text'
             },
             {
