@@ -7,7 +7,7 @@ import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillA
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree, GiPowderBag} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
 import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill} from 'react-icons/ri';
-import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory } from 'react-icons/md';
+import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory, MdSdStorage } from 'react-icons/md';
 
 export const SidebarData = [
     {
@@ -120,7 +120,7 @@ export const SidebarData = [
                     {
                         title: 'Solicitud Bodega',
                         path: '/buys/requestWinery',
-                        icon: <SiHomeassistantcommunitystore />,
+                        icon: <MdSdStorage />,
                     },
                 ]
             },
