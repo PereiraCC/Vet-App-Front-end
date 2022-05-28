@@ -49,6 +49,7 @@ import { BillsPage } from '../components/Bills/BillsPage';
 import { PretakePage } from '../components/Pretake/PretakePage';
 import { TakePage } from '../components/Take/TakePage';
 import { TaxClaimPage } from '../components/TaxClaim/TaxClaimPage';
+import { AreasPage } from '../components/Areas/AreasPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -339,6 +340,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/wineries"
                     component={ WineriesPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/areas"
+                    component={ AreasPage }
                 />
 
                 <PrivateRoute 
