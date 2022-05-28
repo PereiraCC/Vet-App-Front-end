@@ -1,4 +1,4 @@
-import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill} from 'react-icons/bs';
+import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill} from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
@@ -226,6 +226,12 @@ export const SidebarData = [
                         icon: <BsFileCheckFill />,
                     },
                 ]
+            },
+            {
+                title: 'Agente de ventas',
+                path: '/sales/salesagent',
+                icon: <BsFillPersonBadgeFill />,
+                cName: 'vet_nav-text'
             },
             {
                 title: 'Abono Cobrar',

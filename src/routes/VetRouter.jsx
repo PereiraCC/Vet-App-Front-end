@@ -38,6 +38,7 @@ import { Terms } from '../components/Terms/Terms';
 import { UsualCustomersPage } from '../components/UsualCustomers/UsualCustomersPage';
 import { ProformaPage } from '../components/Proforma/ProformaPage';
 import { TrackingQuotesPage } from '../components/TrackingQuotes/TrackingQuotesPage';
+import { SalesAgentPage } from '../components/SalesAgent/SalesAgentPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -167,6 +168,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/sales/budgets/seguimiento"
                     component={ TrackingQuotesPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/sales/salesagent"
+                    component={ SalesAgentPage }
                 />
 
                 <PrivateRoute 
