@@ -48,6 +48,7 @@ import { PurchaseReturnsPage } from '../components/PurchaseReturns/PurchaseRetur
 import { BillsPage } from '../components/Bills/BillsPage';
 import { PretakePage } from '../components/Pretake/PretakePage';
 import { TakePage } from '../components/Take/TakePage';
+import { TaxClaimPage } from '../components/TaxClaim/TaxClaimPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -198,6 +199,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/buys/take"
                     component={ TakePage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/buys/taxclaim"
+                    component={ TaxClaimPage }
                 />
 
                 <PrivateRoute 
