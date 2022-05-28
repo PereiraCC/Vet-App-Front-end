@@ -93,7 +93,7 @@ export const SidebarItem = ({ item, index}) => {
                                         
                                             if(subnavIteamsPedidos){
 
-                                                if(subItem.title == 'Pedidos a Bodega' || subItem.title == 'Seguimiento Cotizaciones') {
+                                                if(subItem.title == 'Pedidos a Bodega' || subItem.title == 'Consultar Pedidos') {
                                                     
                                                     return (
                                                         <div onClick={ (e) => handleAddTab(subItem) } key={index}>

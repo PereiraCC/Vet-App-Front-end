@@ -98,7 +98,7 @@ export const SidebarData = [
                         icon: <BsFillFileEarmarkTextFill />,
                     },
                     {
-                        title: 'Seguimiento Cotizaciones',
+                        title: 'Consultar Pedidos',
                         path: '/buys/orders/checkorders',
                         icon: <BsFileCheckFill />,
                     },

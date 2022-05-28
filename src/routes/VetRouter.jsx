@@ -40,6 +40,7 @@ import { ProformaPage } from '../components/Proforma/ProformaPage';
 import { TrackingQuotesPage } from '../components/TrackingQuotes/TrackingQuotesPage';
 import { SalesAgentPage } from '../components/SalesAgent/SalesAgentPage';
 import { BagsKilosPage } from '../components/BagsKilos/BagsKilosPage';
+import { WarehouseOrdersPage } from '../components/WarehouseOrders/WarehouseOrdersPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -113,6 +114,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/buys/providers"
                     component={ ProvidersPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/buys/orders/warehouseorders"
+                    component={ WarehouseOrdersPage }
                 />
 
                 <PrivateRoute 
