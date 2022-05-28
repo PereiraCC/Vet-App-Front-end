@@ -4,7 +4,7 @@ import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
 import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile, AiFillInteraction } from 'react-icons/ai';
 import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt, FaMoneyCheckAlt} from 'react-icons/fa';
-import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree} from 'react-icons/gi';
+import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree, GiPowderBag} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
 import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill} from 'react-icons/ri';
 import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory } from 'react-icons/md';
@@ -336,7 +336,7 @@ export const SidebarData = [
             {
                 title: 'Convertir Saco por Kilos',
                 path: '/parameters/bagskilos',
-                icon: <MdCategory />,
+                icon: <GiPowderBag />,
                 cName: 'vet_nav-text'
             },
             {

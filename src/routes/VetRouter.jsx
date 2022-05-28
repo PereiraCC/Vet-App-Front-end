@@ -39,6 +39,7 @@ import { UsualCustomersPage } from '../components/UsualCustomers/UsualCustomersP
 import { ProformaPage } from '../components/Proforma/ProformaPage';
 import { TrackingQuotesPage } from '../components/TrackingQuotes/TrackingQuotesPage';
 import { SalesAgentPage } from '../components/SalesAgent/SalesAgentPage';
+import { BagsKilosPage } from '../components/BagsKilos/BagsKilosPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -273,6 +274,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/category"
                     component={ CategoryPage }
+                />
+
+                <PrivateRoute   
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/bagskilos"
+                    component={ BagsKilosPage }
                 />
 
                 <PrivateRoute 
