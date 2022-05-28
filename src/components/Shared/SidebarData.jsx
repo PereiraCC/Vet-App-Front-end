@@ -149,12 +149,12 @@ export const SidebarData = [
                     },
                 ]
             },
-            // {
-            //     title: 'Movimientos de articulos',
-            //     path: '/buys/movementitems',
-            //     icon: <BsCartCheckFill />,
-            //     cName: 'vet_nav-text'
-            // },
+            {
+                title: 'Movimientos de articulos',
+                path: '/buys/movementitems',
+                icon: <BsCartCheckFill />,
+                cName: 'vet_nav-text'
+            },
             {
                 title: 'Orden de compra manual',
                 path: '/buys/inventoryadjustment', //TODO: CHANGLE LINK
