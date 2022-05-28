@@ -1,4 +1,4 @@
-import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill} from 'react-icons/bs';
+import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill, BsCartCheckFill} from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
@@ -149,6 +149,12 @@ export const SidebarData = [
                     },
                 ]
             },
+            // {
+            //     title: 'Movimientos de articulos',
+            //     path: '/buys/movementitems',
+            //     icon: <BsCartCheckFill />,
+            //     cName: 'vet_nav-text'
+            // },
             {
                 title: 'Orden de compra manual',
                 path: '/buys/inventoryadjustment', //TODO: CHANGLE LINK
