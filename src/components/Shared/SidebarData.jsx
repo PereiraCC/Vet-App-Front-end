@@ -1,4 +1,4 @@
-import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill, BsCartCheckFill} from 'react-icons/bs';
+import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill, BsCartCheckFill, BsFileEarmarkBinaryFill} from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
@@ -126,7 +126,7 @@ export const SidebarData = [
             },
             {
                 title: 'Toma',
-                path: '/buys/orders/wineryadjustment',
+                path: '/buys/pretake',
                 icon: <FaMoneyCheckAlt />,
                 iconClosed: <RiArrowDownSFill />,
                 iconOpened: <RiArrowUpSFill />,
@@ -139,8 +139,8 @@ export const SidebarData = [
                     },
                     {
                         title: 'Pretoma',
-                        path: '/buys/requestWinery',
-                        icon: <SiHomeassistantcommunitystore />,
+                        path: '/buys/pretake',
+                        icon: <BsFileEarmarkBinaryFill />,
                     },
                     {
                         title: 'Pretoma Fisica General',
