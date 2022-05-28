@@ -169,8 +169,8 @@ export const SidebarData = [
             },
             {
                 title: 'Gastos',
-                path: '/buys/inventoryadjustment', //TODO: CHANGLE LINK
-                icon: <CgPill />,
+                path: '/buys/bills',
+                icon: <FaMoneyBillAlt />,
                 cName: 'vet_nav-text'
             },
             {
