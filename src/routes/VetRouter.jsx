@@ -43,6 +43,7 @@ import { BagsKilosPage } from '../components/BagsKilos/BagsKilosPage';
 import { WarehouseOrdersPage } from '../components/WarehouseOrders/WarehouseOrdersPage';
 import { MovementItems } from '../components/MovementItems/MovementItems';
 import { RequestWineryPage } from '../components/RequestWinery/RequestWineryPage';
+import { PurchaseOrder } from '../components/PurchaseOrder/PurchaseOrder';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -158,6 +159,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/buys/requestWinery"
                     component={ RequestWineryPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/buys/purchaseorder"
+                    component={ PurchaseOrder }
                 />
 
                 <PrivateRoute 

@@ -6,7 +6,7 @@ import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile, AiFill
 import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt, FaMoneyCheckAlt} from 'react-icons/fa';
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree, GiPowderBag} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
-import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill} from 'react-icons/ri';
+import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill, RiFilePaper2Fill} from 'react-icons/ri';
 import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory, MdSdStorage } from 'react-icons/md';
 
 export const SidebarData = [
@@ -157,8 +157,8 @@ export const SidebarData = [
             },
             {
                 title: 'Orden de compra manual',
-                path: '/buys/inventoryadjustment', //TODO: CHANGLE LINK
-                icon: <CgPill />,
+                path: '/buys/purchaseorder',
+                icon: <RiFilePaper2Fill />,
                 cName: 'vet_nav-text'
             },
             {
