@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
-import { FaFileInvoiceDollar } from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaMoneyCheck} from 'react-icons/fa';
 import { MdOutlineAttachMoney } from 'react-icons/md';
 
 import { addTab } from '../../actions/tabs';
@@ -36,7 +36,7 @@ export const ShortcutsNavbar = () => {
             </Link>
 
             <Link to='/initial/billing' >
-                <FaFileInvoiceDollar onClick={ (e) => handleAddTab('Venta','/initial/billing') } id='iconVenta'/>
+                <FaMoneyCheck onClick={ (e) => handleAddTab('Proformas o Cotización','/sales/budgets/proforma') } id='iconProforma'/>
             </Link>
             
         </div>
