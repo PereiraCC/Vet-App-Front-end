@@ -1,0 +1,27 @@
+.movementItems_body-main {
+    border: 1px solid black;
+    display: grid;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-areas: 
+        'inputs'
+        'compras'
+        'ventas';
+    grid-template-rows: 10% 45% 45%;
+}
+
+.movementItems_body-inputs {
+    grid-area: inputs;
+    background-color: aqua;
+}
+
+.movementItems_body-compras {
+    grid-area: compras;
+    background-color: brown;
+}
+
+.movementItems_body-ventas {
+    grid-area: ventas;
+    background-color: blueviolet;
+}
