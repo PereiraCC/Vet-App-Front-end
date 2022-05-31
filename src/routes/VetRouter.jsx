@@ -50,6 +50,7 @@ import { PretakePage } from '../components/Pretake/PretakePage';
 import { TakePage } from '../components/Take/TakePage';
 import { TaxClaimPage } from '../components/TaxClaim/TaxClaimPage';
 import { AreasPage } from '../components/Areas/AreasPage';
+import { CheckOrdersPage } from '../components/CheckOrders/CheckOrdersPage';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -136,7 +137,7 @@ export const VetRouter = ({ isAuthenticated}) => {
                     isAuthenticated={ isAuthenticated }
                     exact
                     path="/buys/orders/checkorders"
-                    component={ WarehouseOrdersPage }
+                    component={ CheckOrdersPage }
                 />
 
                 <PrivateRoute 
