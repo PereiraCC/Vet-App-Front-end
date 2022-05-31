@@ -156,6 +156,11 @@ export const InventoryHeaderArticle = () => {
                                 <option value="mobiil2">Mobiil2</option>
                         </select>
                     </div>
+
+                    <div className='inventory_header-article-last-line-inputs-cabys'>
+                        <p id='lblCodigoCabysInventory'>Codigo Cabys</p>
+                        <input type="text" id="txtCodigoCabysInventory" name="codigoCabys" />
+                    </div>
                    
                 </div>
             </div>

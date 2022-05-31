@@ -404,26 +404,28 @@
     display: grid;
     grid-template-areas: 
         'labelPantalla inputsPantalla';
-    grid-template-columns: 10% 60%;
+    grid-template-columns: 10% 90%;
 }
 
 #lblPantalla {
     font-size: 15px;
     grid-area: labelPantalla;
     padding-top: 5px;
+    text-align: end;
 }
 
 .inventory_header-article-last-line-inputs {
-    grid-area: inputsPantalla;
     display: grid;
+    grid-area: inputsPantalla;
     grid-template-areas: 
-        'checkPantalla comboboxPantalla';
-    grid-template-columns: 8% 65%;
+        'checkPantalla comboboxPantalla codigoCabys';
+    grid-template-columns: 4% 40% 55%;
 }
 
 .inventory_header-article-last-line-inputs-checks {
     grid-area: checkPantalla;
-    padding-top: 8px;
+    padding-right: 30%;
+    padding-top: 5px;
 }
 
 .inventory_header-article-last-line-inputs-cbo{
@@ -433,5 +435,28 @@
 }
 
 #cboPantalla {
-    width: 100%;
+    width: 95%;
+}
+
+.inventory_header-article-last-line-inputs-cabys {
+    display: grid;
+    grid-area: codigoCabys;
+    grid-template-areas: 
+        'lblCodigoCabys inputCodigoCabys';
+    grid-template-columns: 18% 70%;
+}
+
+#lblCodigoCabysInventory {
+    font-size: 15px;
+    grid-area: lblCodigoCabys;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: start;
+}
+
+#txtCodigoCabysInventory {
+    grid-area: inputCodigoCabys;
+    height: 65%;
+    margin-top: 5px;
+    width: 92%;
 }
