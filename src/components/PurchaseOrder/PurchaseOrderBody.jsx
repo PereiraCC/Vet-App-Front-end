@@ -152,7 +152,73 @@ export const PurchaseOrderBody = () => {
             </div>
 
             <div className='purchaseOrden_body-table'>
-                <p>table</p>
+                
+                <div className='purchaseOrden_body-table-obser'>
+                    <p id='lblObserPurchaseOrden'>Observaciones</p>
+                    <input type='text' id='txtObserPurchaseOrden' name='obserPurchaseOrden'/>
+                </div>
+
+                <div className='purchaseOrden_body-table-table'>
+                    <table className='purchaseOrden_body-table-table-main'>
+                        <thead>
+                            <tr>
+                                <th className='purchaseOrden_body-table-header-codigo'>Código</th>
+                                <th className='purchaseOrden_body-table-header-descrip'>Descripción</th>
+                                <th className='purchaseOrden_body-table-header-precioUnit'>Precio Unit</th>
+                                <th className='purchaseOrden_body-table-header-cantidad'>Cantidad</th>
+                                <th className='purchaseOrden_body-table-header-iv'>% IV</th>
+                                <th className='purchaseOrden_body-table-header-desc'>% Desc</th>
+                                <th className='purchaseOrden_body-table-header-gravado'>Gravado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className='purchaseOrden_body-table-codigo'>test</td>
+                                <td className='purchaseOrden_body-table-descrip'>test</td>
+                                <td className='purchaseOrden_body-table-precioUnit'>test</td>
+                                <td className='purchaseOrden_body-table-cantidad'>test</td>
+                                <td className='purchaseOrden_body-table-iv'>test</td>
+                                <td className='purchaseOrden_body-table-desc'>test</td>
+                                <td className='purchaseOrden_body-table-gravado'>test</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className='purchaseOrden_body-table-totals'>
+                    
+                    <div className='purchaseOrden_body-table-totals-subgravado'>
+                        <p id='lblsubgravadoPurchaseOrden'>Sub. Gravado</p>
+                        <input type='text' id='txtsubgravadoPurchaseOrden' name='subgravadoPurchaseOrden'/>
+                    </div>
+
+                    <div className='purchaseOrden_body-table-totals-subexento'>
+                        <p id='lblsubexentoPurchaseOrden'>Sub. Exento</p>
+                        <input type='text' id='txtsubexentoPurchaseOrden' name='subexentoPurchaseOrden'/>
+                    </div>
+
+                    <div className='purchaseOrden_body-table-totals-subTotal'>
+                        <p id='lblsubTotalPurchaseOrden'>SubTotal</p>
+                        <input type='text' id='txtsubTotalPurchaseOrden' name='subTotalPurchaseOrden'/>
+                    </div>
+
+                    <div className='purchaseOrden_body-table-totals-descuento'>
+                        <p id='lbldescuentoPurchaseOrden'>Descuento</p>
+                        <input type='text' id='txtdescuentoPurchaseOrden' name='descuentoPurchaseOrden'/>
+                    </div>
+
+                    <div className='purchaseOrden_body-table-totals-impuesto'>
+                        <p id='lblimpuestoPurchaseOrden'>Impuesto</p>
+                        <input type='text' id='txtimpuestoPurchaseOrden' name='impuestoPurchaseOrden'/>
+                    </div>
+
+                    <div className='purchaseOrden_body-table-totals-total'>
+                        <p id='lbltotalPurchaseOrden'>Total</p>
+                        <input type='text' id='txttotalPurchaseOrden' name='totalPurchaseOrden'/>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
