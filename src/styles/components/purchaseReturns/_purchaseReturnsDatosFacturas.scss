@@ -1,0 +1,19 @@
+.purchaseReturn_datosFactura-main {
+    display: grid;
+    height: 100%;
+    text-align: center;
+    grid-template-areas: 
+        'firstLine'
+        'secondLine';
+    grid-template-rows: 40% 60%;
+}
+
+.purchaseReturn_datosFactura-firstLine {
+    grid-area: firstLine;
+    background-color: aqua;
+}
+
+.purchaseReturn_datosFactura-secondLine {
+    grid-area: secondLine;
+    background-color: chartreuse;
+}
