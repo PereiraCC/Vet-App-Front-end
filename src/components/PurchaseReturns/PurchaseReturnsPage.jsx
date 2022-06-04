@@ -1,5 +1,6 @@
 import { PurchaseReturnsDatosFactura } from './PurchaseReturnsDatosFactura';
 import { PurchaseReturnsIcons } from './PurchaseReturnsIcons';
+import { PurchaseReturnsTable } from './PurchaseReturnsTable';
 
 export const PurchaseReturnsPage = () => {
     return (
@@ -25,7 +26,7 @@ export const PurchaseReturnsPage = () => {
             </div>
 
             <div className='purchaseReturns-table'>
-                <p>table</p>
+                <PurchaseReturnsTable />
             </div>
 
             <div className='purchaseReturns-footer'>
