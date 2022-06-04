@@ -1,6 +1,25 @@
+import { BillsBodyHeader } from "./BillsBodyHeader"
+import { BillsIcons } from "./BillsIcons"
 
 export const BillsPage = () => {
     return (
-        <h1>BillsPage</h1>
+        <div className='bills-main'>
+
+            <div className='bills-header'>
+                <p id='lblTitleBills'>Registro de Gastos</p>
+            </div>
+
+            <div className='bills-body-header'>
+                <BillsBodyHeader />
+            </div>
+
+            <div className='bills-body-detalle'>
+                <p>body header</p>
+            </div>
+
+            <div className='bills-body-footer'>
+                <BillsIcons />
+            </div>
+        </div>
     )
 }
