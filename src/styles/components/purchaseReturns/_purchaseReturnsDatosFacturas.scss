@@ -12,8 +12,8 @@
 }
 
 .purchaseReturn_datosFactura-firstLine {
-    grid-area: firstLine;
     display: grid;
+    grid-area: firstLine;
     grid-template-areas: 
         'titleF'
         'inputsF';
@@ -25,26 +25,26 @@
 }
 
 #lblTitleDatosFacturaPR {
+    border-bottom: 1px solid #c4c4c4;
+    color: #4169e6;
     font-size: 15px;
     font-weight: bold;
-    color: #4169e6;
-    text-align: start;
     padding-left: 5px;
     padding-top: 2px;
-    border-bottom: 1px solid #c4c4c4;
+    text-align: start;
 }
 
 .purchaseReturn_datosFactura-firstLine-inputs {
-    grid-area: inputsF;
     display: grid;
+    grid-area: inputsF;
     grid-template-areas: 
         'tipo numero proveedor monto fecha moneda';
     grid-template-columns: 12% 12% 34% 14% 14% 14%;
 }
 
 .purchaseReturn_datosFactura-firstLine-inputs-tipo {
-    grid-area: tipo;
     display: grid;
+    grid-area: tipo;
     grid-template-areas: 
         'lblTipo'
         'txtTipo';
@@ -52,25 +52,25 @@
 }
 
 #lblTipoFacturaPR {
+    color: #4169e6;
+    font-size: 15px;
     grid-area: lblTipo;
-    text-align: start;
     padding-left: 5px;
     padding-top: 3px;
-    font-size: 15px;
-    color: #4169e6;
+    text-align: start;
 }
 
 #cboTipoFacturaPR {
     grid-area: txtTipo;
-    text-align: start;
     height: 80%;
-    width: 85%;
     margin-left: 5px;
+    text-align: start;
+    width: 85%;
 }
 
 .purchaseReturn_datosFactura-firstLine-inputs-numero {
-    grid-area: numero;
     display: grid;
+    grid-area: numero;
     grid-template-areas: 
         'lblnumero'
         'txtnumero';
@@ -78,25 +78,25 @@
 }
 
 #lblNumeroFacturaPR {
+    color: #4169e6;
+    font-size: 15px;
     grid-area: lblnumero;
-    text-align: start;
     padding-left: 5px;
     padding-top: 3px;
-    font-size: 15px;
-    color: #4169e6;
+    text-align: start;
 }
 
 #txtNumeroFacturaPR {
     grid-area: txtnumero;
-    text-align: start;
     height: 80%;
-    width: 85%;
     margin-left: 5px;
+    text-align: start;
+    width: 85%;
 }
 
 .purchaseReturn_datosFactura-firstLine-inputs-Proveedor {
-    grid-area: proveedor;
     display: grid;
+    grid-area: proveedor;
     grid-template-areas: 
         'lblproveedor'
         'txtproveedor';
@@ -104,25 +104,25 @@
 }
 
 #lblProveedorFacturaPR {
+    color: #4169e6;
+    font-size: 15px;
     grid-area: lblproveedor;
-    text-align: start;
     padding-left: 5px;
     padding-top: 3px;
-    font-size: 15px;
-    color: #4169e6;
+    text-align: start;
 }
 
 #txtProveedorFacturaPR {
     grid-area: txtproveedor;
-    text-align: start;
     height: 80%;
-    width: 95%;
     margin-left: 5px;
+    text-align: start;
+    width: 95%;
 }
 
 .purchaseReturn_datosFactura-firstLine-inputs-monto {
-    grid-area: monto;
     display: grid;
+    grid-area: monto;
     grid-template-areas: 
         'lblmonto'
         'txtmonto';
@@ -130,25 +130,25 @@
 }
 
 #lblMontoFacturaPR {
+    color: #4169e6;
+    font-size: 15px;
     grid-area: lblmonto;
-    text-align: start;
     padding-left: 5px;
     padding-top: 3px;
-    font-size: 15px;
-    color: #4169e6;
+    text-align: start;
 }
 
 #txtMontoFacturaPR {
     grid-area: txtmonto;
-    text-align: start;
     height: 80%;
-    width: 95%;
     margin-left: 5px;
+    text-align: start;
+    width: 95%;
 }
 
 .purchaseReturn_datosFactura-firstLine-inputs-fecha {
-    grid-area: fecha;
     display: grid;
+    grid-area: fecha;
     grid-template-areas: 
         'lblfecha'
         'txtfecha';
@@ -156,25 +156,25 @@
 }
 
 #lblFechaFacturaPR {
+    color: #4169e6;
+    font-size: 15px;
     grid-area: lblfecha;
-    text-align: start;
     padding-left: 5px;
     padding-top: 3px;
-    font-size: 15px;
-    color: #4169e6;
+    text-align: start;
 }
 
 #txtFechaFacturaPR {
     grid-area: txtfecha;
-    text-align: start;
     height: 80%;
-    width: 95%;
     margin-left: 5px;
+    text-align: start;
+    width: 95%;
 }
 
 .purchaseReturn_datosFactura-firstLine-inputs-moneda {
-    grid-area: moneda;
     display: grid;
+    grid-area: moneda;
     grid-template-areas: 
         'lblmoneda'
         'txtmoneda';
@@ -182,23 +182,323 @@
 }
 
 #lblMonedaFacturaPR {
+    color: #4169e6;
+    font-size: 15px;
     grid-area: lblmoneda;
-    text-align: start;
     padding-left: 5px;
     padding-top: 3px;
-    font-size: 15px;
-    color: #4169e6;
+    text-align: start;
 }
 
 #cboMonedaFacturaPR {
     grid-area: txtmoneda;
-    text-align: start;
     height: 80%;
-    width: 95%;
     margin-left: 5px;
+    text-align: start;
+    width: 95%;
 }
 
 .purchaseReturn_datosFactura-secondLine {
+    display: grid;
     grid-area: secondLine;
-    background-color: chartreuse;
+    grid-template-areas: 
+        'table inputs';
+    grid-template-columns: 50% 50%;
+}
+
+.purchaseReturn_datosFactura-secondLine-table {
+    display: grid;
+    grid-area: table;
+    grid-template-areas: 
+        'title'
+        'body';
+    grid-template-rows: 16% 84%;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-title {
+    border-top: 1px solid #c4c4c4;
+    grid-area: title;
+}
+
+#lblTitleTableDatosFacturaPR {
+    color: #4169e6;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-body {
+    border: 1px solid #c4c4c4;
+    grid-area: body;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-body-main {
+    width: 100%;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-body-header-codigo {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 4%;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-body-header-descrip {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 12%;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-body-header-lote {
+    background-color: #BFBCC1;
+    padding-left: 5px;
+    text-align: start;
+    width: 4%;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-body-codigo {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-body-descrip {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.purchaseReturn_datosFactura-secondLine-table-body-lote {
+    border: 1px solid #BFBCC1;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: start;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs {
+    display: grid;
+    grid-area: inputs;
+    grid-template-areas: 
+        'titleI'
+        'inputsI';
+    grid-template-rows: 16% 84%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-title {
+    background-color: #4169e6;
+    grid-area: titleI;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input {
+    display: grid;
+    grid-area: inputsI;
+    grid-template-areas: 
+        'left right';
+    grid-template-columns: 50% 50%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-left {
+    display: grid;
+    grid-area: left;
+    grid-template-areas: 
+        'codigo'
+        'precioCosto'
+        'descuento';
+    grid-template-rows: 25% 25% 25%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-left-codigo {
+    display: grid;
+    grid-area: codigo;
+    grid-template-areas: 
+        'lblcodigo txtcodigo';
+    grid-template-columns: 40% 60%;
+}
+
+#lblCodigoArticuloPR {
+    color: #4169e6;
+    font-size: 15px;
+    grid-area: lblcodigo;
+    padding-left: 20px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtCodigoArticuloPR {
+    color: black;
+    grid-area: txtcodigo;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 90%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-left-precioCosto {
+    display: grid;
+    grid-area: precioCosto;
+    grid-template-areas: 
+        'lblprecioCosto txtprecioCosto';
+    grid-template-columns: 40% 60%;
+}
+
+#lblPrecioCostoPR {
+    color: #4169e6;
+    font-size: 15px;
+    grid-area: lblprecioCosto;
+    padding-left: 20px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtPrecioCostoPR {
+    color: black;
+    grid-area: txtprecioCosto;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 90%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-left-descuento {
+    display: grid;
+    grid-area: descuento;
+    grid-template-areas: 
+        'lbldescuento txtdescuento';
+    grid-template-columns: 40% 60%;
+}
+
+#lblDescuentoArticuloPR {
+    color: #4169e6;
+    font-size: 15px;
+    grid-area: lbldescuento;
+    padding-left: 20px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtDescuentoArticuloPR {
+    color: black; 
+    grid-area: txtdescuento;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 90%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-right {
+    display: grid;
+    grid-area: right;
+    grid-template-areas: 
+        'lote'
+        'cantOriginal'
+        'devoluciones'
+        'devolucion';
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-right-lote {
+    display: grid;
+    grid-area: lote;
+    grid-template-areas: 
+        'lbllote txtlote';
+    grid-template-columns: 40% 60%;
+}
+
+#lblLoteArticuloPR {
+    color: #4169e6;
+    font-size: 15px;
+    grid-area: lbllote;
+    padding-left: 20px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtLoteArticuloPR {
+    color: black;
+    grid-area: txtlote;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 90%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-right-cantOriginal {
+    display: grid;
+    grid-area: cantOriginal;
+    grid-template-areas: 
+        'lblcantOriginal txtcantOriginal';
+    grid-template-columns: 40% 60%;
+}
+
+#lblCantidadOriginalPR {
+    color: #4169e6;
+    font-size: 15px;
+    grid-area: lblcantOriginal;
+    padding-left: 20px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtCantidadOriginalPR {
+    color: black;
+    grid-area: txtcantOriginal;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 90%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-right-devoluciones {
+    display: grid;
+    grid-area: devoluciones;
+    grid-template-areas: 
+        'lbldevoluciones txtdevoluciones';
+    grid-template-columns: 40% 60%;
+}
+
+#lblDevolucionesPR {
+    color: #4169e6;
+    font-size: 15px;
+    grid-area: lbldevoluciones;
+    padding-left: 20px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtDevolucionesPR {
+    color: black;
+    grid-area: txtdevoluciones;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 90%;
+}
+
+.purchaseReturn_datosFactura-secondLine-inputs-input-right-devolucion {
+    display: grid;
+    grid-area: devolucion;
+    grid-template-areas: 
+        'lbldevolucion txtdevolucion';
+    grid-template-columns: 40% 60%;
+}
+
+#lblDevolucionPR {
+    color: #4169e6;
+    font-size: 15px;
+    grid-area: lbldevolucion;
+    padding-left: 20px;
+    padding-top: 2px;
+    text-align: start;
+}
+
+#txtDevolucionPR {
+    color: black;
+    grid-area: txtdevolucion;
+    height: 80%;
+    margin-top: 2px;
+    text-align: start;
+    width: 90%;
 }
