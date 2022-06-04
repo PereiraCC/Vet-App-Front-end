@@ -12,7 +12,7 @@ export const PurchaseReturnsPage = () => {
                 </div>
 
                 <div className='purchaseReturns-header-title'>
-                    <p id='lblTitlePurchaseReturns'>Orden de Compra Manual</p>
+                    <p id='lblTitlePurchaseReturns'>Devoluciones Compra</p>
                 </div>
 
                 <div className='purchaseReturns-header-fecha'>

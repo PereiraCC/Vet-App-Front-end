@@ -7,7 +7,7 @@
         'datosFactura'
         'table'
         'footer';
-    grid-template-rows: 40px 200px 248px 60px;
+    grid-template-rows: 40px 170px 278px 60px;
 }
 
 .purchaseReturns-header {
@@ -70,7 +70,6 @@
 
 .purchaseReturns-datosFactura {
     grid-area: datosFactura;
-    background-color: blueviolet;
 }
 
 .purchaseReturns-table {

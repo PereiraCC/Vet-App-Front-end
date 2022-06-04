@@ -1,6 +1,9 @@
 .purchaseReturn_datosFactura-main {
+    border: 1px solid #c4c4c4;
     display: grid;
     height: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
     text-align: center;
     grid-template-areas: 
         'firstLine'
@@ -10,7 +13,189 @@
 
 .purchaseReturn_datosFactura-firstLine {
     grid-area: firstLine;
-    background-color: aqua;
+    display: grid;
+    grid-template-areas: 
+        'titleF'
+        'inputsF';
+    grid-template-rows: 25% 75%;
+}
+
+.purchaseReturn_datosFactura-firstLine-title {
+    grid-area: titleF;
+}
+
+#lblTitleDatosFacturaPR {
+    font-size: 15px;
+    font-weight: bold;
+    color: #4169e6;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 2px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.purchaseReturn_datosFactura-firstLine-inputs {
+    grid-area: inputsF;
+    display: grid;
+    grid-template-areas: 
+        'tipo numero proveedor monto fecha moneda';
+    grid-template-columns: 12% 12% 34% 14% 14% 14%;
+}
+
+.purchaseReturn_datosFactura-firstLine-inputs-tipo {
+    grid-area: tipo;
+    display: grid;
+    grid-template-areas: 
+        'lblTipo'
+        'txtTipo';
+    grid-template-rows: 45% 55%;
+}
+
+#lblTipoFacturaPR {
+    grid-area: lblTipo;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 15px;
+    color: #4169e6;
+}
+
+#cboTipoFacturaPR {
+    grid-area: txtTipo;
+    text-align: start;
+    height: 80%;
+    width: 85%;
+    margin-left: 5px;
+}
+
+.purchaseReturn_datosFactura-firstLine-inputs-numero {
+    grid-area: numero;
+    display: grid;
+    grid-template-areas: 
+        'lblnumero'
+        'txtnumero';
+    grid-template-rows: 45% 55%;
+}
+
+#lblNumeroFacturaPR {
+    grid-area: lblnumero;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 15px;
+    color: #4169e6;
+}
+
+#txtNumeroFacturaPR {
+    grid-area: txtnumero;
+    text-align: start;
+    height: 80%;
+    width: 85%;
+    margin-left: 5px;
+}
+
+.purchaseReturn_datosFactura-firstLine-inputs-Proveedor {
+    grid-area: proveedor;
+    display: grid;
+    grid-template-areas: 
+        'lblproveedor'
+        'txtproveedor';
+    grid-template-rows: 45% 55%;
+}
+
+#lblProveedorFacturaPR {
+    grid-area: lblproveedor;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 15px;
+    color: #4169e6;
+}
+
+#txtProveedorFacturaPR {
+    grid-area: txtproveedor;
+    text-align: start;
+    height: 80%;
+    width: 95%;
+    margin-left: 5px;
+}
+
+.purchaseReturn_datosFactura-firstLine-inputs-monto {
+    grid-area: monto;
+    display: grid;
+    grid-template-areas: 
+        'lblmonto'
+        'txtmonto';
+    grid-template-rows: 45% 55%;
+}
+
+#lblMontoFacturaPR {
+    grid-area: lblmonto;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 15px;
+    color: #4169e6;
+}
+
+#txtMontoFacturaPR {
+    grid-area: txtmonto;
+    text-align: start;
+    height: 80%;
+    width: 95%;
+    margin-left: 5px;
+}
+
+.purchaseReturn_datosFactura-firstLine-inputs-fecha {
+    grid-area: fecha;
+    display: grid;
+    grid-template-areas: 
+        'lblfecha'
+        'txtfecha';
+    grid-template-rows: 45% 55%;
+}
+
+#lblFechaFacturaPR {
+    grid-area: lblfecha;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 15px;
+    color: #4169e6;
+}
+
+#txtFechaFacturaPR {
+    grid-area: txtfecha;
+    text-align: start;
+    height: 80%;
+    width: 95%;
+    margin-left: 5px;
+}
+
+.purchaseReturn_datosFactura-firstLine-inputs-moneda {
+    grid-area: moneda;
+    display: grid;
+    grid-template-areas: 
+        'lblmoneda'
+        'txtmoneda';
+    grid-template-rows: 45% 55%;
+}
+
+#lblMonedaFacturaPR {
+    grid-area: lblmoneda;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 15px;
+    color: #4169e6;
+}
+
+#cboMonedaFacturaPR {
+    grid-area: txtmoneda;
+    text-align: start;
+    height: 80%;
+    width: 95%;
+    margin-left: 5px;
 }
 
 .purchaseReturn_datosFactura-secondLine {
