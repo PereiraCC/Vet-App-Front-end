@@ -1,3 +1,4 @@
+import { BillsBodyDetalle } from "./BillsBodyDetalle"
 import { BillsBodyHeader } from "./BillsBodyHeader"
 import { BillsIcons } from "./BillsIcons"
 
@@ -14,7 +15,7 @@ export const BillsPage = () => {
             </div>
 
             <div className='bills-body-detalle'>
-                <p>body header</p>
+                <BillsBodyDetalle />
             </div>
 
             <div className='bills-body-footer'>
