@@ -1,0 +1,115 @@
+.pretake_body-main {
+    border: 1px solid #c4c4c4;
+    display: grid;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+    grid-template-areas: 
+        'inputs'
+        'datos';
+    grid-template-rows: 10% 90%;
+}
+
+.pretake_body-header {
+    grid-area: inputs;
+    display: grid;
+    grid-template-areas: 
+        'proveedor fecha';
+    grid-template-columns: 80% 20%;
+}
+
+.pretake_body-header-proveedor {
+    display: grid;
+    grid-area: proveedor;
+    margin-top: 5px;
+    grid-template-areas: 
+        'lblproveedor iconBuscar inputBuscar inputproveedor';
+    grid-template-columns: 25% 5% 10% 60%;
+}
+
+#lblProveedorPretake {
+    border: 1px solid #c4c4c4;
+    background-color: #4169e6;
+    color: white;
+    grid-area: lblproveedor;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+#lblBusPretake {
+    border: 1px solid #c4c4c4;
+    color: #4169e6;
+    grid-area: iconBuscar;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#txtBuscadorProveedorPretake {
+    border: 1px solid #c4c4c4;
+    color: #4169e6;
+    grid-area: inputBuscar;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+#txtProveedorPretake {
+    color: black;
+    grid-area: inputproveedor;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: start;
+    width: 95%;
+}
+
+.pretake_body-header-fecha {
+    grid-area: fecha;
+    display: grid;
+    margin-top: 5px;
+    grid-template-areas: 
+        'lblfecha inputfecha';
+    grid-template-columns: 25% 75%;
+}
+
+#lblFechaPretake {
+    border: 1px solid #c4c4c4;
+    background-color: #4169e6;
+    color: white;
+    grid-area: lblfecha;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+#txtFechaPretake {
+    color: black;
+    grid-area: inputfecha;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: start;
+    width: 80%;
+}
+
+
+
+.pretake_body-datosProductos {
+    grid-area: datos;
+    background-color: yellow;
+}
