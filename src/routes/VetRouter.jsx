@@ -52,6 +52,10 @@ import { TaxClaimPage } from '../components/TaxClaim/TaxClaimPage';
 import { AreasPage } from '../components/Areas/AreasPage';
 import { CheckOrdersPage } from '../components/CheckOrders/CheckOrdersPage';
 import { Raffle } from '../components/Raffle/Raffle';
+import { Tagger } from '../components/Tagger/Tagger';
+import { UnifyCode } from '../components/UnifyCodes/UnifyCode';
+import { AssingCabysCode } from '../components/AssingCabysCode/AssingCabysCode';
+import { MagIteamsList } from '../components/MagIteamsList/MagIteamsList';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -139,13 +143,6 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/buys/orders/checkorders"
                     component={ CheckOrdersPage }
-                />
-
-                <PrivateRoute 
-                    isAuthenticated={ isAuthenticated }
-                    exact
-                    path="/buys/raffle"
-                    component={ Raffle }
                 />
 
                 <PrivateRoute 
@@ -286,6 +283,41 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/sales/repayment"
                     component={ RepaymentPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/utilities/raffle"
+                    component={ Raffle }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/utilities/tagger"
+                    component={ Tagger }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/utilities/unifycodes"
+                    component={ UnifyCode }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/utilities/magitemslist"
+                    component={ MagIteamsList }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/utilities/assigncabyscode"
+                    component={ AssingCabysCode }
                 />
 
                 <PrivateRoute 

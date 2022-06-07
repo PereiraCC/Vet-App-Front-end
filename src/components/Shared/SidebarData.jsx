@@ -2,12 +2,12 @@ import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPer
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
-import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile, AiFillInteraction } from 'react-icons/ai';
-import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt, FaMoneyCheckAlt, FaReadme, FaTicketAlt} from 'react-icons/fa';
+import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile, AiFillInteraction, AiFillTag } from 'react-icons/ai';
+import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt, FaMoneyCheckAlt, FaReadme, FaTicketAlt, FaTools, FaSitemap} from 'react-icons/fa';
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree, GiPowderBag} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
-import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill, RiFilePaper2Fill} from 'react-icons/ri';
-import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory, MdSdStorage, MdAssignmentReturn } from 'react-icons/md';
+import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill, RiFilePaper2Fill, RiBarcodeBoxFill} from 'react-icons/ri';
+import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory, MdSdStorage, MdAssignmentReturn, MdFormatListNumbered} from 'react-icons/md';
 
 export const SidebarData = [
     {
@@ -174,12 +174,6 @@ export const SidebarData = [
                 cName: 'vet_nav-text'
             },
             {
-                title: 'Rifa',
-                path: '/buys/raffle',
-                icon: <FaTicketAlt />,
-                cName: 'vet_nav-text'
-            },
-            {
                 title: 'Ajuste Inventario',
                 path: '/buys/inventoryadjustment',
                 icon: <CgPill />,
@@ -261,6 +255,46 @@ export const SidebarData = [
                 title: 'Devoluciones',
                 path: '/sales/repayment',
                 icon: <MdAssignmentReturned />,
+                cName: 'vet_nav-text'
+            },
+        ]
+    },
+    {
+        title: 'Utilidades',
+        path: '/utilities',
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
+        icon: <FaTools />,
+        cName: 'vet_nav-text',
+        subNav: [
+            {
+                title: 'Rifa',
+                path: '/utilities/raffle',
+                icon: <FaTicketAlt />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Etiquetador',
+                path: '/utilities/tagger',
+                icon: <AiFillTag />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Unificar codigos',
+                path: '/utilities/unifycodes',
+                icon: <RiBarcodeBoxFill />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Lista articulos MAG',
+                path: '/utilities/magitemslist',
+                icon: <FaSitemap />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Asignar Codigo Cabys',
+                path: '/utilities/assigncabyscode',
+                icon: <MdFormatListNumbered />,
                 cName: 'vet_nav-text'
             },
         ]
