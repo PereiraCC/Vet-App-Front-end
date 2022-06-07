@@ -3,7 +3,7 @@ import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
 import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile, AiFillInteraction } from 'react-icons/ai';
-import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt, FaMoneyCheckAlt, FaReadme} from 'react-icons/fa';
+import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt, FaMoneyCheckAlt, FaReadme, FaTicketAlt} from 'react-icons/fa';
 import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree, GiPowderBag} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
 import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill, RiFilePaper2Fill} from 'react-icons/ri';
@@ -171,6 +171,12 @@ export const SidebarData = [
                 title: 'Gastos',
                 path: '/buys/bills',
                 icon: <FaMoneyBillAlt />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Rifa',
+                path: '/buys/raffle',
+                icon: <FaTicketAlt />,
                 cName: 'vet_nav-text'
             },
             {

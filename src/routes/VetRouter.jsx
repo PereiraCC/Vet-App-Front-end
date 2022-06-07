@@ -51,6 +51,7 @@ import { TakePage } from '../components/Take/TakePage';
 import { TaxClaimPage } from '../components/TaxClaim/TaxClaimPage';
 import { AreasPage } from '../components/Areas/AreasPage';
 import { CheckOrdersPage } from '../components/CheckOrders/CheckOrdersPage';
+import { Raffle } from '../components/Raffle/Raffle';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -138,6 +139,13 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/buys/orders/checkorders"
                     component={ CheckOrdersPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/buys/raffle"
+                    component={ Raffle }
                 />
 
                 <PrivateRoute 
