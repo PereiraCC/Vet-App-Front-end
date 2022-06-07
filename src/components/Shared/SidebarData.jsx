@@ -1,13 +1,13 @@
-import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill, BsCartCheckFill, BsFileEarmarkBinaryFill, BsFileEarmarkFontFill, BsFileDiffFill} from 'react-icons/bs';
+import { BsFillPeopleFill, BsFillFileEarmarkTextFill, BsFileCheckFill, BsFillPersonBadgeFill, BsCartCheckFill, BsFileEarmarkBinaryFill, BsFileEarmarkFontFill, BsFileDiffFill, BsFillUnlockFill} from 'react-icons/bs';
 import { CgPill } from 'react-icons/cg';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { HiDocumentReport, HiPresentationChartBar, HiLocationMarker } from 'react-icons/hi';
 import { AiFillHome, AiFillSetting, AiOutlineShoppingCart, AiFillProfile, AiFillInteraction, AiFillTag } from 'react-icons/ai';
 import { FaFileInvoiceDollar, FaHandshake, FaCashRegister, FaCoins, FaMoneyBillAlt, FaMoneyCheckAlt, FaReadme, FaTicketAlt, FaTools, FaSitemap} from 'react-icons/fa';
-import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree, GiPowderBag} from 'react-icons/gi';
+import { GiReceiveMoney, GiPayMoney, GiTakeMyMoney, GiFamilyTree, GiPowderBag, GiLockedChest} from 'react-icons/gi';
 import { ImTable2 } from 'react-icons/im';
-import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill, RiFilePaper2Fill, RiBarcodeBoxFill} from 'react-icons/ri';
-import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory, MdSdStorage, MdAssignmentReturn, MdFormatListNumbered} from 'react-icons/md';
+import { RiArrowDownSFill, RiArrowUpSFill, RiUserSettingsFill, RiMoneyDollarBoxFill, RiFilePaper2Fill, RiBarcodeBoxFill, RiFileTransferFill} from 'react-icons/ri';
+import { MdOutlineAttachMoney, MdOutlineMoneyOffCsred, MdAssignmentReturned, MdCategory, MdSdStorage, MdAssignmentReturn, MdFormatListNumbered, MdOutlineScreenShare} from 'react-icons/md';
 
 export const SidebarData = [
     {
@@ -377,6 +377,30 @@ export const SidebarData = [
                 title: 'Categorias',
                 path: '/parameters/category',
                 icon: <MdCategory />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Registro de pantalla',
+                path: '/parameters/screenregister',
+                icon: <MdOutlineScreenShare />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Bloquea/Desbloquea bodega',
+                path: '/parameters/lockunlockwarehouse',
+                icon: <BsFillUnlockFill />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Bloquea/desbloquea X Casa Comercial',
+                path: '/parameters/lock/unlockcommercialhouse',
+                icon: <GiLockedChest />,
+                cName: 'vet_nav-text'
+            },
+            {
+                title: 'Translado entre puntos de venta',
+                path: '/parameters/lock/transferpointssale',
+                icon: <RiFileTransferFill />,
                 cName: 'vet_nav-text'
             },
             {

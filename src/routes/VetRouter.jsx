@@ -56,6 +56,10 @@ import { Tagger } from '../components/Tagger/Tagger';
 import { UnifyCode } from '../components/UnifyCodes/UnifyCode';
 import { AssingCabysCode } from '../components/AssingCabysCode/AssingCabysCode';
 import { MagIteamsList } from '../components/MagIteamsList/MagIteamsList';
+import { ScreenRegister } from '../components/ScreenRegister/ScreenRegister';
+import { LockUnlockWarehouse } from '../components/LockUnlockWarehouse/LockUnlockWarehouse';
+import { LockUnlockCommercialHouse } from '../components/LockUnlockCommercialHouse/LockUnlockCommercialHouse';
+import { TransferPointsSale } from '../components/TransferPointsSale/TransferPointsSale';
 
 export const VetRouter = ({ isAuthenticated}) => {
 
@@ -402,6 +406,34 @@ export const VetRouter = ({ isAuthenticated}) => {
                     exact
                     path="/parameters/category"
                     component={ CategoryPage }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/screenregister"
+                    component={ ScreenRegister }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/lockunlockwarehouse"
+                    component={ LockUnlockWarehouse }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/lock/unlockcommercialhouse"
+                    component={ LockUnlockCommercialHouse }
+                />
+
+                <PrivateRoute 
+                    isAuthenticated={ isAuthenticated }
+                    exact
+                    path="/parameters/lock/transferpointssale"
+                    component={ TransferPointsSale }
                 />
 
                 <PrivateRoute   
