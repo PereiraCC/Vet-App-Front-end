@@ -1,0 +1,20 @@
+.tagger_body-main {
+    display: grid;
+    height: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-areas: 
+        'inputs'
+        'image';
+    grid-template-rows: 55% 45%;
+}
+
+.tagger_body-inputs {
+    grid-area: inputs;
+    background-color: aqua;
+}
+
+.tagger_body-image {
+    grid-area: image;
+    background-color: brown;
+}
