@@ -1,14 +1,26 @@
 import Modal from 'react-modal';
+import { useDispatch, useSelector  } from 'react-redux';
+
+import { CloseModalAddUnityCode } from '../../actions/unityCode';
 import { customStyles } from '../../helpers/styleModal';
 
 
 Modal.setAppElement('#root');
 
 export const UnifyCodeAddModal = () => {
+
+    const dispatch = useDispatch();
+    const { modalAddUnityCodeOpen } = useSelector(state => state.unityCode);
+
+    const closeModal = (e) => {
+        e.preventDefault();
+        dispatch( CloseModalAddUnityCode() );
+    }
+
     return (
         <Modal
-            isOpen={ true }
-            // onRequestClose={closeModal}
+            isOpen={ modalAddUnityCodeOpen }
+            onRequestClose={ closeModal }
             style={ customStyles }
             closeTimeoutMS={ 200 }
             className={'modal-unifyCodeAdd'}
@@ -18,7 +30,7 @@ export const UnifyCodeAddModal = () => {
 
                 <div className='modal_unifyCode-title'>
                     <p id='lblTitleUnifyCodeModal'>Vincular productos entre puntos de venta</p>
-                    <p id='lblCloseUnifyCodeModal'>X</p>
+                    <p id='lblCloseUnifyCodeModal' onClick={ closeModal }>X</p>
                 </div>
 
                 <div className='modal_unifyCode-body'>
@@ -84,7 +96,7 @@ export const UnifyCodeAddModal = () => {
                     </div>
 
                     <div className='modal_unifyCode-body-buttons'>
-                        <button id='btnCancelarUnifyCode'>Cancelar</button>
+                        <button id='btnCancelarUnifyCode' onClick={ e => closeModal(e) }>Cancelar</button>
                         <button id='btnAceptarUnifyCode'>Aceptar</button>
                     </div>
 

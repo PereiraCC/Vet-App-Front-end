@@ -1,11 +1,21 @@
+import { useSelector, useDispatch } from "react-redux";
+import { OpenModalAddUnityCode } from "../../actions/unityCode";
+
 import { UnifyCodeAddModal } from "./UnifyCodeAddModal"
 
 export const UnifyCodeBody = () => {
+
+    const dispatch = useDispatch();
+
+    const openModal = () => {
+        dispatch( OpenModalAddUnityCode() );
+    }
+
     return (
         <div className='unifyCode_body-main'>
 
             <div className='unifyCode_body-btn'>
-                <button id='btnAddUnifyCode'>Agregar</button>
+                <button id='btnAddUnifyCode' onClick={ openModal }>Agregar</button>
             </div>
 
             <div className='unifyCode_body-table'>

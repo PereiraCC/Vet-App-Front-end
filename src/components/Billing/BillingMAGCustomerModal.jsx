@@ -12,7 +12,6 @@ export const BillingMAGCustomerModal = () => {
 
     const closeModal = () => {
         dispatch( CloseModalMAGCustomer() );
-        console.log('closeModal');
     }
 
     return (

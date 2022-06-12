@@ -10,6 +10,7 @@ import { PaysReducer } from '../reducers/paysReducer';
 import { BillingReducer } from '../reducers/billingReducer';
 import { BuysReducer } from '../reducers/buysReducer';
 import { TermsReducer } from '../reducers/termsReducer';
+import { UnityCodeReducer } from '../reducers/unityCodeReducer';
 
 const reducers = combineReducers({
     tabs: tabsReducer,
@@ -21,7 +22,8 @@ const reducers = combineReducers({
     pays: PaysReducer,
     billing: BillingReducer,
     buys: BuysReducer,
-    terms: TermsReducer
+    terms: TermsReducer,
+    unityCode: UnityCodeReducer
 });
 
 export const store = createStore(

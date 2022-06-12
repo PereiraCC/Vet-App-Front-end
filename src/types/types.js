@@ -52,4 +52,8 @@ export const types = {
     buysOpenModelImportarF: '[Buys] Open Model Importar Factura',
     buysCloseModelImportarF: '[Buys] Close Model Importar Factura',
 
+    // Unity Code actions
+    unityCodeOpenModelAddUnityCode: '[Unity Code] Open Model Add Unity Code',
+    unityCodeCloseModelAddUnityCode: '[Unity Code] Close Model Add Unity Code',
+
 }
