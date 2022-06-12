@@ -1,3 +1,4 @@
+import { UnifyCodeAddModal } from "./UnifyCodeAddModal"
 
 export const UnifyCodeBody = () => {
     return (
@@ -31,6 +32,8 @@ export const UnifyCodeBody = () => {
                     </tbody>
                 </table>
             </div>
+
+            <UnifyCodeAddModal />
 
         </div>
     )
