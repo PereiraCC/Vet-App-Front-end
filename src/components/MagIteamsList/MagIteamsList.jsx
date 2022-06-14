@@ -1,5 +1,6 @@
 import { FaRegSave } from 'react-icons/fa';
 import { ImCancelCircle} from 'react-icons/im';
+import { ModalAddImpuesto } from './ModalAddImpuesto';
 
 export const MagIteamsList = () => {
     return (
@@ -65,6 +66,8 @@ export const MagIteamsList = () => {
                 </div>
 
             </div>
+
+            <ModalAddImpuesto />
 
         </div>
     )
