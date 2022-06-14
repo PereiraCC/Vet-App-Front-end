@@ -11,6 +11,7 @@ import { BillingReducer } from '../reducers/billingReducer';
 import { BuysReducer } from '../reducers/buysReducer';
 import { TermsReducer } from '../reducers/termsReducer';
 import { UnityCodeReducer } from '../reducers/unityCodeReducer';
+import { MagIteamListReducer } from '../reducers/magIteamListReducer';
 
 const reducers = combineReducers({
     tabs: tabsReducer,
@@ -23,7 +24,8 @@ const reducers = combineReducers({
     billing: BillingReducer,
     buys: BuysReducer,
     terms: TermsReducer,
-    unityCode: UnityCodeReducer
+    unityCode: UnityCodeReducer,
+    magIteamsList: MagIteamListReducer,
 });
 
 export const store = createStore(

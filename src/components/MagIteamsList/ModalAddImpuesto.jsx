@@ -1,13 +1,26 @@
 import Modal from 'react-modal';
+import { useDispatch, useSelector  } from 'react-redux';
+
+import { CloseModalAddMagItemsList } from '../../actions/magItemList';
+
 import { customStyles } from '../../helpers/styleModal';
 
 Modal.setAppElement('#root');
 
 export const ModalAddImpuesto = () => {
+
+    const dispatch = useDispatch();
+    const { modalAddImpuestoOpen } = useSelector(state => state.magIteamsList);
+
+    const closeModal = (e) => {
+        e.preventDefault();
+        dispatch( CloseModalAddMagItemsList() );
+    }
+
     return (
         <Modal
-            isOpen={ true }
-            // onRequestClose={ closeModal }
+            isOpen={ modalAddImpuestoOpen }
+            onRequestClose={ closeModal }
             style={ customStyles }
             closeTimeoutMS={ 200 }
             className={'modal-addImpuesto'}
@@ -17,7 +30,7 @@ export const ModalAddImpuesto = () => {
 
                 <div className='modal_addImpuesto-title'>
                     <p id='lblTitleAddImpuesto'>Selecciones el Nuevo Impuesto</p>
-                    <p id='lblCloseAddImpuesto'>X</p>
+                    <p id='lblCloseAddImpuesto' onClick={ e => closeModal(e) }>X</p>
                 </div>
 
                 <div className='modal_addImpuesto-body'>
@@ -31,7 +44,7 @@ export const ModalAddImpuesto = () => {
                     </div>
 
                     <div className='modal_addImpuesto-body-btns'>
-                        <button id='btnCancelAddImpuesto'>Cancelar</button>
+                        <button id='btnCancelAddImpuesto' onClick={ e => closeModal(e) }>Cancelar</button>
                         <button id='btnCambiarAddImpuesto'>Cambiar Impuesto</button>
                     </div>
                 </div>

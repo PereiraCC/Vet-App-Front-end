@@ -1,8 +1,19 @@
+import { useDispatch } from 'react-redux';
+
 import { FaRegSave } from 'react-icons/fa';
 import { ImCancelCircle} from 'react-icons/im';
+
 import { ModalAddImpuesto } from './ModalAddImpuesto';
+import { OpenModalAddMagItemsList } from '../../actions/magItemList';
 
 export const MagIteamsList = () => {
+
+    const dispatch = useDispatch();
+
+    const openModalAddImpuesto = () => {
+        dispatch( OpenModalAddMagItemsList() );
+    }
+
     return (
         <div className='magIteamsList-main'>
 
@@ -20,7 +31,7 @@ export const MagIteamsList = () => {
                     </div>
 
                     <div className='magIteamsList-body-inputs-cambiar'>
-                        <button id='btnCambiarMAGIteamsList'>Cambiar Impuesto</button>
+                        <button id='btnCambiarMAGIteamsList' onClick={ openModalAddImpuesto }>Cambiar Impuesto</button>
                     </div>
 
                     <div className='magIteamsList-body-inputs-quitar'>

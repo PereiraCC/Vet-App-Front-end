@@ -56,4 +56,8 @@ export const types = {
     unityCodeOpenModelAddUnityCode: '[Unity Code] Open Model Add Unity Code',
     unityCodeCloseModelAddUnityCode: '[Unity Code] Close Model Add Unity Code',
 
+    // Unity Code actions
+    magIteamListOpenModelAddImpuesto: '[Mag Iteam List] Open Model Add Mag Iteam List',
+    magIteamListCloseModelAddImpuesto: '[Mag Iteam List] Close Model Add Mag Iteam List',
+
 }
