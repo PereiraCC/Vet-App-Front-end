@@ -1,6 +1,16 @@
-import { ModalSearchProviders } from "./ModalSearchProviders"
+import { useDispatch } from 'react-redux';
+
+import { ModalSearchProviders } from './ModalSearchProviders';
+import { OpenModalSearchProviders } from '../../actions/assingCabysCode';
 
 export const AssingCabysCodeBody = () => {
+
+    const dispatch = useDispatch();
+
+    const openModalSearchProviders = () => {
+        dispatch( OpenModalSearchProviders() );
+    }
+
     return (
         <div className='assingCabysCode_body-main'>
 
@@ -48,7 +58,7 @@ export const AssingCabysCodeBody = () => {
 
                     <div className='assingCabysCode_body-inputs-thirdBox-secondLine'>
                         <button id='btnAsignarCabysACC'>Asignar Cabys</button>
-                        <button id='btnPuntosACC'>...</button>
+                        <button id='btnPuntosACC' onClick={ openModalSearchProviders }>...</button>
                         <button id='btnQuitarCodigoACC'>Quitar Codigo Cabys</button>
                     </div>
 

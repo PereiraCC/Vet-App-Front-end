@@ -1,12 +1,26 @@
 import Modal from 'react-modal';
+import { useSelector, useDispatch} from 'react-redux';
+
+import { CloseModalSearchProviders } from '../../actions/assingCabysCode';
 
 import { customStyles } from '../../helpers/styleModal';
 
+Modal.setAppElement('#root');
+
 export const ModalSearchProviders = () => {
+
+    const dispatch = useDispatch();
+    const { modalSearchProvidersOpen } = useSelector(state => state.assingCabysCode);
+
+    const closeModal = (e) => {
+        e.preventDefault();
+        dispatch( CloseModalSearchProviders() );
+    }
+
     return (
         <Modal
-            isOpen={ true }
-            // onRequestClose={ closeModal }
+            isOpen={ modalSearchProvidersOpen }
+            onRequestClose={ closeModal }
             style={ customStyles }
             closeTimeoutMS={ 200 }
             className={'modal-searchProviders'}
@@ -16,7 +30,7 @@ export const ModalSearchProviders = () => {
 
                 <div className='modal_searchProviders-title'>
                     <p id='lblTitleSearchProvidersModal'>Buscar Cabys del Proveedor</p>
-                    <p id='lblCloseSearchProvidersModal'>X</p>
+                    <p id='lblCloseSearchProvidersModal' onClick={ e => closeModal(e) }>X</p>
                 </div>
 
                 <div className='modal_searchProviders-table'>

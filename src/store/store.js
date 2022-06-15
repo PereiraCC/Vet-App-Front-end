@@ -12,6 +12,7 @@ import { BuysReducer } from '../reducers/buysReducer';
 import { TermsReducer } from '../reducers/termsReducer';
 import { UnityCodeReducer } from '../reducers/unityCodeReducer';
 import { MagIteamListReducer } from '../reducers/magIteamListReducer';
+import { AssingCabysCodeReducer } from '../reducers/assingCabysCodeReducer';
 
 const reducers = combineReducers({
     tabs: tabsReducer,
@@ -26,6 +27,7 @@ const reducers = combineReducers({
     terms: TermsReducer,
     unityCode: UnityCodeReducer,
     magIteamsList: MagIteamListReducer,
+    assingCabysCode: AssingCabysCodeReducer
 });
 
 export const store = createStore(
