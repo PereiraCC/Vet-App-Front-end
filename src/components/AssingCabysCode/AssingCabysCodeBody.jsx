@@ -1,3 +1,4 @@
+import { ModalSearchProviders } from "./ModalSearchProviders"
 
 export const AssingCabysCodeBody = () => {
     return (
@@ -82,6 +83,8 @@ export const AssingCabysCodeBody = () => {
                     </tbody>
                 </table>
             </div>
+
+            <ModalSearchProviders />
         </div>
     )
 }
