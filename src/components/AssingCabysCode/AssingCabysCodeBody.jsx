@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 
 import { ModalSearchProviders } from './ModalSearchProviders';
 import { OpenModalSearchProviders } from '../../actions/assingCabysCode';
+import { ModalAssingCabysCode } from './ModalAssingCabysCode';
 
 export const AssingCabysCodeBody = () => {
 
@@ -95,6 +96,8 @@ export const AssingCabysCodeBody = () => {
             </div>
 
             <ModalSearchProviders />
+
+            <ModalAssingCabysCode />
         </div>
     )
 }
