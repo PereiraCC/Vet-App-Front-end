@@ -4,7 +4,7 @@
     grid-template-areas:
         'title' 
         'body';
-    grid-template-rows: 30px 500px;
+    grid-template-rows: 30px 450px;
 }
 
 .modal_assingCabysCode-title {
@@ -60,33 +60,38 @@
 .modal_assingCabysCode-body-firstLine {
     grid-area: firstLine;
     display: grid;
+    // grid-template-areas:
+    //     'btnBuscar txtBuscar btnLimpiar';
+    // grid-template-columns: 10% 80% 10%;
     grid-template-areas:
-        'btnBuscar txtBuscar btnLimpiar';
-    grid-template-columns: 10% 80% 10%;
+        'txtBuscar btnLimpiar';
+    grid-template-columns: 90% 10%;
 }
 
-#btnBuscarACCModal {
-    font-size: 15px;
-    grid-area: btnBuscar;
-    height: 70%;
-    margin-left: 8px;
-    margin-top: 10px;
-    text-align: center;
-    width: 80%;
+// #btnBuscarACCModal {
+//     font-size: 15px;
+//     grid-area: btnBuscar;
+//     height: 70%;
+//     margin-left: 8px;
+//     margin-top: 10px;
+//     text-align: center;
+//     width: 80%;
 
-    &:hover {
-        background-color: #3D59A9;
-        color: white;
-        cursor: pointer;
-    }
-}
+//     &:hover {
+//         background-color: #3D59A9;
+//         color: white;
+//         cursor: pointer;
+//     }
+// }
 
-#txtBuscarACCModal {
+.txtBuscarACCModal {
     font-size: 15px;
     grid-area: txtBuscar;
     height: 50%;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: start;
+    margin-left: 30px;
+    // background-color: red;
 }
 
 #btnLimpiarACCModal {
@@ -105,7 +110,7 @@
 
 .modal_assingCabysCode-body-secondLine {
     grid-area: secondLine;
-    background-color: brown;
+    // background-color: brown;
 }
 
 .modal_assingCabysCode-body-thirdLine {
@@ -119,6 +124,7 @@
 
 .modal_assingCabysCode-body-thirdLine-inputs {
     grid-area: inputs;
+    border-top: 1px solid black;
     display: grid;
     grid-template-areas:
         'codigo bien impuesto';
