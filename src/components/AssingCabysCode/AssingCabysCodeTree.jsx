@@ -1,3 +1,4 @@
+import { Scrollbars } from 'react-custom-scrollbars';
 import DropdownTreeSelect from 'react-dropdown-tree-select'
 import 'react-dropdown-tree-select/dist/styles.css'
 
@@ -21,13 +22,15 @@ export const AssingCabysCodeTree = () => {
 
     return (
         <div className='txtBuscarACCModal'>
-            <DropdownTreeSelect 
-                data={cabyscode} 
-                onChange={onChange} 
-                onAction={onAction} 
-                onNodeToggle={onNodeToggle}
-                texts={{ placeholder: 'Buscar Código Cabys' }} 
-            />
+            <Scrollbars style={{ width: 1000, height: 330 }}>
+                <DropdownTreeSelect 
+                    data={cabyscode} 
+                    onChange={onChange} 
+                    onAction={onAction} 
+                    onNodeToggle={onNodeToggle}
+                    texts={{ placeholder: 'Buscar Código Cabys' }}
+                />
+            </Scrollbars>
         </div>
     )
 }
