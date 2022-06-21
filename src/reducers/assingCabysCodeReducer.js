@@ -2,6 +2,7 @@ import { types } from '../types/types';
 
 const initialState = {
     modalSearchProvidersOpen: false,
+    modalAssingCabysCodeOpen: false,
 };
 
 export const AssingCabysCodeReducer = (state = initialState, action) => {
@@ -18,6 +19,18 @@ export const AssingCabysCodeReducer = (state = initialState, action) => {
             return {
                 ...state,
                 modalSearchProvidersOpen: false,
+            }
+
+        case types.assingCabysCodeOpenModelAssingCabysCode:
+            return {
+                ...state,
+                modalAssingCabysCodeOpen: true,
+            }
+
+        case types.assingCabysCodeCloseModelAssingCabysCode:
+            return {
+                ...state,
+                modalAssingCabysCodeOpen: false,
             }
 
         default:

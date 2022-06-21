@@ -1,61 +1,24 @@
 import Modal from 'react-modal';
+import { useSelector, useDispatch } from 'react-redux';
+import { CloseModalAssingCabysCode } from '../../actions/assingCabysCode';
 
 import { customStyles } from '../../helpers/styleModal';
 import { AssingCabysCodeTree } from './AssingCabysCodeTree';
 
 export const ModalAssingCabysCode = () => {
 
-    const data = [
-        {
-            label: 'search me',
-            value: 'searchme',
-            children: [
-              {
-                label: 'search me too',
-                value: 'searchmetoo',
-                children: [
-                  {
-                    label: 'No one can get me',
-                    value: 'anonymous',
-                    children: [
-                        {
-                            label: 'search me you',
-                            value: 'searchmetoo',
-                        }
-                    ]
-                  },
-                ],
-              },
-            ],
-        },
-        {
-            label: 'toby me',
-            value: 'tobyme',
-            children: [
-              {
-                label: 'search me too',
-                value: 'searchmetoo',
-                children: [
-                  {
-                    label: 'No one can get me',
-                    value: 'anonymous',
-                    children: [
-                        {
-                            label: 'search me you',
-                            value: 'searchmetoo',
-                        }
-                    ]
-                  },
-                ],
-              },
-            ],
-        }
-    ]
+    const dispatch = useDispatch();
+    const { modalAssingCabysCodeOpen } = useSelector(state => state.assingCabysCode);
+
+    const closeModal = (e) => {
+        e.preventDefault();
+        dispatch( CloseModalAssingCabysCode() );
+    }
 
     return (
         <Modal
-            isOpen={ true }
-            // onRequestClose={ closeModal }
+            isOpen={ modalAssingCabysCodeOpen }
+            onRequestClose={ closeModal }
             style={ customStyles }
             closeTimeoutMS={ 200 }
             className={'modal-assingCabysCode'}
@@ -65,7 +28,7 @@ export const ModalAssingCabysCode = () => {
 
                 <div className='modal_assingCabysCode-title'>
                     <p id='lblTitleAssingCabysCodeModal'>Catalogo de Bienes y Servicios (CABYS)</p>
-                    <p id='lblCloseAssingCabysCodeModal'>X</p>
+                    <p id='lblCloseAssingCabysCodeModal' onClick={ closeModal } >X</p>
                 </div>
 
                 <div className='modal_assingCabysCode-body'>

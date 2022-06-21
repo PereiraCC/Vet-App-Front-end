@@ -63,5 +63,7 @@ export const types = {
     // Assing Cabys Code actions
     assingCabysCodeOpenModelSearchProviders: '[Assing Cabys Code] Open Model Search Providers',
     assingCabysCodeCloseModelSearchProviders: '[Assing Cabys Code] Close Model Search Providers',
+    assingCabysCodeOpenModelAssingCabysCode: '[Assing Cabys Code] Open Model Assing Cabys Code',
+    assingCabysCodeCloseModelAssingCabysCode: '[Assing Cabys Code] Close Model Assing Cabys Code',
 
 }
