@@ -25,6 +25,11 @@ export const types = {
     loginStartLoading  : '[Login] Start Loading',
     loginFinishLoading : '[Login] Finish Loading',
 
+    //Cellar
+    cellarAddNew: '[cellar reducer] Add new cellar',
+    //cellarUpdate: '[cellar reducer] Update an cellar',
+    //cellarDelete: '[cellar reducer] Delete an cellar',
+
     // Inventory actions
     SelectTabInventory: '[Inventory] SelectTabInventory',
     
